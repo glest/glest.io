@@ -1,0 +1,9 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="tech_farm_full.html" title="Farm" alt="" coords="104,118,55,101,5,118,5,145,104,145"/>
+<area shape="poly" id="node2" href="tech_blacksmith_full.html" title="Blacksmith" alt="" coords="297,118,212,101,127,118,127,145,296,145"/>
+<area shape="poly" id="node4" href="tech_defense_tower_full.html" title="Defense\nTower" alt="" coords="184,324,113,293,42,324,42,373,184,373"/>
+<area shape="poly" id="node5" href="tech_technodrome_full.html" title="Technodrome" alt="" coords="302,214,204,197,105,214,105,241,302,241"/>
+<area shape="poly" id="node3" href="tech_aerodrome_full.html" title="Aerodrome" alt="" coords="401,330,316,314,231,330,231,357,400,357"/>
+<area shape="poly" id="node6" href="tech_barracks_full.html" title="Barracks" alt="" coords="516,118,447,101,377,118,377,145,516,145"/>
+<area shape="poly" id="node7" href="tech_castle_full.html" title="Castle" alt="" coords="329,22,276,5,222,22,222,49,329,49"/>
+</map>

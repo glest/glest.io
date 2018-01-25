@@ -1,0 +1,23 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="indian_bull_full.html" title="Bull" alt="" coords="77,274,76,266,70,260,62,254,52,251,41,250,30,251,20,254,12,260,7,266,5,274,7,281,12,288,20,293,30,297,41,298,52,297,62,293,70,288,76,281"/>
+<area shape="poly" id="node2" href="indian_fire_golem_full.html" title="Fire\nGolem" alt="" coords="483,274,480,263,473,253,462,245,448,240,432,238,416,240,402,245,391,253,384,263,381,274,384,285,391,295,402,303,416,308,432,310,448,308,462,303,473,295,480,285"/>
+<area shape="poly" id="node3" href="indian_horse_farm_full.html" title="Horse\nFarm" alt="" coords="221,132,164,101,107,132,107,181,221,181"/>
+<area shape="poly" id="node15" href="indian_horseman_full.html" title="Horseman" alt="" coords="227,274,224,266,215,260,201,254,184,251,164,250,144,251,127,254,113,260,104,266,101,274,104,281,113,288,127,293,144,297,164,298,184,297,201,293,215,288,224,281"/>
+<area shape="poly" id="node4" href="indian_worker_full.html" title="Worker" alt="" coords="798,29,795,22,788,15,777,10,762,7,747,5,731,7,717,10,705,15,698,22,696,29,698,37,705,43,717,49,731,52,747,53,762,52,777,49,788,43,795,37"/>
+<area shape="poly" id="node5" href="indian_reed_full.html" title="Reed" alt="" coords="603,138,556,122,509,138,509,165,603,165"/>
+<area shape="poly" id="node7" href="indian_totem_full.html" title="Totem" alt="" coords="485,138,428,122,371,138,371,165,485,165"/>
+<area shape="poly" id="node12" href="indian_tent_full.html" title="Tent" alt="" coords="1004,138,960,122,916,138,916,165,1004,165"/>
+<area shape="poly" id="node14" href="indian_round_tent_full.html" title="Round\nTent" alt="" coords="1151,132,1089,101,1028,132,1028,181,1151,181"/>
+<area shape="poly" id="node16" href="indian_main_teepee_full.html" title="Main\nTeepee" alt="" coords="1305,132,1240,101,1175,132,1175,181,1305,181"/>
+<area shape="poly" id="node19" href="indian_big_tent_full.html" title="Big\nTent" alt="" coords="722,132,675,101,627,132,627,181,722,181"/>
+<area shape="poly" id="node21" href="indian_campfire_full.html" title="Campfire" alt="" coords="892,138,819,122,746,138,746,165,891,165"/>
+<area shape="poly" id="node6" href="indian_archer_full.html" title="Archer" alt="" coords="600,274,598,266,591,260,581,254,568,251,553,250,539,251,526,254,515,260,509,266,507,274,509,281,515,288,526,293,539,297,553,298,568,297,581,293,591,288,598,281"/>
+<area shape="poly" id="node9" href="indian_fire_archer_full.html" title="Fire\nArcher" alt="" coords="888,274,886,263,879,253,867,245,853,240,837,238,822,240,807,245,796,253,789,263,786,274,789,285,796,295,807,303,822,308,837,310,853,308,867,303,879,295,886,285"/>
+<area shape="poly" id="node13" href="indian_shaman_full.html" title="Shaman" alt="" coords="357,274,354,266,347,260,335,254,320,251,304,250,288,251,273,254,261,260,254,266,251,274,254,281,261,288,273,293,288,297,304,298,320,297,335,293,347,288,354,281"/>
+<area shape="poly" id="node8" href="indian_beehive_full.html" title="Beehive" alt="" coords="288,374,223,358,157,374,157,401,288,401"/>
+<area shape="poly" id="node10" href="indian_stickfighter_full.html" title="Stickfighter" alt="" coords="763,274,759,266,749,260,734,254,715,251,693,250,672,251,653,254,637,260,627,266,624,274,627,281,637,288,653,293,672,297,693,298,715,297,734,293,749,288,759,281"/>
+<area shape="poly" id="node11" href="indian_spearman_full.html" title="Spearman" alt="" coords="1299,274,1296,266,1287,260,1273,254,1256,251,1237,250,1218,251,1201,254,1188,260,1179,266,1176,274,1179,281,1188,288,1201,293,1218,297,1237,298,1256,297,1273,293,1287,288,1296,281"/>
+<area shape="poly" id="node18" href="indian_axe_indian_full.html" title="Axe\nIndian" alt="" coords="1152,274,1150,263,1143,253,1132,245,1119,240,1104,238,1089,240,1076,245,1065,253,1058,263,1056,274,1058,285,1065,295,1076,303,1089,308,1104,310,1119,308,1132,303,1143,295,1150,285"/>
+<area shape="poly" id="node20" href="indian_axe_thrower_full.html" title="Axe\nThrower" alt="" coords="1031,274,1028,263,1020,253,1007,245,990,240,972,238,954,240,937,245,924,253,916,263,913,274,916,285,924,295,937,303,954,308,972,310,990,308,1007,303,1020,295,1028,285"/>
+<area shape="poly" id="node17" href="indian_thunderbird_full.html" title="Thunderbird" alt="" coords="458,382,455,374,444,367,428,362,408,359,385,358,363,359,343,362,326,367,316,374,313,382,316,389,326,396,343,401,363,404,385,406,408,404,428,401,444,396,455,389"/>
+</map>

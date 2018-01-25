@@ -1,0 +1,11 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="magic_summoner_guild_full.html" title="Summoner\nGuild" alt="" coords="281,173,192,142,102,173,102,222,281,222"/>
+<area shape="poly" id="node2" href="magic_wicker_behemoth_full.html" title="Wicker\nBehemoth" alt="" coords="175,309,90,278,5,309,5,359,175,359"/>
+<area shape="poly" id="node9" href="magic_library_full.html" title="Library" alt="" coords="349,315,288,299,227,315,227,342,349,342"/>
+<area shape="poly" id="node3" href="magic_power_golem_full.html" title="Power\nGolem" alt="" coords="351,582,288,552,225,582,225,632,351,632"/>
+<area shape="poly" id="node4" href="magic_energy_source_full.html" title="Energy\nSource" alt="" coords="436,173,370,142,305,173,305,222,436,222"/>
+<area shape="poly" id="node5" href="magic_golem_full.html" title="Golem" alt="" coords="178,452,120,435,62,452,62,479,178,479"/>
+<area shape="poly" id="node6" href="magic_mage_tower_full.html" title="Mage\nTower" alt="" coords="342,36,281,5,220,36,221,85,342,85"/>
+<area shape="poly" id="node8" href="magic_tower_of_souls_full.html" title="Tower\nOf Souls" alt="" coords="549,446,473,415,397,446,397,495,549,495"/>
+<area shape="poly" id="node7" href="magic_archmage_tower_full.html" title="Archmage\nTower" alt="" coords="374,446,288,415,202,446,202,495,374,495"/>
+</map>

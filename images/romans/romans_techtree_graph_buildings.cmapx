@@ -1,0 +1,10 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="romans_military_camp_full.html" title="Military\nCamp" alt="" coords="150,132,78,101,5,132,5,181,150,181"/>
+<area shape="poly" id="node4" href="romans_guard_tower_full.html" title="Guard\nTower" alt="" coords="288,269,227,238,166,269,166,318,287,318"/>
+<area shape="poly" id="node5" href="romans_eagle_pillar_full.html" title="Eagle\nPillar" alt="" coords="139,269,84,238,29,269,30,318,139,318"/>
+<area shape="poly" id="node2" href="romans_gladiator_school_full.html" title="Gladiator\nSchool" alt="" coords="471,269,392,238,313,269,313,318,471,318"/>
+<area shape="poly" id="node3" href="romans_blacksmith_shop_full.html" title="Blacksmith\nShop" alt="" coords="358,132,266,101,174,132,174,181,358,181"/>
+<area shape="poly" id="node6" href="romans_temple_full.html" title="Temple" alt="" coords="602,22,539,5,476,22,476,49,602,49"/>
+<area shape="poly" id="node7" href="romans_training_camp_full.html" title="Training\nCamp" alt="" coords="579,132,506,101,432,132,432,181,579,181"/>
+<area shape="poly" id="node8" href="romans_forum_full.html" title="Forum" alt="" coords="452,22,395,5,338,22,338,49,452,49"/>
+</map>

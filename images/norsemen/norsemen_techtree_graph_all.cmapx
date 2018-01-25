@@ -1,0 +1,33 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="norsemen_farm_full.html" title="Farm" alt="" coords="116,275,66,258,17,275,17,302,116,302"/>
+<area shape="poly" id="node6" href="norsemen_archer_full.html" title="Archer" alt="" coords="440,410,438,403,431,396,421,391,407,387,393,386,379,387,366,391,355,396,349,403,346,410,349,418,355,424,366,430,379,433,393,434,407,433,421,430,431,424,438,418"/>
+<area shape="poly" id="node15" href="norsemen_flying_valkyrie_full.html" title="Flying\nValkyrie" alt="" coords="199,948,196,937,187,927,174,919,157,914,138,912,120,914,103,919,90,927,81,937,78,948,81,959,90,969,103,977,120,982,138,984,157,982,174,977,187,969,196,959"/>
+<area shape="poly" id="node22" href="norsemen_cow_full.html" title="Cow" alt="" coords="116,410,114,403,109,396,101,391,91,387,80,386,68,387,58,391,50,396,45,403,43,410,45,418,50,424,58,430,68,433,80,434,91,433,101,430,109,424,114,418"/>
+<area shape="poly" id="node2" href="norsemen_blacksmith_full.html" title="Blacksmith" alt="" coords="739,403,654,386,570,403,570,430,739,430"/>
+<area shape="poly" id="node5" href="norsemen_thor_full.html" title="Thor" alt="" coords="169,545,167,537,162,531,154,525,143,522,132,521,120,522,110,525,102,531,96,537,94,545,96,552,102,559,110,564,120,568,132,569,143,568,154,564,162,559,167,552"/>
+<area shape="poly" id="node10" href="norsemen_mistletoe_tree_full.html" title="Mistletoe\nTree" alt="" coords="903,531,824,501,744,531,745,581,903,581"/>
+<area shape="poly" id="node17" href="norsemen_battleaxe_full.html" title="Battleaxe" alt="" coords="1045,545,1042,537,1034,531,1021,525,1005,522,986,521,968,522,952,525,939,531,930,537,927,545,930,552,939,559,952,564,968,568,986,569,1005,568,1021,564,1034,559,1042,552"/>
+<area shape="poly" id="node25" href="norsemen_crossbow_full.html" title="Crossbow" alt="" coords="419,679,416,672,407,665,393,660,376,656,357,655,338,656,321,660,307,665,299,672,296,679,299,687,307,693,321,699,338,702,357,703,376,702,393,699,407,693,416,687"/>
+<area shape="poly" id="node26" href="norsemen_iron_full.html" title="Iron" alt="" coords="564,521,485,521,465,569,544,569"/>
+<area shape="poly" id="node30" href="norsemen_arrow_full.html" title="Arrow" alt="" coords="720,521,615,521,588,569,693,569"/>
+<area shape="poly" id="node31" href="norsemen_advanced_iron_full.html" title="Advanced\nIron" alt="" coords="390,494,234,494,194,595,350,595"/>
+<area shape="poly" id="node3" href="norsemen_valhalla_full.html" title="Valhalla" alt="" coords="575,672,509,655,443,672,443,699,575,699"/>
+<area shape="poly" id="node11" href="norsemen_valkyrie_full.html" title="Valkyrie" alt="" coords="564,814,562,806,554,800,542,794,526,791,509,790,492,791,476,794,464,800,456,806,454,814,456,821,464,828,476,833,492,837,509,838,526,837,542,833,554,828,562,821"/>
+<area shape="poly" id="node27" href="norsemen_holy_valkyrie_full.html" title="Holy\nValkyrie" alt="" coords="360,763,219,763,183,864,324,864"/>
+<area shape="poly" id="node4" href="norsemen_wild_sow_full.html" title="Wild\nSow" alt="" coords="824,679,822,668,816,658,807,650,795,645,782,643,770,645,758,650,749,658,743,668,741,679,743,690,749,700,758,708,770,713,782,715,795,713,807,708,816,700,822,690"/>
+<area shape="poly" id="node7" href="norsemen_mead_bar_full.html" title="Mead\nBar" alt="" coords="1089,269,1033,238,977,269,977,318,1089,318"/>
+<area shape="poly" id="node14" href="norsemen_spearman_full.html" title="Spearman" alt="" coords="1352,410,1349,403,1340,396,1327,391,1309,387,1290,386,1271,387,1254,391,1241,396,1232,403,1229,410,1232,418,1241,424,1254,430,1271,433,1290,434,1309,433,1327,430,1340,424,1349,418"/>
+<area shape="poly" id="node18" href="norsemen_axe_thrower_full.html" title="Axe\nThrower" alt="" coords="1007,410,1004,399,996,389,983,381,966,376,948,374,929,376,913,381,900,389,891,399,888,410,891,421,900,431,913,439,929,444,948,446,966,444,983,439,996,431,1004,421"/>
+<area shape="poly" id="node23" href="norsemen_cudgel_lady_full.html" title="Cudgel\nLady" alt="" coords="1482,410,1479,399,1472,389,1460,381,1445,376,1429,374,1413,376,1398,381,1386,389,1379,399,1376,410,1379,421,1386,431,1398,439,1413,444,1429,446,1445,444,1460,439,1472,431,1479,421"/>
+<area shape="poly" id="node28" href="norsemen_mead_full.html" title="Mead" alt="" coords="1205,386,1108,386,1083,434,1180,434"/>
+<area shape="poly" id="node8" href="norsemen_thor_totem_full.html" title="Thor\nTotem" alt="" coords="567,132,505,101,443,132,443,181,567,181"/>
+<area shape="poly" id="node9" href="norsemen_swordman_full.html" title="Swordman" alt="" coords="1163,679,1160,672,1150,665,1136,660,1117,656,1097,655,1077,656,1058,660,1044,665,1034,672,1031,679,1034,687,1044,693,1058,699,1077,702,1097,703,1117,702,1136,699,1150,693,1160,687"/>
+<area shape="poly" id="node12" href="norsemen_swordman_berserk_full.html" title="Swordman\nBerserk" alt="" coords="1169,814,1165,803,1155,793,1139,785,1119,780,1097,778,1075,780,1055,785,1039,793,1029,803,1025,814,1029,825,1039,835,1055,843,1075,848,1097,850,1119,848,1139,843,1155,835,1165,825"/>
+<area shape="poly" id="node29" href="norsemen_root_full.html" title="Root" alt="" coords="1008,655,921,655,898,703,985,703"/>
+<area shape="poly" id="node13" href="norsemen_thrall_full.html" title="Thrall" alt="" coords="843,29,841,22,835,15,825,10,813,7,800,5,786,7,774,10,765,15,758,22,756,29,758,37,765,43,774,49,786,52,800,53,813,52,825,49,835,43,841,37"/>
+<area shape="poly" id="node19" href="norsemen_bone_tent_full.html" title="Bone\nTent" alt="" coords="941,269,889,238,837,269,837,318,941,318"/>
+<area shape="poly" id="node20" href="norsemen_house_full.html" title="House" alt="" coords="946,138,892,122,837,138,837,165,946,165"/>
+<area shape="poly" id="node21" href="norsemen_castle_full.html" title="Castle" alt="" coords="1077,138,1024,122,970,138,970,165,1077,165"/>
+<area shape="poly" id="node16" href="norsemen_spearman_berserk_full.html" title="Spearman\nBerserk" alt="" coords="1332,814,1329,803,1319,793,1304,785,1286,780,1265,778,1244,780,1226,785,1211,793,1201,803,1198,814,1201,825,1211,835,1226,843,1244,848,1265,850,1286,848,1304,843,1319,835,1329,825"/>
+<area shape="poly" id="node24" href="norsemen_battleaxe_berserk_full.html" title="Battleaxe\nBerserk" alt="" coords="962,814,959,803,950,793,936,785,918,780,898,778,879,780,861,785,846,793,837,803,834,814,837,825,846,835,861,843,879,848,898,850,918,848,936,843,950,835,959,825"/>
+</map>

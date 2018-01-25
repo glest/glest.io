@@ -1,0 +1,11 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="norsemen_farm_full.html" title="Farm" alt="" coords="104,158,55,142,5,158,5,185,104,185"/>
+<area shape="poly" id="node2" href="norsemen_blacksmith_full.html" title="Blacksmith" alt="" coords="185,411,100,395,15,411,15,438,184,438"/>
+<area shape="poly" id="node3" href="norsemen_valhalla_full.html" title="Valhalla" alt="" coords="253,664,187,648,120,664,120,691,253,691"/>
+<area shape="poly" id="node6" href="norsemen_mistletoe_tree_full.html" title="Mistletoe\nTree" alt="" coords="266,542,187,511,107,542,107,591,266,591"/>
+<area shape="poly" id="node4" href="norsemen_mead_bar_full.html" title="Mead\nBar" alt="" coords="328,405,272,374,216,405,216,455,328,455"/>
+<area shape="poly" id="node5" href="norsemen_thor_totem_full.html" title="Thor\nTotem" alt="" coords="319,36,257,5,196,36,196,85,319,85"/>
+<area shape="poly" id="node7" href="norsemen_bone_tent_full.html" title="Bone\nTent" alt="" coords="235,269,183,238,130,269,130,318,235,318"/>
+<area shape="poly" id="node8" href="norsemen_house_full.html" title="House" alt="" coords="237,158,183,142,128,158,128,185,237,185"/>
+<area shape="poly" id="node9" href="norsemen_castle_full.html" title="Castle" alt="" coords="172,42,119,26,65,42,65,69,172,69"/>
+</map>

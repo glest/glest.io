@@ -1,0 +1,19 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="egypt_farm_full.html" title="Farm" alt="" coords="706,138,657,122,607,138,607,165,706,165"/>
+<area shape="poly" id="node10" href="egypt_ibis_full.html" title="Ibis" alt="" coords="693,262,691,254,686,248,678,242,668,239,657,238,645,239,635,242,627,248,622,254,621,262,622,269,627,276,635,281,645,285,657,286,668,285,678,281,686,276,691,269"/>
+<area shape="poly" id="node11" href="egypt_chicken_full.html" title="Chicken" alt="" coords="824,262,821,254,813,248,802,242,787,239,770,238,753,239,738,242,726,248,719,254,716,262,719,269,726,276,738,281,753,285,770,286,787,285,802,281,813,276,821,269"/>
+<area shape="poly" id="node2" href="egypt_spearthrower_full.html" title="Spearthrower" alt="" coords="1092,262,1089,254,1078,248,1061,242,1039,239,1015,238,991,239,970,242,953,248,942,254,938,262,942,269,953,276,970,281,991,285,1015,286,1039,285,1061,281,1078,276,1089,269"/>
+<area shape="poly" id="node3" href="egypt_air_pyramid_full.html" title="Air\nPyramid" alt="" coords="1037,132,963,101,890,132,890,181,1037,181"/>
+<area shape="poly" id="node4" href="egypt_anubis_warrior_full.html" title="Anubis\nWarrior" alt="" coords="1362,370,1360,359,1352,349,1339,341,1323,336,1306,334,1288,336,1273,341,1260,349,1252,359,1249,370,1252,381,1260,391,1273,399,1288,404,1306,406,1323,404,1339,399,1352,391,1360,381"/>
+<area shape="poly" id="node5" href="egypt_scarab_full.html" title="Scarab" alt="" coords="97,262,95,254,88,248,78,242,65,239,51,238,37,239,24,242,14,248,8,254,5,262,8,269,14,276,24,281,37,285,51,286,65,285,78,281,88,276,95,269"/>
+<area shape="poly" id="node6" href="egypt_desert_camp_full.html" title="Desert\nCamp" alt="" coords="1183,132,1122,101,1061,132,1061,181,1182,181"/>
+<area shape="poly" id="node13" href="egypt_spearman_full.html" title="Spearman" alt="" coords="1239,262,1236,254,1228,248,1214,242,1197,239,1178,238,1159,239,1142,242,1128,248,1119,254,1116,262,1119,269,1128,276,1142,281,1159,285,1178,286,1197,285,1214,281,1228,276,1236,269"/>
+<area shape="poly" id="node7" href="egypt_snake_full.html" title="Snake" alt="" coords="208,262,206,254,200,248,190,242,178,239,165,238,151,239,139,242,130,248,123,254,121,262,123,269,130,276,139,281,151,285,165,286,178,285,190,281,200,276,206,269"/>
+<area shape="poly" id="node8" href="egypt_pyramid_full.html" title="Pyramid" alt="" coords="865,138,798,122,730,138,731,165,865,165"/>
+<area shape="poly" id="node16" href="egypt_slave_full.html" title="Slave" alt="" coords="1004,29,1002,22,996,15,987,10,976,7,963,5,951,7,939,10,930,15,925,22,923,29,925,37,930,43,939,49,951,52,963,53,976,52,987,49,996,43,1002,37"/>
+<area shape="poly" id="node9" href="egypt_mummy_full.html" title="Mummy" alt="" coords="1500,370,1497,362,1489,356,1476,350,1461,347,1443,346,1426,347,1410,350,1398,356,1390,362,1387,370,1390,377,1398,384,1410,389,1426,393,1443,394,1461,393,1476,389,1489,384,1497,377"/>
+<area shape="poly" id="node12" href="egypt_sphinx_full.html" title="Sphinx" alt="" coords="1325,138,1266,122,1207,138,1207,165,1325,165"/>
+<area shape="poly" id="node14" href="egypt_obelisk_full.html" title="Obelisk" alt="" coords="484,138,421,122,357,138,357,165,484,165"/>
+<area shape="poly" id="node15" href="egypt_temple_full.html" title="Temple" alt="" coords="1476,138,1413,122,1349,138,1349,165,1476,165"/>
+<area shape="poly" id="node17" href="egypt_priest_full.html" title="Priest" alt="" coords="1425,262,1423,254,1418,248,1409,242,1397,239,1385,238,1372,239,1361,242,1352,248,1346,254,1344,262,1346,269,1352,276,1361,281,1372,285,1385,286,1397,285,1409,281,1418,276,1423,269"/>
+</map>

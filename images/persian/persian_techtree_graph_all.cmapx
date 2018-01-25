@@ -1,0 +1,27 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="persian_farm_full.html" title="Farm" alt="" coords="461,118,412,101,363,118,363,145,461,145"/>
+<area shape="poly" id="node8" href="persian_sheep_full.html" title="Sheep" alt="" coords="351,221,349,214,343,207,334,202,322,199,308,197,295,199,283,202,273,207,267,214,265,221,267,229,273,235,283,241,295,244,308,245,322,244,334,241,343,235,349,229"/>
+<area shape="poly" id="node23" href="persian_corn_and_wicker_full.html" title="Corn\nAnd Wicker" alt="" coords="238,293,53,293,5,395,190,395"/>
+<area shape="poly" id="node2" href="persian_blacksmith_full.html" title="Blacksmith" alt="" coords="747,214,663,197,578,214,578,241,747,241"/>
+<area shape="poly" id="node9" href="persian_swordman_full.html" title="Swordman" alt="" coords="1107,344,1104,337,1095,330,1080,325,1062,321,1041,320,1021,321,1003,325,988,330,979,337,976,344,979,351,988,358,1003,363,1021,367,1041,368,1062,367,1080,363,1095,358,1104,351"/>
+<area shape="poly" id="node16" href="persian_elephant_cage_full.html" title="Elephant\nCage" alt="" coords="464,330,388,300,312,330,312,380,464,380"/>
+<area shape="poly" id="node22" href="persian_nails_full.html" title="Nails" alt="" coords="952,320,861,320,838,368,929,368"/>
+<area shape="poly" id="node24" href="persian_weapons_full.html" title="Weapons" alt="" coords="661,320,524,320,488,368,626,368"/>
+<area shape="poly" id="node25" href="persian_shield_full.html" title="Shield" alt="" coords="814,320,711,320,685,368,788,368"/>
+<area shape="poly" id="node3" href="persian_magician_full.html" title="Magician" alt="" coords="874,628,871,620,862,614,849,608,833,605,815,604,797,605,780,608,767,614,759,620,756,628,759,635,767,642,780,647,797,651,815,652,833,651,849,647,862,642,871,635"/>
+<area shape="poly" id="node7" href="persian_snake_basket_full.html" title="Snake\nBasket" alt="" coords="551,742,489,712,428,742,428,792,551,792"/>
+<area shape="poly" id="node4" href="persian_palace_full.html" title="Palace" alt="" coords="338,118,283,101,227,118,227,145,338,145"/>
+<area shape="poly" id="node5" href="persian_worker_full.html" title="Worker" alt="" coords="670,29,667,22,660,15,649,10,635,7,619,5,603,7,589,10,577,15,570,22,568,29,570,37,577,43,589,49,603,52,619,53,635,52,649,49,660,43,667,37"/>
+<area shape="poly" id="node12" href="persian_tent_full.html" title="Tent" alt="" coords="1219,337,1175,320,1131,337,1131,363,1219,363"/>
+<area shape="poly" id="node13" href="persian_minaret_full.html" title="Minaret" alt="" coords="716,486,652,469,588,486,588,513,716,513"/>
+<area shape="poly" id="node14" href="persian_temple_full.html" title="Temple" alt="" coords="1105,214,1041,197,978,214,978,241,1105,241"/>
+<area shape="poly" id="node18" href="persian_house_full.html" title="House" alt="" coords="1096,118,1041,101,987,118,987,145,1096,145"/>
+<area shape="poly" id="node6" href="persian_princess_full.html" title="Princess" alt="" coords="1350,344,1347,337,1340,330,1328,325,1313,321,1296,320,1280,321,1265,325,1253,330,1245,337,1242,344,1245,351,1253,358,1265,363,1280,367,1296,368,1313,367,1328,363,1340,358,1347,351"/>
+<area shape="poly" id="node10" href="persian_flying_carpet_full.html" title="Flying\nCarpet" alt="" coords="1225,628,1222,617,1215,607,1204,599,1190,594,1175,592,1159,594,1145,599,1134,607,1127,617,1125,628,1127,639,1134,649,1145,657,1159,662,1175,664,1190,662,1204,657,1215,649,1222,639"/>
+<area shape="poly" id="node11" href="persian_stickfighter_full.html" title="Stickfighter" alt="" coords="1512,344,1509,337,1499,330,1484,325,1464,321,1443,320,1421,321,1402,325,1387,330,1377,337,1373,344,1377,351,1387,358,1402,363,1421,367,1443,368,1464,367,1484,363,1499,358,1509,351"/>
+<area shape="poly" id="node15" href="persian_genie_full.html" title="Genie" alt="" coords="1356,493,1354,486,1348,479,1338,474,1327,471,1313,469,1300,471,1288,474,1279,479,1273,486,1271,493,1273,501,1279,507,1288,513,1300,516,1313,517,1327,516,1338,513,1348,507,1354,501"/>
+<area shape="poly" id="node20" href="persian_magic_level_1_full.html" title="Magic\nLevel 1" alt="" coords="1012,443,885,443,852,544,979,544"/>
+<area shape="poly" id="node21" href="persian_magic_level_2_full.html" title="Magic\nLevel 2" alt="" coords="1196,443,1069,443,1036,544,1163,544"/>
+<area shape="poly" id="node19" href="persian_elephant_full.html" title="Elephant" alt="" coords="402,493,399,486,391,479,379,474,363,471,345,469,328,471,312,474,300,479,292,486,289,493,292,501,300,507,312,513,328,516,345,517,363,516,379,513,391,507,399,501"/>
+<area shape="poly" id="node17" href="persian_fakir_full.html" title="Fakir" alt="" coords="1207,221,1205,214,1200,207,1191,202,1180,199,1168,197,1156,199,1145,202,1137,207,1131,214,1129,221,1131,229,1137,235,1145,241,1156,244,1168,245,1180,244,1191,241,1200,235,1205,229"/>
+</map>
