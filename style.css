@@ -2,9 +2,9 @@ body {
     margin: 0 auto;
     width: 1016px;
 
-    background-color: #000000;
+    background-color: #ffffff;
     font-size: 0.8em;
-    color: #fff6c0;
+    color: #000000;
     font-family: "Lucida Sans Unicode","Lucida Grande","Lucida Sans", sans-serif;
 }
 
@@ -35,7 +35,6 @@ body {
 #content {
     width: 1024px;
     margin: 0 auto;
-    background: url("wood_panel.jpg") repeat;
 }
 img {
     padding-right: 3px;
@@ -104,9 +103,13 @@ img {
  * Text display: side, colors, etc.
  */
 p { text-indent: 2em }
-a { color: #ecc72d }
+a { color: #993366 }
 a:link { text-decoration: none }
-a:hover { text-decoration: underline }
+a:hover {
+    color: #cc0000;
+    border-top: 4px dotted brown;
+    border-bottom: 4px dotted brown;
+}
 a img { border: 0; }
 img.right {
     float: right;
@@ -118,7 +121,7 @@ img.left {
 }
 
 /* news dates, scores: gold */
-.info, .date, #content h3 { color: #ecc72d; }
+.info, .date, #content h3 { color: #000000; }
 #content h3 { font-weight: normal; text-indent: 3em }
 
 /* Logo */
