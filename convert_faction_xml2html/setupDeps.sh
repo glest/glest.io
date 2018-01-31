@@ -9,7 +9,7 @@
 SCRIPTDIR="$(dirname $(readlink -f $0))"
 
 # Load shared functions
-. $SCRIPTDIR/../../../mk/linux/mg_shared.sh
+. $SCRIPTDIR/../../zetaglest-source/mk/linux/mg_shared.sh
 
 echo 'Downloading Javascript libraries...'
 wget http://code.jquery.com/jquery-1.12.0.js -O media/jquery-1.12.0.min.js
