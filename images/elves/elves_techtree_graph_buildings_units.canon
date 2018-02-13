@@ -30,6 +30,12 @@ digraph test {
 		label=Reaver];
 	corral -> reaver	 [color="0.13472,0.809,0.925;",
 		style=solid];
+	corral_gryphon_nest	 [URL="elves_corral_gryphon_nest_full.html",
+		color=magenta,
+		fontcolor="0.13472,0.809,0.925;",
+		label="Corral\nGryphon Nest"];
+	corral -> corral_gryphon_nest	 [color="0.13472,0.809,0.925;",
+		style=dashed];
 	silver_helm_lancer	 [URL="elves_silver_helm_lancer_full.html",
 		color=magenta,
 		fontcolor="0.13472,0.809,0.925;",
@@ -66,13 +72,6 @@ digraph test {
 		shape=house];
 	academy -> grey_elf_archer	 [color="0.13472,0.809,0.925;",
 		style=solid];
-	corral_gryphon_nest	 [URL="elves_corral_gryphon_nest_full.html",
-		color=red,
-		fontcolor="0.13472,0.809,0.925;",
-		label="Corral\nGryphon Nest",
-		shape=house];
-	academy -> corral_gryphon_nest	 [color="0.13472,0.809,0.925;",
-		style=dotted];
 	galadrim_archer	 [URL="elves_galadrim_archer_full.html",
 		color=magenta,
 		fontcolor="0.13472,0.809,0.925;",
@@ -91,6 +90,10 @@ digraph test {
 		fontcolor="0.13472,0.809,0.925;",
 		label="Magol\nHedir"];
 	academy -> magol_hedir	 [color="0.13472,0.809,0.925;",
+		style=solid];
+	corral_gryphon_nest -> reaver	 [color="0.13472,0.809,0.925;",
+		style=solid];
+	corral_gryphon_nest -> silver_helm_lancer	 [color="0.13472,0.809,0.925;",
 		style=solid];
 	gryphon	 [URL="elves_gryphon_full.html",
 		color=magenta,
@@ -145,8 +148,6 @@ digraph test {
 	elf -> corral	 [color="0.13472,0.809,0.925;",
 		style=bold];
 	elf -> academy	 [color="0.13472,0.809,0.925;",
-		style=bold];
-	elf -> corral_gryphon_nest	 [color="0.13472,0.809,0.925;",
 		style=bold];
 	elf -> wood_hall	 [color="0.13472,0.809,0.925;",
 		style=bold];

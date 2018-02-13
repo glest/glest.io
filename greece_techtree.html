@@ -1,0 +1,1293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<title>Greece Techtree of Glest - Version 0.8.1 beta
+ (Zetapack) </title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<!-- stuff for table-sorting, see jquery.com and datatables.net for details
+-->
+<script type="text/javascript" language="javascript" src="js/jquery-1.12.0.min.js" ></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+<!--
+<script type="text/javascript" language="javascript" src="js/TableTools.min.js"></script>
+-->
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+
+		$('#table_all').dataTable( {
+			'bAutoWidth': false,
+			"bPaginate": false,
+			"bSortClasses": false,
+			"sDom": '<"top"iflp>rt<"bottom"><"clear">',
+		<!--
+			"oTableTools": {
+				"sSwfPath": "js/copy_cvs_xls_pdf.swf"
+			},
+		-->
+			"aaSorting": [[ 1, "asc" ]]
+			});
+	});
+</script>
+</head>
+
+<body>
+
+ <!-- start header -->
+    <div id="header">
+
+      <!-- Contain the right and left header images -->
+      <div id="header_left"></div>
+      <div id="header_right"></div>
+      <!-- FIXME: needs height and width specs -->
+      <div id="logo"><a href="/"><img src="/images/zetaglest_logo_360x181.png" alt="ZetaGlest logo" /></a></div>
+    </div>
+    <p><a href="https://zetaglest.dreamhosters.com/">Server List and Player Stats</a> |
+				<a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/README.md">README</a> |
+				<a href="https://github.com/ZetaGlest">on GitHub</a> |
+				<a href="https://discord.gg/WaAaXS7">on Discord</a> |
+				<a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/CONTRIBUTING.md">Contributing</a> |
+				<a href="https://github.com/ZetaGlest/zetaglest-data#submitting-mods-tech-trees-tilesets-maps-scenarios">Submitting mods, tech trees, tilesets, maps, scenarios</a>
+    <!-- end header -->
+
+    <!-- start content -->
+    <div id="content">
+      <div id="article">
+
+
+<h1>Greece Techtree of Glest - Version 0.8.1 beta
+ (Zetapack) </h1>
+<p>
+<h4><a href="index.html">Home</a></h4><p><H4>Choose faction: &nbsp;<A HREF=british_overview.html>British</a> |&nbsp;
+&nbsp;<A HREF=egypt_overview.html>Egypt</a> |&nbsp;
+&nbsp;<A HREF=elves_overview.html>Elves</a> |&nbsp;
+&nbsp;<A HREF=greece_overview.html><I>Greece</I></a> |&nbsp;
+&nbsp;<A HREF=indian_overview.html>Indian</a> |&nbsp;
+&nbsp;<A HREF=magic_overview.html>Magic</a> |&nbsp;
+&nbsp;<A HREF=norsemen_overview.html>Norsemen</a> |&nbsp;
+&nbsp;<A HREF=persian_overview.html>Persian</a> |&nbsp;
+&nbsp;<A HREF=romans_overview.html>Romans</a> |&nbsp;
+&nbsp;<A HREF=tech_overview.html>Tech</a> |&nbsp;
+&nbsp;<A HREF=usa_overview.html>Usa</a>
+ </H4><P>
+<P>
+<H4>Techtree Diagrams: <a href="greece_techtree_clickable_map_buildings.html">Buildings</a> |
+<a href="greece_techtree_clickable_map_buildings_units.html">Buildings Units</a> |
+<a href="greece_techtree_clickable_map_all.html">All</a></H4>
+<P>
+<H1>Overview for Faction: Greece</H1>
+
+<H3>Combat Units</H3> <TABLE BORDER=1 WIDTH="100%"><TR> <TH> Name
+						<TH> Total Cost
+						<TH> Hit Points
+						<TH> Rege- nerate
+						<TH> Armor Strength
+						<TH> Armor Type
+						<TH> Sight Range
+					
+					<TH> Move Speed
+					<TH> Air / Ground
+					<TH> Attack Strength Land
+					<TH> Attack Strength Air
+					<TH> Attack Range
+				<TR><TD> <IMG SRC="images/greece/air_box/tower_of_souls.bmp" HEIGHT=32 WIDTH=32 ALT="Air Box"><A HREF="greece_air_box_full.html">Air Box</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">250</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>16</TD><TD ALIGN=CENTER>--
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>200&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>15</TD>
+<TR><TD> <IMG SRC="images/greece/alexander/archmage.bmp" HEIGHT=32 WIDTH=32 ALT="Alexander"><A HREF="greece_alexander_full.html">Alexander</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>3600</TD><TD ALIGN=CENTER>2</TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER>220
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>900&nbsp;+-&nbsp;100</TD><TD ALIGN=CENTER>800&nbsp;+-&nbsp;200</TD><TD ALIGN=CENTER>10</TD>
+<TR><TD> <IMG SRC="images/greece/archer/archer.bmp" HEIGHT=32 WIDTH=32 ALT="Archer"><A HREF="greece_archer_full.html">Archer</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>700</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>20</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER>220
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>100&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>100&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>10</TD>
+<TR><TD> <IMG SRC="images/greece/artemis/technician.bmp" HEIGHT=32 WIDTH=32 ALT="Artemis"><A HREF="greece_artemis_full.html">Artemis</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">400</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>3500</TD><TD ALIGN=CENTER>1</TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>8</TD><TD ALIGN=CENTER>250
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>5500&nbsp;+-&nbsp;500</TD><TD ALIGN=CENTER>300&nbsp;+-&nbsp;100</TD><TD ALIGN=CENTER>12</TD>
+<TR><TD> <IMG SRC="images/greece/atlas/atlas.bmp" HEIGHT=32 WIDTH=32 ALT="Atlas"><A HREF="greece_atlas_full.html">Atlas</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TD ALIGN=CENTER>2000</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>45</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>125
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>400&nbsp;+-&nbsp;100</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>1</TD>
+<TR><TD> <IMG SRC="images/greece/battering_ram/br.bmp" HEIGHT=32 WIDTH=32 ALT="Battering Ram"><A HREF="greece_battering_ram_full.html">Battering Ram</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TD ALIGN=CENTER>2000</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>45</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#metal">Metal</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>220
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>400&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>2</TD>
+<TR><TD> <IMG SRC="images/greece/calvary/horseman.bmp" HEIGHT=32 WIDTH=32 ALT="Calvary"><A HREF="greece_calvary_full.html">Calvary</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TD ALIGN=CENTER>1400</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>30</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>480
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>220&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>1</TD>
+<TR><TD> <IMG SRC="images/greece/chariot/battle_machine.bmp" HEIGHT=32 WIDTH=32 ALT="Chariot"><A HREF="greece_chariot_full.html">Chariot</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>2500</TD><TD ALIGN=CENTER>1</TD><TD ALIGN=CENTER>45</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>480
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>170&nbsp;+-&nbsp;75</TD><TD ALIGN=CENTER>170&nbsp;+-&nbsp;75</TD><TD ALIGN=CENTER>9</TD>
+<TR><TD> <IMG SRC="images/greece/dragon/dragon.bmp" HEIGHT=32 WIDTH=32 ALT="Dragon"><A HREF="greece_dragon_full.html">Dragon</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">150</NOBR>&nbsp;
+<TD ALIGN=CENTER>1400</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>20</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#organic">Organic</A></TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER>250
+<TD ALIGN=CENTER>Air</TD>
+<TD ALIGN=CENTER>250&nbsp;+-&nbsp;40</TD><TD ALIGN=CENTER>250&nbsp;+-&nbsp;40</TD><TD ALIGN=CENTER>8</TD>
+<TR><TD> <IMG SRC="images/greece/engineer/technician.bmp" HEIGHT=32 WIDTH=32 ALT="Engineer"><A HREF="greece_engineer_full.html">Engineer</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>800</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>8</TD><TD ALIGN=CENTER>220
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>100&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>1</TD>
+<TR><TD> <IMG SRC="images/greece/hoplite/guard.bmp" HEIGHT=32 WIDTH=32 ALT="Hoplite"><A HREF="greece_hoplite_full.html">Hoplite</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;75</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>900</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>40</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#metal">Metal</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>220
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>110&nbsp;+-&nbsp;30</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>2</TD>
+<TR><TD> <IMG SRC="images/greece/onager/catapult.bmp" HEIGHT=32 WIDTH=32 ALT="Onager"><A HREF="greece_onager_full.html">Onager</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>1500</TD><TD ALIGN=CENTER>1</TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>150
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>450&nbsp;+-&nbsp;150</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>10</TD>
+<TR><TD> <IMG SRC="images/greece/oxybeles/air_ballista.bmp" HEIGHT=32 WIDTH=32 ALT="Oxybeles"><A HREF="greece_oxybeles_full.html">Oxybeles</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">270</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>3000</TD><TD ALIGN=CENTER>5</TD><TD ALIGN=CENTER>20</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER>--
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>200&nbsp;+-&nbsp;75</TD><TD ALIGN=CENTER>200&nbsp;+-&nbsp;75</TD><TD ALIGN=CENTER>15</TD>
+<TR><TD> <IMG SRC="images/greece/peltast/archer.bmp" HEIGHT=32 WIDTH=32 ALT="Peltast"><A HREF="greece_peltast_full.html">Peltast</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>700</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>20</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>15</TD><TD ALIGN=CENTER>220
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>95&nbsp;+-&nbsp;65</TD><TD ALIGN=CENTER>95&nbsp;+-&nbsp;65</TD><TD ALIGN=CENTER>9</TD>
+<TR><TD> <IMG SRC="images/greece/psiloi/swordman.bmp" HEIGHT=32 WIDTH=32 ALT="Psiloi"><A HREF="greece_psiloi_full.html">Psiloi</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;&nbsp;50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;25</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>700</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>500
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>75&nbsp;+-&nbsp;30</TD><TD ALIGN=CENTER>75&nbsp;+-&nbsp;30</TD><TD ALIGN=CENTER>6</TD>
+<TR><TD> <IMG SRC="images/greece/tower/defense_tower.bmp" HEIGHT=32 WIDTH=32 ALT="Tower"><A HREF="greece_tower_full.html">Tower</A></TD><TD>
+<TD ALIGN=CENTER>7000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>20</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>16</TD><TD ALIGN=CENTER>--
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>120&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>120&nbsp;+-&nbsp;50</TD><TD ALIGN=CENTER>12</TD>
+<TR><TD> <IMG SRC="images/greece/trojan_horse/castle.bmp" HEIGHT=32 WIDTH=32 ALT="Trojan Horse"><A HREF="greece_trojan_horse_full.html">Trojan Horse</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">1000</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">4</NOBR>&nbsp;
+<TD ALIGN=CENTER>1000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>--
+<TD ALIGN=CENTER>Ground</TD>
+<TD ALIGN=CENTER>1000&nbsp;+-&nbsp;0</TD><TD ALIGN=CENTER>--
+</TD><TD ALIGN=CENTER>8</TD>
+</TABLE>
+<H3>Worker Units</H3> <TABLE BORDER=1 WIDTH="100%"><TR> <TH> Name
+						<TH> Total Cost
+						<TH> Hit Points
+						<TH> Rege- nerate
+						<TH> Armor Strength
+						<TH> Armor Type
+						<TH> Sight Range
+					
+					<TH> Move Speed
+					<TH> Air / Ground
+				<TR><TD> <IMG SRC="images/greece/engineer/technician.bmp" HEIGHT=32 WIDTH=32 ALT="Engineer"><A HREF="greece_engineer_full.html">Engineer</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>800</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>8</TD><TD ALIGN=CENTER>220</TD>
+<TD ALIGN=CENTER>Ground</TD>
+<TR><TD> <IMG SRC="images/greece/slave/worker.bmp" HEIGHT=32 WIDTH=32 ALT="Slave"><A HREF="greece_slave_full.html">Slave</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;&nbsp;75</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TD ALIGN=CENTER>600</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#leather">Leather</A></TD><TD ALIGN=CENTER>9</TD><TD ALIGN=CENTER>190</TD>
+<TD ALIGN=CENTER>Ground</TD>
+</TABLE>
+<H3>Buildings</H3> <TABLE BORDER=1 WIDTH="100%"><TR> <TH> Name
+						<TH> Total Cost
+						<TH> Hit Points
+						<TH> Rege- nerate
+						<TH> Armor Strength
+						<TH> Armor Type
+						<TH> Sight Range
+					
+					<TH>Storage
+				<TR><TD> <IMG SRC="images/greece/advanced_barracks/barracks.bmp" HEIGHT=32 WIDTH=32 ALT="Advanced Barracks"><A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">160</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;80</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">240</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>6</TD><TD></TD>
+<TR><TD> <IMG SRC="images/greece/air_box/tower_of_souls.bmp" HEIGHT=32 WIDTH=32 ALT="Air Box"><A HREF="greece_air_box_full.html">Air Box</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">250</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>16</TD><TD></TD>
+<TR><TD> <IMG SRC="images/greece/barley_field/farm.bmp" HEIGHT=32 WIDTH=32 ALT="Barley Field"><A HREF="greece_barley_field_full.html">Barley Field</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">-25</NOBR>&nbsp;
+<TD ALIGN=CENTER>3000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>5</TD><TD><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">&nbsp;50&nbsp;</TD>
+<TR><TD> <IMG SRC="images/greece/barracks/barracks.bmp" HEIGHT=32 WIDTH=32 ALT="Barracks"><A HREF="greece_barracks_full.html">Barracks</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">150</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>6</TD><TD></TD>
+<TR><TD> <IMG SRC="images/greece/blacksmith/blacksmith.bmp" HEIGHT=32 WIDTH=32 ALT="Blacksmith"><A HREF="greece_blacksmith_full.html">Blacksmith</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>12</TD><TD><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;200&nbsp;</TD>
+<TR><TD> <IMG SRC="images/greece/castle/castle.bmp" HEIGHT=32 WIDTH=32 ALT="Castle"><A HREF="greece_castle_full.html">Castle</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">-10</NOBR>&nbsp;
+<TD ALIGN=CENTER>9000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>15</TD><TD><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;2000&nbsp;<IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;1200&nbsp;<IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">&nbsp;1500&nbsp;<IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">&nbsp;150&nbsp;</TD>
+<TR><TD> <IMG SRC="images/greece/palace/castle.bmp" HEIGHT=32 WIDTH=32 ALT="Palace"><A HREF="greece_palace_full.html">Palace</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">100</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>15</TD><TD><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;800&nbsp;<IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">&nbsp;500&nbsp;</TD>
+<TR><TD> <IMG SRC="images/greece/temple/technodrome.bmp" HEIGHT=32 WIDTH=32 ALT="Temple"><A HREF="greece_temple_full.html">Temple</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">200</NOBR>&nbsp;
+<TD ALIGN=CENTER>6000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>5</TD><TD></TD>
+<TR><TD> <IMG SRC="images/greece/tower/defense_tower.bmp" HEIGHT=32 WIDTH=32 ALT="Tower"><A HREF="greece_tower_full.html">Tower</A></TD><TD>
+<TD ALIGN=CENTER>7000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>20</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#wood">Wood</A></TD><TD ALIGN=CENTER>16</TD><TD></TD>
+<TR><TD> <IMG SRC="images/greece/trojan_horse/castle.bmp" HEIGHT=32 WIDTH=32 ALT="Trojan Horse"><A HREF="greece_trojan_horse_full.html">Trojan Horse</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">1000</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">4</NOBR>&nbsp;
+<TD ALIGN=CENTER>1000</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER>-</TD><TD ALIGN=CENTER><a href="attack_and_armor_types.html#stone">Stone</A></TD><TD ALIGN=CENTER>10</TD><TD></TD>
+</TABLE>
+<H3>Upgrades</H3><TABLE BORDER=1><TR> <TH WIDTH=200> Name
+						<TH> Cost
+						<TH> Increases
+						<TH> Affects
+						<TH> Enables to build
+					<TR><TD> <IMG SRC="images/greece/advanced_buildings/training_field.bmp" HEIGHT=32 WIDTH=32 ALT="Advanced Buildings"><A HREF="greece_advanced_buildings_full.html">Advanced Buildings</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;<TD ALIGN=CENTER>&nbsp;<A HREF="greece_temple_full.html">Temple</A>, <A HREF="greece_engineer_full.html">Engineer</A>
+<TD><A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A>, <A HREF="greece_tower_full.html">Tower</A><TR><TD> <IMG SRC="images/greece/advanced_training/training_field.bmp" HEIGHT=32 WIDTH=32 ALT="Advanced Training"><A HREF="greece_advanced_training_full.html">Advanced Training</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;&nbsp;50</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;Production&nbsp;Speed:&nbsp;+150<TD ALIGN=CENTER>&nbsp;<A HREF="greece_barracks_full.html">Barracks</A>
+<TD><A HREF="greece_chariot_full.html">Chariot</A>, <A HREF="greece_battering_ram_full.html">Battering Ram</A>, <A HREF="greece_oxybeles_full.html">Oxybeles</A><TR><TD> <IMG SRC="images/greece/barley_bales/stables.bmp" HEIGHT=32 WIDTH=32 ALT="Barley Bales"><A HREF="greece_barley_bales_full.html">Barley Bales</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;<TD ALIGN=CENTER>&nbsp;
+<TD><A HREF="greece_chariot_full.html">Chariot</A>, <A HREF="greece_calvary_full.html">Calvary</A><TR><TD> <IMG SRC="images/greece/golden_arrow/shield1.bmp" HEIGHT=32 WIDTH=32 ALT="Golden Arrow"><A HREF="greece_golden_arrow_full.html">Golden Arrow</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;<TD ALIGN=CENTER>&nbsp;
+<TD><A HREF="greece_artemis_full.html">Artemis</A><TR><TD> <IMG SRC="images/greece/helmets/h.bmp" HEIGHT=32 WIDTH=32 ALT="Helmets"><A HREF="greece_helmets_full.html">Helmets</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">200</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20<TD ALIGN=CENTER>&nbsp;<A HREF="greece_archer_full.html">Archer</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A>, <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_battering_ram_full.html">Battering Ram</A>, <A HREF="greece_chariot_full.html">Chariot</A>
+<TD>&nbsp;<TR><TD> <IMG SRC="images/greece/pandora/shield1.bmp" HEIGHT=32 WIDTH=32 ALT="Pandora"><A HREF="greece_pandora_full.html">Pandora</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;<TD ALIGN=CENTER>&nbsp;
+<TD><A HREF="greece_air_box_full.html">Air Box</A><TR><TD> <IMG SRC="images/greece/shields/shield1.bmp" HEIGHT=32 WIDTH=32 ALT="Shields"><A HREF="greece_shields_full.html">Shields</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+10<TD ALIGN=CENTER>&nbsp;<A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A>
+<TD>&nbsp;<TR><TD> <IMG SRC="images/greece/training_field/training_field.bmp" HEIGHT=32 WIDTH=32 ALT="Training Field"><A HREF="greece_training_field_full.html">Training Field</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;Production&nbsp;Speed:&nbsp;+150<TD ALIGN=CENTER>&nbsp;<A HREF="greece_barracks_full.html">Barracks</A>
+<TD>Enables command '<i>Hold Position</i>' for: <A HREF="greece_psiloi_full.html">Psiloi</A>, <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_archer_full.html">Archer</A>, <A HREF="greece_peltast_full.html">Peltast</A>, <A HREF="greece_hoplite_full.html">Hoplite</A><TR><TD> <IMG SRC="images/greece/weapons/piercing.bmp" HEIGHT=32 WIDTH=32 ALT="Weapons"><A HREF="greece_weapons_full.html">Weapons</A></TD><TD><NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">200</NOBR>&nbsp;
+<TD ALIGN=CENTER   >&nbsp;Attack&nbsp;Strength:&nbsp;+25<TD ALIGN=CENTER>&nbsp;<A HREF="greece_archer_full.html">Archer</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A>, <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_battering_ram_full.html">Battering Ram</A>, <A HREF="greece_chariot_full.html">Chariot</A>, <A HREF="greece_onager_full.html">Onager</A>, <A HREF="greece_oxybeles_full.html">Oxybeles</A>
+<TD>&nbsp;</TABLE>
+<P>&nbsp;<P><HR><H1>Unit Details for Faction Greece</H1>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="advanced_barracks_full"></A><IMG SRC="images/greece/advanced_barracks/barracks.bmp" HEIGHT=64 WIDTH=64 ALT="Advanced Barracks"></TD><TD WIDTH=500> <B>Advanced Barracks</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="advanced_barracks_G3Dfull"></A><IMG SRC="images/greece/advanced_barracks/barracks-full.png"  ALT="Advanced Barracks"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Morphing from <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">160</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">80</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">240</NOBR>&nbsp; <BR>(Cost for Advanced Barracks with 40&nbsp;% discount = <IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;60&nbsp;<IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;30&nbsp;<IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">&nbsp;90&nbsp;<BR>&nbsp;+ cost for <A HREF="greece_barracks_full.html">Barracks</A> = <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">150</NOBR>&nbsp; )
+<TR><TD>Production Time:</TD><TD>100</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>6000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>6</TD></TR>
+<TR><TD>'Advanced Barracks' is able to Produce:</TD><TD><A HREF="greece_hoplite_full.html">Hoplite</A><br>
+<A HREF="greece_psiloi_full.html">Psiloi</A><br>
+<A HREF="greece_archer_full.html">Archer</A><br>
+<A HREF="greece_peltast_full.html">Peltast</A><br>
+<A HREF="greece_calvary_full.html">Calvary</A><br>
+<A HREF="greece_onager_full.html">Onager</A><br>
+<A HREF="greece_battering_ram_full.html">Battering Ram</A><br>
+</TD></TR>
+<TR><TD>'Advanced Barracks' is able to Upgrade:</TD><TD><A HREF="greece_advanced_training_full.html">Advanced Training</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Advanced Barracks':</TD><TD><A HREF="greece_advanced_buildings_full.html">Advanced Buildings</A><br>
+<A HREF="greece_castle_full.html">Castle</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="advanced_buildings_full"></A><IMG SRC="images/greece/advanced_buildings/training_field.bmp" HEIGHT=64 WIDTH=64 ALT="Advanced Buildings"></TD><TD WIDTH=500> <B>Advanced Buildings</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="advanced_buildings_G3Dfull"></A><IMG SRC="images/greece/advanced_buildings/training_field-full.png"  ALT="Advanced Buildings"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>300</TD></TR>
+<TR><TD>Affects Units:</TD><TD> <A HREF="greece_temple_full.html">Temple</A>, <A HREF="greece_engineer_full.html">Engineer</A></TD></TR>
+<TR><TD>'Advanced Buildings' is a Upgrade-Requirement for:</TD><TD><A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><br>
+<A HREF="greece_tower_full.html">Tower</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Advanced Buildings':</TD><TD><A HREF="greece_engineer_full.html">Engineer</A><br>
+<A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="advanced_training_full"></A><IMG SRC="images/greece/advanced_training/training_field.bmp" HEIGHT=64 WIDTH=64 ALT="Advanced Training"></TD><TD WIDTH=500> <B>Advanced Training</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="advanced_training_G3Dfull"></A><IMG SRC="images/greece/advanced_training/training_field-full.png"  ALT="Advanced Training"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>300</TD></TR>
+<TR><TD>Increase Production&nbsp;Speed:&nbsp;</TD><TD>+150</TD></TR>
+<TR><TD>Affects Units:</TD><TD> <A HREF="greece_barracks_full.html">Barracks</A></TD></TR>
+<TR><TD>'Advanced Training' is a Upgrade-Requirement for:</TD><TD><A HREF="greece_chariot_full.html">Chariot</A><br>
+<A HREF="greece_battering_ram_full.html">Battering Ram</A><br>
+<A HREF="greece_oxybeles_full.html">Oxybeles</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Advanced Training':</TD><TD><A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="air_box_full"></A><IMG SRC="images/greece/air_box/tower_of_souls.bmp" HEIGHT=64 WIDTH=64 ALT="Air Box"></TD><TD WIDTH=500> <B>Air Box</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="air_box_G3Dfull"></A><IMG SRC="images/greece/air_box/tower_of_souls-full.png"  ALT="Air Box"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">250</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>150</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>6000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>16</TD></TR>
+<TR><TD>Needed to build 'Air Box':</TD><TD><A HREF="greece_pandora_full.html">Pandora</A><br>
+<A HREF="greece_palace_full.html">Palace</A><br>
+<A HREF="greece_temple_full.html">Temple</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD>Attack Command: Attack On<BR><IMG SRC="images/greece/air_box/tower_of_souls_attack_on.bmp" HEIGHT=32 WIDTH=32 ALT="Attack On"></TD><TD>
+Target: Only air units<BR>
+Strength: 200+-50<BR>
+Range: 15<BR>
+Splash-Radius: 3<BR>
+Splash also damages own units!<BR>
+Type: <a href="attack_and_armor_types.html#energy">Energy</A> <BR>
+Attack Speed: 80<BR>
+Start Time: 0.3<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="alexander_full"></A><IMG SRC="images/greece/alexander/archmage.bmp" HEIGHT=64 WIDTH=64 ALT="Alexander"></TD><TD WIDTH=500> <B>Alexander</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="alexander_G3Dfull"></A><IMG SRC="images/greece/alexander/archmage-full.png"  ALT="Alexander"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_palace_full.html">Palace</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>200</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>3600</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>2</TD></TR>
+<TR><TD>Maximum Energy Points:</TD><TD>1000</TD></TR>
+<TR><TD>Regeneration Energy Points:</TD><TD>10</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>15</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>Needed to build 'Alexander':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_castle_full.html">Castle</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 220</TD></TR>
+<TR><TD>Attack Command: Attack Sword<BR><IMG SRC="images/greece/alexander/archmage_ice_nova.bmp" HEIGHT=32 WIDTH=32 ALT="Attack Sword"></TD><TD>
+Target: Only ground units<BR>
+Strength: 900+-100<BR>
+Range: 1<BR>
+Type: <a href="attack_and_armor_types.html#slashing">Slashing</A> <BR>
+Attack Speed: 75<BR>
+Start Time: 0.5<BR>
+Energy-Cost: 30<BR>
+</TD></TR>
+<TR><TD>Attack Command: Attack Arrow<BR><IMG SRC="images/greece/alexander/archmage_static_fire.bmp" HEIGHT=32 WIDTH=32 ALT="Attack Arrow"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 800+-200<BR>
+Range: 10<BR>
+Splash-Radius: 5<BR>
+Splash also damages own units!<BR>
+Type: <a href="attack_and_armor_types.html#energy">Energy</A> <BR>
+Attack Speed: 80<BR>
+Start Time: 0.8<BR>
+Energy-Cost: 50<BR>
+This Attack Skill is used on "Hold Position"<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Expert</b> at 18 kills<BR>
+Hitpoints: 3600 -> 5400<BR>
+Energy Points: 1000 -> 1500<BR>
+Armor Strength: 15 -> 22<BR>
+Sight: 15 -> 18<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="archer_full"></A><IMG SRC="images/greece/archer/archer.bmp" HEIGHT=64 WIDTH=64 ALT="Archer"></TD><TD WIDTH=500> <B>Archer</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="archer_G3Dfull"></A><IMG SRC="images/greece/archer/archer-full.png"  ALT="Archer"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+Produced by <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost when produced by Advanced Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Total Cost when produced by Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>60</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>700</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>20</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 220</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/archer/archer_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 100+-50<BR>
+Range: 10<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 50<BR>
+Start Time: 0.5<BR>
+This Attack Skill is used on "Hold Position"<BR>
+("Hold Position" requires <A HREF="greece_training_field_full.html">Training Field</A>)<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 5 kills<BR>
+Hitpoints: 700 -> 1050<BR>
+Armor Strength: 20 -> 30<BR>
+Sight: 15 -> 18<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_helmets_full.html">Helmets</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20)<BR>
+<A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="artemis_full"></A><IMG SRC="images/greece/artemis/technician.bmp" HEIGHT=64 WIDTH=64 ALT="Artemis"></TD><TD WIDTH=500> <B>Artemis</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="artemis_G3Dfull"></A><IMG SRC="images/greece/artemis/technician-full.png"  ALT="Artemis"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_palace_full.html">Palace</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">400</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>50</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>3500</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>1</TD></TR>
+<TR><TD>Maximum Energy Points:</TD><TD>1000</TD></TR>
+<TR><TD>Regeneration Energy Points:</TD><TD>10</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>15</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>8</TD></TR>
+<TR><TD>Needed to build 'Artemis':</TD><TD><A HREF="greece_golden_arrow_full.html">Golden Arrow</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 250</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/artemis/attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 150+-100<BR>
+Range: 12<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 50<BR>
+Start Time: 0.5<BR>
+</TD></TR>
+<TR><TD>Attack Command: Arrow Of Death<BR><IMG SRC="images/greece/artemis/death.bmp" HEIGHT=32 WIDTH=32 ALT="Arrow Of Death"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 300+-100<BR>
+Range: 12<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 80<BR>
+Start Time: 0.5<BR>
+Energy-Cost: 60<BR>
+</TD></TR>
+<TR><TD>Attack Command: Golden Arrow<BR><IMG SRC="images/greece/artemis/gold.bmp" HEIGHT=32 WIDTH=32 ALT="Golden Arrow"></TD><TD>
+Target: Only ground units<BR>
+Strength: 5500+-500<BR>
+Range: 11<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 40<BR>
+Start Time: 0.5<BR>
+Energy-Cost: 1000<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="atlas_full"></A><IMG SRC="images/greece/atlas/atlas.bmp" HEIGHT=64 WIDTH=64 ALT="Atlas"></TD><TD WIDTH=500> <B>Atlas</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="atlas_G3Dfull"></A><IMG SRC="images/greece/atlas/atlas-full.png"  ALT="Atlas"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_temple_full.html">Temple</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>100</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>2000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>3</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>45</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Needed to build 'Atlas':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 125</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/atlas/thor_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Only ground units<BR>
+Strength: 400+-100<BR>
+Range: 1<BR>
+Type: <a href="attack_and_armor_types.html#energy">Energy</A> <BR>
+Attack Speed: 50<BR>
+Start Time: 0.8<BR>
+This Attack Skill is used on "Hold Position"<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Hercules                                                   </b> at 10 kills<BR>
+Hitpoints: 2000 -> 3000<BR>
+Armor Strength: 45 -> 67<BR>
+Sight: 10 -> 12<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="barley_bales_full"></A><IMG SRC="images/greece/barley_bales/stables.bmp" HEIGHT=64 WIDTH=64 ALT="Barley Bales"></TD><TD WIDTH=500> <B>Barley Bales</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="barley_bales_G3Dfull"></A><IMG SRC="images/greece/barley_bales/stables-full.png"  ALT="Barley Bales"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_barley_field_full.html">Barley Field</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>200</TD></TR>
+<TR><TD>'Barley Bales' is a Upgrade-Requirement for:</TD><TD><A HREF="greece_chariot_full.html">Chariot</A><br>
+<A HREF="greece_calvary_full.html">Calvary</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Barley Bales':</TD><TD><A HREF="greece_barley_field_full.html">Barley Field</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="barley_field_full"></A><IMG SRC="images/greece/barley_field/farm.bmp" HEIGHT=64 WIDTH=64 ALT="Barley Field"></TD><TD WIDTH=500> <B>Barley Field</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="barley_field_G3Dfull"></A><IMG SRC="images/greece/barley_field/farm-full.png"  ALT="Barley Field"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_slave_full.html">Slave</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">-25</NOBR>&nbsp;
+<TR><TD>Storage:</TD><TD><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">&nbsp;50&nbsp;
+</TD></TR>
+<TR><TD>Production Time:</TD><TD>50</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>3000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#wood">Wood</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>5</TD></TR>
+<TR><TD>'Barley Field' is able to Upgrade:</TD><TD><A HREF="greece_barley_bales_full.html">Barley Bales</A><br>
+</TD></TR>
+<TR><TD>'Barley Field' is a Requirement for:</TD><TD><A HREF="greece_calvary_full.html">Calvary</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Barley Field':</TD><TD><A HREF="greece_castle_full.html">Castle</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="barracks_full"></A><IMG SRC="images/greece/barracks/barracks.bmp" HEIGHT=64 WIDTH=64 ALT="Barracks"></TD><TD WIDTH=500> <B>Barracks</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="barracks_G3Dfull"></A><IMG SRC="images/greece/barracks/barracks-full.png"  ALT="Barracks"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_slave_full.html">Slave</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">150</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>100</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>6000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>6</TD></TR>
+<TR><TD>'Barracks' is able to Produce:</TD><TD><A HREF="greece_hoplite_full.html">Hoplite</A><br>
+<A HREF="greece_psiloi_full.html">Psiloi</A><br>
+<A HREF="greece_archer_full.html">Archer</A><br>
+<A HREF="greece_peltast_full.html">Peltast</A><br>
+<A HREF="greece_calvary_full.html">Calvary</A><br>
+</TD></TR>
+<TR><TD>'Barracks' is able to Upgrade:</TD><TD><A HREF="greece_training_field_full.html">Training Field</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Barracks':</TD><TD><A HREF="greece_castle_full.html">Castle</A><br>
+</TD></TR>
+<TR><TD> Morph Skill: Advanced Barracks </TD><TD>Morphing to: <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><IMG SRC="images/greece/advanced_barracks/barracks.bmp" HEIGHT=64 WIDTH=64 ALT="Advanced Barracks"><BR>
+Refund (Discount): 40&nbsp;%<BR>
+Morph Speed: 300<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_training_field_full.html">Training Field</A> (Production&nbsp;Speed:&nbsp;+150)<BR>
+<A HREF="greece_advanced_training_full.html">Advanced Training</A> (Production&nbsp;Speed:&nbsp;+150)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="battering_ram_full"></A><IMG SRC="images/greece/battering_ram/br.bmp" HEIGHT=64 WIDTH=64 ALT="Battering Ram"></TD><TD WIDTH=500> <B>Battering Ram</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="battering_ram_G3Dfull"></A><IMG SRC="images/greece/battering_ram/br-full.png"  ALT="Battering Ram"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>100</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>2000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>3</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>45</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#metal">Metal</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Needed to build 'Battering Ram':</TD><TD><A HREF="greece_advanced_training_full.html">Advanced Training</A><br>
+<A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 220</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/battering_ram/thor_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Only ground units<BR>
+Strength: 400+-50<BR>
+Range: 2<BR>
+Type: <a href="attack_and_armor_types.html#impact">Impact</A> <BR>
+Attack Speed: 60<BR>
+Start Time: 0.5<BR>
+This Attack Skill is used on "Hold Position"<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Advanced</b> at 10 kills<BR>
+Hitpoints: 2000 -> 3000<BR>
+Armor Strength: 45 -> 67<BR>
+Sight: 10 -> 12<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_helmets_full.html">Helmets</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20)<BR>
+<A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="blacksmith_full"></A><IMG SRC="images/greece/blacksmith/blacksmith.bmp" HEIGHT=64 WIDTH=64 ALT="Blacksmith"></TD><TD WIDTH=500> <B>Blacksmith</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="blacksmith_G3Dfull"></A><IMG SRC="images/greece/blacksmith/blacksmith-full.png"  ALT="Blacksmith"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_slave_full.html">Slave</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TR><TD>Storage:</TD><TD><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;200&nbsp;
+(Hint: This also means a worker can drop of his harvested wood into this building so it's useful to build it near trees.)</TD></TR>
+<TR><TD>Production Time:</TD><TD>120</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>6000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#wood">Wood</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>12</TD></TR>
+<TR><TD>'Blacksmith' is able to Upgrade:</TD><TD><A HREF="greece_shields_full.html">Shields</A><br>
+<A HREF="greece_weapons_full.html">Weapons</A><br>
+<A HREF="greece_helmets_full.html">Helmets</A><br>
+</TD></TR>
+<TR><TD>'Blacksmith' is a Requirement for:</TD><TD><A HREF="greece_palace_full.html">Palace</A><br>
+<A HREF="greece_chariot_full.html">Chariot</A><br>
+<A HREF="greece_atlas_full.html">Atlas</A><br>
+<A HREF="greece_calvary_full.html">Calvary</A><br>
+<A HREF="greece_alexander_full.html">Alexander</A><br>
+<A HREF="greece_battering_ram_full.html">Battering Ram</A><br>
+<A HREF="greece_tower_full.html">Tower</A><br>
+<A HREF="greece_temple_full.html">Temple</A><br>
+<A HREF="greece_hoplite_full.html">Hoplite</A><br>
+<A HREF="greece_onager_full.html">Onager</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Blacksmith':</TD><TD><A HREF="greece_castle_full.html">Castle</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="calvary_full"></A><IMG SRC="images/greece/calvary/horseman.bmp" HEIGHT=64 WIDTH=64 ALT="Calvary"></TD><TD WIDTH=500> <B>Calvary</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="calvary_G3Dfull"></A><IMG SRC="images/greece/calvary/horseman-full.png"  ALT="Calvary"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+Produced by <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost when produced by Advanced Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TR><TD>Total Cost when produced by Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">2</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>120</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>1400</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>30</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Needed to build 'Calvary':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_barley_field_full.html">Barley Field</A><br>
+<A HREF="greece_barley_bales_full.html">Barley Bales</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 480</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/calvary/horseman_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Only ground units<BR>
+Strength: 220+-50<BR>
+Range: 1<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 100<BR>
+Start Time: 0.8<BR>
+This Attack Skill is used on "Hold Position"<BR>
+("Hold Position" requires <A HREF="greece_training_field_full.html">Training Field</A>)<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 6 kills<BR>
+Hitpoints: 1400 -> 2100<BR>
+Armor Strength: 30 -> 45<BR>
+Sight: 10 -> 12<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_helmets_full.html">Helmets</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20)<BR>
+<A HREF="greece_shields_full.html">Shields</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+10)<BR>
+<A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="castle_full"></A><IMG SRC="images/greece/castle/castle.bmp" HEIGHT=64 WIDTH=64 ALT="Castle"></TD><TD WIDTH=500> <B>Castle</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="castle_G3Dfull"></A><IMG SRC="images/greece/castle/castle-full.png"  ALT="Castle"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_slave_full.html">Slave</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">-10</NOBR>&nbsp;
+<TR><TD>Storage:</TD><TD><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;2000&nbsp;<IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;1200&nbsp;<IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">&nbsp;1500&nbsp;<IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">&nbsp;150&nbsp;
+</TD></TR>
+<TR><TD>Production Time:</TD><TD>300</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>9000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>'Castle' is able to Produce:</TD><TD><A HREF="greece_slave_full.html">Slave</A><br>
+<A HREF="greece_engineer_full.html">Engineer</A><br>
+</TD></TR>
+<TR><TD>'Castle' is a Requirement for:</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_palace_full.html">Palace</A><br>
+<A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><br>
+<A HREF="greece_barley_field_full.html">Barley Field</A><br>
+<A HREF="greece_alexander_full.html">Alexander</A><br>
+<A HREF="greece_temple_full.html">Temple</A><br>
+<A HREF="greece_barracks_full.html">Barracks</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="chariot_full"></A><IMG SRC="images/greece/chariot/battle_machine.bmp" HEIGHT=64 WIDTH=64 ALT="Chariot"></TD><TD WIDTH=500> <B>Chariot</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="chariot_G3Dfull"></A><IMG SRC="images/greece/chariot/battle_machine-full.png"  ALT="Chariot"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_palace_full.html">Palace</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>140</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>2500</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>1</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>45</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#wood">Wood</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Needed to build 'Chariot':</TD><TD><A HREF="greece_barley_bales_full.html">Barley Bales</A><br>
+<A HREF="greece_advanced_training_full.html">Advanced Training</A><br>
+<A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_temple_full.html">Temple</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 440</TD></TR>
+<TR><TD>Attack Command: Attack Spear<BR><IMG SRC="images/greece/chariot/battle_machine_attack_arrow.bmp" HEIGHT=32 WIDTH=32 ALT="Attack Spear"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 170+-75<BR>
+Range: 9<BR>
+Splash-Radius: 1<BR>
+Splash also damages own units!<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 60<BR>
+Start Time: 0.5<BR>
+This Attack Skill is used on "Hold Position"<BR>
+Special Move Speed: 480 (Charge Skill)<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 10 kills<BR>
+Hitpoints: 2500 -> 3750<BR>
+Armor Strength: 45 -> 67<BR>
+Sight: 10 -> 12<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_helmets_full.html">Helmets</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20)<BR>
+<A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="dragon_full"></A><IMG SRC="images/greece/dragon/dragon.bmp" HEIGHT=64 WIDTH=64 ALT="Dragon"></TD><TD WIDTH=500> <B>Dragon</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="dragon_G3Dfull"></A><IMG SRC="images/greece/dragon/dragon-full.png"  ALT="Dragon"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_temple_full.html">Temple</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">300</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">150</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>150</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>1400</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>3</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>20</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#organic">Organic</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>Needed to build 'Dragon':</TD><TD><A HREF="greece_palace_full.html">Palace</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Air Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 250</TD></TR>
+<TR><TD>Attack Command: Breath<BR><IMG SRC="images/greece/dragon/dragon_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Breath"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 250+-40<BR>
+Range: 8<BR>
+Splash-Radius: 1<BR>
+Splash also damages own units!<BR>
+Type: <a href="attack_and_armor_types.html#energy">Energy</A> <BR>
+Attack Speed: 40<BR>
+Start Time: 0.3<BR>
+This Attack Skill is used on "Hold Position"<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Master</b> at 10 kills<BR>
+Hitpoints: 1400 -> 2100<BR>
+Armor Strength: 20 -> 30<BR>
+Sight: 15 -> 18<BR>
+<B>Ancient</b> at 10 kills<BR>
+Hitpoints: 2100 -> 3150<BR>
+Armor Strength: 30 -> 45<BR>
+Sight: 18 -> 21<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="engineer_full"></A><IMG SRC="images/greece/engineer/technician.bmp" HEIGHT=64 WIDTH=64 ALT="Engineer"></TD><TD WIDTH=500> <B>Engineer</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="engineer_G3Dfull"></A><IMG SRC="images/greece/engineer/technician-full.png"  ALT="Engineer"></TD></TR>
+<TR><TD>Type:</TD><TD>Worker Unit<br>
+Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_castle_full.html">Castle</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>80</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>800</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>8</TD></TR>
+<TR><TD>'Engineer' is able to Build:</TD><TD><A HREF="greece_tower_full.html">Tower</A><br>
+<A HREF="greece_air_box_full.html">Air Box</A><br>
+<A HREF="greece_palace_full.html">Palace</A><br>
+<A HREF="greece_temple_full.html">Temple</A><br>
+<A HREF="greece_trojan_horse_full.html">Trojan Horse</A><br>
+</TD></TR>
+<TR><TD>'Engineer' is able to Upgrade:</TD><TD><A HREF="greece_advanced_buildings_full.html">Advanced Buildings</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 220</TD></TR>
+<TR><TD> Morph Skill: Build Ballista </TD><TD>Morphing to: <A HREF="greece_oxybeles_full.html">Oxybeles</A><IMG SRC="images/greece/oxybeles/air_ballista.bmp" HEIGHT=64 WIDTH=64 ALT="Oxybeles"><BR>
+Refund (Discount): 40&nbsp;%<BR>
+Morph Speed: 500<BR>
+</TD></TR>
+<TR><TD>Attack Command: Molotov<BR><IMG SRC="images/greece/engineer/molotov.bmp" HEIGHT=32 WIDTH=32 ALT="Molotov"></TD><TD>
+Target: Only ground units<BR>
+Strength: 100+-50<BR>
+Range: 1<BR>
+Type: <a href="attack_and_armor_types.html#slashing">Slashing</A> <BR>
+Attack Speed: 111<BR>
+Start Time: 0.5<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_advanced_buildings_full.html">Advanced Buildings</A><BR>
+</TD></TR>
+<TR><TD> Repair/Heal Skill: Repair </TD><TD>Repairing: <A HREF="greece_trojan_horse_full.html">Trojan Horse</A>, <A HREF="greece_barley_field_full.html">Barley Field</A>, <A HREF="greece_barracks_full.html">Barracks</A>, <A HREF="greece_blacksmith_full.html">Blacksmith</A>, <A HREF="greece_tower_full.html">Tower</A>, <A HREF="greece_castle_full.html">Castle</A>, <A HREF="greece_palace_full.html">Palace</A>, <A HREF="greece_temple_full.html">Temple</A>, <A HREF="greece_air_box_full.html">Air Box</A>, <A HREF="greece_oxybeles_full.html">Oxybeles</A>, <A HREF="greece_battering_ram_full.html">Battering Ram</A>, <A HREF="greece_chariot_full.html">Chariot</A>, <A HREF="greece_onager_full.html">Onager</A><BR>
+Repair/Heal Speed: 180<BR>
+</TD></TR>
+<TR><TD> Repair/Heal Skill: Heal </TD><TD>Healing: <A HREF="greece_slave_full.html">Slave</A>, <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_engineer_full.html">Engineer</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A>, <A HREF="greece_alexander_full.html">Alexander</A>, <A HREF="greece_artemis_full.html">Artemis</A>, <A HREF="greece_atlas_full.html">Atlas</A>, <A HREF="greece_archer_full.html">Archer</A>, <A HREF="greece_psiloi_full.html">Psiloi</A><BR>
+Repair/Heal Speed: 210<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="golden_arrow_full"></A><IMG SRC="images/greece/golden_arrow/shield1.bmp" HEIGHT=64 WIDTH=64 ALT="Golden Arrow"></TD><TD WIDTH=500> <B>Golden Arrow</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="golden_arrow_G3Dfull"></A><IMG SRC="images/greece/golden_arrow/shield1-full.png"  ALT="Golden Arrow"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_temple_full.html">Temple</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>250</TD></TR>
+<TR><TD>'Golden Arrow' is a Upgrade-Requirement for:</TD><TD><A HREF="greece_artemis_full.html">Artemis</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Golden Arrow':</TD><TD><A HREF="greece_temple_full.html">Temple</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="helmets_full"></A><IMG SRC="images/greece/helmets/h.bmp" HEIGHT=64 WIDTH=64 ALT="Helmets"></TD><TD WIDTH=500> <B>Helmets</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="helmets_G3Dfull"></A><IMG SRC="images/greece/helmets/h-full.png"  ALT="Helmets"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_blacksmith_full.html">Blacksmith</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">200</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>600</TD></TR>
+<TR><TD>Increase Hitpoints:&nbsp;</TD><TD>+50</TD></TR>
+<TR><TD>Increase Armor:&nbsp;</TD><TD>+20</TD></TR>
+<TR><TD>Affects Units:</TD><TD> <A HREF="greece_archer_full.html">Archer</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A>, <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_battering_ram_full.html">Battering Ram</A>, <A HREF="greece_chariot_full.html">Chariot</A></TD></TR>
+<TR><TD>Needed to build 'Helmets':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="hoplite_full"></A><IMG SRC="images/greece/hoplite/guard.bmp" HEIGHT=64 WIDTH=64 ALT="Hoplite"></TD><TD WIDTH=500> <B>Hoplite</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="hoplite_G3Dfull"></A><IMG SRC="images/greece/hoplite/guard-full.png"  ALT="Hoplite"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+Produced by <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost when produced by Advanced Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">75</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Total Cost when produced by Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">75</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>80</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>900</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>40</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#metal">Metal</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Needed to build 'Hoplite':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 220</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/hoplite/guard_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Only ground units<BR>
+Strength: 110+-30<BR>
+Range: 2<BR>
+Type: <a href="attack_and_armor_types.html#slashing">Slashing</A> <BR>
+Attack Speed: 120<BR>
+Start Time: 0<BR>
+This Attack Skill is used on "Hold Position"<BR>
+("Hold Position" requires <A HREF="greece_training_field_full.html">Training Field</A>)<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 4 kills<BR>
+Hitpoints: 900 -> 1350<BR>
+Armor Strength: 40 -> 60<BR>
+Sight: 10 -> 12<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_helmets_full.html">Helmets</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20)<BR>
+<A HREF="greece_shields_full.html">Shields</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+10)<BR>
+<A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="onager_full"></A><IMG SRC="images/greece/onager/catapult.bmp" HEIGHT=64 WIDTH=64 ALT="Onager"></TD><TD WIDTH=500> <B>Onager</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="onager_G3Dfull"></A><IMG SRC="images/greece/onager/catapult-full.png"  ALT="Onager"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>100</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>1500</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>1</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>10</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#wood">Wood</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Needed to build 'Onager':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_palace_full.html">Palace</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 150</TD></TR>
+<TR><TD>Attack Command: Fire Ball<BR><IMG SRC="images/greece/onager/catapult_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Fire Ball"></TD><TD>
+Target: Only ground units<BR>
+Strength: 450+-150<BR>
+Range: 10<BR>
+Splash-Radius: 2<BR>
+Splash also damages own units!<BR>
+Type: <a href="attack_and_armor_types.html#impact">Impact</A> <BR>
+Attack Speed: 50<BR>
+Start Time: 0.333<BR>
+This Attack Skill is used on "Hold Position"<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="oxybeles_full"></A><IMG SRC="images/greece/oxybeles/air_ballista.bmp" HEIGHT=64 WIDTH=64 ALT="Oxybeles"></TD><TD WIDTH=500> <B>Oxybeles</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="oxybeles_G3Dfull"></A><IMG SRC="images/greece/oxybeles/air_ballista-full.png"  ALT="Oxybeles"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Morphing from <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">270</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp; <BR>(Cost for Oxybeles with 40&nbsp;% discount = <IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;120&nbsp;<IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">&nbsp;150&nbsp;<IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">&nbsp;1&nbsp;<BR>&nbsp;+ cost for <A HREF="greece_engineer_full.html">Engineer</A> = <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp; )
+<TR><TD>Production Time:</TD><TD>180</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>3000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>5</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>20</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#wood">Wood</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>Needed to build 'Oxybeles':</TD><TD><A HREF="greece_advanced_training_full.html">Advanced Training</A><br>
+<A HREF="greece_palace_full.html">Palace</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD>Attack Command: Attack On<BR><IMG SRC="images/greece/oxybeles/air_ballista_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack On"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 200+-75<BR>
+Range: 15<BR>
+Splash-Radius: 1<BR>
+Splash also damages own units!<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 70<BR>
+Start Time: 0.9<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 10 kills<BR>
+Hitpoints: 3000 -> 4500<BR>
+Armor Strength: 20 -> 30<BR>
+Sight: 15 -> 18<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="palace_full"></A><IMG SRC="images/greece/palace/castle.bmp" HEIGHT=64 WIDTH=64 ALT="Palace"></TD><TD WIDTH=500> <B>Palace</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="palace_G3Dfull"></A><IMG SRC="images/greece/palace/castle-full.png"  ALT="Palace"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">100</NOBR>&nbsp;
+<TR><TD>Storage:</TD><TD><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">&nbsp;800&nbsp;<IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">&nbsp;500&nbsp;
+</TD></TR>
+<TR><TD>Production Time:</TD><TD>200</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>6000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>'Palace' is able to Produce:</TD><TD><A HREF="greece_chariot_full.html">Chariot</A><br>
+<A HREF="greece_alexander_full.html">Alexander</A><br>
+<A HREF="greece_artemis_full.html">Artemis</A><br>
+</TD></TR>
+<TR><TD>'Palace' is a Requirement for:</TD><TD><A HREF="greece_air_box_full.html">Air Box</A><br>
+<A HREF="greece_dragon_full.html">Dragon</A><br>
+<A HREF="greece_oxybeles_full.html">Oxybeles</A><br>
+<A HREF="greece_onager_full.html">Onager</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Palace':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_castle_full.html">Castle</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="pandora_full"></A><IMG SRC="images/greece/pandora/shield1.bmp" HEIGHT=64 WIDTH=64 ALT="Pandora"></TD><TD WIDTH=500> <B>Pandora</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="pandora_G3Dfull"></A><IMG SRC="images/greece/pandora/shield1-full.png"  ALT="Pandora"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_temple_full.html">Temple</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">100</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>300</TD></TR>
+<TR><TD>'Pandora' is a Upgrade-Requirement for:</TD><TD><A HREF="greece_air_box_full.html">Air Box</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Pandora':</TD><TD><A HREF="greece_temple_full.html">Temple</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="peltast_full"></A><IMG SRC="images/greece/peltast/archer.bmp" HEIGHT=64 WIDTH=64 ALT="Peltast"></TD><TD WIDTH=500> <B>Peltast</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="peltast_G3Dfull"></A><IMG SRC="images/greece/peltast/archer-full.png"  ALT="Peltast"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+Produced by <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost when produced by Advanced Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Total Cost when produced by Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>60</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>700</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>20</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>15</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 220</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/peltast/archer_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 95+-65<BR>
+Range: 9<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 50<BR>
+Start Time: 0.5<BR>
+This Attack Skill is used on "Hold Position"<BR>
+("Hold Position" requires <A HREF="greece_training_field_full.html">Training Field</A>)<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 5 kills<BR>
+Hitpoints: 700 -> 1050<BR>
+Armor Strength: 20 -> 30<BR>
+Sight: 15 -> 18<BR>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_helmets_full.html">Helmets</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+20)<BR>
+<A HREF="greece_shields_full.html">Shields</A> (Hitpoints:&nbsp;+50, 
+Armor:&nbsp;+10)<BR>
+<A HREF="greece_weapons_full.html">Weapons</A> (Attack&nbsp;Strength:&nbsp;+25)<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="psiloi_full"></A><IMG SRC="images/greece/psiloi/swordman.bmp" HEIGHT=64 WIDTH=64 ALT="Psiloi"></TD><TD WIDTH=500> <B>Psiloi</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="psiloi_G3Dfull"></A><IMG SRC="images/greece/psiloi/swordman-full.png"  ALT="Psiloi"></TD></TR>
+<TR><TD>Type:</TD><TD>Combat Unit
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+Produced by <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost when produced by Advanced Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">25</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Total Cost when produced by Barracks: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">50</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">25</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>30</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>700</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 400</TD></TR>
+<TR><TD>Attack Command: Attack<BR><IMG SRC="images/greece/psiloi/swordman_attack.bmp" HEIGHT=32 WIDTH=32 ALT="Attack"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 75+-30<BR>
+Range: 6<BR>
+Type: <a href="attack_and_armor_types.html#slashing">Slashing</A> <BR>
+Attack Speed: 100<BR>
+Start Time: 0.5<BR>
+This Attack Skill is used on "Hold Position"<BR>
+("Hold Position" requires <A HREF="greece_training_field_full.html">Training Field</A>)<BR>
+Special Move Speed: 500 (Charge Skill)<BR>
+</TD></TR>
+<TR><TD>Level(s):</TD><TD>
+<B>Elite</b> at 3 kills<BR>
+Hitpoints: 700 -> 1050<BR>
+Armor Strength: 0 -> 0<BR>
+Sight: 10 -> 12<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="shields_full"></A><IMG SRC="images/greece/shields/shield1.bmp" HEIGHT=64 WIDTH=64 ALT="Shields"></TD><TD WIDTH=500> <B>Shields</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="shields_G3Dfull"></A><IMG SRC="images/greece/shields/shield1-full.png"  ALT="Shields"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_blacksmith_full.html">Blacksmith</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>300</TD></TR>
+<TR><TD>Increase Hitpoints:&nbsp;</TD><TD>+50</TD></TR>
+<TR><TD>Increase Armor:&nbsp;</TD><TD>+10</TD></TR>
+<TR><TD>Affects Units:</TD><TD> <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A></TD></TR>
+<TR><TD>Needed to build 'Shields':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="slave_full"></A><IMG SRC="images/greece/slave/worker.bmp" HEIGHT=64 WIDTH=64 ALT="Slave"></TD><TD WIDTH=500> <B>Slave</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="slave_G3Dfull"></A><IMG SRC="images/greece/slave/worker-full.png"  ALT="Slave"></TD></TR>
+<TR><TD>Type:</TD><TD>Worker Unit<br>
+</TD></TR>
+<TR><TD>Creation:</TD><TD>Produced by <A HREF="greece_castle_full.html">Castle</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">75</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">1</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>40</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>600</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#leather">Leather</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>9</TD></TR>
+<TR><TD>'Slave' is able to Build:</TD><TD><A HREF="greece_barley_field_full.html">Barley Field</A><br>
+<A HREF="greece_barracks_full.html">Barracks</A><br>
+<A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+<A HREF="greece_castle_full.html">Castle</A><br>
+<A HREF="greece_tower_full.html">Tower</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD> Move Command: Move </TD><TD> Speed: 190</TD></TR>
+<TR><TD> Repair/Heal Skill: Repair </TD><TD>Repairing: <A HREF="greece_barley_field_full.html">Barley Field</A>, <A HREF="greece_barracks_full.html">Barracks</A>, <A HREF="greece_blacksmith_full.html">Blacksmith</A>, <A HREF="greece_tower_full.html">Tower</A>, <A HREF="greece_castle_full.html">Castle</A>, <A HREF="greece_palace_full.html">Palace</A>, <A HREF="greece_temple_full.html">Temple</A>, <A HREF="greece_air_box_full.html">Air Box</A>, <A HREF="greece_advanced_barracks_full.html">Advanced Barracks</A><BR>
+Repair/Heal Speed: 40<BR>
+</TD></TR>
+<TR><TD> Harvest/Mine Skill: Mine </TD><TD><IMG SRC="images/resources/gold.bmp" HEIGHT=32 WIDTH=32 ALT="Gold"><IMG SRC="images/resources/stone.bmp" HEIGHT=32 WIDTH=32 ALT="Stone"><BR>
+Speed: 225<BR>
+Max Load: 25<BR>
+Hits per Unit: 1<BR>
+</TD></TR>
+<TR><TD> Harvest/Mine Skill: Harvest Wood </TD><TD><IMG SRC="images/resources/wood.bmp" HEIGHT=32 WIDTH=32 ALT="Wood"><BR>
+Speed: 150<BR>
+Max Load: 25<BR>
+Hits per Unit: 1<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="temple_full"></A><IMG SRC="images/greece/temple/technodrome.bmp" HEIGHT=64 WIDTH=64 ALT="Temple"></TD><TD WIDTH=500> <B>Temple</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="temple_G3Dfull"></A><IMG SRC="images/greece/temple/technodrome-full.png"  ALT="Temple"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">200</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>150</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>6000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>5</TD></TR>
+<TR><TD>'Temple' is able to Produce:</TD><TD><A HREF="greece_dragon_full.html">Dragon</A><br>
+<A HREF="greece_atlas_full.html">Atlas</A><br>
+</TD></TR>
+<TR><TD>'Temple' is able to Upgrade:</TD><TD><A HREF="greece_pandora_full.html">Pandora</A><br>
+<A HREF="greece_golden_arrow_full.html">Golden Arrow</A><br>
+</TD></TR>
+<TR><TD>'Temple' is a Requirement for:</TD><TD><A HREF="greece_air_box_full.html">Air Box</A><br>
+<A HREF="greece_chariot_full.html">Chariot</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Temple':</TD><TD><A HREF="greece_castle_full.html">Castle</A><br>
+<A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+<TR><TD>Upgrades Available:</TD><TD><A HREF="greece_advanced_buildings_full.html">Advanced Buildings</A><BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="tower_full"></A><IMG SRC="images/greece/tower/defense_tower.bmp" HEIGHT=64 WIDTH=64 ALT="Tower"></TD><TD WIDTH=500> <B>Tower</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="tower_G3Dfull"></A><IMG SRC="images/greece/tower/defense_tower-full.png"  ALT="Tower"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_slave_full.html">Slave</A><BR>
+Built by <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost when built by Slave: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">200</NOBR>&nbsp;
+<TR><TD>Total Cost when built by Engineer: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">250</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">200</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>140</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>7000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>20</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#wood">Wood</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>16</TD></TR>
+<TR><TD>Needed to build 'Tower':</TD><TD><A HREF="greece_advanced_buildings_full.html">Advanced Buildings</A><br>
+<A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD>Attack Command: Attack On<BR><IMG SRC="images/greece/tower/defense_tower_attack_on.bmp" HEIGHT=32 WIDTH=32 ALT="Attack On"></TD><TD>
+Target: Ground and air units<BR>
+Strength: 120+-50<BR>
+Range: 12<BR>
+Type: <a href="attack_and_armor_types.html#piercing">Piercing</A> <BR>
+Attack Speed: 80<BR>
+Start Time: 0.3<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="training_field_full"></A><IMG SRC="images/greece/training_field/training_field.bmp" HEIGHT=64 WIDTH=64 ALT="Training Field"></TD><TD WIDTH=500> <B>Training Field</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="training_field_G3Dfull"></A><IMG SRC="images/greece/training_field/training_field-full.png"  ALT="Training Field"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_barracks_full.html">Barracks</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">150</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">150</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>300</TD></TR>
+<TR><TD>Increase Production&nbsp;Speed:&nbsp;</TD><TD>+150</TD></TR>
+<TR><TD>Affects Units:</TD><TD> <A HREF="greece_barracks_full.html">Barracks</A></TD></TR>
+<TR><TD>'Training Field' enables commands:</TD><TD>Hold Position : <A HREF="greece_psiloi_full.html">Psiloi</A><br>
+Hold Position : <A HREF="greece_calvary_full.html">Calvary</A><br>
+Hold Position : <A HREF="greece_archer_full.html">Archer</A><br>
+Hold Position : <A HREF="greece_peltast_full.html">Peltast</A><br>
+Hold Position : <A HREF="greece_hoplite_full.html">Hoplite</A><br>
+</TD></TR>
+<TR><TD>Needed to build 'Training Field':</TD><TD><A HREF="greece_barracks_full.html">Barracks</A><br>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="trojan_horse_full"></A><IMG SRC="images/greece/trojan_horse/castle.bmp" HEIGHT=64 WIDTH=64 ALT="Trojan Horse"></TD><TD WIDTH=500> <B>Trojan Horse</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="trojan_horse_G3Dfull"></A><IMG SRC="images/greece/trojan_horse/castle-full.png"  ALT="Trojan Horse"></TD></TR>
+<TR><TD>Type:</TD><TD>Building</TD></TR>
+<TR><TD>Creation:</TD><TD>Built by <A HREF="greece_engineer_full.html">Engineer</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">100</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/stone.bmp" HEIGHT=16 WIDTH=16 ALT="Stone">1000</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/food.bmp" HEIGHT=16 WIDTH=16 ALT="Food">4</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>10</TD></TR>
+<TR><TD>Maximum Hitpoints:</TD><TD>1000</TD></TR>
+<TR><TD>Regeneration of Hitpoints:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Strength:</TD><TD>-</TD></TR>
+<TR><TD>Armor-Type:</TD><TD><a href="attack_and_armor_types.html#stone">Stone</A></TD></TR>
+<TR><TD>Sight-Range:</TD><TD>10</TD></TR>
+<TR><TD>Movement Type:</TD><TD>Ground Unit</TD>
+<TR><TD>Attack Command: Escape On<BR><IMG SRC="images/greece/trojan_horse/escape.bmp" HEIGHT=32 WIDTH=32 ALT="Escape On"></TD><TD>
+Target: Only ground units<BR>
+Strength: 1000+-0<BR>
+Range: 8<BR>
+Type: <a href="attack_and_armor_types.html#slashing">Slashing</A> <BR>
+Attack Speed: 100<BR>
+Start Time: 0.5<BR>
+</TD></TR>
+<TR><TD>Attack Command: Escape Off<BR><IMG SRC="images/greece/trojan_horse/escape_no.bmp" HEIGHT=32 WIDTH=32 ALT="Escape Off"></TD><TD>
+Target: Only ground units<BR>
+Strength: 1+-0<BR>
+Range: 0<BR>
+Type: <a href="attack_and_armor_types.html#slashing">Slashing</A> <BR>
+Attack Speed: 100<BR>
+Start Time: 0.5<BR>
+</TD></TR>
+</TABLE><P>
+
+<TABLE BORDER=1><TR><TD WIDTH=250><A NAME="weapons_full"></A><IMG SRC="images/greece/weapons/piercing.bmp" HEIGHT=64 WIDTH=64 ALT="Weapons"></TD><TD WIDTH=500> <B>Weapons</B></TD></TR>
+<TR><TD COLSPAN=2 WIDTH=750><A NAME="weapons_G3Dfull"></A><IMG SRC="images/greece/weapons/piercing-full.png"  ALT="Weapons"></TD></TR>
+<TR><TD>Type:</TD><TD>Upgrade</TD></TR>
+<TR><TD>Creation:</TD><TD>Upgraded by <A HREF="greece_blacksmith_full.html">Blacksmith</A><BR>
+</TD></TR>
+<TR><TD>Total Cost: </TD><TD> <NOBR><IMG SRC="images/resources/gold.bmp" HEIGHT=16 WIDTH=16 ALT="Gold">200</NOBR>&nbsp;<NOBR><IMG SRC="images/resources/wood.bmp" HEIGHT=16 WIDTH=16 ALT="Wood">200</NOBR>&nbsp;
+<TR><TD>Production Time:</TD><TD>600</TD></TR>
+<TR><TD>Increase Attack&nbsp;Strength:&nbsp;</TD><TD>+25</TD></TR>
+<TR><TD>Affects Units:</TD><TD> <A HREF="greece_archer_full.html">Archer</A>, <A HREF="greece_hoplite_full.html">Hoplite</A>, <A HREF="greece_peltast_full.html">Peltast</A>, <A HREF="greece_calvary_full.html">Calvary</A>, <A HREF="greece_battering_ram_full.html">Battering Ram</A>, <A HREF="greece_chariot_full.html">Chariot</A>, <A HREF="greece_onager_full.html">Onager</A>, <A HREF="greece_oxybeles_full.html">Oxybeles</A></TD></TR>
+<TR><TD>Needed to build 'Weapons':</TD><TD><A HREF="greece_blacksmith_full.html">Blacksmith</A><br>
+</TD></TR>
+</TABLE><P>
+<!-- start footer -->
+
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fgithub.com%2FZetaGlest%2Fzetaglest-source%2Fcommits%2Fdevelop.atom&showtitle=false&type=js"></script>
+
+<p>This page was generated by: <I><A HREF="http://rupp.de/glest/">convert_faction_xml2html.pl</A></I>, version: <I>0.8.1 beta</I>, using config-file:  <I>zetapack.ini</I></p>
+<p>ZetaGlest is a fork of <a href="https://megaglest.org/">MegaGlest</a>
+<br>
+
+<div id="footer">
+	<div id="footer_left"></div>
+	<div id="footer_right"></div>
+	<ul>
+		<!-- <li><a href="https://megaglest.org/privacy.html">Privacy</a></li> -->
+		<a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/COPYING"><img src="/images/ThemezHut-Released-under-GPL_135x90.png" alt="GNU GPL3 logo" /></a></li>
+		<li><a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/AUTHORS.md">Credits</a></li>
+	</ul>
+</div>
+</body>
+</html>
+<!-- end footer -->

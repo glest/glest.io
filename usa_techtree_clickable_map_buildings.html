@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<title>Clickable Techtree Diagram for Usa - Buildings (Zetapack) </title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<!-- stuff for table-sorting, see jquery.com and datatables.net for details
+-->
+<script type="text/javascript" language="javascript" src="js/jquery-1.12.0.min.js" ></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+<!--
+<script type="text/javascript" language="javascript" src="js/TableTools.min.js"></script>
+-->
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+
+		$('#table_all').dataTable( {
+			'bAutoWidth': false,
+			"bPaginate": false,
+			"bSortClasses": false,
+			"sDom": '<"top"iflp>rt<"bottom"><"clear">',
+		<!--
+			"oTableTools": {
+				"sSwfPath": "js/copy_cvs_xls_pdf.swf"
+			},
+		-->
+			"aaSorting": [[ 1, "asc" ]]
+			});
+	});
+</script>
+</head>
+
+<body>
+
+ <!-- start header -->
+    <div id="header">
+
+      <!-- Contain the right and left header images -->
+      <div id="header_left"></div>
+      <div id="header_right"></div>
+      <!-- FIXME: needs height and width specs -->
+      <div id="logo"><a href="/"><img src="/images/zetaglest_logo_360x181.png" alt="ZetaGlest logo" /></a></div>
+    </div>
+    <p><a href="https://zetaglest.dreamhosters.com/">Server List and Player Stats</a> |
+				<a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/README.md">README</a> |
+				<a href="https://github.com/ZetaGlest">on GitHub</a> |
+				<a href="https://discord.gg/WaAaXS7">on Discord</a> |
+				<a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/CONTRIBUTING.md">Contributing</a> |
+				<a href="https://github.com/ZetaGlest/zetaglest-data#submitting-mods-tech-trees-tilesets-maps-scenarios">Submitting mods, tech trees, tilesets, maps, scenarios</a>
+    <!-- end header -->
+
+    <!-- start content -->
+    <div id="content">
+      <div id="article">
+
+
+<h1>Clickable Techtree Diagram for Usa - Buildings (Zetapack) </h1>
+<p>
+<h4><a href="index.html">Home</a></h4><p><H4>Choose faction: &nbsp;<A HREF=british_overview.html>British</a> |&nbsp;
+&nbsp;<A HREF=egypt_overview.html>Egypt</a> |&nbsp;
+&nbsp;<A HREF=elves_overview.html>Elves</a> |&nbsp;
+&nbsp;<A HREF=greece_overview.html>Greece</a> |&nbsp;
+&nbsp;<A HREF=indian_overview.html>Indian</a> |&nbsp;
+&nbsp;<A HREF=magic_overview.html>Magic</a> |&nbsp;
+&nbsp;<A HREF=norsemen_overview.html>Norsemen</a> |&nbsp;
+&nbsp;<A HREF=persian_overview.html>Persian</a> |&nbsp;
+&nbsp;<A HREF=romans_overview.html>Romans</a> |&nbsp;
+&nbsp;<A HREF=tech_overview.html>Tech</a> |&nbsp;
+&nbsp;<A HREF=usa_overview.html><I>Usa</I></a>
+ </H4><P>
+<P>
+<H4>Techtree Diagrams: <a href="usa_techtree_clickable_map_buildings.html">Buildings</a> |
+<a href="usa_techtree_clickable_map_buildings_units.html">Buildings Units</a> |
+<a href="usa_techtree_clickable_map_all.html">All</a></H4>
+<P>
+<img src="images/usa/usa_techtree_graph_buildings.png" usemap=#test>
+<map id="test" name="test">
+<area shape="poly" id="node1" href="usa_pentagon_full.html" title="Pentagon" alt="" coords="149,275,77,258,5,275,5,302,149,302"/>
+<area shape="poly" id="node7" href="usa_missile_launcher_full.html" title="Missile\nLauncher" alt="" coords="468,405,389,374,310,405,310,455,468,455"/>
+<area shape="poly" id="node8" href="usa_guard_tower_full.html" title="Guard\nTower" alt="" coords="138,405,77,374,17,405,17,455,138,455"/>
+<area shape="poly" id="node2" href="usa_flag_full.html" title="Flag" alt="" coords="202,138,158,122,115,138,115,165,202,165"/>
+<area shape="poly" id="node3" href="usa_white_house_full.html" title="White\nHouse" alt="" coords="346,132,286,101,227,132,227,181,346,181"/>
+<area shape="poly" id="node4" href="usa_liberty_bell_full.html" title="Liberty\nBell" alt="" coords="304,269,238,238,173,269,173,318,304,318"/>
+<area shape="poly" id="node5" href="usa_statue_of_liberty_full.html" title="Statue\nOf Liberty" alt="" coords="501,269,414,238,328,269,328,318,501,318"/>
+<area shape="poly" id="node6" href="usa_bank_full.html" title="Bank" alt="" coords="207,22,158,5,110,22,110,49,207,49"/>
+</map>
+<h4>Arrow Styles:</h4>
+<ul>
+<li>Bold: Unit creates building
+<li>Solid: Building produces unit or upgrade
+<li>Dashed: Units morphs/upgrades to other unit
+<li>Dotted: Unit or Upgrade is a requirement
+</ul>

@@ -1,0 +1,33 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="british_cavalry_full.html" title="Cavalry" alt="" coords="1172,432,1169,424,1162,417,1151,412,1137,409,1121,408,1105,409,1091,412,1079,417,1072,424,1070,432,1072,439,1079,446,1091,451,1105,454,1121,456,1137,454,1151,451,1162,446,1169,439"/>
+<area shape="poly" id="node2" href="british_grenader_full.html" title="Grenader" alt="" coords="919,432,916,424,908,417,895,412,879,409,861,408,843,409,827,412,814,417,806,424,803,432,806,439,814,446,827,451,843,454,861,456,879,454,895,451,908,446,916,439"/>
+<area shape="poly" id="node3" href="british_colonist_full.html" title="Colonist" alt="" coords="1186,29,1184,22,1176,15,1164,10,1149,7,1133,5,1116,7,1101,10,1089,15,1082,22,1079,29,1082,37,1089,43,1101,49,1116,52,1133,53,1149,52,1164,49,1176,43,1184,37"/>
+<area shape="poly" id="node6" href="british_powder_house_full.html" title="Powder\nHouse" alt="" coords="1200,132,1133,101,1065,132,1065,181,1200,181"/>
+<area shape="poly" id="node7" href="british_balloon_base_full.html" title="Balloon\nBase" alt="" coords="143,418,74,387,5,418,5,467,143,467"/>
+<area shape="poly" id="node12" href="british_artillery_foundry_full.html" title="Artillery\nFoundry" alt="" coords="605,275,531,244,458,275,458,324,605,324"/>
+<area shape="poly" id="node13" href="british_lookout_tower_full.html" title="Lookout\nTower" alt="" coords="1754,418,1682,387,1610,418,1610,467,1754,467"/>
+<area shape="poly" id="node15" href="british_fort_full.html" title="Fort" alt="" coords="1041,138,999,122,958,138,958,165,1041,165"/>
+<area shape="poly" id="node18" href="british_wagon_worker_full.html" title="Wagon\nWorker" alt="" coords="330,432,327,420,319,410,307,403,291,397,274,396,257,397,241,403,229,410,221,420,218,432,221,443,229,453,241,461,257,466,274,467,291,466,307,461,319,453,327,443"/>
+<area shape="poly" id="node19" href="british_field_hospital_full.html" title="Field\nHospital" alt="" coords="1510,132,1438,101,1366,132,1366,181,1510,181"/>
+<area shape="poly" id="node24" href="british_camp_full.html" title="Camp" alt="" coords="750,138,697,122,643,138,643,165,750,165"/>
+<area shape="poly" id="node25" href="british_farm_house_full.html" title="Farm\nHouse" alt="" coords="2084,132,2025,101,1965,132,1965,181,2084,181"/>
+<area shape="poly" id="node4" href="british_captain__full.html" title="Captain\n" alt="" coords="1383,289,1380,281,1373,274,1361,269,1347,266,1331,265,1316,266,1301,269,1290,274,1283,281,1280,289,1283,296,1290,303,1301,308,1316,311,1331,313,1347,311,1361,308,1373,303,1380,296"/>
+<area shape="poly" id="node23" href="british_captain_full.html" title="Captain" alt="" coords="1045,432,1043,424,1035,417,1024,412,1010,409,994,408,978,409,964,412,953,417,945,424,943,432,945,439,953,446,964,451,978,454,994,456,1010,454,1024,451,1035,446,1043,439"/>
+<area shape="poly" id="node5" href="british_balloon_full.html" title="Balloon" alt="" coords="125,697,123,690,115,683,104,678,90,674,74,673,58,674,44,678,33,683,25,690,23,697,25,705,33,711,44,717,58,720,74,721,90,720,104,717,115,711,123,705"/>
+<area shape="poly" id="node8" href="british_infantryman_full.html" title="Infantryman" alt="" coords="826,289,822,281,812,274,796,269,775,266,753,265,730,266,710,269,694,274,684,281,680,289,684,296,694,303,710,308,730,311,753,313,775,311,796,308,812,303,822,296"/>
+<area shape="poly" id="node26" href="british_bullets_full.html" title="Bullets" alt="" coords="1256,265,1145,265,1116,313,1227,313"/>
+<area shape="poly" id="node28" href="british_explosives_full.html" title="Explosives" alt="" coords="1043,265,889,265,850,313,1003,313"/>
+<area shape="poly" id="node30" href="british_gun_powder_full.html" title="Gun\nPowder" alt="" coords="1566,238,1439,238,1406,339,1533,339"/>
+<area shape="poly" id="node29" href="british_heated_air_full.html" title="Heated\nAir" alt="" coords="207,524,87,524,55,625,176,625"/>
+<area shape="poly" id="node9" href="british_mortar_full.html" title="Mortar" alt="" coords="493,408,382,408,354,456,465,456"/>
+<area shape="poly" id="node10" href="british_pig_full.html" title="Pig" alt="" coords="2315,289,2314,281,2309,274,2301,269,2291,266,2279,265,2268,266,2258,269,2250,274,2245,281,2243,289,2245,296,2250,303,2258,308,2268,311,2279,313,2291,311,2301,308,2309,303,2314,296"/>
+<area shape="poly" id="node11" href="british_nurse_full.html" title="Nurse" alt="" coords="1675,289,1673,281,1667,274,1658,269,1646,266,1633,265,1620,266,1608,269,1598,274,1592,281,1590,289,1592,296,1598,303,1608,308,1620,311,1633,313,1646,311,1658,308,1667,303,1673,296"/>
+<area shape="poly" id="node17" href="british_cannon_full.html" title="Cannon" alt="" coords="779,432,776,424,769,417,757,412,743,409,727,408,712,409,697,412,686,417,679,424,676,432,679,439,686,446,697,451,712,454,727,456,743,454,757,451,769,446,776,439"/>
+<area shape="poly" id="node27" href="british_puckle_full.html" title="Puckle" alt="" coords="652,408,545,408,517,456,625,456"/>
+<area shape="poly" id="node14" href="british_saberman_full.html" title="Saberman" alt="" coords="434,289,431,281,423,274,409,269,392,266,373,265,354,266,337,269,323,274,314,281,311,289,314,296,323,303,337,308,354,311,373,313,392,311,409,308,423,303,431,296"/>
+<area shape="poly" id="node20" href="british_puckle_gun_full.html" title="Puckle\nGun" alt="" coords="483,574,480,563,473,553,462,545,448,540,433,539,417,540,403,545,392,553,385,563,383,574,385,586,392,596,403,603,417,609,433,610,448,609,462,603,473,596,480,586"/>
+<area shape="poly" id="node16" href="british_stone_tax_full.html" title="Stone\nTax" alt="" coords="2004,289,2002,277,1995,268,1985,260,1973,254,1959,253,1946,254,1933,260,1924,268,1917,277,1915,289,1917,300,1924,310,1933,318,1946,323,1959,324,1973,323,1985,318,1995,310,2002,300"/>
+<area shape="poly" id="node21" href="british_wood_tax_full.html" title="Wood\nTax" alt="" coords="2123,289,2120,277,2114,268,2103,260,2090,254,2075,253,2061,254,2048,260,2037,268,2031,277,2028,289,2031,300,2037,310,2048,318,2061,323,2075,324,2090,323,2103,318,2114,310,2120,300"/>
+<area shape="poly" id="node22" href="british_cow_full.html" title="Cow" alt="" coords="2220,289,2218,281,2213,274,2205,269,2195,266,2183,265,2172,266,2162,269,2154,274,2149,281,2147,289,2149,296,2154,303,2162,308,2172,311,2183,313,2195,311,2205,308,2213,303,2218,296"/>
+<area shape="poly" id="node31" href="british_stables_full.html" title="Stables" alt="" coords="1841,265,1728,265,1699,313,1812,313"/>
+</map>

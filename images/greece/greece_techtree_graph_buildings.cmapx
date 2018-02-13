@@ -1,0 +1,12 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="greece_blacksmith_full.html" title="Blacksmith" alt="" coords="267,179,182,162,98,179,98,206,267,206"/>
+<area shape="poly" id="node3" href="greece_palace_full.html" title="Palace" alt="" coords="117,295,61,278,5,295,5,322,117,322"/>
+<area shape="poly" id="node7" href="greece_tower_full.html" title="Tower" alt="" coords="253,295,197,278,141,295,141,322,253,322"/>
+<area shape="poly" id="node8" href="greece_temple_full.html" title="Temple" alt="" coords="403,295,340,278,277,295,277,322,403,322"/>
+<area shape="poly" id="node2" href="greece_air_box_full.html" title="Air\nBox" alt="" coords="245,405,200,374,154,405,154,455,245,455"/>
+<area shape="poly" id="node4" href="greece_advanced_barracks_full.html" title="Advanced\nBarracks" alt="" coords="457,173,374,142,292,173,292,222,457,222"/>
+<area shape="poly" id="node5" href="greece_barley_field_full.html" title="Barley\nField" alt="" coords="604,173,542,142,481,173,481,222,604,222"/>
+<area shape="poly" id="node6" href="greece_trojan_horse_full.html" title="Trojan\nHorse" alt="" coords="659,36,597,5,535,36,535,85,659,85"/>
+<area shape="poly" id="node9" href="greece_barracks_full.html" title="Barracks" alt="" coords="817,179,748,162,678,179,678,206,817,206"/>
+<area shape="poly" id="node10" href="greece_castle_full.html" title="Castle" alt="" coords="512,42,458,26,405,42,405,69,512,69"/>
+</map>

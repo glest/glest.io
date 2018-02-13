@@ -1,0 +1,27 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="greece_blacksmith_full.html" title="Blacksmith" alt="" coords="1016,371,931,354,847,371,847,398,1016,398"/>
+<area shape="poly" id="node5" href="greece_chariot_full.html" title="Chariot" alt="" coords="1587,515,1585,507,1578,501,1567,495,1553,492,1538,491,1523,492,1509,495,1498,501,1491,507,1488,515,1491,522,1498,529,1509,534,1523,538,1538,539,1553,538,1567,534,1578,529,1585,522"/>
+<area shape="poly" id="node6" href="greece_atlas_full.html" title="Atlas" alt="" coords="1465,515,1463,507,1457,501,1449,495,1438,492,1426,491,1414,492,1403,495,1394,501,1389,507,1387,515,1389,522,1394,529,1403,534,1414,538,1426,539,1438,538,1449,534,1457,529,1463,522"/>
+<area shape="poly" id="node9" href="greece_calvary_full.html" title="Calvary" alt="" coords="108,515,105,507,98,501,87,495,72,492,56,491,41,492,26,495,15,501,8,507,5,515,8,522,15,529,26,534,41,538,56,539,72,538,87,534,98,529,105,522"/>
+<area shape="poly" id="node13" href="greece_alexander_full.html" title="Alexander" alt="" coords="1233,515,1230,507,1221,501,1207,495,1189,492,1170,491,1150,492,1133,495,1119,501,1110,507,1107,515,1110,522,1119,529,1133,534,1150,538,1170,539,1189,538,1207,534,1221,529,1230,522"/>
+<area shape="poly" id="node14" href="greece_battering_ram_full.html" title="Battering\nRam" alt="" coords="598,515,595,504,586,494,572,486,555,481,535,479,516,481,498,486,484,494,475,504,472,515,475,526,484,536,498,544,516,549,535,551,555,549,572,544,586,536,595,526"/>
+<area shape="poly" id="node19" href="greece_hoplite_full.html" title="Hoplite" alt="" coords="721,515,718,507,711,501,700,495,686,492,671,491,656,492,642,495,631,501,624,507,622,515,624,522,631,529,642,534,656,538,671,539,686,538,700,534,711,529,718,522"/>
+<area shape="poly" id="node25" href="greece_onager_full.html" title="Onager" alt="" coords="1082,515,1080,507,1073,501,1062,495,1049,492,1034,491,1019,492,1005,495,995,501,988,507,985,515,988,522,995,529,1005,534,1019,538,1034,539,1049,538,1062,534,1073,529,1080,522"/>
+<area shape="poly" id="node2" href="greece_psiloi_full.html" title="Psiloi" alt="" coords="213,515,211,507,205,501,196,495,185,492,172,491,160,492,149,495,140,501,134,507,132,515,134,522,140,529,149,534,160,538,172,539,185,538,196,534,205,529,211,522"/>
+<area shape="poly" id="node3" href="greece_air_box_full.html" title="Air\nBox" alt="" coords="1966,501,1920,470,1875,501,1875,551,1966,551"/>
+<area shape="poly" id="node4" href="greece_palace_full.html" title="Palace" alt="" coords="1452,371,1396,354,1341,371,1341,398,1452,398"/>
+<area shape="poly" id="node7" href="greece_artemis_full.html" title="Artemis" alt="" coords="1363,515,1360,507,1353,501,1341,495,1326,492,1310,491,1293,492,1279,495,1267,501,1260,507,1257,515,1260,522,1267,529,1279,534,1293,538,1310,539,1326,538,1341,534,1353,529,1360,522"/>
+<area shape="poly" id="node11" href="greece_dragon_full.html" title="Dragon" alt="" coords="1710,515,1707,507,1700,501,1689,495,1676,492,1660,491,1645,492,1631,495,1621,501,1613,507,1611,515,1613,522,1621,529,1631,534,1645,538,1660,539,1676,538,1689,534,1700,529,1707,522"/>
+<area shape="poly" id="node24" href="greece_oxybeles_full.html" title="Oxybeles" alt="" coords="1851,515,1849,507,1840,501,1827,495,1811,492,1792,491,1774,492,1758,495,1745,501,1736,507,1734,515,1736,522,1745,529,1758,534,1774,538,1792,539,1811,538,1827,534,1840,529,1849,522"/>
+<area shape="poly" id="node8" href="greece_advanced_barracks_full.html" title="Advanced\nBarracks" alt="" coords="551,365,468,334,386,365,386,414,551,414"/>
+<area shape="poly" id="node10" href="greece_archer_full.html" title="Archer" alt="" coords="331,515,329,507,322,501,312,495,299,492,284,491,270,492,257,495,247,501,240,507,238,515,240,522,247,529,257,534,270,538,284,539,299,538,312,534,322,529,329,522"/>
+<area shape="poly" id="node16" href="greece_peltast_full.html" title="Peltast" alt="" coords="448,515,445,507,439,501,429,495,416,492,402,491,388,492,375,495,365,501,358,507,356,515,358,522,365,529,375,534,388,538,402,539,416,538,429,534,439,529,445,522"/>
+<area shape="poly" id="node12" href="greece_barley_field_full.html" title="Barley\nField" alt="" coords="590,132,528,101,467,132,467,181,590,181"/>
+<area shape="poly" id="node15" href="greece_trojan_horse_full.html" title="Trojan\nHorse" alt="" coords="1750,365,1688,334,1627,365,1627,414,1750,414"/>
+<area shape="poly" id="node17" href="greece_tower_full.html" title="Tower" alt="" coords="1316,371,1260,354,1205,371,1205,398,1316,398"/>
+<area shape="poly" id="node18" href="greece_temple_full.html" title="Temple" alt="" coords="1602,371,1539,354,1476,371,1476,398,1602,398"/>
+<area shape="poly" id="node20" href="greece_slave_full.html" title="Slave" alt="" coords="1128,29,1126,22,1120,15,1111,10,1100,7,1087,5,1075,7,1063,10,1054,15,1048,22,1046,29,1048,37,1054,43,1063,49,1075,52,1087,53,1100,52,1111,49,1120,43,1126,37"/>
+<area shape="poly" id="node22" href="greece_barracks_full.html" title="Barracks" alt="" coords="669,254,599,238,530,254,530,281,669,281"/>
+<area shape="poly" id="node23" href="greece_castle_full.html" title="Castle" alt="" coords="1221,138,1167,122,1114,138,1114,165,1221,165"/>
+<area shape="poly" id="node21" href="greece_engineer_full.html" title="Engineer" alt="" coords="1523,262,1521,254,1513,248,1500,242,1485,239,1467,238,1450,239,1434,242,1422,248,1414,254,1411,262,1414,269,1422,276,1434,281,1450,285,1467,286,1485,285,1500,281,1513,276,1521,269"/>
+</map>
