@@ -6,7 +6,7 @@
 # Copyright 2012-2016 olaus & MegaGlest Team
 # license: GPLv3 or newer
 
-our $version = "0.8.1 beta";
+our $version = "0.8.2 beta";
 
 # This tool requires jquery and the jquery dataTables plugin (run setupDeps.sh which uses curl to try to download these into the media folder).
 # These are NOT required to run the script but are used to display the resulting html.
@@ -267,7 +267,7 @@ our %speed;
 our %ep_cost;
 our %skill_type;
 our %attack_range;
-our %attack_strenght;
+our %attack_strength;
 our %attack_var;
 our %attack_type;
 our %attack_start_time;
@@ -693,7 +693,7 @@ foreach my $faction_path ( @factions ) {
 
 		my ( $cost, $cost_icon, $cost_icon_overview );
 		# loop over creation-methods because f.e. guard might be produced in barracks or upgraded from swordman
-
+s
 		my $num_creation_methods =@{$created_by_unit{ $u }};
 		my $num_method=0;
 		$full .= "<TR><TD>Creation:</TD><TD>";
@@ -1564,7 +1564,7 @@ sub read_unit {
 		$max_hp{$u}           = get_value($xpath, "/upgrade/max-hp" );
 		$max_ep{$u}           = get_value($xpath, "/upgrade/max-ep" );
 		$sight{$u}            = get_value($xpath, "/upgrade/sight" );
-		$attack_strenght{$u}  = get_value($xpath, "/upgrade/attack-strenght" );
+		$attack_strength{$u}  = get_value($xpath, "/upgrade/attack-strength" );
 		$attack_range{$u}     = get_value($xpath, "/upgrade/attack-range" );
 		$armor{$u}            = get_value($xpath, "/upgrade/armor" );
 		$move_speed{$u}       = get_value($xpath, "/upgrade/move-speed" );
@@ -1633,7 +1633,7 @@ sub read_unit {
 				if ( $skill_type{ $s } =~ /attack/i ) {
 					$combat{ $u } = 1;
 					$attack_range{ $s }      = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-range/\@value");
-					$attack_strenght{ $s }   = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-strenght/\@value");
+					$attack_strength{ $s }   = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-strength/\@value");
 					$attack_var{ $s }        = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-var/\@value");
 					$attack_type{ $s }       = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-type/\@value");
 					$attack_start_time{ $s } = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-start-time/\@value");
@@ -2381,15 +2381,15 @@ sub show_attack {
 
 	if ( $attack_land{ $s } ) {
 
-		if ( $attack_strenght{ $s } > $max_strength_vs_land ) {
-			$max_strength_vs_land     = $attack_strenght{ $s };
+		if ( $attack_strength{ $s } > $max_strength_vs_land ) {
+			$max_strength_vs_land     = $attack_strength{ $s };
 			$max_strength_vs_land_var = $attack_var{ $s };
 		}
 	}
 	if ( $attack_air{ $s } ) {
 
-		if ( $attack_strenght{ $s } > $max_strength_vs_air ) {
-			$max_strength_vs_air     = $attack_strenght{ $s };
+		if ( $attack_strength{ $s } > $max_strength_vs_air ) {
+			$max_strength_vs_air     = $attack_strength{ $s };
 			$max_strength_vs_air_var = $attack_var{ $s };
 		}
 	}
@@ -2420,13 +2420,13 @@ sub show_attack {
 	}
 
 
-	$full_attack_tmp .= "Strength: $attack_strenght{ $s }+-$attack_var{ $s }<BR>\n";
+	$full_attack_tmp .= "Strength: $attack_strength{ $s }+-$attack_var{ $s }<BR>\n";
 
 	# show attack as range ( 100-200)
-	#$full_attack_tmp .= "Strength: ".($attack_strenght{ $s }-$attack_var{ $s })."-".($attack_strenght{ $s }+$attack_var{ $s })."<BR>\n";
+	#$full_attack_tmp .= "Strength: ".($attack_strength{ $s }-$attack_var{ $s })."-".($attack_strength{ $s }+$attack_var{ $s })."<BR>\n";
 
 	#$full_attack_tmp .= "Strength-Variance: ".$attack_var{ $s }."<BR>\n";
-	#$full_attack_tmp .= "Strength: ".$attack_strenght{ $s }."<BR>\n";
+	#$full_attack_tmp .= "Strength: ".$attack_strength{ $s }."<BR>\n";
 	#$full_attack_tmp .= "Strength-Variance: ".$attack_var{ $s }."<BR>\n";
 
 	$full_attack_tmp .= "Range: ".$attack_range{ $s }."<BR>\n";
@@ -2465,7 +2465,7 @@ sub show_attack {
 		$max_strength_vs_air_var,
 		$max_range,
 		$max_move_speed,
-		$attack_strenght{ $s },
+		$attack_strength{ $s },
 		$attack_var{ $s },
 		$attack_range{ $s },
 		$attack_type{ $s },
@@ -2685,7 +2685,7 @@ sub do_upgrade_benefits {
 	$upgrade_benefits_html .= "<TR><TD>Increase Hitpoints:&nbsp;</TD><TD>+".$max_hp{$u}."</TD></TR>\n" if ( $max_hp{$u} );
 	$upgrade_benefits_html .= "<TR><TD>Increase Energy-Points:&nbsp;</TD><TD>+".$max_ep{$u}."</TD></TR>\n" if ( $max_ep{$u} );
 	$upgrade_benefits_html .= "<TR><TD>Increase Sight:&nbsp;</TD><TD>+".$sight{$u}."</TD></TR>\n" if ( $sight{$u} );
-	$upgrade_benefits_html .= "<TR><TD>Increase Attack&nbsp;Strength:&nbsp;</TD><TD>+".$attack_strenght{$u}."</TD></TR>\n" if ( $attack_strenght{$u} );
+	$upgrade_benefits_html .= "<TR><TD>Increase Attack&nbsp;Strength:&nbsp;</TD><TD>+".$attack_strength{$u}."</TD></TR>\n" if ( $attack_strength{$u} );
 	$upgrade_benefits_html .= "<TR><TD>Increase Attack&nbsp;Range:&nbsp;</TD><TD>+".$attack_range{$u}."</TD></TR>\n" if ( $attack_range{$u} );
 	$upgrade_benefits_html .= "<TR><TD>Increase Armor:&nbsp;</TD><TD>+".$armor{$u}."</TD></TR>\n" if ( $armor{$u} );
 	$upgrade_benefits_html .= "<TR><TD>Increase Move:&nbsp;</TD><TD>+".$move_speed{$u}."</TD></TR>\n" if ( $move_speed{$u} );
