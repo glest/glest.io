@@ -1,0 +1,669 @@
+title:Writing Scenarios (LUA)
+layout:default
+---
+<h2><span class="mw-headline" id="Text">Text</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=1" title="Edit section: Text">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="showMessage.28text.2C_header.29">showMessage(text, header)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=2" title="Edit section: showMessage(text, header)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Displays a message box on the screen, that will have to be dismissed by the player.
+</p><p>Parameters:<br />
+<b>text</b> - a string identifying the<i> text</i> from a language file.<br />
+<b>header</b> - a string identifying the<i> title bar text </i>from a language file.
+</p>
+<h3><span class="mw-headline" id="addConsoleText.28text.29">addConsoleText(text)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=3" title="Edit section: addConsoleText(text)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Displays a message in the game console messages area. Will remain until the user-specified message timeout has elapsed.
+</p><p>Parameters:<br />
+<b>text</b> - a string identifying the<i> text</i> from a language file.
+</p>
+<h3><span class="mw-headline" id="addConsoleLangText.28text.29">addConsoleLangText(text)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=4" title="Edit section: addConsoleLangText(text)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Displays a message in the game console messages area. Will remain until the message timeout has elapsed. Works like <tt>displayFormattedText()</tt> besides the fact that <tt>addConsoleLangText()</tt> uses the language-file for resolving the format of the text.
+</p><p>Parameters:<br />
+<b>text</b> - a string identifying the <i>text</i> from a language file.
+</p>
+<h3><span class="mw-headline" id="setDisplayText.28text.29">setDisplayText(text)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=5" title="Edit section: setDisplayText(text)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Displays a message at the top of the screen. Will remain until dismissed with <tt>clearDisplayText()</tt> or <tt>setDisplayText()</tt> is called again.
+</p><p>Parameters:<br />
+<b>text</b> - a string identifying the <i>text</i> from a language file.
+</p>
+<h3><span class="mw-headline" id="displayFormattedText_.28fmt.2C_....29">displayFormattedText (fmt, ...)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=6" title="Edit section: displayFormattedText (fmt, ...)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Works like <tt>setDisplayText()</tt> but allows formatting of text.
+</p><p>Parameters:<br />
+<b>fmt</b> - a string identifying the format of text <i>(like in printf)</i>.<br />
+<b>...</b> - variable parameter list to pass values to fmt <i>(like in printf)</i>.
+</p>
+<h3><span class="mw-headline" id="displayFormattedLangText_.28fmt.2C_....29">displayFormattedLangText (fmt, ...)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=7" title="Edit section: displayFormattedLangText (fmt, ...)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Works like <tt>displayFormattedText()</tt> but uses the language-file for resolving the format of the text.
+</p><p>Parameters:<br />
+<b>fmt</b> - a string identifying the format of text <i>(like in printf)</i>.<br />
+<b>...</b> - variable parameter list to pass values to fmt <i>(like in printf)</i>.
+</p>
+<h3><span class="mw-headline" id="clearDisplayText.28.29">clearDisplayText()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=8" title="Edit section: clearDisplayText()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Clears the message from the top of the screen previously set with <tt>setDisplayText()</tt>.
+</p>
+<h2><span class="mw-headline" id="Unit">Unit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=9" title="Edit section: Unit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="createUnit.28unitID.2C_faction.2C_pos.29">createUnit(unitID, faction, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=10" title="Edit section: createUnit(unitID, faction, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Creates a unit. If <i>pos</i> is occupied, a nearby cell will be chosen. The game attempts to keep a 2 cell 'border' between the new unit and other units or objects (eg, trees). If a position can not be found, the game crashes.
+</p><p>Parameters:<br /><b>unit</b> - name of a unit in the loaded factions.<br /><b>faction</b> - the index of the faction this unit will belong to.<br /><b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
+</p>
+<h3><span class="mw-headline" id="createUnitNoSpacing.28unitID.2C_faction.2C_pos.29">createUnitNoSpacing(unitID, faction, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=11" title="Edit section: createUnitNoSpacing(unitID, faction, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Same as above, but position is exact.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="destroyUnit.28unitID.29">destroyUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=12" title="Edit section: destroyUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Destroys a unit.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of the unit to destroy.
+</p>
+<h3><span class="mw-headline" id="morphToUnit.28unitID.2C_morphName.2C_ignoreRequirements.29">morphToUnit(unitID, morphName, ignoreRequirements)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=13" title="Edit section: morphToUnit(unitID, morphName, ignoreRequirements)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Morphs a unit into another unit of type morphName. If ignoreRequirements is set to 1 then the morph is executed even if the unit does not satisfy the morph requirements.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of a unit.<br />
+<b>morphName</b> - the name of the morph to execute.<br />
+<b>ignoreRequirements</b> - a 0 or 1 value indicating whether to respect morph requirements (0) or not (1)
+</p>
+<h3><span class="mw-headline" id="setUnitPosition.28unitId.2C_pos.29">setUnitPosition(unitId, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=14" title="Edit section: setUnitPosition(unitId, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>"Teleports" unit to the given position (places the unit there instantly, no move animation).
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of the unit to move.<br />
+<b>pos</b> - the x and y coordinates of the location you wish to move the unit to (note the exact position may not be the supplied position, as the unit may be slightly staggered, particularly if a unit already exists in the given location).
+</p>
+<h3><span class="mw-headline" id="moveToUnit.28unitID.2C_destUnitID.29">moveToUnit(unitID, destUnitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=15" title="Edit section: moveToUnit(unitID, destUnitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Move unitID to the location of destUnitID.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of the unit to move (starting location).<br />
+<b>destUnitID</b> - the ID of the unit to move to (ending location of unitID). This would essentially make unitID 'follow' destUnitID until it arrives at the location of destUnitID.
+</p>
+<h3><span class="mw-headline" id="giveStopCommand.28unitID.29">giveStopCommand(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=16" title="Edit section: giveStopCommand(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Gives a stop command to a specific unit.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of a unit that has a stop command.
+</p>
+<h3><span class="mw-headline" id="giveAttackCommand.28unitID.2C_unitToAttackID.29">giveAttackCommand(unitID, unitToAttackID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=17" title="Edit section: giveAttackCommand(unitID, unitToAttackID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Instruct a unit to carry out a command of type 'attack' on a specific unit.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of a unit that has an attack command.
+<b>unitToAttackID</b> - the ID of a unit that should be attacked.
+</p>
+<h3><span class="mw-headline" id="giveAttackStoppedCommand.28unitID.2C_valueName.2C_ignoreRequirements.29">giveAttackStoppedCommand(unitID, valueName, ignoreRequirements)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=18" title="Edit section: giveAttackStoppedCommand(unitID, valueName, ignoreRequirements)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Executes the attack stopped command for a unit specified by 'valueName'. If ignoreRequirements is set to 1 then the command is executed even if the unit does not satisfy the command requirements.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of a unit.<br />
+<b>valueName</b> - the name of the attack stopped command to execute.<br />
+<b>ignoreRequirements</b> - a 0 or 1 value indicating whether to respect command requirements (0) or not (1).
+</p>
+<h3><span class="mw-headline" id="giveResource.28resource.2C_faction.2C_amount.29">giveResource(resource, faction, amount)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=19" title="Edit section: giveResource(resource, faction, amount)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Give an amount of a specified resource to a player, negative values are valid and have the obvious effect.
+</p><p>Parameters:<br />
+<b>resource</b> - a corresponding resource in the techtree.<br />
+<b>faction</b> - the index of the faction to give the resource.<br />
+<b>amount</b> - the amount of resource the faction will receive.
+</p>
+<h3><span class="mw-headline" id="givePositionCommand.28unitID.2C_command.2C_pos.29">givePositionCommand(unitID, command, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=20" title="Edit section: givePositionCommand(unitID, command, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Instruct a unit to carry out a command of type 'attack' or 'move'. The unit being given the command must have such a command available.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of a unit that has an attack and/or move command.<br />
+<b>command</b> - the type of command to carry out ('attack' or 'move')<br />
+<b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
+</p>
+<h3><span class="mw-headline" id="giveProductionCommand.28unitID.2C_produced.29">giveProductionCommand(unitID, produced)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=21" title="Edit section: giveProductionCommand(unitID, produced)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Instruct a unit to carry out a command of type 'produce'. The unit being given the command must have such a command available.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of a unit that is to produce the new unit.<br />
+<b>produced</b> - the name of the unit to produce.
+</p>
+<h3><span class="mw-headline" id="giveUpgradeCommand.28unitID.2C_upgrade.29">giveUpgradeCommand(unitID, upgrade)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=22" title="Edit section: giveUpgradeCommand(unitID, upgrade)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Instruct a unit to carry out a command of type 'upgrade'. The unit being given the command must have such a command available.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of the unit to perform the upgrade.<br />
+<b>upgrade </b>- the name of the upgrade to perform.
+</p>
+<h3><span class="mw-headline" id="giveKills.28unitID.2C_amount.29">giveKills(unitID, amount)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=23" title="Edit section: giveKills(unitID, amount)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Gives a specified unit a certain number of kills (which can be used to level them up).
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit to give the kills to.<br />
+<b>amount</b> - The number of kills given.
+</p>
+<h3><span class="mw-headline" id="getUnitProperty.28unitId.2CtypeId.29">getUnitProperty(unitId,typeId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=24" title="Edit section: getUnitProperty(unitId,typeId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the value of the type of the unit.
+The type can be a number between 1 and 5.
+1=hp
+2=ep
+3=level
+4=field
+5=skill
+</p><p>getUnitProperty is dedicated for hp,ep and field. For skill and level see getUnitPropertyName(unitId,typeId).
+</p>
+<h3><span class="mw-headline" id="getUnitPropertyName.28unitId.2CtypeId.29">getUnitPropertyName(unitId,typeId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=25" title="Edit section: getUnitPropertyName(unitId,typeId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the type of the unit.
+The type can be a number between 1 and 5.
+1=hp
+2=ep
+3=level
+4=field
+5=skill
+</p><p>getUnitPropertyName is dedicated for skill and level. For hp,ep and field see getUnitProperty(unitId,typeId).
+</p>
+<h3><span class="mw-headline" id="selectUnit.28unitID.29">selectUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=26" title="Edit section: selectUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Selects the specified unit.
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit to select.
+</p>
+<h3><span class="mw-headline" id="unselectUnit.28unitID.29">unselectUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=27" title="Edit section: unselectUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Unselects the specified unit (provided it's already selected).
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit to unselect.
+</p>
+<h3><span class="mw-headline" id="addUnitToGroupSelection.28unitID.2C_groupIndex.29">addUnitToGroupSelection(unitID, groupIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=28" title="Edit section: addUnitToGroupSelection(unitID, groupIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Adds the unit to a group, assigned a user defined group index.
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit to select.<br />
+<b>groupIndex</b> - A number to identify the group.
+</p>
+<h3><span class="mw-headline" id="removeUnitFromGroupSelection.28unitID.2C_groupIndex.29">removeUnitFromGroupSelection(unitID, groupIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=29" title="Edit section: removeUnitFromGroupSelection(unitID, groupIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Removes the unit from a group of the defined group index.
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit to select.<br />
+<b>groupIndex</b> - The previously assigned index of the group.
+</p>
+<h3><span class="mw-headline" id="recallGroupSelection.28groupIndex.29">recallGroupSelection(groupIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=30" title="Edit section: recallGroupSelection(groupIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Reselects a previously defined group by its group index.
+</p><p>Parameters:<br />
+<b>groupIndex</b> - The previously assigned index of the group.
+</p>
+<h3><span class="mw-headline" id="highlightUnit.28unitID.2C_radius.2C_thickness.2C_colour.29">highlightUnit(unitID, radius, thickness, colour)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=31" title="Edit section: highlightUnit(unitID, radius, thickness, colour)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Places a coloured circle around a unit.
+</p><p>Parameters:<br />
+<b>unitID</b> - unit ID of the target unit.<br />
+<b>radius</b> - the radius, in Glest tiles, of the circle.<br />
+<b>thickness</b> - thickness of the circle.<br />
+<b>colour</b> - the colour of the circle.
+</p>
+<h3><span class="mw-headline" id="unhighlightUnit.28unitID.29">unhighlightUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=32" title="Edit section: unhighlightUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Removes a previously placed highlight from a unit.
+</p><p>Parameters:<br />
+<b>unitID</b> - unit ID of the target unit.
+</p>
+<h2><span class="mw-headline" id="Game">Game</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=33" title="Edit section: Game">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="setCameraPosition.28pos.29">setCameraPosition(pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=34" title="Edit section: setCameraPosition(pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Move the camera to the coordinates of pos.
+</p><p>Parameters:<br />
+<b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
+</p>
+<h3><span class="mw-headline" id="togglePauseGame.28pauseStatus.29">togglePauseGame(pauseStatus)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=35" title="Edit section: togglePauseGame(pauseStatus)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Toggle the pause state of the existing game.
+</p><p>Parameters:<br />
+<b>pauseStatus</b> - 0 indicates normal game play, 1 indicates a paused game
+</p>
+<h3><span class="mw-headline" id="setPlayerAsWinner.28factionID.29">setPlayerAsWinner(factionID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=36" title="Edit section: setPlayerAsWinner(factionID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Sets the player with index faction ID as the winner. Would typically be followed by <tt>endGame()</tt>.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="endGame.28.29">endGame()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=37" title="Edit section: endGame()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Ends the scenario, bringing up the "you win" screen and asking the player if they want to leave the game. Usually would be called after <tt>setPlayerAsWinner()</tt> when victory conditions have been met.
+</p>
+<h3><span class="mw-headline" id="loadScenario.28scenario.2C_keepFactions.29">loadScenario(scenario, keepFactions)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=38" title="Edit section: loadScenario(scenario, keepFactions)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Loads another scenario from inside an existing scenario. The new scenario must have the same techtree and factions, but map, tileset can change.
+</p><p>Parameters:<br />
+<b>scenario</b> - the name of the scenario to be loaded.<br />
+<b>keepFactions</b> - True to call the next scenario with existing factions or false to call the next scenario with only newly defined factions in the new scenario
+</p>
+<h3><span class="mw-headline" id="setAttackWarningsEnabled.28enabled.29">setAttackWarningsEnabled(enabled)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=39" title="Edit section: setAttackWarningsEnabled(enabled)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables or disables the attack warning system for the player.
+</p><p>Parameters:<br />
+<b>enabled</b> - A boolean true or false value, with true enabling the attack warning system and false disabling it.
+</p>
+<h3><span class="mw-headline" id="getAttackWarningsEnabled.28.29">getAttackWarningsEnabled()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=40" title="Edit section: getAttackWarningsEnabled()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the current status of the attack warnings system (true if enabled, false if disabled).
+</p>
+<h3><span class="mw-headline" id="getIsDayTime.28.29">getIsDayTime()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=41" title="Edit section: getIsDayTime()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns if it is day ingame. ( 1 is day and 0 is night )
+</p>
+<h3><span class="mw-headline" id="getIsNightTime.28.29">getIsNightTime()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=42" title="Edit section: getIsNightTime()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns if it is night ingame. ( 1 is night and 0 is day )
+</p>
+<h3><span class="mw-headline" id="getTimeOfDay.28.29">getTimeOfDay()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=43" title="Edit section: getTimeOfDay()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ingame time of the day.
+</p>
+<h3><span class="mw-headline" id="storeSaveGameDate.28key.2C_value.29">storeSaveGameDate(key, value)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=44" title="Edit section: storeSaveGameDate(key, value)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stores <i>value</i> at <i>key</i> in the savegame.<br />
+<i><b>Only available in the onSave-tag!</b></i>
+</p><p>Parameters:<br />
+<b>key</b> - a key string<br />
+<b>value</b> - a string that is stored
+</p>
+<h3><span class="mw-headline" id="loadSaveGameDate.28key.29">loadSaveGameDate(key)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=45" title="Edit section: loadSaveGameDate(key)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the <i>value</i> stored at <i>key</i> in the savegame.<br />
+<i><b>Only available in the onLoad-tag!</b></i>
+</p><p>Parameters:<br />
+<b>key</b> - a key string
+</p>
+<h2><span class="mw-headline" id="AI">AI</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=46" title="Edit section: AI">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="enableAi.28faction.29">enableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=47" title="Edit section: enableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables a factions AI. All of the faction's units will move with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="disableAi.28faction.29">disableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=48" title="Edit section: disableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disables a factions AI. None of the faction's units will move with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="getAiEnabled.28faction.29">getAiEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=49" title="Edit section: getAiEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Checks the enabled status of a factions AI. Returns 0 if the AI is disabled, and 1 if enabled.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="enableConsume.28faction.29">enableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=50" title="Edit section: enableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables a factions requirement to consume resources like food. All of the faction's units will consume food type resources with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="disableConsume.28faction.29">disableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=51" title="Edit section: disableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disbles a factions requirement to consume resources like food. All of the faction's units will not consume food type resources with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="getConsumeEnabled.28faction.29">getConsumeEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=52" title="Edit section: getConsumeEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Checks the consume status of a factions AI. Returns 0 if disabled, and 1 if enabled.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h2><span class="mw-headline" id="Sound">Sound</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=53" title="Edit section: Sound">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="playStaticSound.28soundFile.29">playStaticSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=54" title="Edit section: playStaticSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Play a static sound file specified by 'soundFile'.
+</p><p>Parameters:<br />
+<b>soundFile</b> - the filename of the sound file to play.
+</p>
+<h3><span class="mw-headline" id="playStreamingSound.28soundFile.29">playStreamingSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=55" title="Edit section: playStreamingSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Play a streaming sound file (background music) specified by 'soundFile'.
+</p><p>Parameters:<br />
+<b>soundFile</b> - the filename of the sound file to play.
+</p>
+<h3><span class="mw-headline" id="stopStreamingSound.28soundFile.29">stopStreamingSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=56" title="Edit section: stopStreamingSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stop playing a streaming sound file (background music) specified by 'soundFile'.
+</p><p>Parameters:<br />
+<b>soundFile</b> - the filename of the sound file to play.
+</p>
+<h3><span class="mw-headline" id="stopAllSound.28.29">stopAllSound()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=57" title="Edit section: stopAllSound()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stop playing all sounds
+</p>
+<h2><span class="mw-headline" id="Events">Events</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=58" title="Edit section: Events">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="registerCellTriggerEventForUnitToUnit.28sourceUnitID.2C_destUnitID.29">registerCellTriggerEventForUnitToUnit(sourceUnitID, destUnitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=59" title="Edit section: registerCellTriggerEventForUnitToUnit(sourceUnitID, destUnitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Register a cell 'trigger' event. Any time sourceUnit comes next to destUnit the eventID returned by this function will be triggered inside an event called '&lt;cellTriggerEvent&gt;'.
+</p><p>Parameters:<br />
+<b>sourceUnitID</b> - the ID of a unit moves next to destUnit.<br />
+<b>destUnitID</b> - the ID of a unit that source moves next to.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="sy0">&lt;</span>startup<span class="sy0">&gt;</span>
+	unitA <span class="sy0">=</span> <span class="st0">'guard'</span><span class="sy0">;</span>
+	unitB <span class="sy0">=</span> <span class="st0">'castle'</span><span class="sy0">;</span>
+&#160;
+	createUnit<span class="br0">&#40;</span>unitB<span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> startLocation<span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	castleUnit<span class="sy0">=</span> lastCreatedUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	createUnit<span class="br0">&#40;</span>unitA<span class="sy0">,</span> <span class="nu0">0</span><span class="sy0">,</span> startLocation<span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+	guard<span class="sy0">=</span> lastCreatedUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&#160;
+	cell_event1 <span class="sy0">=</span> registerCellTriggerEventForUnitToUnit<span class="br0">&#40;</span>guard<span class="sy0">,</span> castleUnit<span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="sy0">&lt;/</span>startup<span class="sy0">&gt;</span>
+<span class="sy0">&lt;</span>cellTriggerEvent<span class="sy0">&gt;</span>
+	<span class="kw1">if</span> triggeredCellEventId<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> cell_event1 <span class="kw1">then</span>
+		clearDisplayText<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+		displayFormattedText<span class="br0">&#40;</span><span class="st0">'You captured the flag!'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+		unregisterCellTriggerEvent<span class="br0">&#40;</span>cell_event1<span class="br0">&#41;</span><span class="sy0">;</span>
+	<span class="kw1">end</span>
+<span class="sy0">&lt;/</span>cellTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
+<h3><span class="mw-headline" id="registerCellTriggerEventForUnitToLocation.28sourceUnitID.2C_pos.29">registerCellTriggerEventForUnitToLocation(sourceUnitID, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=60" title="Edit section: registerCellTriggerEventForUnitToLocation(sourceUnitID, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Register a cell 'trigger' event. Any time sourceUnit comes into the cell co-ordinates specified by pos, the event called '&lt;cellTriggerEvent&gt;' is triggered using the eventID returned by this function.
+</p><p>Parameters:<br />
+<b>sourceUnitID</b> - the ID of a unit moves next to destUnit.<br />
+<b>pos</b> - the x and y cell coordinates that will trigger the event when sourceUnitID enters the cell
+</p>
+<h3><span class="mw-headline" id="registerCellTriggerEventForFactionToUnit.28sourceFactionID.2C_destUnitID.29">registerCellTriggerEventForFactionToUnit(sourceFactionID, destUnitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=61" title="Edit section: registerCellTriggerEventForFactionToUnit(sourceFactionID, destUnitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Register a cell 'trigger' event. Any time a unit from sourceFaction comes next to destUnit the eventID returned by this function will be triggered inside an event called '&lt;cellTriggerEvent&gt;'.
+</p><p>Parameters:<br />
+<b>sourceFactionID</b> - the ID of a faction who has at least one unit that moves next to destUnit.<br />
+<b>destUnitID</b> - the ID of a unit that source moves next to.
+</p>
+<h3><span class="mw-headline" id="registerCellTriggerEventForFactionToLocation.28sourceFactionID.2C_pos.29">registerCellTriggerEventForFactionToLocation(sourceFactionID, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=62" title="Edit section: registerCellTriggerEventForFactionToLocation(sourceFactionID, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Register a cell 'trigger' event. Any time a unit from sourceFaction comes into the cell co-ordinates specified by pos, the event called '&lt;cellTriggerEvent&gt;' is triggered using the eventID returned by this function.
+</p><p>Parameters:<br />
+<b>sourceFactionID</b> - the ID of a faction who has at least one unit that moves next to destUnit.<br />
+<b>pos</b> - the x and y cell co-ordinates that will trigger the event when a unit from sourceFactionID enters the cell.
+</p>
+<h3><span class="mw-headline" id="registerCellAreaTriggerEvent.28pos.29">registerCellAreaTriggerEvent(pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=63" title="Edit section: registerCellAreaTriggerEvent(pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Registers a bounding rectangle as a trigger event. This will be triggered by ANY unit moving in or out of the area. To know which unit, use <tt>triggeredEventAreaEntryUnitId()</tt>.
+</p><p>Parameters:<br />
+<b>pos</b> - the x and y coordinate of the top left point then the bottom right point (eg, {10,10,5,5} would create a box from points (10,10) to (5,5)).
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="registerDayNightEvent.28.29">registerDayNightEvent()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=64" title="Edit section: registerDayNightEvent()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables the Day/Night Event which will be triggered when night or day starts.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="sy0">&lt;</span>startup<span class="sy0">&gt;</span>
+	registerDayNightEvent<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="sy0">&lt;/</span>startup<span class="sy0">&gt;</span>
+<span class="sy0">&lt;</span>dayNightTriggerEvent<span class="sy0">&gt;</span>
+	<span class="kw1">if</span> getIsDayTime<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">1</span> <span class="kw1">then</span>
+		setDisplayText<span class="br0">&#40;</span><span class="st0">'It is day time, a safer time to roam!'</span><span class="br0">&#41;</span>
+    <span class="kw1">else</span>
+		setDisplayText<span class="br0">&#40;</span><span class="st0">'**It is night time, WATCH OUT!**'</span><span class="br0">&#41;</span>
+    <span class="kw1">end</span>
+<span class="sy0">&lt;/</span>dayNightTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
+<h3><span class="mw-headline" id="unregisterDayNightEvent.28.29">unregisterDayNightEvent()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=65" title="Edit section: unregisterDayNightEvent()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disables the Day/Night Event.
+</p>
+<h3><span class="mw-headline" id="triggeredEventAreaEntryUnitId.28.29">triggeredEventAreaEntryUnitId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=66" title="Edit section: triggeredEventAreaEntryUnitId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the unit ID of the unit who entered a registered cell area trigger event.
+</p>
+<h3><span class="mw-headline" id="triggeredEventAreaExitUnitId.28.29">triggeredEventAreaExitUnitId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=67" title="Edit section: triggeredEventAreaExitUnitId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the unit ID of the unit who exited a registered cell area trigger event.
+</p>
+<h3><span class="mw-headline" id="lastUnitTriggerEventUnit.28.29">lastUnitTriggerEventUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=68" title="Edit section: lastUnitTriggerEventUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the Unit which triggered the UnitTriggerEvent.
+</p>
+<h3><span class="mw-headline" id="lastUnitTriggerEventType.28.29">lastUnitTriggerEventType()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=69" title="Edit section: lastUnitTriggerEventType()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of property which changed.
+1=hp
+2=ep
+3=level
+4=field
+5=skill
+</p>
+<h3><span class="mw-headline" id="getCellTriggerEventCount.28eventID.29">getCellTriggerEventCount(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=70" title="Edit section: getCellTriggerEventCount(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the number of times the event specified by eventID has been triggered.
+</p><p>Parameters:<br />
+<b>eventID</b> - the ID of a previously registered event
+</p>
+<h3><span class="mw-headline" id="triggeredCellEventUnitId.28.29">triggeredCellEventUnitId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=71" title="Edit section: triggeredCellEventUnitId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Can be called in a '&lt;cellTriggerEvent&gt;' to return the unit ID of the unit whom triggered the event.
+</p>
+<h3><span class="mw-headline" id="unregisterCellTriggerEvent.28eventID.29">unregisterCellTriggerEvent(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=72" title="Edit section: unregisterCellTriggerEvent(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Unregister the event specified by eventID.
+</p><p>Parameters:<br />
+<b>eventID</b> - the ID of a previously registered event.
+</p>
+<h3><span class="mw-headline" id="registerUnitTriggerEvent.28unitId.29">registerUnitTriggerEvent(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=73" title="Edit section: registerUnitTriggerEvent(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Registers a unit trigger event for a unit which will be triggered if one of his properties changes.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="sy0">&lt;</span>startup<span class="sy0">&gt;</span>
+    createUnit<span class="br0">&#40;</span><span class="st0">'battle_machine'</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> startLocation<span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+&#160;
+    player2_battlemachine<span class="sy0">=</span> lastCreatedUnit<span class="br0">&#40;</span><span class="br0">&#41;</span>
+    registerUnitTriggerEvent<span class="br0">&#40;</span>player2_battlemachine<span class="br0">&#41;</span>
+<span class="sy0">&lt;/</span>startup<span class="sy0">&gt;</span>
+<span class="sy0">&lt;</span>unitTriggerEvent<span class="sy0">&gt;</span>
+    <span class="kw1">if</span> player2_battlemachine <span class="sy0">==</span> lastUnitTriggerEventUnit<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">then</span>
+&#160;
+        <span class="kw1">if</span> lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">1</span> <span class="kw1">then</span> <span class="co1">-- hp changed</span>
+            <span class="kw3">print</span><span class="br0">&#40;</span><span class="st0">'Unit hp is now: '</span> <span class="sy0">..</span> getUnitProperty<span class="br0">&#40;</span>lastUnitTriggerEventUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span>lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="kw1">elseif</span> lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">2</span> <span class="kw1">then</span> <span class="co1">-- ep changed</span>
+            <span class="kw3">print</span><span class="br0">&#40;</span><span class="st0">'Unit ep is now: '</span> <span class="sy0">..</span> getUnitProperty<span class="br0">&#40;</span>lastUnitTriggerEventUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span>lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="kw1">elseif</span> lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">3</span> <span class="kw1">then</span> <span class="co1">-- level changed</span>
+            <span class="kw3">print</span><span class="br0">&#40;</span><span class="st0">'Unit level is now: '</span> <span class="sy0">..</span> getUnitPropertyName<span class="br0">&#40;</span>lastUnitTriggerEventUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span>lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="kw1">elseif</span> lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">4</span> <span class="kw1">then</span> <span class="co1">-- field changed</span>
+            <span class="kw3">print</span><span class="br0">&#40;</span><span class="st0">'Unit field is now: '</span> <span class="sy0">..</span> getUnitProperty<span class="br0">&#40;</span>lastUnitTriggerEventUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span>lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="kw1">elseif</span> lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> <span class="nu0">5</span> <span class="kw1">then</span> <span class="co1">-- skill changed</span>
+            <span class="kw3">print</span><span class="br0">&#40;</span><span class="st0">'Unit skill is now: '</span> <span class="sy0">..</span> getUnitPropertyName<span class="br0">&#40;</span>lastUnitTriggerEventUnit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span>lastUnitTriggerEventType<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="kw1">end</span>
+    <span class="kw1">end</span>
+<span class="sy0">&lt;/</span>unitTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
+<h3><span class="mw-headline" id="unregisterUnitTriggerEvent.28unitId.29">unregisterUnitTriggerEvent(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=74" title="Edit section: unregisterUnitTriggerEvent(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Unregisters the unit trigger event for a unit.
+</p>
+<h3><span class="mw-headline" id="startTimerEvent.28.29">startTimerEvent()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=75" title="Edit section: startTimerEvent()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Registers a timer and returns its unqiue ID, which can later be compared within a '&lt;timerTriggerEvent&gt;' event.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="sy0">&lt;</span>timerTriggerEvent<span class="sy0">&gt;</span>
+	<span class="kw1">if</span> triggeredTimerEventId<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">==</span> timer_event1 <span class="kw1">then</span>
+		<span class="kw1">if</span> timerEventSecondsElapsed<span class="br0">&#40;</span>triggeredTimerEventId<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy0">&gt;=</span> captureTheFlagSeconds <span class="kw1">then</span>
+			clearDisplayText<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+			displayFormattedText<span class="br0">&#40;</span><span class="st0">'Your time ran out of time to capture the flag!'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+			stopTimerEvent<span class="br0">&#40;</span>timer_event1<span class="br0">&#41;</span><span class="sy0">;</span>
+			unregisterCellTriggerEvent<span class="br0">&#40;</span>cell_event1<span class="br0">&#41;</span><span class="sy0">;</span>
+		<span class="kw1">end</span>
+	<span class="kw1">end</span>
+<span class="sy0">&lt;/</span>timerTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
+<h3><span class="mw-headline" id="resetTimerEvent.28eventID.29">resetTimerEvent(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=76" title="Edit section: resetTimerEvent(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Reset the timer specified by eventID. This function also returns the number of seconds elapsed since the timer started.
+</p><p>Parameters:<br />
+<b>eventID</b> - the ID of a previously registered timer.
+</p>
+<h3><span class="mw-headline" id="stopTimerEvent.28eventID.29">stopTimerEvent(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=77" title="Edit section: stopTimerEvent(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stop the timer specified by eventID. This function also returns the number of seconds elapsed since the timer started.
+</p><p>Parameters:<br />
+<b>eventID</b> - the ID of a previously registered timer.
+</p>
+<h3><span class="mw-headline" id="timerEventSecondsElapsed.28eventID.29">timerEventSecondsElapsed(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=78" title="Edit section: timerEventSecondsElapsed(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This function returns the number of seconds elapsed since the timer started.
+</p><p>Parameters:<br />
+<b>eventID</b> - the ID of a previously registered timer.
+</p>
+<h3><span class="mw-headline" id="triggeredCellEventId.28.29">triggeredCellEventId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=79" title="Edit section: triggeredCellEventId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This function returns the eventID that is currently triggering a '&lt;cellTriggerEvent&gt;'.
+</p>
+<h3><span class="mw-headline" id="triggeredTimerEventId.28.29">triggeredTimerEventId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=80" title="Edit section: triggeredTimerEventId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This function returns the eventID that is currently triggering a '&lt;timerTriggerEvent&gt;'.
+</p>
+<h3><span class="mw-headline" id="startEfficientTimerEvent.28triggerSecondsElapsed.29">startEfficientTimerEvent(triggerSecondsElapsed)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=81" title="Edit section: startEfficientTimerEvent(triggerSecondsElapsed)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This function creates a timer that will only trigger the timer event after <tt>triggerSecondsElapsed</tt> seconds, then remove the timer.
+</p>
+<h2><span class="mw-headline" id="Queries">Queries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=82" title="Edit section: Queries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="unitPosition.28unitID.29">unitPosition(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=83" title="Edit section: unitPosition(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the current location of a given unit.
+</p><p>Parameters:<br />
+<b>unitID - </b>the unitID of the unit whose position you wish to know.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">if</span> <span class="br0">&#40;</span>unitPosition<span class="br0">&#40;</span>myUnit<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">&gt;</span> <span class="nu0">47</span> <span class="kw2">and</span> <span class="nu0">75</span> <span class="sy0">&gt;</span> unitPosition<span class="br0">&#40;</span>myUnit<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="kw2">and</span>  unitPostion<span class="br0">&#40;</span>myUnit<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy0">&gt;</span> <span class="nu0">95</span> <span class="br0">&#41;</span> <span class="kw1">then</span>
+	<span class="co1">-- The unit's x co-ord is between 47 and 75, and its y cord is larger than 95.</span>
+<span class="kw1">end</span></pre></div></div>
+<h3><span class="mw-headline" id="unitFaction.28unitID.29">unitFaction(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=84" title="Edit section: unitFaction(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the faction index of the unit with unitID.
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit whose faction you wish you check.
+</p>
+<h3><span class="mw-headline" id="resourceAmount.28resource.2C_faction.29">resourceAmount(resource, faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=85" title="Edit section: resourceAmount(resource, faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the amount of a given resource is possessed by a faction.
+</p><p>Parameters:<br />
+<b>resource</b> - The name of the resource you wish you check.<br />
+<b>faction</b> - The index of the faction to check.
+</p>
+<h3><span class="mw-headline" id="unitName.28unitId.29">unitName(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=86" title="Edit section: unitName(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the unit whose unit ID was passed into the function.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of the unit whose name you wish to know.
+</p>
+<h3><span class="mw-headline" id="lastCreatedUnitName.28.29">lastCreatedUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=87" title="Edit section: lastCreatedUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the unit name of the last created unit.
+</p>
+<h3><span class="mw-headline" id="lastCreatedUnit.28.29">lastCreatedUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=88" title="Edit section: lastCreatedUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the unit ID of the last created unit.
+</p>
+<h3><span class="mw-headline" id="lastDeadUnitName.28.29">lastDeadUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=89" title="Edit section: lastDeadUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the last unit to die.
+</p>
+<h3><span class="mw-headline" id="lastDeadUnit.28.29">lastDeadUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=90" title="Edit section: lastDeadUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the last unit to die.
+</p>
+<h3><span class="mw-headline" id="lastDeadUnitCauseOfDeath.28.29">lastDeadUnitCauseOfDeath()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=91" title="Edit section: lastDeadUnitCauseOfDeath()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the following depending on how the last unit died:
+</p>
+<dl><dd>None = 0</dd>
+<dd>Attacked = 1</dd>
+<dd>Attack boost = 2</dd>
+<dd>Starved resource = 3</dd>
+<dd>Negative regeneration = 4</dd></dl>
+<h3><span class="mw-headline" id="lastDeadUnitKillerName.28.29">lastDeadUnitKillerName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=92" title="Edit section: lastDeadUnitKillerName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the killer of the last dead unit. Returns empty if the cause of death was not from an attacker (attacked).
+</p>
+<h3><span class="mw-headline" id="lastDeadUnitKiller.28.29">lastDeadUnitKiller()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=93" title="Edit section: lastDeadUnitKiller()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the killer of the last dead unit. Returns -1 if the cause of death was not from an attacker (attacked).
+</p>
+<h3><span class="mw-headline" id="lastAttackedUnit.28.29">lastAttackedUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=94" title="Edit section: lastAttackedUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the last unit which was attacked.
+</p>
+<h3><span class="mw-headline" id="lastAttackedUnitName.28.29">lastAttackedUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=95" title="Edit section: lastAttackedUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the last unit which was attacked.
+</p>
+<h3><span class="mw-headline" id="lastAttackingUnit.28.29">lastAttackingUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=96" title="Edit section: lastAttackingUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the last unit to attack.
+</p>
+<h3><span class="mw-headline" id="lastAttackingUnitName.28.29">lastAttackingUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=97" title="Edit section: lastAttackingUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the last unit to attack.
+</p>
+<h3><span class="mw-headline" id="getSystemMacroValue.28key.29">getSystemMacroValue(key)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=98" title="Edit section: getSystemMacroValue(key)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the value of the SystemMacro in C++ (e.g. $SCENARIO_PATH, $APPLICATIONPATH, $GAMEVERSION). At the moment it is primary used to get the path to the loaded scenario.
+</p><p>Parameters:<br />
+<b>key - </b> The name of the SystemMacro you want to get. Usually starts with "$". (e.g. $SCENARIO_PATH, $APPLICATIONPATH, $GAMEVERSION)
+</p><p>Example (will load the file filename.lua in the folder of your scenario):
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw3">dofile</span><span class="br0">&#40;</span>getSystemMacroValue<span class="br0">&#40;</span><span class="st0">&quot;$SCENARIO_PATH&quot;</span><span class="br0">&#41;</span> <span class="sy0">..</span> <span class="st0">&quot;filename.lua&quot;</span><span class="br0">&#41;</span></pre></div></div>
+<h3><span class="mw-headline" id="scenarioDir.28.29">scenarioDir()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=99" title="Edit section: scenarioDir()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Does the same as <b>getSystemMacroValue("$SCENARIO_PATH")</b>. Exist for GAE compatibility.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="getPlayerName.28faction.29">getPlayerName(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=100" title="Edit section: getPlayerName(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the player of a given faction.
+</p>
+<h3><span class="mw-headline" id="playerName.28faction.29">playerName(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=101" title="Edit section: playerName(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Does the same as <b>getPlayerName(faction)</b>. Exist for GAE compatibility.
+</p><p>Parameters:<br />
+<b>faction</b> - The index of the faction you wish to check.
+</p>
+<h3><span class="mw-headline" id="unitCount.28faction.29">unitCount(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=102" title="Edit section: unitCount(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the number of units a given faction has.
+</p><p>Parameters:<br />
+<b>faction</b> - The index of the faction you wish to check.
+</p>
+<h3><span class="mw-headline" id="unitCountOfType.28faction.2C_name.29">unitCountOfType(faction, name)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=103" title="Edit section: unitCountOfType(faction, name)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the number of units of a specific name a given faction has.
+</p><p>Parameters:<br />
+<b>faction</b> - The index of the faction you wish to check.<br />
+<b>name</b> - The name of the specific unit you wish to check.
+</p>
+<h3><span class="mw-headline" id="gameWon.28.29">gameWon()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=104" title="Edit section: gameWon()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns true if the human player won the game, and false if they did not.
+</p>
+<h3><span class="mw-headline" id="isGameOver.28.29">isGameOver()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=105" title="Edit section: isGameOver()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns true if the game is over (either by the default game over criteria being met or by calling <tt>endGame()</tt>). Returns false otherwise.
+</p>
+<h3><span class="mw-headline" id="startLocation.28faction.29">startLocation(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=106" title="Edit section: startLocation(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the start location for a given faction as a set of coordinates.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">createUnit <span class="br0">&#40;</span> <span class="st0">&quot;someunit&quot;</span><span class="sy0">,</span> <span class="nu0">0</span><span class="sy0">,</span> <span class="br0">&#123;</span>startLocation<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">+</span> <span class="nu0">5</span><span class="sy0">,</span> startLocation<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="br0">&#125;</span> <span class="br0">&#41;</span></pre></div></div>
+<p>This would create a unit 5 cells east of startLocation 0.
+</p>
+<h3><span class="mw-headline" id="setRandomGenInit.28seed.29">setRandomGenInit(seed)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=107" title="Edit section: setRandomGenInit(seed)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Generates a random number based on the supplied seed.
+</p>
+<h3><span class="mw-headline" id="getRandomGen.28minVal.2C_maxVal.29">getRandomGen(minVal, maxVal)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=108" title="Edit section: getRandomGen(minVal, maxVal)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Used with <tt>setRandomGenInit</tt> to get a random number inbetween <tt>minVal</tt> and <tt>maxVal</tt>.
+</p>
+<h3><span class="mw-headline" id="getWorldFrameCount.28.29">getWorldFrameCount()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=109" title="Edit section: getWorldFrameCount()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Retrieves the world frame count, which can be used in seeding random numbers.
+</p>
+<h3><span class="mw-headline" id="getUnitsForFaction.28factionIndex.2C_commandTypeName.2C_field.29">getUnitsForFaction(factionIndex, commandTypeName, field)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=110" title="Edit section: getUnitsForFaction(factionIndex, commandTypeName, field)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns an array (table) of units in the specified faction which lists all units which have the specified command and can use it on the specified field (such as being able to attack air units).<br />
+<tt>0</tt> for land and <tt>1</tt> for air field.
+</p>
+<h3><span class="mw-headline" id="getUnitCurrentField.28unitId.29">getUnitCurrentField(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=111" title="Edit section: getUnitCurrentField(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For the specified unit, returns <tt>0</tt> if they are land and <tt>1</tt> if they are in the air field.
+</p>
+<h2><span class="mw-headline" id="Network">Network</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=112" title="Edit section: Network">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="networkShowMessageForFaction.28text.2C_header.2C_factionIndex.29">networkShowMessageForFaction(text, header, factionIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=113" title="Edit section: networkShowMessageForFaction(text, header, factionIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Works the same was as <tt>showMessage()</tt>, but only displays the message to the specific faction. Good for network scenarios where it may be beneficial to display different messages to each player.
+</p>
+<h3><span class="mw-headline" id="networkShowMessageForTeam.28text.2C_header.2C_teamIndex.29">networkShowMessageForTeam(text, header, teamIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=114" title="Edit section: networkShowMessageForTeam(text, header, teamIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Works the same was as <tt>networkShowMessageForFaction()</tt> above, but displays to all players in the specified team.
+</p>
+<h3><span class="mw-headline" id="showMarker.28flashCount.2C_factionIndex.2C_note.2C_textureFile.2C_pos.29">showMarker(flashCount, factionIndex, note, textureFile, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=115" title="Edit section: showMarker(flashCount, factionIndex, note, textureFile, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Places a marker on the map at a given location.
+</p><p>Parameters:<br />
+<b>flashCount</b> -<br />
+<b>factionIndex</b> - index of the faction who "placed" the marker.<br />
+<b>note</b> - note on the marker.<br />
+<b>textureFile</b> - path of texture file to use for marker.<br />
+<b>pos</b> - the x and y cell coordinates of the marker.
+</p>
+<h3><span class="mw-headline" id="networkSetCameraPositionForFaction.28factionIndex.2C_pos.29">networkSetCameraPositionForFaction(factionIndex, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=116" title="Edit section: networkSetCameraPositionForFaction(factionIndex, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Set the camera position for a specific faction.
+</p><p>Parameters:<br />
+<b>factionIndex</b> - index of the faction whose camera you wish to move.<br />
+<b>pos</b> - x and y coordinates for the camera's position.
+</p>
+<h3><span class="mw-headline" id="networkSetCameraPositionForTeam.28teamNumber.2C_pos.29">networkSetCameraPositionForTeam(teamNumber, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=117" title="Edit section: networkSetCameraPositionForTeam(teamNumber, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Set the camera position for all factions on a team.
+</p><p>Parameters:<br />
+<b>teamNumber</b> - team number whose camera you wish to move.<br />
+<b>pos</b> - x and y coordinates for the camera's position.
+</p>
+<h2><span class="mw-headline" id="XML_events">XML events</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=118" title="Edit section: XML events">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>These are XML tags used to execute Lua code on its specified event. Variables can be used across different events.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="xml source-xml"><pre class="de1"><span class="sc3"><span class="re1">&lt;global<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed whenever the scenario is started.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/global<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;onSave<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed when the game is about to save.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/onSave<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;onLoad<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed when the savegame got loaded.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/onLoad<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;startup<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed once on startup.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/startup<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;unitCreatedOfType</span> <span class="re0">type</span>=<span class="st0">&quot;unitname&quot;</span><span class="re2">&gt;</span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed every time a unit of the specified</span>
+<span class="sc-1">		type is created.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/unitCreatedOfType<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;unitDied<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed every time a unit dies.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/unitDied<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;unitAttacked<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed every time a unit gets attacked. </span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/unitAttacked<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;unitAttacking<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed every time a unit is attacking. </span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/unitAttacking<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;resourceHarvested<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed every time a resource is harvested.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/resourceHarvested<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;gameOver<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed when the game ends.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/gameOver<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;cellTriggerEvent<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed when cell events activate.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/cellTriggerEvent<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;timerTriggerEvent<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed when timer events acivate.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/timerTriggerEvent<span class="re2">&gt;</span></span></span></pre></div></div>
