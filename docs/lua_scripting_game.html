@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Scenarios | LUA scripting | Game | ZetaGlest</title>
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--including Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Scenarios | LUA scripting | Game</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav flex-column navbar-nav mr-auto">
+            <li class="nav-item" > <a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item" > <a class="nav-link" href="scenarios.html">Back to Scenarios</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_text.html">Text</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_unit.html">Unit</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_game.html">Game</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_AI.html">AI</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_events.html">Events</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_sound.html">Sound</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_queries.html">Queries</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_network.html">Network</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_xml_events.html">XML Events</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-8">
+        <h2><span class="mw-headline" id="Game">Game</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=33" title="Edit section: Game">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="setCameraPosition.28pos.29">setCameraPosition(pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=34" title="Edit section: setCameraPosition(pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Move the camera to the coordinates of pos.
+</p><p>Parameters:<br />
+<b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
+</p>
+<h3><span class="mw-headline" id="togglePauseGame.28pauseStatus.29">togglePauseGame(pauseStatus)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=35" title="Edit section: togglePauseGame(pauseStatus)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Toggle the pause state of the existing game.
+</p><p>Parameters:<br />
+<b>pauseStatus</b> - 0 indicates normal game play, 1 indicates a paused game
+</p>
+<h3><span class="mw-headline" id="setPlayerAsWinner.28factionID.29">setPlayerAsWinner(factionID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=36" title="Edit section: setPlayerAsWinner(factionID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Sets the player with index faction ID as the winner. Would typically be followed by <tt>endGame()</tt>.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="endGame.28.29">endGame()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=37" title="Edit section: endGame()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Ends the scenario, bringing up the "you win" screen and asking the player if they want to leave the game. Usually would be called after <tt>setPlayerAsWinner()</tt> when victory conditions have been met.
+</p>
+<h3><span class="mw-headline" id="loadScenario.28scenario.2C_keepFactions.29">loadScenario(scenario, keepFactions)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=38" title="Edit section: loadScenario(scenario, keepFactions)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Loads another scenario from inside an existing scenario. The new scenario must have the same techtree and factions, but map, tileset can change.
+</p><p>Parameters:<br />
+<b>scenario</b> - the name of the scenario to be loaded.<br />
+<b>keepFactions</b> - True to call the next scenario with existing factions or false to call the next scenario with only newly defined factions in the new scenario
+</p>
+<h3><span class="mw-headline" id="setAttackWarningsEnabled.28enabled.29">setAttackWarningsEnabled(enabled)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=39" title="Edit section: setAttackWarningsEnabled(enabled)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables or disables the attack warning system for the player.
+</p><p>Parameters:<br />
+<b>enabled</b> - A boolean true or false value, with true enabling the attack warning system and false disabling it.
+</p>
+<h3><span class="mw-headline" id="getAttackWarningsEnabled.28.29">getAttackWarningsEnabled()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=40" title="Edit section: getAttackWarningsEnabled()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the current status of the attack warnings system (true if enabled, false if disabled).
+</p>
+<h3><span class="mw-headline" id="getIsDayTime.28.29">getIsDayTime()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=41" title="Edit section: getIsDayTime()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns if it is day ingame. ( 1 is day and 0 is night )
+</p>
+<h3><span class="mw-headline" id="getIsNightTime.28.29">getIsNightTime()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=42" title="Edit section: getIsNightTime()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns if it is night ingame. ( 1 is night and 0 is day )
+</p>
+<h3><span class="mw-headline" id="getTimeOfDay.28.29">getTimeOfDay()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=43" title="Edit section: getTimeOfDay()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ingame time of the day.
+</p>
+<h3><span class="mw-headline" id="storeSaveGameDate.28key.2C_value.29">storeSaveGameDate(key, value)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=44" title="Edit section: storeSaveGameDate(key, value)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stores <i>value</i> at <i>key</i> in the savegame.<br />
+<i><b>Only available in the onSave-tag!</b></i>
+</p><p>Parameters:<br />
+<b>key</b> - a key string<br />
+<b>value</b> - a string that is stored
+</p>
+<h3><span class="mw-headline" id="loadSaveGameDate.28key.29">loadSaveGameDate(key)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=45" title="Edit section: loadSaveGameDate(key)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the <i>value</i> stored at <i>key</i> in the savegame.<br />
+<i><b>Only available in the onLoad-tag!</b></i>
+</p><p>Parameters:<br />
+<b>key</b> - a key string
+</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p class="sct_footer">
+      RSS<a href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+      <img src="assets/icons/si-glyph-rss.svg" alt="rss" height="23" width="23"></a>
+  </p>
+  <p class="sct_footer">
+      Powered by <a href="https://github.com/dafky2000/simplectemplate">simplectemplate</a>
+  </p>
+  </div>
+    <!--The following included for responsize web design with Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>

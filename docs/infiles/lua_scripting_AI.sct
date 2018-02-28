@@ -1,0 +1,34 @@
+title:Scenarios | LUA scripting | AI
+layout:_lua_scripting
+---
+<h2><span class="mw-headline" id="AI">AI</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=46" title="Edit section: AI">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="enableAi.28faction.29">enableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=47" title="Edit section: enableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables a factions AI. All of the faction's units will move with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="disableAi.28faction.29">disableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=48" title="Edit section: disableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disables a factions AI. None of the faction's units will move with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="getAiEnabled.28faction.29">getAiEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=49" title="Edit section: getAiEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Checks the enabled status of a factions AI. Returns 0 if the AI is disabled, and 1 if enabled.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="enableConsume.28faction.29">enableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=50" title="Edit section: enableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables a factions requirement to consume resources like food. All of the faction's units will consume food type resources with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="disableConsume.28faction.29">disableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=51" title="Edit section: disableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disbles a factions requirement to consume resources like food. All of the faction's units will not consume food type resources with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="getConsumeEnabled.28faction.29">getConsumeEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=52" title="Edit section: getConsumeEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Checks the consume status of a factions AI. Returns 0 if disabled, and 1 if enabled.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>

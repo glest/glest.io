@@ -1,0 +1,22 @@
+title:Scenarios | LUA scripting | Sound
+layout:_lua_scripting
+---
+<h2><span class="mw-headline" id="Sound">Sound</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=53" title="Edit section: Sound">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="playStaticSound.28soundFile.29">playStaticSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=54" title="Edit section: playStaticSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Play a static sound file specified by 'soundFile'.
+</p><p>Parameters:<br />
+<b>soundFile</b> - the filename of the sound file to play.
+</p>
+<h3><span class="mw-headline" id="playStreamingSound.28soundFile.29">playStreamingSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=55" title="Edit section: playStreamingSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Play a streaming sound file (background music) specified by 'soundFile'.
+</p><p>Parameters:<br />
+<b>soundFile</b> - the filename of the sound file to play.
+</p>
+<h3><span class="mw-headline" id="stopStreamingSound.28soundFile.29">stopStreamingSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=56" title="Edit section: stopStreamingSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stop playing a streaming sound file (background music) specified by 'soundFile'.
+</p><p>Parameters:<br />
+<b>soundFile</b> - the filename of the sound file to play.
+</p>
+<h3><span class="mw-headline" id="stopAllSound.28.29">stopAllSound()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=57" title="Edit section: stopAllSound()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Stop playing all sounds
+</p>

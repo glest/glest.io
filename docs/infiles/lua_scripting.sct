@@ -1,0 +1,20 @@
+title:Scenarios | LUA scripting
+layout:_lua_scripting
+---
+<p>
+  Lua is the scripting language used in ZetaGlest's scenarios. It allows
+  scenarios to expand and do things not normally possible in regular
+  games of ZetaGlest. This page lists all the Lua commands available in
+  ZetaGlest. For information on how to create scenarios and working with
+  Lua in general, see Lua.
+<p>
+
+<p>
+  Note: You can’t use the <pre><-operator</pre> in within the XML-events. You can
+  use an external script instead or invert the logic.
+</p>
+
+<p>
+    The LUA information provided on these pages was either adapted or
+    copied from <a href="https://docs.megaglest.org/MG/Lua">MG/Lua</a>
+</p>

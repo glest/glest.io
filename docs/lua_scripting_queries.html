@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Scenarios | LUA scripting | Queries | ZetaGlest</title>
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--including Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Scenarios | LUA scripting | Queries</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav flex-column navbar-nav mr-auto">
+            <li class="nav-item" > <a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item" > <a class="nav-link" href="scenarios.html">Back to Scenarios</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_text.html">Text</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_unit.html">Unit</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_game.html">Game</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_AI.html">AI</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_events.html">Events</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_sound.html">Sound</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_queries.html">Queries</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_network.html">Network</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_xml_events.html">XML Events</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-8">
+        <h2><span class="mw-headline" id="Queries">Queries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=82" title="Edit section: Queries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="unitPosition.28unitID.29">unitPosition(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=83" title="Edit section: unitPosition(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the current location of a given unit.
+</p><p>Parameters:<br />
+<b>unitID - </b>the unitID of the unit whose position you wish to know.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw1">if</span> <span class="br0">&#40;</span>unitPosition<span class="br0">&#40;</span>myUnit<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">&gt;</span> <span class="nu0">47</span> <span class="kw2">and</span> <span class="nu0">75</span> <span class="sy0">&gt;</span> unitPosition<span class="br0">&#40;</span>myUnit<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="kw2">and</span>  unitPostion<span class="br0">&#40;</span>myUnit<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy0">&gt;</span> <span class="nu0">95</span> <span class="br0">&#41;</span> <span class="kw1">then</span>
+	<span class="co1">-- The unit's x co-ord is between 47 and 75, and its y cord is larger than 95.</span>
+<span class="kw1">end</span></pre></div></div>
+<h3><span class="mw-headline" id="unitFaction.28unitID.29">unitFaction(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=84" title="Edit section: unitFaction(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the faction index of the unit with unitID.
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit whose faction you wish you check.
+</p>
+<h3><span class="mw-headline" id="resourceAmount.28resource.2C_faction.29">resourceAmount(resource, faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=85" title="Edit section: resourceAmount(resource, faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the amount of a given resource is possessed by a faction.
+</p><p>Parameters:<br />
+<b>resource</b> - The name of the resource you wish you check.<br />
+<b>faction</b> - The index of the faction to check.
+</p>
+<h3><span class="mw-headline" id="unitName.28unitId.29">unitName(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=86" title="Edit section: unitName(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the unit whose unit ID was passed into the function.
+</p><p>Parameters:<br />
+<b>unitID</b> - the ID of the unit whose name you wish to know.
+</p>
+<h3><span class="mw-headline" id="lastCreatedUnitName.28.29">lastCreatedUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=87" title="Edit section: lastCreatedUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the unit name of the last created unit.
+</p>
+<h3><span class="mw-headline" id="lastCreatedUnit.28.29">lastCreatedUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=88" title="Edit section: lastCreatedUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the unit ID of the last created unit.
+</p>
+<h3><span class="mw-headline" id="lastDeadUnitName.28.29">lastDeadUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=89" title="Edit section: lastDeadUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the last unit to die.
+</p>
+<h3><span class="mw-headline" id="lastDeadUnit.28.29">lastDeadUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=90" title="Edit section: lastDeadUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the last unit to die.
+</p>
+<h3><span class="mw-headline" id="lastDeadUnitCauseOfDeath.28.29">lastDeadUnitCauseOfDeath()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=91" title="Edit section: lastDeadUnitCauseOfDeath()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the following depending on how the last unit died:
+</p>
+<dl><dd>None = 0</dd>
+<dd>Attacked = 1</dd>
+<dd>Attack boost = 2</dd>
+<dd>Starved resource = 3</dd>
+<dd>Negative regeneration = 4</dd></dl>
+<h3><span class="mw-headline" id="lastDeadUnitKillerName.28.29">lastDeadUnitKillerName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=92" title="Edit section: lastDeadUnitKillerName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the killer of the last dead unit. Returns empty if the cause of death was not from an attacker (attacked).
+</p>
+<h3><span class="mw-headline" id="lastDeadUnitKiller.28.29">lastDeadUnitKiller()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=93" title="Edit section: lastDeadUnitKiller()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the killer of the last dead unit. Returns -1 if the cause of death was not from an attacker (attacked).
+</p>
+<h3><span class="mw-headline" id="lastAttackedUnit.28.29">lastAttackedUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=94" title="Edit section: lastAttackedUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the last unit which was attacked.
+</p>
+<h3><span class="mw-headline" id="lastAttackedUnitName.28.29">lastAttackedUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=95" title="Edit section: lastAttackedUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the last unit which was attacked.
+</p>
+<h3><span class="mw-headline" id="lastAttackingUnit.28.29">lastAttackingUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=96" title="Edit section: lastAttackingUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the ID of the last unit to attack.
+</p>
+<h3><span class="mw-headline" id="lastAttackingUnitName.28.29">lastAttackingUnitName()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=97" title="Edit section: lastAttackingUnitName()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the last unit to attack.
+</p>
+<h3><span class="mw-headline" id="getSystemMacroValue.28key.29">getSystemMacroValue(key)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=98" title="Edit section: getSystemMacroValue(key)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the value of the SystemMacro in C++ (e.g. $SCENARIO_PATH, $APPLICATIONPATH, $GAMEVERSION). At the moment it is primary used to get the path to the loaded scenario.
+</p><p>Parameters:<br />
+<b>key - </b> The name of the SystemMacro you want to get. Usually starts with "$". (e.g. $SCENARIO_PATH, $APPLICATIONPATH, $GAMEVERSION)
+</p><p>Example (will load the file filename.lua in the folder of your scenario):
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw3">dofile</span><span class="br0">&#40;</span>getSystemMacroValue<span class="br0">&#40;</span><span class="st0">&quot;$SCENARIO_PATH&quot;</span><span class="br0">&#41;</span> <span class="sy0">..</span> <span class="st0">&quot;filename.lua&quot;</span><span class="br0">&#41;</span></pre></div></div>
+<h3><span class="mw-headline" id="scenarioDir.28.29">scenarioDir()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=99" title="Edit section: scenarioDir()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Does the same as <b>getSystemMacroValue("$SCENARIO_PATH")</b>. Exist for GAE compatibility.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="getPlayerName.28faction.29">getPlayerName(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=100" title="Edit section: getPlayerName(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the name of the player of a given faction.
+</p>
+<h3><span class="mw-headline" id="playerName.28faction.29">playerName(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=101" title="Edit section: playerName(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Does the same as <b>getPlayerName(faction)</b>. Exist for GAE compatibility.
+</p><p>Parameters:<br />
+<b>faction</b> - The index of the faction you wish to check.
+</p>
+<h3><span class="mw-headline" id="unitCount.28faction.29">unitCount(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=102" title="Edit section: unitCount(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the number of units a given faction has.
+</p><p>Parameters:<br />
+<b>faction</b> - The index of the faction you wish to check.
+</p>
+<h3><span class="mw-headline" id="unitCountOfType.28faction.2C_name.29">unitCountOfType(faction, name)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=103" title="Edit section: unitCountOfType(faction, name)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the number of units of a specific name a given faction has.
+</p><p>Parameters:<br />
+<b>faction</b> - The index of the faction you wish to check.<br />
+<b>name</b> - The name of the specific unit you wish to check.
+</p>
+<h3><span class="mw-headline" id="gameWon.28.29">gameWon()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=104" title="Edit section: gameWon()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns true if the human player won the game, and false if they did not.
+</p>
+<h3><span class="mw-headline" id="isGameOver.28.29">isGameOver()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=105" title="Edit section: isGameOver()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns true if the game is over (either by the default game over criteria being met or by calling <tt>endGame()</tt>). Returns false otherwise.
+</p>
+<h3><span class="mw-headline" id="startLocation.28faction.29">startLocation(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=106" title="Edit section: startLocation(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns the start location for a given faction as a set of coordinates.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p><p>Example:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1">createUnit <span class="br0">&#40;</span> <span class="st0">&quot;someunit&quot;</span><span class="sy0">,</span> <span class="nu0">0</span><span class="sy0">,</span> <span class="br0">&#123;</span>startLocation<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy0">+</span> <span class="nu0">5</span><span class="sy0">,</span> startLocation<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="br0">&#125;</span> <span class="br0">&#41;</span></pre></div></div>
+<p>This would create a unit 5 cells east of startLocation 0.
+</p>
+<h3><span class="mw-headline" id="setRandomGenInit.28seed.29">setRandomGenInit(seed)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=107" title="Edit section: setRandomGenInit(seed)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Generates a random number based on the supplied seed.
+</p>
+<h3><span class="mw-headline" id="getRandomGen.28minVal.2C_maxVal.29">getRandomGen(minVal, maxVal)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=108" title="Edit section: getRandomGen(minVal, maxVal)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Used with <tt>setRandomGenInit</tt> to get a random number inbetween <tt>minVal</tt> and <tt>maxVal</tt>.
+</p>
+<h3><span class="mw-headline" id="getWorldFrameCount.28.29">getWorldFrameCount()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=109" title="Edit section: getWorldFrameCount()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Retrieves the world frame count, which can be used in seeding random numbers.
+</p>
+<h3><span class="mw-headline" id="getUnitsForFaction.28factionIndex.2C_commandTypeName.2C_field.29">getUnitsForFaction(factionIndex, commandTypeName, field)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=110" title="Edit section: getUnitsForFaction(factionIndex, commandTypeName, field)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns an array (table) of units in the specified faction which lists all units which have the specified command and can use it on the specified field (such as being able to attack air units).<br />
+<tt>0</tt> for land and <tt>1</tt> for air field.
+</p>
+<h3><span class="mw-headline" id="getUnitCurrentField.28unitId.29">getUnitCurrentField(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=111" title="Edit section: getUnitCurrentField(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For the specified unit, returns <tt>0</tt> if they are land and <tt>1</tt> if they are in the air field.
+</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p class="sct_footer">
+      RSS<a href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+      <img src="assets/icons/si-glyph-rss.svg" alt="rss" height="23" width="23"></a>
+  </p>
+  <p class="sct_footer">
+      Powered by <a href="https://github.com/dafky2000/simplectemplate">simplectemplate</a>
+  </p>
+  </div>
+    <!--The following included for responsize web design with Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>

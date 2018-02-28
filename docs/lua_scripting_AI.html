@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Scenarios | LUA scripting | AI | ZetaGlest</title>
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--including Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Scenarios | LUA scripting | AI</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav flex-column navbar-nav mr-auto">
+            <li class="nav-item" > <a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item" > <a class="nav-link" href="scenarios.html">Back to Scenarios</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_text.html">Text</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_unit.html">Unit</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_game.html">Game</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_AI.html">AI</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_events.html">Events</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_sound.html">Sound</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_queries.html">Queries</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_network.html">Network</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_xml_events.html">XML Events</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-8">
+        <h2><span class="mw-headline" id="AI">AI</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=46" title="Edit section: AI">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="enableAi.28faction.29">enableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=47" title="Edit section: enableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables a factions AI. All of the faction's units will move with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="disableAi.28faction.29">disableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=48" title="Edit section: disableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disables a factions AI. None of the faction's units will move with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="getAiEnabled.28faction.29">getAiEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=49" title="Edit section: getAiEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Checks the enabled status of a factions AI. Returns 0 if the AI is disabled, and 1 if enabled.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="enableConsume.28faction.29">enableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=50" title="Edit section: enableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Enables a factions requirement to consume resources like food. All of the faction's units will consume food type resources with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="disableConsume.28faction.29">disableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=51" title="Edit section: disableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disbles a factions requirement to consume resources like food. All of the faction's units will not consume food type resources with this command.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+<h3><span class="mw-headline" id="getConsumeEnabled.28faction.29">getConsumeEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=52" title="Edit section: getConsumeEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Checks the consume status of a factions AI. Returns 0 if disabled, and 1 if enabled.
+</p><p>Parameters:<br />
+<b>faction </b>- the index of the faction.
+</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p class="sct_footer">
+      RSS<a href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+      <img src="assets/icons/si-glyph-rss.svg" alt="rss" height="23" width="23"></a>
+  </p>
+  <p class="sct_footer">
+      Powered by <a href="https://github.com/dafky2000/simplectemplate">simplectemplate</a>
+  </p>
+  </div>
+    <!--The following included for responsize web design with Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>

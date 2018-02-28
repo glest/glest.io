@@ -1,0 +1,31 @@
+title:Scenarios | LUA scripting | Network
+layout:_lua_scripting
+---
+<h2><span class="mw-headline" id="Network">Network</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=112" title="Edit section: Network">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="networkShowMessageForFaction.28text.2C_header.2C_factionIndex.29">networkShowMessageForFaction(text, header, factionIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=113" title="Edit section: networkShowMessageForFaction(text, header, factionIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Works the same was as <tt>showMessage()</tt>, but only displays the message to the specific faction. Good for network scenarios where it may be beneficial to display different messages to each player.
+</p>
+<h3><span class="mw-headline" id="networkShowMessageForTeam.28text.2C_header.2C_teamIndex.29">networkShowMessageForTeam(text, header, teamIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=114" title="Edit section: networkShowMessageForTeam(text, header, teamIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Works the same was as <tt>networkShowMessageForFaction()</tt> above, but displays to all players in the specified team.
+</p>
+<h3><span class="mw-headline" id="showMarker.28flashCount.2C_factionIndex.2C_note.2C_textureFile.2C_pos.29">showMarker(flashCount, factionIndex, note, textureFile, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=115" title="Edit section: showMarker(flashCount, factionIndex, note, textureFile, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Places a marker on the map at a given location.
+</p><p>Parameters:<br />
+<b>flashCount</b> -<br />
+<b>factionIndex</b> - index of the faction who "placed" the marker.<br />
+<b>note</b> - note on the marker.<br />
+<b>textureFile</b> - path of texture file to use for marker.<br />
+<b>pos</b> - the x and y cell coordinates of the marker.
+</p>
+<h3><span class="mw-headline" id="networkSetCameraPositionForFaction.28factionIndex.2C_pos.29">networkSetCameraPositionForFaction(factionIndex, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=116" title="Edit section: networkSetCameraPositionForFaction(factionIndex, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Set the camera position for a specific faction.
+</p><p>Parameters:<br />
+<b>factionIndex</b> - index of the faction whose camera you wish to move.<br />
+<b>pos</b> - x and y coordinates for the camera's position.
+</p>
+<h3><span class="mw-headline" id="networkSetCameraPositionForTeam.28teamNumber.2C_pos.29">networkSetCameraPositionForTeam(teamNumber, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=117" title="Edit section: networkSetCameraPositionForTeam(teamNumber, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Set the camera position for all factions on a team.
+</p><p>Parameters:<br />
+<b>teamNumber</b> - team number whose camera you wish to move.<br />
+<b>pos</b> - x and y coordinates for the camera's position.
+</p>

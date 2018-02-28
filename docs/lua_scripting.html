@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>System Requirements | ZetaGlest</title>
+    <title>Scenarios | LUA scripting | ZetaGlest</title>
     <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
     <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   </head>
   <body>
-    <h1>System Requirements</h1>
+    <h1>Scenarios | LUA scripting</h1>
 <div class="container">
   <div class="row">
     <div class="col-md-4">
@@ -23,52 +23,38 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav flex-column navbar-nav mr-auto">
             <li class="nav-item" > <a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item" > <a class="nav-link" href="system_requirements.html">System Requirements</a></li>
-            <li class="nav-item" > <a class="nav-link" href="scenarios.html">Scenarios</a></li>
+            <li class="nav-item" > <a class="nav-link" href="scenarios.html">Back to Scenarios</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_text.html">Text</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_unit.html">Unit</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_game.html">Game</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_AI.html">AI</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_events.html">Events</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_sound.html">Sound</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_queries.html">Queries</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_network.html">Network</a></li>
+            <li class="nav-item" > <a class="nav-link" href="lua_scripting_xml_events.html">XML Events</a></li>
           </ul>
         </div>
       </nav>
     </div>
     <div class="col-md-8">
-        
-<h2>Hardware requirements</h2>
-<pre>
-* >= (2011) Intel Sandy Bridge x86 CPU with 1.6 GHz or higher frequency
-  (modern multi-core CPU series, at least 2.0 GHz recommended)
-* 2.0 GB RAM
-  (4.0 GB RAM recommended)
-* Graphics chip supporting OpenGL 2.1 or higher
-  (dedicated/discrete video card with hardware 3D acceleration recommended)
-* 512 MB video memory
-* Audio chip supporting OpenAL
-</pre>
+        <p>
+  Lua is the scripting language used in ZetaGlest's scenarios. It allows
+  scenarios to expand and do things not normally possible in regular
+  games of ZetaGlest. This page lists all the Lua commands available in
+  ZetaGlest. For information on how to create scenarios and working with
+  Lua in general, see Lua.
+<p>
 
-<h2>Software requirements:</h2>
-<pre>
-* A supported (by its producer) operating system version
-* Graphics drivers which work well with this operating system version and
-  support the OpenGL requirements discussed above
-* Audio drivers supporting OpenAL
-* A file archiving utility which provides a command line interface and can
-  decompress 7-zip archives
+<p>
+  Note: You can’t use the <pre><-operator</pre> in within the XML-events. You can
+  use an external script instead or invert the logic.
+</p>
 
-Graphics hardware and drivers:
-Current dedicated Nvidia and AMD hardware with up to date vendor-supplied
-proprietary drivers installed usually provide the best experience. However, it
-is not unheard of that they may be difficult to get working on Linux and other
-open platforms (due to insufficient support by hardware vendors). If you
-experience such issues, open source 3D drivers are now becoming usable for both
-many current and legacy GPUs, and may help with the proprietary drivers'
-shortcomings.
-
-Next to standard dedicated gaming video cards, ZetaGlest also runs fine
-on most integrated Intel, Nvidia and AMD APUs. In some case, reduce
-visual effects from the options menu may help improve game performance.
-
-To run ZetaGlest in headless mode, neither video nor audio hardware and driver
-support are necessary. For a good user experience, please ensure your system
-meets all other minimum hardware requirements, as listed above.
-</pre>
+<p>
+    The LUA information provided on these pages was either adapted or
+    copied from <a href="https://docs.megaglest.org/MG/Lua">MG/Lua</a>
+</p>
     </div>
   </div>
 </div>
