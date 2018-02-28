@@ -160,34 +160,27 @@ bufchk (const char *str, ushort boundary)
  * Adapted from The ANSI C Programming Language, 2nd Edition (p. 65)
  * Brian W. Kernighan & Dennis M. Ritchie
  */
-int
+void
 trim (char *str)
 {
-  static int n;
-
-  n = strlen (str);
-
-  char c;
-  c = str[n];
-
-  if (c != '\0')
+  /* Advance pointer until NULL terminator is found */
+  while (*str != '\0')
   {
-    printf ("null terminator not found\n");
-  }
+    str++;
+  };
 
-  n--;
-  c = str[n];
+  /* set pointer to segment preceding NULL terminator */
+  str--;
 
   /* /r added to fix a bug. It was failing on files when the lines ended
    * with CRLF */
-  while (c == ' ' || c == '\t' || c == '\n' || c == EOF || c == '\r')
+  while (*str == ' ' || *str == '\t' || *str == '\n' || *str == EOF || *str == '\r')
   {
-    str[n] = '\0';
-    n--;
-    c = str[n];
+    *str = '\0';
+    str--;
   }
 
-  return n;
+  return;
 }
 
 void
