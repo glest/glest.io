@@ -65,6 +65,7 @@ enum {
 typedef struct cfg {
   char site_title[LINE_LEN_MAX];
   char site_description[LINE_LEN_MAX];
+  char repo_URL[LINE_LEN_MAX];
 } struct_cfg;
 
 #endif

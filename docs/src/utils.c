@@ -103,6 +103,16 @@ PRINT_DEBUG ("cfgopts.site_description is '%s' at line %d\n", cfgopts->site_desc
 #endif
       continue;
     }
+
+        if (strcmp (cfg_line, "repo_URL") > 0)
+    {
+      parse_option (cfgopts->repo_URL, cfg_line);
+#ifdef DEBUG
+PRINT_DEBUG ("cfg_line is\n%s at line %d\n", cfg_line, __LINE__);
+PRINT_DEBUG ("cfgopts.site_description is '%s' at line %d\n", cfgopts->repo_URL, __LINE__);
+#endif
+      continue;
+    }
   }
 
   /* Close the config file */

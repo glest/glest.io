@@ -69,6 +69,7 @@ int main(int argc, char **argv)
 #ifdef DEBUG
   PRINT_DEBUG ("after parsing, site_title is '%s'\n", cfgopts->site_title);
   PRINT_DEBUG ("after parsing, site_description is '%s'\n", cfgopts->site_description);
+  PRINT_DEBUG ("after parsing, repo_URL is '%s'\n", cfgopts->repo_URL);
 #endif
 
   FILE *tail_fp;
@@ -116,6 +117,10 @@ int main(int argc, char **argv)
 
     char input_file[FILENAME_LEN_MAX + 1];
     sprintf (input_file, "infiles/%s", dir_entry->d_name);
+
+    char infile_URL[FILENAME_LEN_MAX];
+    sprintf (infile_URL, "%s/%s", cfgopts->repo_URL, dir_entry->d_name);
+
     printf ("processing %s\n", input_file);
 
     FILE *fp = fopen (input_file, "r");
@@ -254,7 +259,8 @@ PRINT_DEBUG ("sub_title is '%s' at L%d\n", sub_title, __LINE__);
     };
 
     const char *body_data[] = {
-      "body", body
+      "body", body,
+      "infile_URL", infile_URL
     };
 
     char layout_template[FILENAME_LEN_MAX] = "";
@@ -280,7 +286,7 @@ PRINT_DEBUG ("sub_title is '%s' at L%d\n", sub_title, __LINE__);
     strcpy (output_head, output_head_tmp);
     add_newline (output_head);
 
-    char *output_layout_tmp = render_template_file (layout_template, 1, body_data);
+    char *output_layout_tmp = render_template_file (layout_template, 2, body_data);
     strcpy (output_layout, output_layout_tmp);
     add_newline (output_layout);
 
