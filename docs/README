@@ -6,7 +6,12 @@ web site <https://zetaglest.github.io/docs/>.
 docs/src/simplecgen will read from infiles/ and create html files
 in the docs folder using the layouts in templates/
 
-The {{title}} tag contained in the template files will be replaced by
+The format of the .sct files in infiles/ is very simple. At the top there is info that simplecgen
+uses, and the remainer is the html document body.
+
+    Example:<https://github.com/ZetaGlest/zetaglest.github.io/blob/master/docs/infiles/index.sct>
+
+The {{title}} tag contained in the template/ files will be replaced by
 the "title" line at the top of each .sct file.
 
 The {{body}} tag contained in the template files will be replaced by
@@ -23,7 +28,10 @@ Afterward, run simplecgen to generate the web site from the docs
 directory:
 
     src/simplecgen
+    
+You can preview and test your changes by opening docs/index.html in your web browser.
 
-simplecgen uses the [simplectemplate library][sct_repo] to generate a web site.
+simplecgen uses the simplectemplate library<https://github.com/dafky2000/simplectemplate> to
+generate the web site (which is included in the src/ directory).
 
 [sct_repo]: https://github.com/dafky2000/simplectemplate
