@@ -1,0 +1,39 @@
+title:Differences from MegaGlest
+layout:default
+---
+<p>
+  These are the chief ways that ZetaGlest is different from MegaGlest:
+</p>
+<ul>
+  <li>
+    The lobby test scenario has been removed.
+  </li>
+  <li>
+    Key changes: M for Move, H for chat history, T for team chat
+  </li>
+  <li>
+    <p>The default command is "attack". That means when you right-click on
+    a location, units go into attack-mode. As a result, using "a" is not needed.</p>
+
+    <p>Note:"m" or clicking the "move" icon is needed to retreat</p>
+
+    <p>After they are produced, units go into attack-mode upon exiting a
+    barracks</p>
+    </li>
+  </li>
+  <li>
+    The CPU is more difficult. For instance, If before you had trouble
+    beating a Mega 2.5, you will probably have to change the Mega to a
+    2.0
+  </li>
+  <li>
+    Observers aren't required to use slots on the map. If you are
+    playing a 4-player map, observers can be in slots 5 - 10 (Note:
+    this feature hasn't been fully tested yet, and it's a little at the
+    game set up menu. Tickets have been created to address the
+    problems)
+  </li>
+  <li>
+    Other changes not directly related to game-play: added factions,
+    some new graphics and sound effects
+  </li>
