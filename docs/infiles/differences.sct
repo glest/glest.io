@@ -22,6 +22,17 @@ layout:default
     </li>
   </li>
   <li>
+    Healers such as the priest, shaman, engineer, technician, etc can auto-heal
+    when in range of mobile units (within a radius of 15 cells). Each healer adds
+    5 regeneration points to units within range (i.e. 10 healers add 50 regeneration
+    points).
+  </li>
+  <li>
+    If playing Magic or Norse, mobile units standing within a range of 8 cells
+    from an Archmage tower or a Valhalla will be auto-healed
+    (adds 5 regeneration points per building)
+  </li>
+  <li>
     The CPU is more difficult. For instance, If before you had trouble
     beating a Mega 2.5, you will probably have to change the Mega to a
     2.0
@@ -37,3 +48,8 @@ layout:default
     Other changes not directly related to game-play: added factions,
     some new graphics and sound effects
   </li>
+</ul>
+<p>
+  For more detailed information, please see the <a
+href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/ChangeLog.md">ChangeLog</a>
+</p>
