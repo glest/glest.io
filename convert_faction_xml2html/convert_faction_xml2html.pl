@@ -475,7 +475,7 @@ foreach my $faction_path ( @factions ) {
 
 		my ( $unit_from, $unit_to, $style, $relation ) = split(/:/, $edge );
 
-		print "dedge: deciding edge for $faction:$unit_from:$unit_to - $relation -style: $style\n";
+#		print "dedge: deciding edge for $faction:$unit_from:$unit_to - $relation -style: $style\n";
 
 
 		# only show requirement-link of there's no build, morph or produce link
@@ -501,7 +501,7 @@ foreach my $faction_path ( @factions ) {
 				$relation ne "Produce"
 			) {
 				$dont_link_in_all=1;
-				print "dedge: not showing edge $faction:$unit_from:$unit_to\n";
+#				print "dedge: not showing edge $faction:$unit_from:$unit_to\n";
 			}
 
 
@@ -518,7 +518,7 @@ foreach my $faction_path ( @factions ) {
 				$relation eq "Upgrade-Requirement"
 			) {
 				$graph_all             -> add_edge("$unit_from" => "$unit_to", style => $style, color => $svg_fontcolor ) if (!$dont_link_in_all);
-				print "dedge: SHOWING edge $faction:$unit_from:$unit_to\n";
+#				print "dedge: SHOWING edge $faction:$unit_from:$unit_to\n";
 
 				if ( !$upgrade{"$faction:$unit_from"} ) {
 					$graph_buildings_units -> add_edge("$unit_from" => "$unit_to", style => $style, color => $svg_fontcolor );
@@ -556,7 +556,7 @@ foreach my $faction_path ( @factions ) {
 		my ( $faction_hop, $unit_from, $unit_to ) = split(/:/, $multihop );
 
 		if ( $faction eq $faction_hop ) {
-			print "found multihop from building to building $unit_from to $unit_to\n";
+#			print "found multihop from building to building $unit_from to $unit_to\n";
 			my $style="dotted";
 			$graph_buildings_units -> add_edge("$unit_from" => "$unit_to", style => $style, color => $svg_fontcolor );
 			$graph_buildings       -> add_edge("$unit_from" => "$unit_to", style => $style, color => $svg_fontcolor );
@@ -636,7 +636,7 @@ foreach my $faction_path ( @factions ) {
 		my %col = ();
 
 		my $u = "$faction:$unit";
-		print "doing HTML for $u\n" if ( $debug );
+#		print "doing HTML for $u\n" if ( $debug );
 
 		my $full_tmp = "";
 		my $found = 0;
@@ -975,16 +975,16 @@ foreach my $faction_path ( @factions ) {
 			my $skill_short = $skill;
 			$skill_short =~ s/_skill$//;
 
-			print "morph_command: $command $c\n";
+#			print "morph_command: $command $c\n";
 
 			$full_morph_tmp .= "<TR><TD> Morph Skill: ".&format_name($skill_short)." </TD><TD>";
 
 			# since f.e. the technician can morph into different units, find the one for this skill
 			foreach my $command ( @{$c_command{ $u }} ) {
 				my $c = "$u:$command";
-				print "comparing command: $skill of $c\n";
+				# print "comparing command: $skill of $c\n";
 				if ( $morph_skill{ $c } && $morph_skill{ $c } eq $skill ) {
-					print "fitting morph_skill and command $skill of $c\n";
+#					print "fitting morph_skill and command $skill of $c\n";
 					$full_morph_tmp .= "Morphing to: ".&link_unit($faction, $morph_unit{ $c }).&html_icon($faction.":".$morph_unit{ $c }, 64)."<BR>\n";
 					$full_morph_tmp .= "Refund (Discount): ".$morph_discount{ $c }."&nbsp;%<BR>\n";
 					$full_morph_tmp .="Morph Speed: ".$speed{ $s }."<BR>\n";
@@ -1011,7 +1011,7 @@ foreach my $faction_path ( @factions ) {
 			my $skill_short = $skill;
 			$skill_short =~ s/_skill$//;
 
-			print "repair_command: $command $c\n";
+#			print "repair_command: $command $c\n";
 			$full_repair_tmp .= "<TR><TD> Repair/Heal Skill: ".&format_name($skill_short)." </TD><TD>".&format_name($skill_short)."ing: ";
 			$col{"heal_skill_$num_heal"} = &format_name($skill_short);
 
@@ -1042,7 +1042,7 @@ foreach my $faction_path ( @factions ) {
 			my $skill_short = $skill;
 			$skill_short =~ s/_skill$//;
 
-			print "harvest_command: $command $c\n";
+#			print "harvest_command: $command $c\n";
 			$full_harvest_tmp .= "<TR><TD> Harvest/Mine Skill: ".&format_name($skill_short)." </TD><TD>";
 			$col{"mine_speed_$num_heal"} = $speed{ $s };
 
@@ -1189,7 +1189,7 @@ foreach my $faction_path ( @factions ) {
 			$full_tmp .= "</TD></TR>\n";
 
 			if ( $found ) {
-				print "found enables for $u\n";
+				# print "found enables for $u\n";
 				$full .= $full_tmp;
 				# detect unit & command in one cell
 				my $found_unit_command = grep /<A HREF=.*Enables command/, $req_overview_tmp;
@@ -1619,7 +1619,7 @@ sub read_unit {
 			# ignore useless skills
 			if ( $skill !~ /stop/i && $skill !~ /die/i &&  $skill !~ /loaded/i &&  $skill !~ /be_built/i ) {
 
-				print "skill: $skill\n";
+#				print "skill: $skill\n";
 				push @{ $c_skill{ $u } }, $skill;
 
 				# index-var for storing all skills:
@@ -1629,7 +1629,7 @@ sub read_unit {
 				$ep_cost{ $s }           = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/ep-cost/\@value");
 
 				$skill_type{ $s } = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/type/\@value");
-				print "skill-type: <".$skill_type{ $s }.">\n";
+#				print "skill-type: <".$skill_type{ $s }.">\n";
 				if ( $skill_type{ $s } =~ /attack/i ) {
 					$combat{ $u } = 1;
 					$attack_range{ $s }      = get_value($xpath, "/unit/skills/skill/name[\@value='$skill']/parent::*/attack-range/\@value");
@@ -1660,7 +1660,7 @@ sub read_unit {
 			XML::XPath::XMLParser::as_string( $command_xml ) =~ /value=\"(.+?)\"/;
 			my $command = $1;
 
-			print "command: $command\n";
+#			print "command: $command\n";
 			push @{ $c_command{ $u } }, $command;
 
 			# index-var for storing all skills:
@@ -1670,7 +1670,7 @@ sub read_unit {
 			$command_icon{ $c } = $command_icon_tmp;
 			$command_icon{ $c } =~ s/.+\///;
 			if ( $command_icon{ $c }) {
-				print "command icon: ".$command_icon{ $c }." for $c\n" ;
+#				print "command icon: ".$command_icon{ $c }." for $c\n" ;
 				# commented to save time, not used anyway yet
 				system "cp $faction_path/$units_path/$unit/$command_icon_tmp $out_path/$images_path/${faction}/$unit";
 			}
@@ -1685,13 +1685,13 @@ sub read_unit {
 
 
 			$command_type{ $c } = get_value($xpath, "/unit/commands/command/name[\@value='$command']/parent::*/type/\@value");
-			print "command-type: <".$command_type{ $c }.">\n";
+#			print "command-type: <".$command_type{ $c }.">\n";
 
 			push @{ $commands_of_unit{ "$u:$command_type{ $c }" } }, $c;
 
 			my $unit_requirements = $xpath->find("/unit/commands/command/name[\@value='$command']/parent::*/unit-requirements/*");
 			foreach my $unit_requirement ( $unit_requirements->get_nodelist ) {
-				print "req: ".XML::XPath::XMLParser::as_string( $unit_requirement ) . "\n";
+#				print "req: ".XML::XPath::XMLParser::as_string( $unit_requirement ) . "\n";
 				XML::XPath::XMLParser::as_string( $unit_requirement ) =~ /name=\"(.+?)\"/;
 				my $req_name = $1;
 				print "FFF unit-req: $c of $u - $req_name\n";
@@ -1702,7 +1702,7 @@ sub read_unit {
 
 			my $upgrade_requirements = $xpath->find("/unit/commands/command/name[\@value='$command']/parent::*/upgrade-requirements/*");
 			foreach my $upgrade_requirement ( $upgrade_requirements->get_nodelist ) {
-				print "req: ".XML::XPath::XMLParser::as_string( $upgrade_requirement ) . "\n";
+#				print "req: ".XML::XPath::XMLParser::as_string( $upgrade_requirement ) . "\n";
 				XML::XPath::XMLParser::as_string( $upgrade_requirement ) =~ /name=\"(.+?)\"/;
 				my $req_name = $1;
 				print "FFF-upgrade-req: $c of $u - $req_name\n";
@@ -1752,11 +1752,11 @@ sub read_unit {
 
 	# now read $resource_requirements as set above
 	foreach my $resource_requirement ( $resource_requirements->get_nodelist ) {
-		print "req: ".XML::XPath::XMLParser::as_string( $resource_requirement ) . "\n";
+#		print "req: ".XML::XPath::XMLParser::as_string( $resource_requirement ) . "\n";
 		XML::XPath::XMLParser::as_string( $resource_requirement ) =~ /name=\"(.+?)\" amount=\"(.+?)\"/;
 		my $req_name   = $1;
 		my $req_amount = $2;
-		print "cost: $u $req_name:$req_amount\n";
+#		print "cost: $u $req_name:$req_amount\n";
 
 		if ( $req_amount ) {
 			push @{ $c_resource_requirement{ $u } }, "$req_name:$req_amount";
@@ -1771,7 +1771,7 @@ sub read_unit {
 	# now read resources stored
 	my $resources_stored = $xpath->find("/unit/parameters/resources-stored/resource");
 	foreach my $resource_stored ( $resources_stored->get_nodelist ) {
-		print "req: ".XML::XPath::XMLParser::as_string( $resource_stored ) . "\n";
+#		print "req: ".XML::XPath::XMLParser::as_string( $resource_stored ) . "\n";
 		XML::XPath::XMLParser::as_string( $resource_stored ) =~ /name=\"(.+?)\" amount=\"(.+?)\"/;
 		my $res_name   = $1;
 		my $res_amount = $2;
@@ -1821,7 +1821,7 @@ sub read_unit {
 
                 my $unit_requirements = $xpath->find("$location");
                 foreach my $unit_requirement ( $unit_requirements->get_nodelist ) {
-                        print "req: ".XML::XPath::XMLParser::as_string( $unit_requirement ) . "\n";
+#                        print "req: ".XML::XPath::XMLParser::as_string( $unit_requirement ) . "\n";
                         XML::XPath::XMLParser::as_string( $unit_requirement ) =~ /name=\"(.+?)\"/;
                         my $req_name = $1;
 
@@ -1924,7 +1924,7 @@ sub get_value {
 
 	my ( $xpath, $location ) = @_;
 	my $nodeset = $xpath->find("$location");
-	print "doing location $location\n";
+#	print "doing location $location\n";
 	my ($node) = $nodeset->get_nodelist;
 	my $value;
 	if ( $node ) {
@@ -1991,14 +1991,14 @@ sub check_multi_hops {
 
 		my ( $unit_from, $unit_to, $style, $relation ) = split(/:/, $edge );
 
-		print "#################edge_check1: $unit_from -> $unit_to\n";
+#		print "#################edge_check1: $unit_from -> $unit_to\n";
 
 		# only check for Requirement and Upgrade-Requirement
 		if ( $relation =~ /Requirement/i ) {
 			# do recursion in check_edges:
 			if ( &check_edges( $faction, $unit_from, $unit_to, 0 ) ) {
 				$multi_hop{"$faction:$unit_from:$unit_to"}=1;
-				print "edge_check5: $faction:$unit_from:$unit_to =1\n";
+#				print "edge_check5: $faction:$unit_from:$unit_to =1\n";
 			}
 		}
 		# find multihop from building via upgrade to building to include in graphs without upgrades
@@ -2030,19 +2030,19 @@ sub check_edges {
 
 	my $found_multihop=0;
 
-	print "edge_check2: $faction, $unit_from, $unit_to, $recursion_depth\n";
+#	print "edge_check2: $faction, $unit_from, $unit_to, $recursion_depth\n";
 
 	REC: foreach my $edge ( @{$c_edges_from{"$faction:$unit_from"}} ) {
 		my ( $o_unit_from, $o_unit_to, $o_style, $o_relation ) = split(/:/, $edge );
 
-		print "edge_check3: $o_unit_from -> $o_unit_to\n";
+#		print "edge_check3: $o_unit_from -> $o_unit_to\n";
 		if (
 			$unit_to eq $o_unit_to     &&
 			# skip the record we're just checking
 			$recursion_depth > 1
 		) {
 			$found_multihop=1;
-			print "edge_check4: found an end at $o_unit_from to $unit_to\n";
+#			print "edge_check4: found an end at $o_unit_from to $unit_to\n";
 			last REC;
 		}
 		else {
@@ -2267,7 +2267,7 @@ sub calc_cost_of_unit {
 
 sub add_costs {
 	my ( $resource, $amount_total ) = @_;
-	print "amount_total: $resource: $amount_total \n";
+#	print "amount_total: $resource: $amount_total \n";
 	my $cost      .= "$resource:$amount_total,";
 
 	my $add_nbsp = "";
