@@ -693,7 +693,7 @@ foreach my $faction_path ( @factions ) {
 
 		my ( $cost, $cost_icon, $cost_icon_overview );
 		# loop over creation-methods because f.e. guard might be produced in barracks or upgraded from swordman
-s
+
 		my $num_creation_methods =@{$created_by_unit{ $u }};
 		my $num_method=0;
 		$full .= "<TR><TD>Creation:</TD><TD>";
