@@ -12,8 +12,8 @@
 <!-- blacksmith -->
 <g id="node1" class="node"><title>blacksmith</title>
 <g id="a_node1"><a xlink:href="greece_blacksmith_full.html" xlink:title="Blacksmith">
-<polygon fill="none" stroke="red" points="764.78,-141.202 701.347,-153.64 637.914,-141.202 637.973,-121.077 764.72,-121.077 764.78,-141.202"/>
-<text text-anchor="middle" x="701.347" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Blacksmith</text>
+<polygon fill="none" stroke="red" points="804.78,-141.202 741.347,-153.64 677.914,-141.202 677.973,-121.077 804.72,-121.077 804.78,-141.202"/>
+<text text-anchor="middle" x="741.347" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Blacksmith</text>
 </a>
 </g>
 </g>
@@ -27,34 +27,34 @@
 </g>
 <!-- blacksmith&#45;&gt;cavalry -->
 <g id="edge19" class="edge"><title>blacksmith&#45;&gt;cavalry</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M676.441,-121.048C662.676,-114.211 645.028,-106.525 628.347,-102.426 393.901,-44.8177 314.842,-144.359 86.3466,-66.4264 78.902,-63.8873 71.5167,-59.8836 64.8523,-55.55"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="66.4723,-52.4117 56.2733,-49.5427 62.4572,-58.1457 66.4723,-52.4117"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M677.836,-126.188C625.235,-119.328 548.504,-109.645 481.347,-102.426 306.073,-83.5864 252.481,-125.377 86.3466,-66.4264 78.9337,-63.7961 71.5608,-59.7569 64.8981,-55.4182"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="66.5175,-52.28 56.3159,-49.4202 62.5076,-58.0176 66.5175,-52.28"/>
 </g>
 <!-- chariot -->
 <g id="node6" class="node"><title>chariot</title>
 <g id="a_node6"><a xlink:href="greece_chariot_full.html" xlink:title="Chariot">
-<ellipse fill="none" stroke="magenta" cx="938.347" cy="-33.2132" rx="37.0935" ry="18"/>
-<text text-anchor="middle" x="938.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Chariot</text>
+<ellipse fill="none" stroke="magenta" cx="1024.35" cy="-33.2132" rx="37.0935" ry="18"/>
+<text text-anchor="middle" x="1024.35" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Chariot</text>
 </a>
 </g>
 </g>
 <!-- blacksmith&#45;&gt;chariot -->
 <g id="edge20" class="edge"><title>blacksmith&#45;&gt;chariot</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M750.73,-120.995C790.211,-109.153 846.363,-90.1889 892.347,-66.4264 898.748,-63.1184 905.287,-59.0356 911.351,-54.9011"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="913.693,-57.5313 919.824,-48.8907 909.642,-51.8219 913.693,-57.5313"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M768.175,-121.051C781.5,-114.714 797.997,-107.475 813.347,-102.426 884.648,-78.9756 909.595,-96.5427 978.347,-66.4264 985.223,-63.4143 992.124,-59.2998 998.414,-55.0186"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1000.48,-57.8461 1006.55,-49.1652 996.389,-52.1636 1000.48,-57.8461"/>
 </g>
 <!-- atlas -->
 <g id="node7" class="node"><title>atlas</title>
 <g id="a_node7"><a xlink:href="greece_atlas_full.html" xlink:title="Atlas">
-<ellipse fill="none" stroke="magenta" cx="583.347" cy="-33.2132" rx="29.4969" ry="18"/>
-<text text-anchor="middle" x="583.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Atlas</text>
+<ellipse fill="none" stroke="magenta" cx="854.347" cy="-33.2132" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="854.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Atlas</text>
 </a>
 </g>
 </g>
 <!-- blacksmith&#45;&gt;atlas -->
 <g id="edge17" class="edge"><title>blacksmith&#45;&gt;atlas</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M684.939,-120.676C664.886,-103.609 630.776,-74.5794 607.669,-54.913"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="609.879,-52.1981 599.995,-48.3822 605.342,-57.5289 609.879,-52.1981"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M757.059,-120.676C776.178,-103.684 808.641,-74.8327 830.765,-55.1712"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="833.254,-57.6414 838.404,-48.3822 828.604,-52.4091 833.254,-57.6414"/>
 </g>
 <!-- alexander -->
 <g id="node13" class="node"><title>alexander</title>
@@ -66,88 +66,88 @@
 </g>
 <!-- blacksmith&#45;&gt;alexander -->
 <g id="edge16" class="edge"><title>blacksmith&#45;&gt;alexander</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M765.155,-123.365C804.361,-116.686 855.662,-108.391 901.347,-102.426 1060.35,-81.6676 1107.68,-115.494 1260.35,-66.4264 1269.19,-63.5838 1278.17,-59.2084 1286.28,-54.5898"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1288.24,-57.4945 1295.01,-49.3404 1284.63,-51.4962 1288.24,-57.4945"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M766.242,-120.971C779.77,-114.202 797.029,-106.602 813.347,-102.426 1006.43,-53.0142 1070.01,-125.553 1260.35,-66.4264 1269.22,-63.6705 1278.21,-59.3258 1286.32,-54.7088"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1288.28,-57.6107 1295.04,-49.4506 1284.67,-51.6156 1288.28,-57.6107"/>
 </g>
 <!-- battering_ram -->
 <g id="node14" class="node"><title>battering_ram</title>
 <g id="a_node14"><a xlink:href="greece_battering_ram_full.html" xlink:title="Battering\nRam">
-<ellipse fill="none" stroke="magenta" cx="397.347" cy="-33.2132" rx="47.2526" ry="26.7407"/>
-<text text-anchor="middle" x="397.347" y="-37.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Battering</text>
-<text text-anchor="middle" x="397.347" y="-22.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Ram</text>
+<ellipse fill="none" stroke="magenta" cx="396.347" cy="-33.2132" rx="47.2526" ry="26.7407"/>
+<text text-anchor="middle" x="396.347" y="-37.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Battering</text>
+<text text-anchor="middle" x="396.347" y="-22.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Ram</text>
 </a>
 </g>
 </g>
 <!-- blacksmith&#45;&gt;battering_ram -->
 <g id="edge18" class="edge"><title>blacksmith&#45;&gt;battering_ram</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M674.152,-120.986C660.644,-114.634 643.917,-107.401 628.347,-102.426 552.707,-78.261 527.594,-94.5811 453.347,-66.4264 447.77,-64.3119 442.095,-61.6861 436.601,-58.8525"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="438.035,-55.6481 427.578,-53.9415 434.688,-61.7963 438.035,-55.6481"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M677.734,-125.095C618.083,-114.88 527.123,-96.0248 452.347,-66.4264 446.868,-64.258 441.28,-61.6231 435.858,-58.8044"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="437.393,-55.655 426.939,-53.9373 434.04,-61.7997 437.393,-55.655"/>
 </g>
 <!-- hoplite -->
 <g id="node19" class="node"><title>hoplite</title>
 <g id="a_node19"><a xlink:href="greece_hoplite_full.html" xlink:title="Hoplite">
-<ellipse fill="none" stroke="magenta" cx="499.347" cy="-33.2132" rx="37.0935" ry="18"/>
-<text text-anchor="middle" x="499.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Hoplite</text>
+<ellipse fill="none" stroke="magenta" cx="498.347" cy="-33.2132" rx="37.0935" ry="18"/>
+<text text-anchor="middle" x="498.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Hoplite</text>
 </a>
 </g>
 </g>
 <!-- blacksmith&#45;&gt;hoplite -->
 <g id="edge21" class="edge"><title>blacksmith&#45;&gt;hoplite</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M670.463,-120.96C657.468,-115.217 642.18,-108.479 628.347,-102.426 591.509,-86.3098 580.437,-86.0586 545.347,-66.4264 539.173,-62.9723 532.803,-58.8882 526.844,-54.8088"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="528.669,-51.8126 518.479,-48.9092 524.634,-57.533 528.669,-51.8126"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M689.554,-120.991C648.866,-109.266 591.408,-90.4584 544.347,-66.4264 537.929,-63.1495 531.383,-59.0798 525.318,-54.9482"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="527.027,-51.8692 516.846,-48.9357 522.976,-57.5776 527.027,-51.8692"/>
 </g>
 <!-- onager -->
 <g id="node25" class="node"><title>onager</title>
 <g id="a_node25"><a xlink:href="greece_onager_full.html" xlink:title="Onager">
-<ellipse fill="none" stroke="magenta" cx="847.347" cy="-33.2132" rx="36.2938" ry="18"/>
-<text text-anchor="middle" x="847.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Onager</text>
+<ellipse fill="none" stroke="magenta" cx="770.347" cy="-33.2132" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="770.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Onager</text>
 </a>
 </g>
 </g>
 <!-- blacksmith&#45;&gt;onager -->
 <g id="edge22" class="edge"><title>blacksmith&#45;&gt;onager</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M721.698,-120.864C741.94,-107.138 773.859,-85.4253 801.347,-66.4264 807.059,-62.4785 813.153,-58.234 818.974,-54.1636"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="821.049,-56.9833 827.232,-48.3793 817.033,-51.2499 821.049,-56.9833"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M745.379,-120.676C749.838,-105.234 757.125,-80 762.678,-60.7679"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="766.067,-61.6504 765.478,-51.0719 759.341,-59.7083 766.067,-61.6504"/>
 </g>
 <!-- advanced_buildings -->
 <g id="node26" class="node"><title>advanced_buildings</title>
-<ellipse fill="none" stroke="black" cx="711.347" cy="-33.2132" rx="81.4863" ry="18"/>
-<text text-anchor="middle" x="711.347" y="-29.5132" font-family="Times,serif" font-size="14.00">advanced_buildings</text>
+<ellipse fill="none" stroke="black" cx="634.347" cy="-33.2132" rx="81.4863" ry="18"/>
+<text text-anchor="middle" x="634.347" y="-29.5132" font-family="Times,serif" font-size="14.00">advanced_buildings</text>
 </g>
 <!-- blacksmith&#45;&gt;advanced_buildings -->
 <g id="edge15" class="edge"><title>blacksmith&#45;&gt;advanced_buildings</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M702.737,-120.676C704.259,-105.396 706.735,-80.5287 708.642,-61.3756"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="712.125,-61.7177 709.633,-51.42 705.16,-61.024 712.125,-61.7177"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M726.469,-120.676C709.258,-104.523 680.63,-77.6534 659.849,-58.1489"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="661.996,-55.3634 652.309,-51.0719 657.205,-60.4675 661.996,-55.3634"/>
 </g>
 <!-- psiloi -->
 <g id="node2" class="node"><title>psiloi</title>
 <g id="a_node2"><a xlink:href="greece_psiloi_full.html" xlink:title="Psiloi">
-<ellipse fill="none" stroke="magenta" cx="301.347" cy="-33.2132" rx="30.5947" ry="18"/>
-<text text-anchor="middle" x="301.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Psiloi</text>
+<ellipse fill="none" stroke="magenta" cx="212.347" cy="-33.2132" rx="30.5947" ry="18"/>
+<text text-anchor="middle" x="212.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Psiloi</text>
 </a>
 </g>
 </g>
 <!-- air_box -->
 <g id="node3" class="node"><title>air_box</title>
 <g id="a_node3"><a xlink:href="greece_air_box_full.html" xlink:title="Air\nBox">
-<polygon fill="none" stroke="red" points="1061.52,-43.543 1027.35,-66.641 993.172,-43.543 993.204,-6.16955 1061.49,-6.16955 1061.52,-43.543"/>
-<text text-anchor="middle" x="1027.35" y="-37.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Air</text>
-<text text-anchor="middle" x="1027.35" y="-22.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Box</text>
+<polygon fill="none" stroke="red" points="969.521,-43.543 935.347,-66.641 901.172,-43.543 901.204,-6.16955 969.489,-6.16955 969.521,-43.543"/>
+<text text-anchor="middle" x="935.347" y="-37.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Air</text>
+<text text-anchor="middle" x="935.347" y="-22.0132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Box</text>
 </a>
 </g>
 </g>
 <!-- palace -->
 <g id="node5" class="node"><title>palace</title>
 <g id="a_node5"><a xlink:href="greece_palace_full.html" xlink:title="Palace">
-<polygon fill="none" stroke="red" points="1152.9,-141.202 1111.35,-153.64 1069.79,-141.202 1069.83,-121.077 1152.86,-121.077 1152.9,-141.202"/>
-<text text-anchor="middle" x="1111.35" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Palace</text>
+<polygon fill="none" stroke="red" points="1157.9,-141.202 1116.35,-153.64 1074.79,-141.202 1074.83,-121.077 1157.86,-121.077 1157.9,-141.202"/>
+<text text-anchor="middle" x="1116.35" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Palace</text>
 </a>
 </g>
 </g>
 <!-- palace&#45;&gt;chariot -->
 <g id="edge34" class="edge"><title>palace&#45;&gt;chariot</title>
-<path fill="none" stroke="#ebc72d" d="M1083.57,-120.917C1057.48,-107.749 1017.59,-86.8973 984.347,-66.4264 978.434,-62.7859 972.251,-58.6778 966.406,-54.644"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="968.349,-51.7322 958.154,-48.8505 964.327,-57.4612 968.349,-51.7322"/>
+<path fill="none" stroke="#ebc72d" d="M1103.55,-120.676C1088.63,-104.381 1063.71,-77.1805 1045.8,-57.6366"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1048.18,-55.0524 1038.85,-50.043 1043.02,-59.7809 1048.18,-55.0524"/>
 </g>
 <!-- artemis -->
 <g id="node8" class="node"><title>artemis</title>
@@ -159,8 +159,8 @@
 </g>
 <!-- palace&#45;&gt;artemis -->
 <g id="edge33" class="edge"><title>palace&#45;&gt;artemis</title>
-<path fill="none" stroke="#ebc72d" d="M1125.25,-120.676C1141.55,-104.308 1168.8,-76.9385 1188.28,-57.3765"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1191.01,-59.5987 1195.58,-50.043 1186.05,-54.6595 1191.01,-59.5987"/>
+<path fill="none" stroke="#ebc72d" d="M1129.56,-120.676C1145.04,-104.308 1170.93,-76.9385 1189.43,-57.3765"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1192.04,-59.7129 1196.37,-50.043 1186.96,-54.9024 1192.04,-59.7129"/>
 </g>
 <!-- dragon -->
 <g id="node11" class="node"><title>dragon</title>
@@ -172,13 +172,13 @@
 </g>
 <!-- palace&#45;&gt;dragon -->
 <g id="edge35" class="edge"><title>palace&#45;&gt;dragon</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1112.04,-120.676C1112.8,-105.467 1114.03,-80.7588 1114.98,-61.642"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1118.49,-61.5818 1115.49,-51.42 1111.5,-61.2336 1118.49,-61.5818"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1116.35,-120.676C1116.35,-105.467 1116.35,-80.7588 1116.35,-61.642"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1119.85,-61.42 1116.35,-51.42 1112.85,-61.4201 1119.85,-61.42"/>
 </g>
 <!-- palace&#45;&gt;alexander -->
 <g id="edge32" class="edge"><title>palace&#45;&gt;alexander</title>
-<path fill="none" stroke="#ebc72d" d="M1133.27,-120.989C1143.44,-114.929 1155.81,-107.938 1167.35,-102.426 1207.34,-83.3208 1220.35,-85.5321 1260.35,-66.4264 1267.96,-62.789 1275.94,-58.5073 1283.4,-54.2743"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1285.62,-57.032 1292.52,-48.9905 1282.12,-50.975 1285.62,-57.032"/>
+<path fill="none" stroke="#ebc72d" d="M1147.03,-120.962C1176.43,-107.66 1221.87,-86.5667 1260.35,-66.4264 1267.75,-62.5499 1275.59,-58.2002 1282.99,-53.9813"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1285.14,-56.7825 1292.05,-48.7529 1281.64,-50.7195 1285.14,-56.7825"/>
 </g>
 <!-- oxybeles -->
 <g id="node24" class="node"><title>oxybeles</title>
@@ -190,50 +190,50 @@
 </g>
 <!-- palace&#45;&gt;oxybeles -->
 <g id="edge37" class="edge"><title>palace&#45;&gt;oxybeles</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1153.21,-127.481C1205.77,-117.647 1298.05,-97.5551 1372.35,-66.4264 1380.2,-63.1341 1388.29,-58.8552 1395.73,-54.4972"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1398.04,-57.194 1404.76,-49.0031 1394.39,-51.2155 1398.04,-57.194"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1158.3,-127.182C1210,-117.16 1299.88,-96.9925 1372.35,-66.4264 1380.2,-63.1154 1388.28,-58.8291 1395.72,-54.47"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1398.02,-57.1673 1404.74,-48.9775 1394.38,-51.1883 1398.02,-57.1673"/>
 </g>
 <!-- palace&#45;&gt;onager -->
 <g id="edge36" class="edge"><title>palace&#45;&gt;onager</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1070.9,-121.059C1053.26,-115.21 1032.32,-108.365 1013.35,-102.426 959.801,-85.6644 942.74,-91.0953 892.347,-66.4264 885.969,-63.3044 879.523,-59.3002 873.58,-55.1833"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="875.445,-52.212 865.299,-49.1608 871.328,-57.8731 875.445,-52.212"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1098.91,-121.037C1089.48,-114.372 1077.33,-106.849 1065.35,-102.426 960.442,-63.7204 920.301,-107.616 816.347,-66.4264 809.243,-63.6117 802.177,-59.5011 795.792,-55.1519"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="797.714,-52.222 787.567,-49.1727 793.598,-57.8839 797.714,-52.222"/>
 </g>
 <!-- advanced_barracks -->
 <g id="node9" class="node"><title>advanced_barracks</title>
 <g id="a_node9"><a xlink:href="greece_advanced_barracks_full.html" xlink:title="Advanced\nBarracks">
-<polygon fill="none" stroke="red" points="369.459,-145.969 307.347,-169.067 245.234,-145.969 245.292,-108.596 369.401,-108.596 369.459,-145.969"/>
-<text text-anchor="middle" x="307.347" y="-139.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Advanced</text>
-<text text-anchor="middle" x="307.347" y="-124.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Barracks</text>
+<polygon fill="none" stroke="red" points="362.459,-145.969 300.347,-169.067 238.234,-145.969 238.292,-108.596 362.401,-108.596 362.459,-145.969"/>
+<text text-anchor="middle" x="300.347" y="-139.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Advanced</text>
+<text text-anchor="middle" x="300.347" y="-124.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Barracks</text>
 </a>
 </g>
 </g>
 <!-- advanced_barracks&#45;&gt;psiloi -->
 <g id="edge7" class="edge"><title>advanced_barracks&#45;&gt;psiloi</title>
-<path fill="none" stroke="#ebc72d" d="M305.786,-108.516C304.928,-94.1592 303.865,-76.3593 302.994,-61.7809"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="306.462,-61.1445 302.372,-51.371 299.474,-61.562 306.462,-61.1445"/>
+<path fill="none" stroke="#ebc72d" d="M277.455,-108.516C263.619,-92.7263 246.134,-72.7718 232.768,-57.5186"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="235.039,-54.799 225.816,-49.5846 229.774,-59.4123 235.039,-54.799"/>
 </g>
 <!-- advanced_barracks&#45;&gt;cavalry -->
 <g id="edge3" class="edge"><title>advanced_barracks&#45;&gt;cavalry</title>
-<path fill="none" stroke="#ebc72d" d="M248.364,-108.577C242.658,-106.377 236.92,-104.287 231.347,-102.426 168.361,-81.4048 147.052,-93.3331 86.3466,-66.4264 79.2817,-63.2951 72.1243,-59.1331 65.5692,-54.8438"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="67.2923,-51.7812 57.0689,-49.0006 63.327,-57.5497 67.2923,-51.7812"/>
+<path fill="none" stroke="#ebc72d" d="M240.923,-108.485C235.359,-106.33 229.773,-104.273 224.347,-102.426 164.341,-82.0041 144.142,-92.4536 86.3466,-66.4264 79.3004,-63.2533 72.1504,-59.0747 65.5965,-54.7826"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="67.3191,-51.7197 57.0946,-48.943 63.3559,-57.4898 67.3191,-51.7197"/>
 </g>
 <!-- archer -->
 <g id="node10" class="node"><title>archer</title>
 <g id="a_node10"><a xlink:href="greece_archer_full.html" xlink:title="Archer">
-<ellipse fill="none" stroke="magenta" cx="217.347" cy="-33.2132" rx="35.194" ry="18"/>
-<text text-anchor="middle" x="217.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Archer</text>
+<ellipse fill="none" stroke="magenta" cx="296.347" cy="-33.2132" rx="35.194" ry="18"/>
+<text text-anchor="middle" x="296.347" y="-29.5132" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Archer</text>
 </a>
 </g>
 </g>
 <!-- advanced_barracks&#45;&gt;archer -->
 <g id="edge1" class="edge"><title>advanced_barracks&#45;&gt;archer</title>
-<path fill="none" stroke="#ebc72d" d="M283.935,-108.516C269.742,-92.6791 251.795,-72.6524 238.11,-57.3819"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="240.665,-54.9885 231.384,-49.8773 235.452,-59.6603 240.665,-54.9885"/>
+<path fill="none" stroke="#ebc72d" d="M299.306,-108.516C298.734,-94.1592 298.025,-76.3593 297.445,-61.7809"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="300.925,-61.2238 297.03,-51.371 293.931,-61.5024 300.925,-61.2238"/>
 </g>
 <!-- advanced_barracks&#45;&gt;battering_ram -->
 <g id="edge2" class="edge"><title>advanced_barracks&#45;&gt;battering_ram</title>
-<path fill="none" stroke="#ebc72d" d="M330.758,-108.516C342.711,-95.1781 357.328,-78.8684 369.818,-64.931"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="372.441,-67.249 376.508,-57.466 367.228,-62.5772 372.441,-67.249"/>
+<path fill="none" stroke="#ebc72d" d="M325.319,-108.516C338.163,-95.08 353.889,-78.6284 367.276,-64.624"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="370.06,-66.7772 374.44,-57.1301 365,-61.9402 370.06,-66.7772"/>
 </g>
 <!-- peltast -->
 <g id="node16" class="node"><title>peltast</title>
@@ -245,228 +245,223 @@
 </g>
 <!-- advanced_barracks&#45;&gt;peltast -->
 <g id="edge6" class="edge"><title>advanced_barracks&#45;&gt;peltast</title>
-<path fill="none" stroke="#ebc72d" d="M251.161,-108.55C226.755,-96.5809 198.139,-81.6752 173.347,-66.4264 167.631,-62.9112 161.708,-58.8732 156.13,-54.8715"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="157.858,-51.7978 147.728,-48.6931 153.711,-57.4372 157.858,-51.7978"/>
+<path fill="none" stroke="#ebc72d" d="M247,-108.534C223.622,-96.5051 196.147,-81.5573 172.347,-66.4264 166.768,-62.8796 160.982,-58.8275 155.531,-54.8219"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="157.416,-51.8597 147.32,-48.6448 153.208,-57.4535 157.416,-51.8597"/>
 </g>
 <!-- advanced_barracks&#45;&gt;hoplite -->
 <g id="edge4" class="edge"><title>advanced_barracks&#45;&gt;hoplite</title>
-<path fill="none" stroke="#ebc72d" d="M369.284,-108.572C395.718,-96.7184 426.58,-81.8946 453.347,-66.4264 459.472,-62.8867 465.821,-58.7656 471.774,-54.677"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="473.982,-57.4025 480.141,-48.7815 469.95,-51.6802 473.982,-57.4025"/>
+<path fill="none" stroke="#ebc72d" d="M357.681,-108.581C362.302,-106.494 366.901,-104.423 371.347,-102.426 407.285,-86.2878 418.053,-85.8154 452.347,-66.4264 458.505,-62.9446 464.868,-58.8485 470.825,-54.7661"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="473.034,-57.4908 479.19,-48.8679 469.001,-51.7697 473.034,-57.4908"/>
 </g>
 <!-- advanced_barracks&#45;&gt;onager -->
 <g id="edge5" class="edge"><title>advanced_barracks&#45;&gt;onager</title>
-<path fill="none" stroke="#ebc72d" d="M369.66,-113.965C384.799,-109.571 401.039,-105.375 416.347,-102.426 585.102,-69.9198 640.031,-125.691 801.347,-66.4264 808.519,-63.7914 815.611,-59.7504 822,-55.4115"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="824.204,-58.1363 830.218,-49.4139 820.077,-52.4821 824.204,-58.1363"/>
+<path fill="none" stroke="#ebc72d" d="M353.158,-108.45C359.192,-106.13 365.336,-104.05 371.347,-102.426 523.594,-61.308 576.547,-121.431 724.347,-66.4264 731.508,-63.7613 738.596,-59.7087 744.984,-55.368"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="747.186,-58.0941 753.203,-49.3735 743.061,-52.4385 747.186,-58.0941"/>
 </g>
 <!-- barley_field -->
 <g id="node12" class="node"><title>barley_field</title>
 <g id="a_node12"><a xlink:href="greece_barley_field_full.html" xlink:title="Barley\nField">
-<polygon fill="none" stroke="red" points="198.495,-248.396 152.347,-271.494 106.199,-248.396 106.242,-211.022 198.452,-211.022 198.495,-248.396"/>
-<text text-anchor="middle" x="152.347" y="-241.866" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Barley</text>
-<text text-anchor="middle" x="152.347" y="-226.866" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Field</text>
+<polygon fill="none" stroke="red" points="494.495,-320.396 448.347,-343.494 402.199,-320.396 402.242,-283.022 494.452,-283.022 494.495,-320.396"/>
+<text text-anchor="middle" x="448.347" y="-313.866" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Barley</text>
+<text text-anchor="middle" x="448.347" y="-298.866" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Field</text>
 </a>
 </g>
 </g>
 <!-- barley_field&#45;&gt;cavalry -->
 <g id="edge8" class="edge"><title>barley_field&#45;&gt;cavalry</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M137.676,-210.962C115.723,-171.898 74.5778,-98.6834 52.7695,-59.8775"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="55.6155,-57.7976 47.6651,-50.7947 49.5132,-61.2271 55.6155,-57.7976"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M402.123,-286.833C350.312,-261.129 264.622,-216.242 196.347,-168.853 145.524,-133.578 91.8171,-85.0714 61.9457,-56.939"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="64.1937,-54.2474 54.5277,-49.9092 59.3786,-59.3283 64.1937,-54.2474"/>
 </g>
 <!-- trojan_horse -->
 <g id="node15" class="node"><title>trojan_horse</title>
 <g id="a_node15"><a xlink:href="greece_trojan_horse_full.html" xlink:title="Trojan\nHorse">
-<polygon fill="none" stroke="red" points="619.495,-145.969 573.347,-169.067 527.199,-145.969 527.242,-108.596 619.452,-108.596 619.495,-145.969"/>
-<text text-anchor="middle" x="573.347" y="-139.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Trojan</text>
-<text text-anchor="middle" x="573.347" y="-124.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Horse</text>
+<polygon fill="none" stroke="red" points="472.495,-145.969 426.347,-169.067 380.199,-145.969 380.242,-108.596 472.452,-108.596 472.495,-145.969"/>
+<text text-anchor="middle" x="426.347" y="-139.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Trojan</text>
+<text text-anchor="middle" x="426.347" y="-124.44" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Horse</text>
 </a>
 </g>
 </g>
 <!-- trojan_horse&#45;&gt;psiloi -->
-<g id="edge50" class="edge"><title>trojan_horse&#45;&gt;psiloi</title>
-<path fill="none" stroke="#ebc72d" d="M532.019,-108.532C527.504,-106.258 522.894,-104.166 518.347,-102.426 443.365,-73.7532 414.001,-100.57 341.347,-66.4264 335.415,-63.6391 329.593,-59.7969 324.305,-55.7353"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="326.438,-52.9579 316.498,-49.2924 321.983,-58.3569 326.438,-52.9579"/>
-</g>
-<!-- trojan_horse&#45;&gt;atlas -->
-<g id="edge48" class="edge"><title>trojan_horse&#45;&gt;atlas</title>
-<path fill="none" stroke="#ebc72d" d="M575.948,-108.516C577.391,-94.0185 579.185,-76.01 580.644,-61.3531"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="584.13,-61.6687 581.638,-51.371 577.164,-60.975 584.13,-61.6687"/>
+<g id="edge49" class="edge"><title>trojan_horse&#45;&gt;psiloi</title>
+<path fill="none" stroke="#ebc72d" d="M383.925,-108.483C379.741,-106.303 375.504,-104.242 371.347,-102.426 320.71,-80.3096 301.208,-92.2301 252.347,-66.4264 246.552,-63.366 240.787,-59.4076 235.513,-55.319"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="237.644,-52.5402 227.695,-48.8974 233.201,-57.9493 237.644,-52.5402"/>
 </g>
 <!-- trojan_horse&#45;&gt;archer -->
 <g id="edge47" class="edge"><title>trojan_horse&#45;&gt;archer</title>
-<path fill="none" stroke="#ebc72d" d="M532.742,-108.547C528.011,-106.208 523.155,-104.098 518.347,-102.426 409.402,-64.5611 368.217,-109.803 261.347,-66.4264 254.628,-63.6993 247.99,-59.7204 241.988,-55.483"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="243.793,-52.4599 233.711,-49.2052 239.563,-58.0371 243.793,-52.4599"/>
+<path fill="none" stroke="#ebc72d" d="M392.53,-108.516C370.939,-91.8364 343.331,-70.5093 323.236,-54.9859"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="325.177,-52.0625 315.124,-48.7189 320.898,-57.6021 325.177,-52.0625"/>
 </g>
 <!-- trojan_horse&#45;&gt;hoplite -->
-<g id="edge49" class="edge"><title>trojan_horse&#45;&gt;hoplite</title>
-<path fill="none" stroke="#ebc72d" d="M554.097,-108.516C542.785,-93.164 528.572,-73.8749 517.462,-58.7977"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="520.074,-56.4431 511.325,-50.4688 514.439,-60.5956 520.074,-56.4431"/>
+<g id="edge48" class="edge"><title>trojan_horse&#45;&gt;hoplite</title>
+<path fill="none" stroke="#ebc72d" d="M445.076,-108.516C456.082,-93.164 469.911,-73.8749 480.721,-58.7977"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="483.71,-60.6353 486.692,-50.4688 478.021,-56.5566 483.71,-60.6353"/>
 </g>
 <!-- tower -->
 <g id="node17" class="node"><title>tower</title>
 <g id="a_node17"><a xlink:href="greece_tower_full.html" xlink:title="Tower">
-<polygon fill="none" stroke="red" points="508.899,-141.202 467.347,-153.64 425.795,-141.202 425.833,-121.077 508.86,-121.077 508.899,-141.202"/>
-<text text-anchor="middle" x="467.347" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Tower</text>
+<polygon fill="none" stroke="red" points="905.899,-141.202 864.347,-153.64 822.795,-141.202 822.833,-121.077 905.86,-121.077 905.899,-141.202"/>
+<text text-anchor="middle" x="864.347" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Tower</text>
 </a>
 </g>
 </g>
 <!-- temple -->
 <g id="node18" class="node"><title>temple</title>
 <g id="a_node18"><a xlink:href="greece_temple_full.html" xlink:title="Temple">
-<polygon fill="none" stroke="red" points="1004.64,-141.202 957.347,-153.64 910.048,-141.202 910.093,-121.077 1004.6,-121.077 1004.64,-141.202"/>
-<text text-anchor="middle" x="957.347" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Temple</text>
+<polygon fill="none" stroke="red" points="1056.64,-141.202 1009.35,-153.64 962.048,-141.202 962.093,-121.077 1056.6,-121.077 1056.64,-141.202"/>
+<text text-anchor="middle" x="1009.35" y="-131.94" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Temple</text>
 </a>
 </g>
 </g>
 <!-- temple&#45;&gt;air_box -->
 <g id="edge43" class="edge"><title>temple&#45;&gt;air_box</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M967.08,-120.676C977.114,-106.281 993.08,-83.3748 1006.06,-64.7552"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1008.93,-66.753 1011.78,-56.5479 1003.19,-62.7502 1008.93,-66.753"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M999.057,-120.676C988.381,-106.187 971.352,-83.077 957.585,-64.3931"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="960.273,-62.1412 951.523,-56.1669 954.638,-66.2936 960.273,-62.1412"/>
 </g>
 <!-- temple&#45;&gt;chariot -->
 <g id="edge45" class="edge"><title>temple&#45;&gt;chariot</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M954.705,-120.676C951.814,-105.396 947.109,-80.5287 943.486,-61.3756"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="946.9,-60.5951 941.602,-51.42 940.022,-61.8964 946.9,-60.5951"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1011.43,-120.676C1013.71,-105.396 1017.43,-80.5287 1020.29,-61.3756"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1023.76,-61.8274 1021.78,-51.42 1016.84,-60.7933 1023.76,-61.8274"/>
 </g>
 <!-- temple&#45;&gt;atlas -->
 <g id="edge44" class="edge"><title>temple&#45;&gt;atlas</title>
-<path fill="none" stroke="#ebc72d" d="M910.004,-126.379C823.658,-111.116 647.085,-78.9146 621.347,-66.4264 615.764,-63.7176 610.325,-59.9968 605.389,-56.044"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="607.468,-53.2142 597.618,-49.3104 602.883,-58.5043 607.468,-53.2142"/>
+<path fill="none" stroke="#ebc72d" d="M982.977,-120.99C958.718,-108.036 922.103,-87.4684 892.347,-66.4264 887.58,-63.0558 882.685,-59.2231 878.061,-55.4064"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="880.004,-52.464 870.117,-48.6566 875.471,-57.7987 880.004,-52.464"/>
 </g>
 <!-- temple&#45;&gt;dragon -->
 <g id="edge46" class="edge"><title>temple&#45;&gt;dragon</title>
-<path fill="none" stroke="#ebc72d" d="M981.007,-120.987C1004.07,-107.532 1040,-86.1778 1070.35,-66.4264 1076.17,-62.6386 1082.31,-58.4652 1088.14,-54.4138"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1090.22,-57.2322 1096.4,-48.6247 1086.2,-51.5012 1090.22,-57.2322"/>
+<path fill="none" stroke="#ebc72d" d="M1024.22,-120.676C1041.84,-104.14 1071.42,-76.3755 1092.31,-56.7766"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1094.94,-59.101 1099.84,-49.7053 1090.15,-53.9969 1094.94,-59.101"/>
 </g>
 <!-- slave -->
 <g id="node20" class="node"><title>slave</title>
 <g id="a_node20"><a xlink:href="greece_slave_full.html" xlink:title="Slave">
-<ellipse fill="none" stroke="magenta" cx="471.347" cy="-325.279" rx="30.5947" ry="18"/>
-<text text-anchor="middle" x="471.347" y="-321.579" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Slave</text>
+<ellipse fill="none" stroke="magenta" cx="864.347" cy="-397.279" rx="30.5947" ry="18"/>
+<text text-anchor="middle" x="864.347" y="-393.579" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Slave</text>
 </a>
 </g>
 </g>
 <!-- slave&#45;&gt;blacksmith -->
 <g id="edge40" class="edge"><title>slave&#45;&gt;blacksmith</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M589.347,-237.066C606.437,-201.024 643.001,-172.241 669.719,-154.885"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="671.763,-157.734 678.36,-149.444 668.033,-151.811 671.763,-157.734"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M864.347,-309.066C842.787,-277.929 875.795,-259.954 864.347,-223.853"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M864.347,-221.853C857.904,-201.538 809.195,-172.26 775.044,-153.853"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="776.318,-150.567 765.845,-148.966 773.034,-156.749 776.318,-150.567"/>
 </g>
 <!-- slave&#45;&gt;barley_field -->
 <g id="edge38" class="edge"><title>slave&#45;&gt;barley_field</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M444.149,-317.014C391.086,-302.84 272.959,-271.285 204.382,-252.966"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="205.202,-249.563 194.638,-250.363 203.396,-256.325 205.202,-249.563"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M835.753,-390.422C767.614,-376.465 594.651,-341.035 504.671,-322.603"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="505.147,-319.128 494.648,-320.55 503.742,-325.986 505.147,-319.128"/>
 </g>
 <!-- slave&#45;&gt;tower -->
 <g id="edge42" class="edge"><title>slave&#45;&gt;tower</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M496.373,-314.923C525.216,-302.576 570.996,-277.767 589.347,-239.066"/>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M589.347,-237.066C594.692,-225.793 530.835,-179.829 493.427,-154.171"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="495.224,-151.16 484.99,-148.42 491.282,-156.944 495.224,-151.16"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M864.347,-221.853C858.367,-202.997 858.634,-180.592 860.253,-163.489"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="863.782,-163.443 861.461,-153.106 856.829,-162.635 863.782,-163.443"/>
 </g>
 <!-- barracks -->
 <g id="node22" class="node"><title>barracks</title>
 <g id="a_node22"><a xlink:href="greece_barracks_full.html" xlink:title="Barracks">
-<polygon fill="none" stroke="red" points="406.786,-243.628 354.347,-256.066 301.907,-243.628 301.956,-223.504 406.737,-223.504 406.786,-243.628"/>
-<text text-anchor="middle" x="354.347" y="-234.366" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Barracks</text>
+<polygon fill="none" stroke="red" points="452.786,-228.415 400.347,-240.853 347.907,-228.415 347.956,-208.291 452.737,-208.291 452.786,-228.415"/>
+<text text-anchor="middle" x="400.347" y="-219.153" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Barracks</text>
 </a>
 </g>
 </g>
 <!-- slave&#45;&gt;barracks -->
 <g id="edge39" class="edge"><title>slave&#45;&gt;barracks</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M452.808,-310.777C433.239,-296.525 402.245,-273.951 380.263,-257.941"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="382.177,-255.006 372.033,-251.947 378.056,-260.664 382.177,-255.006"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M869.614,-379.24C874.226,-360.733 878.242,-331.135 864.347,-311.066"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M864.347,-309.066C819.371,-244.111 578.658,-228.662 462.775,-224.993"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="462.732,-221.49 452.632,-224.692 462.524,-228.487 462.732,-221.49"/>
 </g>
 <!-- castle -->
 <g id="node23" class="node"><title>castle</title>
 <g id="a_node23"><a xlink:href="greece_castle_full.html" xlink:title="Castle">
-<polygon fill="none" stroke="red" points="922.685,-402.842 882.347,-415.279 842.009,-402.842 842.046,-382.717 922.647,-382.717 922.685,-402.842"/>
-<text text-anchor="middle" x="882.347" y="-393.579" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Castle</text>
+<polygon fill="none" stroke="red" points="1011.68,-315.628 971.347,-328.066 931.009,-315.628 931.046,-295.504 1011.65,-295.504 1011.68,-315.628"/>
+<text text-anchor="middle" x="971.347" y="-306.366" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Castle</text>
 </a>
 </g>
+</g>
+<!-- slave&#45;&gt;castle -->
+<g id="edge41" class="edge"><title>slave&#45;&gt;castle</title>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M890.002,-375.848C907.6,-361.833 930.771,-343.38 947.88,-329.754"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="887.658,-373.24 882.015,-382.208 892.018,-378.716 887.658,-373.24"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="950.099,-332.461 955.741,-323.494 945.738,-326.986 950.099,-332.461"/>
 </g>
 <!-- engineer -->
 <g id="node21" class="node"><title>engineer</title>
 <g id="a_node21"><a xlink:href="greece_engineer_full.html" xlink:title="Engineer">
-<ellipse fill="none" stroke="magenta" cx="1032.35" cy="-238.066" rx="42.4939" ry="18"/>
-<text text-anchor="middle" x="1032.35" y="-234.366" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Engineer</text>
+<ellipse fill="none" stroke="magenta" cx="971.347" cy="-222.853" rx="42.4939" ry="18"/>
+<text text-anchor="middle" x="971.347" y="-219.153" font-family="Times,serif" font-size="14.00" fill="#ebc72d">Engineer</text>
 </a>
 </g>
 </g>
 <!-- engineer&#45;&gt;air_box -->
 <g id="edge26" class="edge"><title>engineer&#45;&gt;air_box</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M1031.92,-219.771C1031.14,-188.282 1029.48,-120.763 1028.39,-76.4428"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="1031.88,-76.1721 1028.14,-66.2614 1024.88,-76.3446 1031.88,-76.1721"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M964.652,-204.913C960.825,-194.628 956.228,-181.153 953.347,-168.853 946.104,-137.941 941.501,-102.305 938.764,-75.4631"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="942.224,-74.8839 937.771,-65.2704 935.257,-75.5627 942.224,-74.8839"/>
 </g>
 <!-- engineer&#45;&gt;palace -->
 <g id="edge28" class="edge"><title>engineer&#45;&gt;palace</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M1045.39,-220.483C1058.69,-203.574 1079.4,-177.248 1094.06,-158.613"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="1096.89,-160.677 1100.32,-150.653 1091.39,-156.349 1096.89,-160.677"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M996.28,-208.239C1015.34,-197.726 1042.18,-182.686 1065.35,-168.853 1073.23,-164.144 1081.7,-158.882 1089.42,-153.998"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="1091.51,-156.815 1098.07,-148.493 1087.76,-150.91 1091.51,-156.815"/>
 </g>
 <!-- engineer&#45;&gt;trojan_horse -->
 <g id="edge31" class="edge"><title>engineer&#45;&gt;trojan_horse</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M990.512,-234.851C915.918,-229.847 755.9,-214.31 629.347,-168.853 622.893,-166.535 616.327,-163.486 610.072,-160.189"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="611.617,-157.043 601.178,-155.235 608.211,-163.159 611.617,-157.043"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M933.385,-214.639C916.546,-211.51 896.479,-207.878 878.347,-204.853 736.178,-181.137 568.235,-156.739 482.643,-144.563"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="483.013,-141.081 472.62,-143.14 482.029,-148.011 483.013,-141.081"/>
 </g>
 <!-- engineer&#45;&gt;tower -->
 <g id="edge30" class="edge"><title>engineer&#45;&gt;tower</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M989.936,-237.495C900.122,-237.115 685.286,-229.346 518.347,-168.853 508.947,-165.447 499.465,-160.101 491.27,-154.736"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="493.166,-151.793 482.947,-148.998 489.193,-157.556 493.166,-151.793"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M952.217,-206.618C934.309,-192.357 907.491,-170.999 888.195,-155.632"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="890.179,-152.738 880.176,-149.246 885.818,-158.214 890.179,-152.738"/>
 </g>
 <!-- engineer&#45;&gt;temple -->
 <g id="edge29" class="edge"><title>engineer&#45;&gt;temple</title>
-<path fill="none" stroke="#ebc72d" stroke-width="2" d="M1019.96,-220.483C1007.46,-203.746 988.074,-177.784 974.184,-159.185"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="976.835,-156.886 968.047,-150.968 971.227,-161.075 976.835,-156.886"/>
+<path fill="none" stroke="#ebc72d" stroke-width="2" d="M978.854,-205.017C984.389,-192.606 992.008,-175.521 998.245,-161.534"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" stroke-width="2" points="1001.62,-162.566 1002.49,-152.008 995.224,-159.715 1001.62,-162.566"/>
 </g>
 <!-- engineer&#45;&gt;oxybeles -->
 <g id="edge27" class="edge"><title>engineer&#45;&gt;oxybeles</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="5,2" d="M1059.58,-224.23C1117.71,-196.649 1257.97,-129.135 1372.35,-66.4264 1379.55,-62.4781 1387.18,-58.0683 1394.37,-53.8092"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1396.39,-56.6801 1403.17,-48.5411 1392.79,-50.6737 1396.39,-56.6801"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="5,2" d="M1008.53,-214.125C1048.47,-205.289 1113.48,-189.357 1167.35,-168.853 1262.53,-132.619 1282.99,-115.311 1372.35,-66.4264 1379.55,-62.4845 1387.19,-58.0774 1394.37,-53.8189"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1396.39,-56.6896 1403.18,-48.5505 1392.8,-50.6834 1396.39,-56.6896"/>
 </g>
 <!-- barracks&#45;&gt;psiloi -->
 <g id="edge14" class="edge"><title>barracks&#45;&gt;psiloi</title>
-<path fill="none" stroke="#ebc72d" d="M217.347,-134.64C205.151,-119.386 247.178,-79.3587 276.128,-54.6908"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="278.482,-57.2842 283.891,-48.1738 273.981,-51.9231 278.482,-57.2842"/>
+<path fill="none" stroke="#ebc72d" d="M210.347,-134.64C191.978,-115.378 196.223,-83.3878 202.646,-60.6926"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="206.034,-61.5871 205.677,-50.9982 199.352,-59.4981 206.034,-61.5871"/>
 </g>
 <!-- barracks&#45;&gt;cavalry -->
 <g id="edge11" class="edge"><title>barracks&#45;&gt;cavalry</title>
-<path fill="none" stroke="#ebc72d" d="M321.038,-223.458C295.573,-211.813 260.798,-193.091 236.347,-168.853 224.542,-157.151 227.726,-149.622 217.347,-136.64"/>
-<path fill="none" stroke="#ebc72d" d="M217.347,-134.64C176.355,-83.3691 142.798,-99.9262 86.3466,-66.4264 79.9383,-62.6235 73.2094,-58.3168 66.885,-54.1183"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="68.8275,-51.2068 58.5796,-48.5178 64.9139,-57.0106 68.8275,-51.2068"/>
+<path fill="none" stroke="#ebc72d" d="M347.856,-215.696C311.416,-209.167 263.474,-195.847 229.347,-168.853 216.31,-158.541 221.818,-148.669 210.347,-136.64"/>
+<path fill="none" stroke="#ebc72d" d="M210.347,-134.64C166.938,-89.1199 140.068,-99.1421 86.3466,-66.4264 80.242,-62.7088 73.819,-58.5666 67.7273,-54.5236"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="69.3664,-51.4081 59.1149,-48.7324 65.4603,-57.217 69.3664,-51.4081"/>
 </g>
 <!-- barracks&#45;&gt;advanced_barracks -->
 <g id="edge9" class="edge"><title>barracks&#45;&gt;advanced_barracks</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="5,2" d="M347.811,-223.102C341.852,-210.369 332.777,-190.978 324.73,-173.784"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="327.801,-172.088 320.392,-164.514 321.461,-175.055 327.801,-172.088"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="5,2" d="M384.28,-208.162C370.995,-196.841 351.658,-180.364 334.893,-166.078"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="336.788,-163.094 326.907,-159.272 332.248,-168.422 336.788,-163.094"/>
 </g>
 <!-- barracks&#45;&gt;archer -->
 <g id="edge10" class="edge"><title>barracks&#45;&gt;archer</title>
-<path fill="none" stroke="#ebc72d" d="M217.347,-134.64C200.992,-114.184 203.83,-83.158 208.968,-61.0086"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="212.382,-61.7897 211.516,-51.2303 205.608,-60.0251 212.382,-61.7897"/>
+<path fill="none" stroke="#ebc72d" d="M210.347,-134.64C196.808,-120.442 239.689,-80.4323 269.683,-55.4089"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="272.241,-57.8365 277.743,-48.7824 267.796,-52.4292 272.241,-57.8365"/>
 </g>
 <!-- barracks&#45;&gt;peltast -->
 <g id="edge13" class="edge"><title>barracks&#45;&gt;peltast</title>
-<path fill="none" stroke="#ebc72d" d="M217.347,-134.64C195.493,-107.306 168.813,-77.2875 150.597,-57.2553"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="153.149,-54.8599 143.822,-49.8354 147.98,-59.58 153.149,-54.8599"/>
+<path fill="none" stroke="#ebc72d" d="M210.347,-134.64C186.842,-109.992 162.684,-79.1951 146.94,-58.249"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="149.718,-56.1198 140.936,-50.194 144.106,-60.3034 149.718,-56.1198"/>
 </g>
 <!-- barracks&#45;&gt;hoplite -->
 <g id="edge12" class="edge"><title>barracks&#45;&gt;hoplite</title>
-<path fill="none" stroke="#ebc72d" d="M358.374,-223.363C366.379,-197.72 386.162,-141.544 416.347,-102.426 424.709,-91.5894 450.767,-70.7555 471.48,-54.9506"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="473.817,-57.5708 479.676,-48.7436 469.591,-51.9903 473.817,-57.5708"/>
+<path fill="none" stroke="#ebc72d" d="M433.937,-208.207C450.955,-199.512 470.304,-186.525 481.347,-168.853 501.717,-136.253 503.027,-90.518 501.298,-61.632"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="504.772,-61.1531 500.52,-51.4488 497.792,-61.6863 504.772,-61.1531"/>
 </g>
 <!-- castle&#45;&gt;alexander -->
 <g id="edge23" class="edge"><title>castle&#45;&gt;alexander</title>
-<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M1181.35,-324.279C1214.44,-222.28 1274.4,-109.158 1301.88,-59.6974"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1304.95,-61.384 1306.77,-50.9476 1298.84,-57.9675 1304.95,-61.384"/>
-</g>
-<!-- castle&#45;&gt;slave -->
-<g id="edge25" class="edge"><title>castle&#45;&gt;slave</title>
-<path fill="none" stroke="#ebc72d" d="M831.909,-387.689C748.822,-373.538 584.941,-345.626 510.177,-332.893"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="831.368,-391.147 841.814,-389.376 832.543,-384.246 831.368,-391.147"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="510.682,-329.428 500.236,-331.2 509.507,-336.329 510.682,-329.428"/>
+<path fill="none" stroke="#ebc72d" stroke-dasharray="1,5" d="M991.939,-295.471C1028.28,-271.236 1105.76,-218.445 1167.35,-168.853 1213.27,-131.878 1263.54,-85.0036 1292.37,-57.4411"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="1295.12,-59.6524 1299.91,-50.2035 1290.27,-54.6014 1295.12,-59.6524"/>
 </g>
 <!-- castle&#45;&gt;engineer -->
 <g id="edge24" class="edge"><title>castle&#45;&gt;engineer</title>
-<path fill="none" stroke="#ebc72d" d="M922.753,-394.655C1000.64,-390.419 1165.32,-375.658 1181.35,-326.279"/>
-<path fill="none" stroke="#ebc72d" d="M1181.35,-324.279C1196.45,-277.741 1130.89,-255.846 1081.92,-246.128"/>
-<polygon fill="#ebc72d" stroke="#ebc72d" points="1082.54,-242.683 1072.07,-244.288 1081.26,-249.564 1082.54,-242.683"/>
+<path fill="none" stroke="#ebc72d" d="M971.347,-295.375C971.347,-283.488 971.347,-265.915 971.347,-251.163"/>
+<polygon fill="#ebc72d" stroke="#ebc72d" points="974.847,-251.041 971.347,-241.041 967.847,-251.041 974.847,-251.041"/>
 </g>
 </g>
 </svg>

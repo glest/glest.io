@@ -135,8 +135,6 @@ digraph test {
 		shape=house];
 	trojan_horse -> psiloi	 [color="0.13472,0.809,0.925;",
 		style=solid];
-	trojan_horse -> atlas	 [color="0.13472,0.809,0.925;",
-		style=solid];
 	trojan_horse -> archer	 [color="0.13472,0.809,0.925;",
 		style=solid];
 	trojan_horse -> hoplite	 [color="0.13472,0.809,0.925;",
