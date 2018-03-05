@@ -6,7 +6,13 @@ layout:default
 </p>
 <ul>
   <li>Zetapack has replaced Megapack</li>
-  <li>Three factions have been added: The Great Ming, Greece, and British</li>
+  <li>Four factions have been added
+    <ul>
+      <li><a href="https://zetaglest.github.io/elves_overview.html">Elves</a></li>
+      <li><a href="https://zetaglest.github.io/the_great_ming_overview.html">The Great Ming</a></li>
+      <li><a href="https://zetaglest.github.io/greece_overview.html">Greece</a></li>
+      <li><a href="https://zetaglest.github.io/british_overview.html">British</a></li>
+    </ul>
   <li>The lobby test scenario has been removed.</li>
   <li>
     Key changes: M for Move, H for chat history, T for team chat
@@ -28,9 +34,11 @@ layout:default
     points).
   </li>
   <li>
-    If playing Magic or Norse, mobile units standing within a range of 8 cells
-    from an Archmage tower or a Valhalla will be auto-healed
-    (adds 5 regeneration points per building)
+    If playing <a href="https://zetaglest.github.io/magic_overview.html">Magic</a>
+    or <a href="https://zetaglest.github.io/norsemen_overview.html">Norse</a>,
+    mobile units standing within a range of 8 cells from an Archmage
+    tower or a Valhalla will be auto-healed (adds 5 regeneration points
+    per building)
   </li>
   <li>
     The CPU is more difficult. For instance, If before you had trouble
@@ -38,8 +46,9 @@ layout:default
     2.0
   </li>
   <li>
-    Magic and Tech have been rebalanced, to make the more competitive with
-    the other factions.
+    Magic and <a href="https://zetaglest.github.io/tech_overview.html">Tech</a> have
+    been rebalanced, to make the more competitive with the other
+    factions.
   </li>
   <li>
     Observers aren't required to use slots on the map. If you are
