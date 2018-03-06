@@ -38,12 +38,6 @@
 #   define PATH_MAX 1024
 #endif
 
-#ifdef WIN32
-  #define PATH_SEP "\\"
-#else
-  #define PATH_SEP "/"
-#endif
-
 #ifndef VERSION
   #define VERSION "unversioned"
 #endif
