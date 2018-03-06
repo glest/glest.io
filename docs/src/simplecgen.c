@@ -50,7 +50,7 @@ int main(int argc, char **argv)
   char *bin_dir = dirname (argv[0]);
 
   char cfg_file[PATH_MAX + 1];
-  sprintf (cfg_file, "%s/%s", bin_dir, CONFIG_FILE_BASE);
+  sprintf (cfg_file, "%s%s%s", bin_dir, PATH_SEP, CONFIG_FILE_BASE);
 
   struct_cfg *cfgopts = calloc (sizeof (struct_cfg), 1);
 
@@ -73,7 +73,11 @@ int main(int argc, char **argv)
 #endif
 
   FILE *tail_fp;
+  #ifdef WIN32
+  if ((tail_fp = fopen ("templates\\tail.html", "r")) == NULL)
+    #else
   if ((tail_fp = fopen ("templates/tail.html", "r")) == NULL)
+  #endif
   {
     perror ("Error opening file");
     return errno;
@@ -116,10 +120,10 @@ int main(int argc, char **argv)
       continue;
 
     char input_file[FILENAME_LEN_MAX + 1];
-    sprintf (input_file, "infiles/%s", dir_entry->d_name);
+    sprintf (input_file, "infiles%s%s", PATH_SEP, dir_entry->d_name);
 
     char infile_URL[FILENAME_LEN_MAX];
-    sprintf (infile_URL, "%s/%s", cfgopts->repo_URL, dir_entry->d_name);
+    sprintf (infile_URL, "%s%s%s", cfgopts->repo_URL, PATH_SEP, dir_entry->d_name);
 
     printf ("processing %s\n", input_file);
 
@@ -264,7 +268,7 @@ PRINT_DEBUG ("sub_title is '%s' at L%d\n", sub_title, __LINE__);
     };
 
     char layout_template[FILENAME_LEN_MAX] = "";
-    sprintf (layout_template, "templates/%s.html", layout);
+    sprintf (layout_template, "templates%s%s.html", PATH_SEP, layout);
 
     FILE *fp_layout;
     if ((fp_layout = fopen (layout_template, "r")) == NULL)
@@ -282,7 +286,12 @@ PRINT_DEBUG ("sub_title is '%s' at L%d\n", sub_title, __LINE__);
     /* FIXME: need a check to make sure the directory and file exists
      * add more flexibility so the user can change this (hint: config file)
      */
+    #ifdef WIN32
+    char *output_head_tmp = render_template_file ("templates\\head.html", 2, title_data);
+    #else
     char *output_head_tmp = render_template_file ("templates/head.html", 2, title_data);
+    #endif
+
     strcpy (output_head, output_head_tmp);
     add_newline (output_head);
 
