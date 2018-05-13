@@ -24,6 +24,11 @@ layout:_lua_scripting
 <span class="sc-1">		Code here will be executed once on startup.</span>
 <span class="sc-1">	--&gt;</span>
 <span class="sc3"><span class="re1">&lt;/startup<span class="re2">&gt;</span></span></span>
+<span class="sc3"><span class="re1">&lt;unitCreated<span class="re2">&gt;</span></span></span>
+	<span class="sc-1">&lt;!--</span>
+<span class="sc-1">		Code here will be executed every time a unit is created.</span>
+<span class="sc-1">	--&gt;</span>
+<span class="sc3"><span class="re1">&lt;/unitCreated<span class="re2">&gt;</span></span></span>
 <span class="sc3"><span class="re1">&lt;unitCreatedOfType</span> <span class="re0">type</span>=<span class="st0">&quot;unitname&quot;</span><span class="re2">&gt;</span></span>
 	<span class="sc-1">&lt;!--</span>
 <span class="sc-1">		Code here will be executed every time a unit of the specified</span>
