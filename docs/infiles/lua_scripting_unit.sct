@@ -84,6 +84,14 @@ layout:_lua_scripting
 <b>unitID</b> - The ID of the unit to give the kills to.<br />
 <b>amount</b> - The number of kills given.
 </p>
+<h3><span class="mw-headline" id="setUnitProperty.28unitId.2CtypeId.2Cvalue.29">setUnitProperty(unitId,typeId,value)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=24" title="Edit section: setUnitProperty(unitId,typeId,value)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Sets the value of the selected property for the specified unit.
+The type can be 1, 2 or 4.
+1=hp
+2=ep
+4=field
+</p><p>EP and HP are capped to the unit max EP and HP. Field can be 0 for land or 1 for air.
+</p>
 <h3><span class="mw-headline" id="getUnitProperty.28unitId.2CtypeId.29">getUnitProperty(unitId,typeId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=24" title="Edit section: getUnitProperty(unitId,typeId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>Returns the value of the type of the unit.
 The type can be a number between 1 and 5.
@@ -103,6 +111,11 @@ The type can be a number between 1 and 5.
 4=field
 5=skill
 </p><p>getUnitPropertyName is dedicated for skill and level. For hp,ep and field see getUnitProperty(unitId,typeId).
+</p>
+<h3><span class="mw-headline" id="isBuilding.28unitID.29">isBuilding(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=26" title="Edit section: isBuilding(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Returns whether the specified unit is a building.
+</p><p>Parameters:<br />
+<b>unitID</b> - The ID of the unit to select.
 </p>
 <h3><span class="mw-headline" id="selectUnit.28unitID.29">selectUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=26" title="Edit section: selectUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>Selects the specified unit.
