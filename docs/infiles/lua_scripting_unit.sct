@@ -1,90 +1,90 @@
 title:Scenarios | LUA scripting | Unit
 layout:_lua_scripting
 ---
-<h2><span class="mw-headline" id="Unit">Unit</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=9" title="Edit section: Unit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="createUnit.28unitID.2C_faction.2C_pos.29">createUnit(unitID, faction, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=10" title="Edit section: createUnit(unitID, faction, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h2><span class="mw-headline" id="Unit">Unit</span></h2>
+<h3><span class="mw-headline" id="createUnit.28unitID.2C_faction.2C_pos.29">createUnit(unitID, faction, pos)</span></h3>
 <p>Creates a unit. If <i>pos</i> is occupied, a nearby cell will be chosen. The game attempts to keep a 2 cell 'border' between the new unit and other units or objects (eg, trees). If a position can not be found, the game crashes.
 </p><p>Parameters:<br /><b>unit</b> - name of a unit in the loaded factions.<br /><b>faction</b> - the index of the faction this unit will belong to.<br /><b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
 </p>
-<h3><span class="mw-headline" id="createUnitNoSpacing.28unitID.2C_faction.2C_pos.29">createUnitNoSpacing(unitID, faction, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=11" title="Edit section: createUnitNoSpacing(unitID, faction, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="createUnitNoSpacing.28unitID.2C_faction.2C_pos.29">createUnitNoSpacing(unitID, faction, pos)</span></h3>
 <p>Same as above, but position is exact.
 </p><p><br />
 </p>
-<h3><span class="mw-headline" id="destroyUnit.28unitID.29">destroyUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=12" title="Edit section: destroyUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="destroyUnit.28unitID.29">destroyUnit(unitID)</span></h3>
 <p>Destroys a unit.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of the unit to destroy.
 </p>
-<h3><span class="mw-headline" id="morphToUnit.28unitID.2C_morphName.2C_ignoreRequirements.29">morphToUnit(unitID, morphName, ignoreRequirements)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=13" title="Edit section: morphToUnit(unitID, morphName, ignoreRequirements)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="morphToUnit.28unitID.2C_morphName.2C_ignoreRequirements.29">morphToUnit(unitID, morphName, ignoreRequirements)</span></h3>
 <p>Morphs a unit into another unit of type morphName. If ignoreRequirements is set to 1 then the morph is executed even if the unit does not satisfy the morph requirements.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of a unit.<br />
 <b>morphName</b> - the name of the morph to execute.<br />
 <b>ignoreRequirements</b> - a 0 or 1 value indicating whether to respect morph requirements (0) or not (1)
 </p>
-<h3><span class="mw-headline" id="setUnitPosition.28unitId.2C_pos.29">setUnitPosition(unitId, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=14" title="Edit section: setUnitPosition(unitId, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="setUnitPosition.28unitId.2C_pos.29">setUnitPosition(unitId, pos)</span></h3>
 <p>"Teleports" unit to the given position (places the unit there instantly, no move animation).
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of the unit to move.<br />
 <b>pos</b> - the x and y coordinates of the location you wish to move the unit to (note the exact position may not be the supplied position, as the unit may be slightly staggered, particularly if a unit already exists in the given location).
 </p>
-<h3><span class="mw-headline" id="moveToUnit.28unitID.2C_destUnitID.29">moveToUnit(unitID, destUnitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=15" title="Edit section: moveToUnit(unitID, destUnitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="moveToUnit.28unitID.2C_destUnitID.29">moveToUnit(unitID, destUnitID)</span></h3>
 <p>Move unitID to the location of destUnitID.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of the unit to move (starting location).<br />
 <b>destUnitID</b> - the ID of the unit to move to (ending location of unitID). This would essentially make unitID 'follow' destUnitID until it arrives at the location of destUnitID.
 </p>
-<h3><span class="mw-headline" id="giveStopCommand.28unitID.29">giveStopCommand(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=16" title="Edit section: giveStopCommand(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveStopCommand.28unitID.29">giveStopCommand(unitID)</span></h3>
 <p>Gives a stop command to a specific unit.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of a unit that has a stop command.
 </p>
-<h3><span class="mw-headline" id="giveAttackCommand.28unitID.2C_unitToAttackID.29">giveAttackCommand(unitID, unitToAttackID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=17" title="Edit section: giveAttackCommand(unitID, unitToAttackID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveAttackCommand.28unitID.2C_unitToAttackID.29">giveAttackCommand(unitID, unitToAttackID)</span></h3>
 <p>Instruct a unit to carry out a command of type 'attack' on a specific unit.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of a unit that has an attack command.
 <b>unitToAttackID</b> - the ID of a unit that should be attacked.
 </p>
-<h3><span class="mw-headline" id="giveAttackStoppedCommand.28unitID.2C_valueName.2C_ignoreRequirements.29">giveAttackStoppedCommand(unitID, valueName, ignoreRequirements)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=18" title="Edit section: giveAttackStoppedCommand(unitID, valueName, ignoreRequirements)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveAttackStoppedCommand.28unitID.2C_valueName.2C_ignoreRequirements.29">giveAttackStoppedCommand(unitID, valueName, ignoreRequirements)</span></h3>
 <p>Executes the attack stopped command for a unit specified by 'valueName'. If ignoreRequirements is set to 1 then the command is executed even if the unit does not satisfy the command requirements.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of a unit.<br />
 <b>valueName</b> - the name of the attack stopped command to execute.<br />
 <b>ignoreRequirements</b> - a 0 or 1 value indicating whether to respect command requirements (0) or not (1).
 </p>
-<h3><span class="mw-headline" id="giveResource.28resource.2C_faction.2C_amount.29">giveResource(resource, faction, amount)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=19" title="Edit section: giveResource(resource, faction, amount)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveResource.28resource.2C_faction.2C_amount.29">giveResource(resource, faction, amount)</span></h3>
 <p>Give an amount of a specified resource to a player, negative values are valid and have the obvious effect.
 </p><p>Parameters:<br />
 <b>resource</b> - a corresponding resource in the techtree.<br />
 <b>faction</b> - the index of the faction to give the resource.<br />
 <b>amount</b> - the amount of resource the faction will receive.
 </p>
-<h3><span class="mw-headline" id="givePositionCommand.28unitID.2C_command.2C_pos.29">givePositionCommand(unitID, command, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=20" title="Edit section: givePositionCommand(unitID, command, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="givePositionCommand.28unitID.2C_command.2C_pos.29">givePositionCommand(unitID, command, pos)</span></h3>
 <p>Instruct a unit to carry out a command of type 'attack' or 'move'. The unit being given the command must have such a command available.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of a unit that has an attack and/or move command.<br />
 <b>command</b> - the type of command to carry out ('attack' or 'move')<br />
 <b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
 </p>
-<h3><span class="mw-headline" id="giveProductionCommand.28unitID.2C_produced.29">giveProductionCommand(unitID, produced)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=21" title="Edit section: giveProductionCommand(unitID, produced)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveProductionCommand.28unitID.2C_produced.29">giveProductionCommand(unitID, produced)</span></h3>
 <p>Instruct a unit to carry out a command of type 'produce'. The unit being given the command must have such a command available.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of a unit that is to produce the new unit.<br />
 <b>produced</b> - the name of the unit to produce.
 </p>
-<h3><span class="mw-headline" id="giveUpgradeCommand.28unitID.2C_upgrade.29">giveUpgradeCommand(unitID, upgrade)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=22" title="Edit section: giveUpgradeCommand(unitID, upgrade)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveUpgradeCommand.28unitID.2C_upgrade.29">giveUpgradeCommand(unitID, upgrade)</span></h3>
 <p>Instruct a unit to carry out a command of type 'upgrade'. The unit being given the command must have such a command available.
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of the unit to perform the upgrade.<br />
 <b>upgrade </b>- the name of the upgrade to perform.
 </p>
-<h3><span class="mw-headline" id="giveKills.28unitID.2C_amount.29">giveKills(unitID, amount)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=23" title="Edit section: giveKills(unitID, amount)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="giveKills.28unitID.2C_amount.29">giveKills(unitID, amount)</span></h3>
 <p>Gives a specified unit a certain number of kills (which can be used to level them up).
 </p><p>Parameters:<br />
 <b>unitID</b> - The ID of the unit to give the kills to.<br />
 <b>amount</b> - The number of kills given.
 </p>
-<h3><span class="mw-headline" id="setUnitProperty.28unitId.2CtypeId.2Cvalue.29">setUnitProperty(unitId,typeId,value)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=24" title="Edit section: setUnitProperty(unitId,typeId,value)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="setUnitProperty.28unitId.2CtypeId.2Cvalue.29">setUnitProperty(unitId,typeId,value)</span></h3>
 <p>Sets the value of the selected property for the specified unit.
 The type can be 1, 2 or 4.
 1=hp
@@ -92,7 +92,7 @@ The type can be 1, 2 or 4.
 4=field
 </p><p>EP and HP are capped to the unit max EP and HP. Field can be 0 for land or 1 for air.
 </p>
-<h3><span class="mw-headline" id="getUnitProperty.28unitId.2CtypeId.29">getUnitProperty(unitId,typeId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=24" title="Edit section: getUnitProperty(unitId,typeId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getUnitProperty.28unitId.2CtypeId.29">getUnitProperty(unitId,typeId)</span></h3>
 <p>Returns the value of the type of the unit.
 The type can be a number between 1 and 5.
 1=hp
@@ -102,7 +102,7 @@ The type can be a number between 1 and 5.
 5=skill
 </p><p>getUnitProperty is dedicated for hp,ep and field. For skill and level see getUnitPropertyName(unitId,typeId).
 </p>
-<h3><span class="mw-headline" id="getUnitPropertyName.28unitId.2CtypeId.29">getUnitPropertyName(unitId,typeId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=25" title="Edit section: getUnitPropertyName(unitId,typeId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getUnitPropertyName.28unitId.2CtypeId.29">getUnitPropertyName(unitId,typeId)</span></h3>
 <p>Returns the name of the type of the unit.
 The type can be a number between 1 and 5.
 1=hp
@@ -112,39 +112,39 @@ The type can be a number between 1 and 5.
 5=skill
 </p><p>getUnitPropertyName is dedicated for skill and level. For hp,ep and field see getUnitProperty(unitId,typeId).
 </p>
-<h3><span class="mw-headline" id="isBuilding.28unitID.29">isBuilding(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=26" title="Edit section: isBuilding(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="isBuilding.28unitID.29">isBuilding(unitID)</span></h3>
 <p>Returns whether the specified unit is a building.
 </p><p>Parameters:<br />
 <b>unitID</b> - The ID of the unit to select.
 </p>
-<h3><span class="mw-headline" id="selectUnit.28unitID.29">selectUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=26" title="Edit section: selectUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="selectUnit.28unitID.29">selectUnit(unitID)</span></h3>
 <p>Selects the specified unit.
 </p><p>Parameters:<br />
 <b>unitID</b> - The ID of the unit to select.
 </p>
-<h3><span class="mw-headline" id="unselectUnit.28unitID.29">unselectUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=27" title="Edit section: unselectUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="unselectUnit.28unitID.29">unselectUnit(unitID)</span></h3>
 <p>Unselects the specified unit (provided it's already selected).
 </p><p>Parameters:<br />
 <b>unitID</b> - The ID of the unit to unselect.
 </p>
-<h3><span class="mw-headline" id="addUnitToGroupSelection.28unitID.2C_groupIndex.29">addUnitToGroupSelection(unitID, groupIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=28" title="Edit section: addUnitToGroupSelection(unitID, groupIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="addUnitToGroupSelection.28unitID.2C_groupIndex.29">addUnitToGroupSelection(unitID, groupIndex)</span></h3>
 <p>Adds the unit to a group, assigned a user defined group index.
 </p><p>Parameters:<br />
 <b>unitID</b> - The ID of the unit to select.<br />
 <b>groupIndex</b> - A number to identify the group.
 </p>
-<h3><span class="mw-headline" id="removeUnitFromGroupSelection.28unitID.2C_groupIndex.29">removeUnitFromGroupSelection(unitID, groupIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=29" title="Edit section: removeUnitFromGroupSelection(unitID, groupIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="removeUnitFromGroupSelection.28unitID.2C_groupIndex.29">removeUnitFromGroupSelection(unitID, groupIndex)</span></h3>
 <p>Removes the unit from a group of the defined group index.
 </p><p>Parameters:<br />
 <b>unitID</b> - The ID of the unit to select.<br />
 <b>groupIndex</b> - The previously assigned index of the group.
 </p>
-<h3><span class="mw-headline" id="recallGroupSelection.28groupIndex.29">recallGroupSelection(groupIndex)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=30" title="Edit section: recallGroupSelection(groupIndex)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="recallGroupSelection.28groupIndex.29">recallGroupSelection(groupIndex)</span></h3>
 <p>Reselects a previously defined group by its group index.
 </p><p>Parameters:<br />
 <b>groupIndex</b> - The previously assigned index of the group.
 </p>
-<h3><span class="mw-headline" id="highlightUnit.28unitID.2C_radius.2C_thickness.2C_colour.29">highlightUnit(unitID, radius, thickness, colour)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=31" title="Edit section: highlightUnit(unitID, radius, thickness, colour)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="highlightUnit.28unitID.2C_radius.2C_thickness.2C_colour.29">highlightUnit(unitID, radius, thickness, colour)</span></h3>
 <p>Places a coloured circle around a unit.
 </p><p>Parameters:<br />
 <b>unitID</b> - unit ID of the target unit.<br />
@@ -152,7 +152,7 @@ The type can be a number between 1 and 5.
 <b>thickness</b> - thickness of the circle.<br />
 <b>colour</b> - the colour of the circle.
 </p>
-<h3><span class="mw-headline" id="unhighlightUnit.28unitID.29">unhighlightUnit(unitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=32" title="Edit section: unhighlightUnit(unitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="unhighlightUnit.28unitID.29">unhighlightUnit(unitID)</span></h3>
 <p>Removes a previously placed highlight from a unit.
 </p><p>Parameters:<br />
 <b>unitID</b> - unit ID of the target unit.
