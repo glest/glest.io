@@ -38,3 +38,6 @@ layout:_lua_scripting
 <h3><span class="mw-headline" id="clearDisplayText.28.29">clearDisplayText()</span></h3>
 <p>Clears the message from the top of the screen previously set with <tt>setDisplayText()</tt>.
 </p>
+<h3><span class="mw-headline" id="translate.28.29">translate(key)</span></h3>
+<p>Returns the corresponding string value from the loaded lng files.
+</p>
