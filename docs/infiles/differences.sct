@@ -6,12 +6,15 @@ layout:default
 </p>
 <ul>
   <li>Zetapack has replaced Megapack</li>
-  <li>Four factions have been added
+  <li>Seven factions have been added
     <ul>
       <li><a href="https://zetaglest.github.io/elves_overview.html">Elves</a></li>
       <li><a href="https://zetaglest.github.io/the_great_ming_overview.html">The Great Ming</a></li>
       <li><a href="https://zetaglest.github.io/greece_overview.html">Greece</a></li>
       <li><a href="https://zetaglest.github.io/british_overview.html">British</a></li>
+      <li><a href="https://github.com/ZetaGlest/zetaglest-data/tree/develop/techs/zetapack/factions/japanese">Japanese</a></li>
+      <li><a href="https://github.com/ZetaGlest/zetaglest-data/tree/develop/techs/zetapack/factions/medieval">Medieval (Prax)</a></li>
+      <li><a href="https://github.com/ZetaGlest/zetaglest-data/tree/develop/techs/zetapack/factions/specialists">Specialists</a></li>
     </ul>
   <li>The lobby test scenario has been removed.</li>
   <li>
