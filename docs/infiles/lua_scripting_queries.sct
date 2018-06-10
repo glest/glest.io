@@ -27,6 +27,11 @@ layout:_lua_scripting
 </p><p>Parameters:<br />
 <b>unitID</b> - the ID of the unit whose name you wish to know.
 </p>
+<h3><span class="mw-headline" id="getFactionName.28unitId.29">getFactionName(factionId)</span></h3>
+<p>Returns the faction name of the faction whose ID was passed into the function.
+</p><p>Parameters:<br />
+<b>factionID</b> - the ID of the loaded faction.
+</p>
 <h3><span class="mw-headline" id="lastCreatedUnitName.28.29">lastCreatedUnitName()</span></h3>
 <p>Returns the unit name of the last created unit.
 </p>
