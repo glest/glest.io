@@ -6,7 +6,7 @@ layout:_modding
 characteristics of a unit within the game. Below it, the xml tags are
 explained (not yet completed).</p>
 
-<h3>Battlemage</h3>
+<h3><a href="https://github.com/ZetaGlest/zetaglest-data/blob/develop/techs/zetapack/factions/magic/units/battlemage/battlemage.xml">Battlemage</a></h3>
 
 <textarea rows=25 cols=75 readonly>
 <?xml version="1.0" standalone="no"?>
