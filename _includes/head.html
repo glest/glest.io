@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{% if page.title %}{{ page.title | escape }} | {{ site.title}}
+            {% elsif page.tag %}{{ page.tag | escape }} | {{ site.title}}
+            {% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/ZetaGlest/zetaglest.github.io/commits/master.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--including Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+ </head>
+ <body>
