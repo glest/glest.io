@@ -10,7 +10,7 @@ rvm:
 #script: ./script/cibuild
 
 install: gem install jekyll
-script: jekyll build
+script: bundle exec jekyll build
 
 #env:
 #  global:
