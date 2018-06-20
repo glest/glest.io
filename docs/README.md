@@ -8,6 +8,10 @@ You'll find the documentation for that on the jekyll website.
 Once you have jekyll installed, in the zetaglest.github.io repo
 directory, run
 
+    bundle install
+    
+to automatically install any required gems. Then
+
     jekyll serve
 
 You can then view the site in your web browser at http://localhost:4000
