@@ -47,14 +47,17 @@ digraph test {
 		label=Hoplite];
 	blacksmith -> hoplite	 [color="0.13472,0.809,0.925;",
 		style=dotted];
+	engineer	 [URL="greece_engineer_full.html",
+		color=magenta,
+		fontcolor="0.13472,0.809,0.925;",
+		label=Engineer];
+	blacksmith -> engineer	 [color="0.13472,0.809,0.925;",
+		style=solid];
 	onager	 [URL="greece_onager_full.html",
 		color=magenta,
 		fontcolor="0.13472,0.809,0.925;",
 		label=Onager];
 	blacksmith -> onager	 [color="0.13472,0.809,0.925;",
-		style=dotted];
-	advanced_buildings	 [label=advanced_buildings];
-	blacksmith -> advanced_buildings	 [color="0.13472,0.809,0.925;",
 		style=dotted];
 	psiloi	 [URL="greece_psiloi_full.html",
 		color=magenta,
@@ -119,8 +122,6 @@ digraph test {
 		style=solid];
 	advanced_barracks -> hoplite	 [color="0.13472,0.809,0.925;",
 		style=solid];
-	advanced_barracks -> onager	 [color="0.13472,0.809,0.925;",
-		style=solid];
 	barley_field	 [URL="greece_barley_field_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
@@ -181,10 +182,6 @@ digraph test {
 		shape=house];
 	slave -> castle	 [color="0.13472,0.809,0.925;",
 		style=bold];
-	engineer	 [URL="greece_engineer_full.html",
-		color=magenta,
-		fontcolor="0.13472,0.809,0.925;",
-		label=Engineer];
 	engineer -> air_box	 [color="0.13472,0.809,0.925;",
 		style=bold];
 	engineer -> palace	 [color="0.13472,0.809,0.925;",
@@ -196,6 +193,8 @@ digraph test {
 	engineer -> temple	 [color="0.13472,0.809,0.925;",
 		style=bold];
 	engineer -> oxybeles	 [color="0.13472,0.809,0.925;",
+		style=dashed];
+	engineer -> onager	 [color="0.13472,0.809,0.925;",
 		style=dashed];
 	barracks -> psiloi	 [color="0.13472,0.809,0.925;",
 		style=solid];
@@ -212,7 +211,5 @@ digraph test {
 	castle -> alexander	 [color="0.13472,0.809,0.925;",
 		style=dotted];
 	castle -> slave	 [color="0.13472,0.809,0.925;",
-		style=solid];
-	castle -> engineer	 [color="0.13472,0.809,0.925;",
 		style=solid];
 }
