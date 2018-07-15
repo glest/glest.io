@@ -1,0 +1,14 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="japanese_blacksmith_full.html" title="Blacksmith" alt="" coords="279,42,194,26,109,42,110,69,279,69"/>
+<area shape="poly" id="node5" href="japanese_yagura_gun_full.html" title="Yagura\nGun" alt="" coords="353,173,287,142,222,173,222,222,353,222"/>
+<area shape="poly" id="node11" href="japanese_watchtower_gun_full.html" title="Watchtower\nGun" alt="" coords="199,173,102,142,5,173,5,222,199,222"/>
+<area shape="poly" id="node2" href="japanese_dojo_full.html" title="Dojo" alt="" coords="471,179,423,162,376,179,376,206,470,206"/>
+<area shape="poly" id="node3" href="japanese_european_trader_full.html" title="European\nTrader" alt="" coords="653,173,574,142,495,173,495,222,653,222"/>
+<area shape="poly" id="node4" href="japanese_farmhouse_full.html" title="Farmhouse" alt="" coords="834,42,751,26,669,42,669,69,834,69"/>
+<area shape="poly" id="node6" href="japanese_yagura_full.html" title="Yagura" alt="" coords="797,179,737,162,677,179,677,206,797,206"/>
+<area shape="poly" id="node7" href="japanese_daimyo_yashiki_full.html" title="Daimyo\nYashiki" alt="" coords="645,36,574,5,503,36,503,85,645,85"/>
+<area shape="poly" id="node10" href="japanese_buddhist_temple_full.html" title="Buddhist\nTemple" alt="" coords="972,173,897,142,821,173,821,222,972,222"/>
+<area shape="poly" id="node8" href="japanese_watchtower_full.html" title="Watchtower" alt="" coords="1036,42,947,26,858,42,859,69,1036,69"/>
+<area shape="poly" id="node9" href="japanese_barrack_full.html" title="Barrack" alt="" coords="1187,42,1123,26,1060,42,1060,69,1187,69"/>
+<area shape="poly" id="node12" href="japanese_castle_full.html" title="Castle" alt="" coords="1318,42,1265,26,1211,42,1211,69,1318,69"/>
+</map>

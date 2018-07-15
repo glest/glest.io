@@ -124,6 +124,9 @@ digraph test {
 		shape=house];
 	mistletoe_tree -> wild_sow	 [color="0.13472,0.809,0.925;",
 		style=solid];
+	speedup_cow_production	 [label=speedup_cow_production];
+	mistletoe_tree -> speedup_cow_production	 [color="0.13472,0.809,0.925;",
+		style=dotted];
 	thrall	 [URL="norsemen_thrall_full.html",
 		color=magenta,
 		fontcolor="0.13472,0.809,0.925;",

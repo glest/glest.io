@@ -29,6 +29,13 @@ digraph test {
 		label=Cow];
 	farm -> cow	 [color="0.13472,0.809,0.925;",
 		style=solid];
+	speedup_cow_production	 [URL="norsemen_speedup_cow_production_full.html",
+		color=green,
+		fontcolor="0.13472,0.809,0.925;",
+		label="Speedup\nCow Production",
+		shape=parallelogram];
+	farm -> speedup_cow_production	 [color="0.13472,0.809,0.925;",
+		style=solid];
 	blacksmith	 [URL="norsemen_blacksmith_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
@@ -164,6 +171,8 @@ digraph test {
 		shape=parallelogram];
 	mistletoe_tree -> root	 [color="0.13472,0.809,0.925;",
 		style=solid];
+	mistletoe_tree -> speedup_cow_production	 [color="0.13472,0.809,0.925;",
+		style=dotted];
 	thrall	 [URL="norsemen_thrall_full.html",
 		color=magenta,
 		fontcolor="0.13472,0.809,0.925;",

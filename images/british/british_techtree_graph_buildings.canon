@@ -45,13 +45,6 @@ digraph test {
 		style=dotted];
 	fort -> artillery_foundry	 [color="0.13472,0.809,0.925;",
 		style=dotted];
-	field_hospital	 [URL="british_field_hospital_full.html",
-		color=red,
-		fontcolor="0.13472,0.809,0.925;",
-		label="Field\nHospital",
-		shape=house];
-	fort -> field_hospital	 [color="0.13472,0.809,0.925;",
-		style=dotted];
 	camp	 [URL="british_camp_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
