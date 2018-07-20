@@ -6,11 +6,18 @@ digraph test {
 		ratio=fill
 	];
 	node [label="\N"];
+	air_box	 [URL="british_air_box_full.html",
+		color=red,
+		fontcolor="0.13472,0.809,0.925;",
+		label="Air\nBox",
+		shape=house];
 	powder_house	 [URL="british_powder_house_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
 		label="Powder\nHouse",
 		shape=house];
+	powder_house -> air_box	 [color="0.13472,0.809,0.925;",
+		style=dotted];
 	artillery_foundry	 [URL="british_artillery_foundry_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",

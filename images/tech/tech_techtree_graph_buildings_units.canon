@@ -40,11 +40,11 @@ digraph test {
 		fontcolor="0.13472,0.809,0.925;",
 		label=Farm,
 		shape=house];
-	pig	 [URL="tech_pig_full.html",
+	livestock	 [URL="tech_livestock_full.html",
 		color=magenta,
 		fontcolor="0.13472,0.809,0.925;",
-		label=Pig];
-	farm -> pig	 [color="0.13472,0.809,0.925;",
+		label=Livestock];
+	farm -> livestock	 [color="0.13472,0.809,0.925;",
 		style=solid];
 	horseman	 [URL="tech_horseman_full.html",
 		color=magenta,
@@ -52,12 +52,6 @@ digraph test {
 		label=Horseman];
 	farm -> horseman	 [color="0.13472,0.809,0.925;",
 		style=dotted];
-	cow	 [URL="tech_cow_full.html",
-		color=magenta,
-		fontcolor="0.13472,0.809,0.925;",
-		label=Cow];
-	farm -> cow	 [color="0.13472,0.809,0.925;",
-		style=solid];
 	blacksmith	 [URL="tech_blacksmith_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
