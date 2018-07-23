@@ -1,21 +1,20 @@
 <map id="test" name="test">
-<area shape="poly" id="node1" href="magic_daemon_full.html" title="Daemon" alt="" coords="265,410,262,403,254,396,242,391,227,387,210,386,193,387,178,391,166,396,158,403,155,410,158,418,166,424,178,430,193,433,210,434,227,433,242,430,254,424,262,418"/>
-<area shape="poly" id="node2" href="magic_summoner_guild_full.html" title="Summoner\nGuild" alt="" coords="421,132,331,101,242,132,242,181,421,181"/>
-<area shape="poly" id="node4" href="magic_summoner_full.html" title="Summoner" alt="" coords="434,282,431,275,421,268,406,263,388,259,367,258,347,259,328,263,313,268,304,275,301,282,304,290,313,296,328,302,347,305,367,306,388,305,406,302,421,296,431,290"/>
-<area shape="poly" id="node3" href="magic_dragon_rider_full.html" title="Dragon\nRider" alt="" coords="860,410,857,399,849,389,838,381,823,376,806,374,789,376,774,381,762,389,755,399,752,410,755,421,762,431,774,439,789,444,806,446,823,444,838,439,849,431,857,421"/>
-<area shape="poly" id="node8" href="magic_dragon_full.html" title="Dragon" alt="" coords="729,410,726,403,719,396,708,391,695,387,679,386,664,387,650,391,639,396,632,403,630,410,632,418,639,424,650,430,664,433,679,434,695,433,708,430,719,424,726,418"/>
-<area shape="poly" id="node13" href="magic_ghost_armor_full.html" title="Ghost\nArmor" alt="" coords="388,410,385,399,378,389,367,381,353,376,338,374,322,376,309,381,298,389,290,399,288,410,290,421,298,431,309,439,322,444,338,446,353,444,367,439,378,431,385,421"/>
-<area shape="poly" id="node16" href="magic_behemoth_full.html" title="Behemoth" alt="" coords="132,410,129,403,120,396,106,391,88,387,69,386,49,387,31,391,17,396,8,403,5,410,8,418,17,424,31,430,49,433,69,434,88,433,106,430,120,424,129,418"/>
-<area shape="poly" id="node5" href="magic_evil_dragon_full.html" title="Evil\nDragon" alt="" coords="841,530,838,519,831,509,819,501,804,496,787,494,771,496,756,501,744,509,736,519,734,530,736,541,744,551,756,559,771,564,787,566,804,564,819,559,831,551,838,541"/>
-<area shape="poly" id="node6" href="magic_wicker_behemoth_full.html" title="Wicker\nBehemoth" alt="" coords="276,269,191,238,106,269,106,318,276,318"/>
-<area shape="poly" id="node7" href="magic_battlemage_full.html" title="Battlemage" alt="" coords="1073,146,1070,138,1060,132,1045,126,1026,123,1005,122,983,123,964,126,949,132,939,138,936,146,939,153,949,160,964,165,983,168,1005,170,1026,168,1045,165,1060,160,1070,153"/>
-<area shape="poly" id="node18" href="magic_archmage_full.html" title="Archmage" alt="" coords="1066,282,1063,275,1054,268,1040,263,1022,259,1002,258,982,259,964,263,950,268,941,275,938,282,941,290,950,296,964,302,982,305,1002,306,1022,305,1040,302,1054,296,1063,290"/>
-<area shape="poly" id="node9" href="magic_power_golem_full.html" title="Power\nGolem" alt="" coords="610,269,547,238,484,269,484,318,610,318"/>
-<area shape="poly" id="node10" href="magic_energy_source_full.html" title="Energy\nSource" alt="" coords="913,132,847,101,782,132,782,181,912,181"/>
-<area shape="poly" id="node11" href="magic_golem_full.html" title="Golem" alt="" coords="561,138,503,122,445,138,445,165,561,165"/>
-<area shape="poly" id="node12" href="magic_mage_tower_full.html" title="Mage\nTower" alt="" coords="141,132,81,101,20,132,20,181,141,181"/>
-<area shape="poly" id="node15" href="magic_initiate_full.html" title="Initiate" alt="" coords="719,29,717,22,710,15,699,10,686,7,671,5,657,7,643,10,633,15,626,22,624,29,626,37,633,43,643,49,657,52,671,53,686,52,699,49,710,43,717,37"/>
-<area shape="poly" id="node14" href="magic_archmage_tower_full.html" title="Archmage\nTower" alt="" coords="757,132,671,101,585,132,585,181,757,181"/>
-<area shape="poly" id="node17" href="magic_tower_of_souls_full.html" title="Tower\nOf Souls" alt="" coords="1248,132,1173,101,1097,132,1097,181,1248,181"/>
-<area shape="poly" id="node19" href="magic_library_full.html" title="Library" alt="" coords="1395,138,1334,122,1273,138,1273,165,1395,165"/>
+<area shape="poly" id="node1" href="magic_daemon_full.html" title="Daemon" alt="" coords="333,410,330,403,323,396,310,391,295,387,278,386,262,387,246,391,234,396,226,403,224,410,226,418,234,424,246,430,262,433,278,434,295,433,310,430,323,424,330,418"/>
+<area shape="poly" id="node2" href="magic_summoner_guild_full.html" title="Summoner\nGuild" alt="" coords="368,132,278,101,189,132,189,181,368,181"/>
+<area shape="poly" id="node4" href="magic_summoner_full.html" title="Summoner" alt="" coords="345,282,342,275,332,268,318,263,299,259,278,258,258,259,239,263,224,268,215,275,212,282,215,290,224,296,239,302,258,305,278,306,299,305,318,302,332,296,342,290"/>
+<area shape="poly" id="node3" href="magic_dragon_rider_full.html" title="Dragon\nRider" alt="" coords="603,410,600,399,593,389,581,381,566,376,549,374,532,376,517,381,506,389,498,399,495,410,498,421,506,431,517,439,532,444,549,446,566,444,581,439,593,431,600,421"/>
+<area shape="poly" id="node7" href="magic_dragon_full.html" title="Dragon" alt="" coords="1096,410,1093,403,1086,396,1075,391,1062,387,1046,386,1031,387,1017,391,1006,396,999,403,997,410,999,418,1006,424,1017,430,1031,433,1046,434,1062,433,1075,430,1086,424,1093,418"/>
+<area shape="poly" id="node12" href="magic_ghost_armor_full.html" title="Ghost\nArmor" alt="" coords="456,410,454,399,447,389,436,381,422,376,406,374,391,376,377,381,366,389,359,399,356,410,359,421,366,431,377,439,391,444,406,446,422,444,436,439,447,431,454,421"/>
+<area shape="poly" id="node5" href="magic_evil_dragon_full.html" title="Evil\nDragon" alt="" coords="1056,530,1054,519,1046,509,1034,501,1019,496,1002,494,986,496,971,501,959,509,951,519,949,530,951,541,959,551,971,559,986,564,1002,566,1019,564,1034,559,1046,551,1054,541"/>
+<area shape="poly" id="node6" href="magic_battlemage_full.html" title="Battlemage" alt="" coords="871,146,868,138,858,132,843,126,824,123,802,122,781,123,762,126,747,132,737,138,734,146,737,153,747,160,762,165,781,168,802,170,824,168,843,165,858,160,868,153"/>
+<area shape="poly" id="node17" href="magic_archmage_full.html" title="Archmage" alt="" coords="895,282,891,275,882,268,868,263,850,259,830,258,811,259,793,263,779,268,769,275,766,282,769,290,779,296,793,302,811,305,830,306,850,305,868,302,882,296,891,290"/>
+<area shape="poly" id="node8" href="magic_power_golem_full.html" title="Power\nGolem" alt="" coords="1327,269,1264,238,1201,269,1201,318,1327,318"/>
+<area shape="poly" id="node9" href="magic_energy_source_full.html" title="Energy\nSource" alt="" coords="1025,132,960,101,894,132,895,181,1025,181"/>
+<area shape="poly" id="node10" href="magic_golem_full.html" title="Golem" alt="" coords="1362,138,1304,122,1246,138,1246,165,1362,165"/>
+<area shape="poly" id="node11" href="magic_mage_tower_full.html" title="Mage\nTower" alt="" coords="710,132,649,101,588,132,589,181,710,181"/>
+<area shape="poly" id="node14" href="magic_initiate_full.html" title="Initiate" alt="" coords="850,29,848,22,841,15,830,10,817,7,802,5,788,7,774,10,764,15,757,22,755,29,757,37,764,43,774,49,788,52,802,53,817,52,830,49,841,43,848,37"/>
+<area shape="poly" id="node13" href="magic_archmage_tower_full.html" title="Archmage\nTower" alt="" coords="1222,132,1136,101,1049,132,1050,181,1222,181"/>
+<area shape="poly" id="node15" href="magic_behemoth_full.html" title="Behemoth" alt="" coords="526,275,448,258,370,275,370,302,526,302"/>
+<area shape="poly" id="node16" href="magic_tower_of_souls_full.html" title="Tower\nOf Souls" alt="" coords="1537,132,1461,101,1385,132,1385,181,1537,181"/>
+<area shape="poly" id="node18" href="magic_library_full.html" title="Library" alt="" coords="565,138,504,122,443,138,443,165,565,165"/>
 </map>
