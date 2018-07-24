@@ -128,6 +128,12 @@ digraph test {
 		label=Nurse];
 	nurse -> air_box	 [color="0.13472,0.809,0.925;",
 		style=bold];
+	battering_ram	 [URL="british_battering_ram_full.html",
+		color=magenta,
+		fontcolor="0.13472,0.809,0.925;",
+		label="Battering\nRam"];
+	nurse -> battering_ram	 [color="0.13472,0.809,0.925;",
+		style=dashed];
 	artillery_foundry -> balloon	 [color="0.13472,0.809,0.925;",
 		style=dotted];
 	artillery_foundry -> grenadier	 [color="0.13472,0.809,0.925;",

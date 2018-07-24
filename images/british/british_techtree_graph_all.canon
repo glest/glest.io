@@ -127,6 +127,12 @@ digraph test {
 		label=Nurse];
 	nurse -> air_box	 [color="0.13472,0.809,0.925;",
 		style=bold];
+	battering_ram	 [URL="british_battering_ram_full.html",
+		color=magenta,
+		fontcolor="0.13472,0.809,0.925;",
+		label="Battering\nRam"];
+	nurse -> battering_ram	 [color="0.13472,0.809,0.925;",
+		style=dashed];
 	medicine	 [URL="british_medicine_full.html",
 		color=green,
 		fontcolor="0.13472,0.809,0.925;",
@@ -212,6 +218,8 @@ digraph test {
 	imperialism -> grenadier	 [color="0.13472,0.809,0.925;",
 		style=dotted];
 	imperialism -> mortar	 [color="0.13472,0.809,0.925;",
+		style=dotted];
+	imperialism -> battering_ram	 [color="0.13472,0.809,0.925;",
 		style=dotted];
 	puckle -> puckle_gun	 [color="0.13472,0.809,0.925;",
 		style=dotted];
