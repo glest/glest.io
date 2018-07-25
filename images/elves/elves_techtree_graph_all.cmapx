@@ -1,32 +1,33 @@
 <map id="test" name="test">
-<area shape="poly" id="node1" href="elves_dryad_full.html" title="Dryad" alt="" coords="958,790,956,783,950,776,940,771,928,767,915,766,902,767,889,771,880,776,874,783,872,790,874,798,880,804,889,810,902,813,915,814,928,813,940,810,950,804,956,798"/>
-<area shape="poly" id="node2" href="elves_grey_elf_archer_full.html" title="Grey\nElf Archer" alt="" coords="851,504,848,493,838,483,823,475,803,470,782,468,760,470,741,475,725,483,715,493,712,504,715,515,725,525,741,533,760,538,782,540,803,538,823,533,838,525,848,515"/>
-<area shape="poly" id="node3" href="elves_forge_full.html" title="Forge" alt="" coords="1320,640,1268,623,1217,640,1217,667,1320,667"/>
-<area shape="poly" id="node25" href="elves_noldor_weaponry_full.html" title="Noldor\nWeaponry" alt="" coords="1608,739,1445,739,1403,841,1566,841"/>
-<area shape="poly" id="node27" href="elves_noldor_armour_crafting_full.html" title="Noldor\nArmour Crafting" alt="" coords="1379,739,1139,739,1078,841,1317,841"/>
-<area shape="poly" id="node29" href="elves_silverthorn_arrows_full.html" title="Silverthorn\nArrows" alt="" coords="1845,739,1676,739,1633,841,1802,841"/>
-<area shape="poly" id="node4" href="elves_corral_full.html" title="Corral" alt="" coords="286,497,231,480,176,497,176,524,286,524"/>
-<area shape="poly" id="node8" href="elves_reaver_full.html" title="Reaver" alt="" coords="156,790,154,783,147,776,136,771,123,767,108,766,94,767,80,771,70,776,63,783,61,790,63,798,70,804,80,810,94,813,108,814,123,813,136,810,147,804,154,798"/>
-<area shape="poly" id="node10" href="elves_corral_gryphon_nest_full.html" title="Corral\nGryphon Nest" alt="" coords="356,647,352,636,339,626,320,618,295,613,268,611,241,613,217,618,197,626,185,636,181,647,185,658,197,668,217,676,241,681,268,683,295,681,320,676,339,668,352,658"/>
-<area shape="poly" id="node15" href="elves_silver_helm_lancer_full.html" title="Silver\nHelm Lancer" alt="" coords="278,933,273,922,262,912,243,904,220,899,194,897,168,899,144,904,126,912,114,922,110,933,114,944,126,954,144,962,168,967,194,969,220,967,243,962,262,954,273,944"/>
-<area shape="poly" id="node5" href="elves_minstrel_full.html" title="Minstrel" alt="" coords="1192,647,1190,640,1182,633,1170,628,1154,624,1138,623,1121,624,1106,628,1093,633,1086,640,1083,647,1086,655,1093,661,1106,667,1121,670,1138,671,1154,670,1170,667,1182,661,1190,655"/>
-<area shape="poly" id="node7" href="elves_ent_full.html" title="Ent" alt="" coords="1054,790,1052,783,1047,776,1039,771,1029,767,1018,766,1006,767,996,771,988,776,983,783,982,790,983,798,988,804,996,810,1006,813,1018,814,1029,813,1039,810,1047,804,1052,798"/>
-<area shape="poly" id="node6" href="elves_prince_full.html" title="Prince" alt="" coords="847,790,845,783,839,776,829,771,817,767,803,766,789,767,777,771,767,776,761,783,759,790,761,798,767,804,777,810,789,813,803,814,817,813,829,810,839,804,845,798"/>
-<area shape="poly" id="node19" href="elves_forest_guardian_full.html" title="Forest\nGuardian" alt="" coords="1528,919,1450,889,1372,919,1372,969,1528,969"/>
-<area shape="poly" id="node9" href="elves_academy_full.html" title="Academy" alt="" coords="856,374,782,358,708,374,708,401,855,401"/>
-<area shape="poly" id="node11" href="elves_wood_hall_full.html" title="Wood\nHall" alt="" coords="1269,491,1211,460,1153,491,1153,540,1269,540"/>
-<area shape="poly" id="node13" href="elves_galadrim_archer_full.html" title="Galadrim\nArcher" alt="" coords="886,647,883,636,873,626,859,618,841,613,822,611,802,613,784,618,770,626,761,636,758,647,761,658,770,668,784,676,802,681,822,683,841,681,859,676,873,668,883,658"/>
-<area shape="poly" id="node21" href="elves_magol_hedir_full.html" title="Magol\nHedir" alt="" coords="460,504,457,493,450,483,439,475,425,470,410,468,394,470,380,475,369,483,362,493,360,504,362,515,369,525,380,533,394,538,410,540,425,538,439,533,450,525,457,515"/>
-<area shape="poly" id="node23" href="elves_dryad_weaponry_full.html" title="Dryad\nWeaponry" alt="" coords="688,454,525,454,483,555,646,555"/>
-<area shape="poly" id="node28" href="elves_elven_lore_full.html" title="Elven\nLore" alt="" coords="1008,454,902,454,875,555,981,555"/>
-<area shape="poly" id="node22" href="elves_gryphon_full.html" title="Gryphon" alt="" coords="343,790,341,783,333,776,320,771,304,767,287,766,270,767,254,771,241,776,233,783,231,790,233,798,241,804,254,810,270,813,287,814,304,813,320,810,333,804,341,798"/>
-<area shape="poly" id="node24" href="elves_taming_song_full.html" title="Taming\nSong" alt="" coords="530,739,400,739,367,841,496,841"/>
-<area shape="poly" id="node30" href="elves_quenya_full.html" title="Quenya" alt="" coords="1059,623,940,623,909,671,1029,671"/>
-<area shape="poly" id="node12" href="elves_gryphon_rider_full.html" title="Gryphon\nRider" alt="" coords="467,933,464,922,455,912,442,904,425,899,406,897,387,899,370,904,356,912,347,922,344,933,347,944,356,954,370,962,387,967,406,969,425,967,442,962,455,954,464,944"/>
-<area shape="poly" id="node14" href="elves_sanctuary_full.html" title="Sanctuary" alt="" coords="684,374,608,358,532,374,532,401,684,401"/>
-<area shape="poly" id="node17" href="elves_elf_full.html" title="Elf" alt="" coords="731,286,729,278,724,271,716,266,706,263,695,262,684,263,674,266,666,271,661,278,659,286,661,293,666,300,674,305,684,308,695,310,706,308,716,305,724,300,729,293"/>
-<area shape="poly" id="node16" href="elves_wise_elf_full.html" title="Wise\nElf" alt="" coords="737,41,735,30,729,20,720,12,708,7,695,5,682,7,670,12,661,20,655,30,653,41,655,52,661,62,670,70,682,75,695,77,708,75,720,70,729,62,735,52"/>
-<area shape="poly" id="node18" href="elves_tree_of_life_full.html" title="Tree\nOf Life" alt="" coords="709,156,643,125,577,156,577,205,709,205"/>
-<area shape="poly" id="node20" href="elves_lore_house_full.html" title="Lore\nHouse" alt="" coords="718,633,659,603,600,633,600,683,718,683"/>
-<area shape="poly" id="node26" href="elves_mystical_forest_full.html" title="Mystical\nForest" alt="" coords="734,739,591,739,554,841,697,841"/>
+<area shape="poly" id="node1" href="elves_dryad_full.html" title="Dryad" alt="" coords="226,953,224,946,218,939,208,934,196,931,183,929,170,931,157,934,148,939,142,946,140,953,142,961,148,967,157,973,170,976,183,977,196,976,208,973,218,967,224,961"/>
+<area shape="poly" id="node2" href="elves_grey_elf_archer_full.html" title="Grey\nElf Archer" alt="" coords="1027,545,1024,534,1014,524,999,516,979,511,958,509,936,511,917,516,901,524,891,534,888,545,891,556,901,566,917,574,936,579,958,581,979,579,999,574,1014,566,1024,556"/>
+<area shape="poly" id="node3" href="elves_forge_full.html" title="Forge" alt="" coords="437,537,386,521,334,537,334,564,437,564"/>
+<area shape="poly" id="node26" href="elves_noldor_weaponry_full.html" title="Noldor\nWeaponry" alt="" coords="721,643,558,643,517,745,679,745"/>
+<area shape="poly" id="node28" href="elves_noldor_armour_crafting_full.html" title="Noldor\nArmour Crafting" alt="" coords="1048,643,809,643,747,745,987,745"/>
+<area shape="poly" id="node30" href="elves_silverthorn_arrows_full.html" title="Silverthorn\nArrows" alt="" coords="492,643,323,643,279,745,448,745"/>
+<area shape="poly" id="node4" href="elves_corral_full.html" title="Corral" alt="" coords="1294,394,1239,378,1184,394,1184,421,1293,421"/>
+<area shape="poly" id="node8" href="elves_reaver_full.html" title="Reaver" alt="" coords="1495,694,1492,687,1485,680,1475,675,1462,671,1447,670,1432,671,1419,675,1408,680,1402,687,1399,694,1402,702,1408,708,1419,714,1432,717,1447,718,1462,717,1475,714,1485,708,1492,702"/>
+<area shape="poly" id="node10" href="elves_corral_gryphon_nest_full.html" title="Corral\nGryphon Nest" alt="" coords="1660,545,1656,534,1643,524,1624,516,1599,511,1572,509,1545,511,1521,516,1501,524,1489,534,1485,545,1489,556,1501,566,1521,574,1545,579,1572,581,1599,579,1624,574,1643,566,1656,556"/>
+<area shape="poly" id="node15" href="elves_silver_helm_lancer_full.html" title="Silver\nHelm Lancer" alt="" coords="1348,837,1344,826,1332,816,1314,808,1290,803,1264,801,1238,803,1215,808,1196,816,1184,826,1180,837,1184,848,1196,858,1215,866,1238,871,1264,873,1290,871,1314,866,1332,858,1344,848"/>
+<area shape="poly" id="node5" href="elves_minstrel_full.html" title="Minstrel" alt="" coords="309,545,307,537,299,531,287,525,272,522,255,521,238,522,223,525,211,531,203,537,200,545,203,552,211,559,223,564,238,568,255,569,272,568,287,564,299,559,307,552"/>
+<area shape="poly" id="node7" href="elves_ent_full.html" title="Ent" alt="" coords="183,694,181,687,176,680,168,675,158,671,147,670,136,671,126,675,118,680,113,687,111,694,113,702,118,708,126,714,136,717,147,718,158,717,168,714,176,708,181,702"/>
+<area shape="poly" id="node6" href="elves_prince_full.html" title="Prince" alt="" coords="1156,837,1154,830,1148,823,1138,818,1126,814,1112,813,1099,814,1086,818,1076,823,1070,830,1068,837,1070,844,1076,851,1086,856,1099,860,1112,861,1126,860,1138,856,1148,851,1154,844"/>
+<area shape="poly" id="node19" href="elves_forest_guardian_full.html" title="Forest\nGuardian" alt="" coords="204,823,126,793,47,823,48,873,204,873"/>
+<area shape="poly" id="node9" href="elves_academy_full.html" title="Academy" alt="" coords="933,394,859,378,785,394,785,421,933,421"/>
+<area shape="poly" id="node13" href="elves_galadrim_archer_full.html" title="Galadrim\nArcher" alt="" coords="1202,694,1199,683,1189,673,1175,665,1157,660,1138,658,1118,660,1100,665,1086,673,1077,683,1073,694,1077,705,1086,715,1100,723,1118,728,1138,730,1157,728,1175,723,1189,715,1199,705"/>
+<area shape="poly" id="node21" href="elves_magol_hedir_full.html" title="Magol\nHedir" alt="" coords="1152,545,1149,534,1142,524,1131,516,1117,511,1102,509,1086,511,1072,516,1061,524,1054,534,1052,545,1054,556,1061,566,1072,574,1086,579,1102,581,1117,579,1131,574,1142,566,1149,556"/>
+<area shape="poly" id="node23" href="elves_training_field_full.html" title="Training\nField" alt="" coords="635,494,497,494,461,595,600,595"/>
+<area shape="poly" id="node24" href="elves_dryad_weaponry_full.html" title="Dryad\nWeaponry" alt="" coords="864,494,701,494,659,595,822,595"/>
+<area shape="poly" id="node22" href="elves_gryphon_full.html" title="Gryphon" alt="" coords="1682,694,1679,687,1671,680,1659,675,1643,671,1626,670,1608,671,1592,675,1580,680,1572,687,1569,694,1572,702,1580,708,1592,714,1608,717,1626,718,1643,717,1659,714,1671,708,1679,702"/>
+<area shape="poly" id="node25" href="elves_taming_song_full.html" title="Taming\nSong" alt="" coords="1868,643,1739,643,1705,745,1835,745"/>
+<area shape="poly" id="node11" href="elves_wood_hall_full.html" title="Wood\nHall" alt="" coords="243,388,184,358,126,388,126,438,242,438"/>
+<area shape="poly" id="node31" href="elves_quenya_full.html" title="Quenya" alt="" coords="177,521,57,521,27,569,146,569"/>
+<area shape="poly" id="node12" href="elves_gryphon_rider_full.html" title="Gryphon\nRider" alt="" coords="1767,837,1764,826,1755,816,1742,808,1725,803,1706,801,1687,803,1670,808,1656,816,1647,826,1644,837,1647,848,1656,858,1670,866,1687,871,1706,873,1725,871,1742,866,1755,858,1764,848"/>
+<area shape="poly" id="node14" href="elves_sanctuary_full.html" title="Sanctuary" alt="" coords="419,394,343,378,267,394,267,421,419,421"/>
+<area shape="poly" id="node16" href="elves_wise_elf_full.html" title="Wise\nElf" alt="" coords="235,41,233,30,227,20,217,12,205,7,192,5,179,7,167,12,158,20,152,30,150,41,152,52,158,62,167,70,179,75,192,77,205,75,217,70,227,62,233,52"/>
+<area shape="poly" id="node18" href="elves_tree_of_life_full.html" title="Tree\nOf Life" alt="" coords="259,156,192,125,126,156,126,205,259,205"/>
+<area shape="poly" id="node17" href="elves_elf_full.html" title="Elf" alt="" coords="198,286,196,278,191,271,183,266,173,263,162,262,150,263,140,266,132,271,127,278,126,286,127,293,132,300,140,305,150,308,162,310,173,308,183,305,191,300,196,293"/>
+<area shape="poly" id="node20" href="elves_lore_house_full.html" title="Lore\nHouse" alt="" coords="1437,388,1378,358,1318,388,1318,438,1437,438"/>
+<area shape="poly" id="node27" href="elves_mystical_forest_full.html" title="Mystical\nForest" alt="" coords="1863,494,1720,494,1684,595,1827,595"/>
+<area shape="poly" id="node29" href="elves_elven_lore_full.html" title="Elven\nLore" alt="" coords="1409,494,1304,494,1277,595,1382,595"/>
 </map>

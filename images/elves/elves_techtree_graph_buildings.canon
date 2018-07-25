@@ -16,6 +16,13 @@ digraph test {
 		fontcolor="0.13472,0.809,0.925;",
 		label=Corral,
 		shape=house];
+	lore_house	 [URL="elves_lore_house_full.html",
+		color=red,
+		fontcolor="0.13472,0.809,0.925;",
+		label="Lore\nHouse",
+		shape=house];
+	corral -> lore_house	 [color="0.13472,0.809,0.925;",
+		style=dotted];
 	academy	 [URL="elves_academy_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
@@ -29,13 +36,6 @@ digraph test {
 		label="Wood\nHall",
 		shape=house];
 	academy -> wood_hall	 [color="0.13472,0.809,0.925;",
-		style=dotted];
-	lore_house	 [URL="elves_lore_house_full.html",
-		color=red,
-		fontcolor="0.13472,0.809,0.925;",
-		label="Lore\nHouse",
-		shape=house];
-	academy -> lore_house	 [color="0.13472,0.809,0.925;",
 		style=dotted];
 	wood_hall -> forge	 [color="0.13472,0.809,0.925;",
 		style=dotted];
