@@ -148,8 +148,6 @@ digraph test {
 		style=dashed];
 	elf -> tree_of_life	 [color="0.13472,0.809,0.925;",
 		style=bold];
-	elf -> forest_guardian	 [color="0.13472,0.809,0.925;",
-		style=bold];
 	lore_house	 [URL="elves_lore_house_full.html",
 		color=red,
 		fontcolor="0.13472,0.809,0.925;",
