@@ -1475,7 +1475,6 @@ mkdir "$out_path/js";
 mkdir "$out_path/css";
 system "cp $ENV{APP_ROOT}/media/*.html $out_path";
 system "cp $ENV{APP_ROOT}/media/*.ico $out_path";
-system "cp $ENV{APP_ROOT}/media/*.css $out_path";
 system "cp $ENV{APP_ROOT}/media/*.js $out_path/js";
 system "cp -r $ENV{APP_ROOT}/media/datatables $out_path/images";
 

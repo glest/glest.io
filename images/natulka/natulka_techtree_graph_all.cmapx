@@ -1,0 +1,43 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="natulka_farm_full.html" title="Farm" alt="" coords="490,138,440,122,391,138,391,165,490,165"/>
+<area shape="poly" id="node5" href="natulka_wolf_hut_full.html" title="Wolf\nHut" alt="" coords="110,275,58,244,5,275,5,324,110,324"/>
+<area shape="poly" id="node8" href="natulka_hunter_full.html" title="Hunter" alt="" coords="571,289,569,281,562,274,552,269,539,266,524,265,510,266,497,269,487,274,480,281,478,289,480,296,487,303,497,308,510,311,524,313,539,311,552,308,562,303,569,296"/>
+<area shape="poly" id="node9" href="natulka_golem_hole_full.html" title="Golem\nHole" alt="" coords="521,418,458,387,395,418,395,467,521,467"/>
+<area shape="poly" id="node10" href="natulka_banner_bearer_full.html" title="Banner\nBearer" alt="" coords="1117,289,1115,277,1107,268,1095,260,1081,254,1064,253,1048,254,1033,260,1022,268,1014,277,1012,289,1014,300,1022,310,1033,318,1048,323,1064,324,1081,323,1095,318,1107,310,1115,300"/>
+<area shape="poly" id="node18" href="natulka_dragon_tower_full.html" title="Dragon\nTower" alt="" coords="679,561,612,530,546,561,546,610,679,610"/>
+<area shape="poly" id="node24" href="natulka_cow_full.html" title="Cow" alt="" coords="404,289,402,281,397,274,389,269,378,266,367,265,356,266,346,269,338,274,332,281,331,289,332,296,338,303,346,308,356,311,367,313,378,311,389,308,397,303,402,296"/>
+<area shape="poly" id="node35" href="natulka_dog_food_full.html" title="Dog\nFood" alt="" coords="256,238,159,238,134,339,231,339"/>
+<area shape="poly" id="node2" href="natulka_town_center_full.html" title="Town\nCenter" alt="" coords="257,132,195,101,133,132,133,181,257,181"/>
+<area shape="poly" id="node4" href="natulka_worker_full.html" title="Worker" alt="" coords="660,29,657,22,650,15,638,10,624,7,608,5,593,7,578,10,567,15,560,22,557,29,560,37,567,43,578,49,593,52,608,53,624,52,638,49,650,43,657,37"/>
+<area shape="poly" id="node3" href="natulka_sorcerer_full.html" title="Sorcerer" alt="" coords="1174,432,1172,424,1164,417,1152,412,1137,409,1120,408,1104,409,1089,412,1077,417,1069,424,1067,432,1069,439,1077,446,1089,451,1104,454,1120,456,1137,454,1152,451,1164,446,1172,439"/>
+<area shape="poly" id="node11" href="natulka_zombie_full.html" title="Zombie" alt="" coords="986,574,984,567,976,560,965,555,951,552,935,550,919,552,905,555,894,560,886,567,884,574,886,582,894,589,905,594,919,597,935,598,951,597,965,594,976,589,984,582"/>
+<area shape="poly" id="node26" href="natulka_healing_potions_full.html" title="Healing\nPotions" alt="" coords="1418,524,1288,524,1255,625,1385,625"/>
+<area shape="poly" id="node31" href="natulka_magical_time_jump_full.html" title="Magical\nTime Jump" alt="" coords="1231,524,1055,524,1010,625,1186,625"/>
+<area shape="poly" id="node38" href="natulka_mana_potions_full.html" title="Mana\nPotions" alt="" coords="1599,524,1474,524,1442,625,1567,625"/>
+<area shape="poly" id="node40" href="natulka_dragon_lure_full.html" title="Dragon\nLure" alt="" coords="861,524,735,524,703,625,828,625"/>
+<area shape="poly" id="node6" href="natulka_tower_academy_full.html" title="Tower\nAcademy" alt="" coords="1492,275,1411,244,1331,275,1331,324,1491,324"/>
+<area shape="poly" id="node15" href="natulka_stone_sanctuary_full.html" title="Stone\nSanctuary" alt="" coords="1307,275,1224,244,1142,275,1142,324,1307,324"/>
+<area shape="poly" id="node16" href="natulka_sentry_tower_full.html" title="Sentry\nTower" alt="" coords="1985,275,1924,244,1864,275,1864,324,1985,324"/>
+<area shape="poly" id="node17" href="natulka_metal_wreaker_full.html" title="Metal\nWreaker" alt="" coords="2178,132,2103,101,2029,132,2029,181,2178,181"/>
+<area shape="poly" id="node21" href="natulka_army_tent_full.html" title="Army\nTent" alt="" coords="919,132,862,101,805,132,805,181,919,181"/>
+<area shape="poly" id="node25" href="natulka_fire_menhir_full.html" title="Fire\nMenhir" alt="" coords="1744,418,1678,387,1611,418,1611,467,1744,467"/>
+<area shape="poly" id="node19" href="natulka_hunting_wolf_full.html" title="Hunting\nWolf" alt="" coords="210,432,207,420,199,410,186,403,170,397,152,396,135,397,119,403,106,410,98,420,95,432,98,443,106,453,119,461,135,466,152,467,170,466,186,461,199,453,207,443"/>
+<area shape="poly" id="node39" href="natulka_wolf_training_full.html" title="Wolf\nTraining" alt="" coords="193,524,54,524,19,625,157,625"/>
+<area shape="poly" id="node33" href="natulka_poison_full.html" title="Poison" alt="" coords="1588,408,1481,408,1453,456,1560,456"/>
+<area shape="poly" id="node37" href="natulka_medicine_full.html" title="Medicine" alt="" coords="1430,408,1292,408,1257,456,1394,456"/>
+<area shape="poly" id="node7" href="natulka_axeman_full.html" title="Axeman" alt="" coords="1675,289,1672,281,1665,274,1653,269,1637,266,1620,265,1604,266,1588,269,1576,274,1569,281,1566,289,1569,296,1576,303,1588,308,1604,311,1620,313,1637,311,1653,308,1665,303,1672,296"/>
+<area shape="poly" id="node23" href="natulka_armored_axeman_full.html" title="Armored\nAxeman" alt="" coords="2377,432,2374,420,2365,410,2352,403,2334,397,2315,396,2296,397,2279,403,2265,410,2256,420,2253,432,2256,443,2265,453,2279,461,2296,466,2315,467,2334,466,2352,461,2365,453,2374,443"/>
+<area shape="poly" id="node20" href="natulka_stone_golem_full.html" title="Stone\nGolem" alt="" coords="509,574,506,563,499,553,488,545,474,540,458,539,442,540,428,545,417,553,409,563,407,574,409,586,417,596,428,603,442,609,458,610,474,609,488,603,499,596,506,586"/>
+<area shape="poly" id="node12" href="natulka_armored_knight_full.html" title="Armored\nKnight" alt="" coords="2851,432,2848,420,2839,410,2825,403,2808,397,2788,396,2769,397,2752,403,2738,410,2729,420,2726,432,2729,443,2738,453,2752,461,2769,466,2788,467,2808,466,2825,461,2839,453,2848,443"/>
+<area shape="poly" id="node13" href="natulka_dragon_full.html" title="Dragon" alt="" coords="746,724,743,716,736,710,725,704,712,701,696,700,681,701,667,704,656,710,649,716,647,724,649,731,656,738,667,743,681,747,696,748,712,747,725,743,736,738,743,731"/>
+<area shape="poly" id="node14" href="natulka_lancer_full.html" title="Lancer" alt="" coords="987,289,985,281,978,274,968,269,955,266,940,265,926,266,913,269,903,274,896,281,894,289,896,296,903,303,913,308,926,311,940,313,955,311,968,308,978,303,985,296"/>
+<area shape="poly" id="node22" href="natulka_swordsman_full.html" title="Swordsman" alt="" coords="1840,289,1837,281,1827,274,1811,269,1791,266,1770,265,1748,266,1729,269,1713,274,1703,281,1700,289,1703,296,1713,303,1729,308,1748,311,1770,313,1791,311,1811,308,1827,303,1837,296"/>
+<area shape="poly" id="node27" href="natulka_optimize_spears_full.html" title="Optimize\nSpears" alt="" coords="2197,238,2048,238,2009,339,2159,339"/>
+<area shape="poly" id="node29" href="natulka_optimize_swords_full.html" title="Optimize\nSwords" alt="" coords="3094,238,2945,238,2906,339,3056,339"/>
+<area shape="poly" id="node30" href="natulka_optimize_axes_full.html" title="Optimize\nAxes" alt="" coords="2409,238,2260,238,2221,339,2371,339"/>
+<area shape="poly" id="node32" href="natulka_optimize_shields_full.html" title="Optimize\nShields" alt="" coords="2776,673,2626,673,2588,774,2737,774"/>
+<area shape="poly" id="node34" href="natulka_optimize_armor_full.html" title="Optimize\nArmor" alt="" coords="2882,238,2733,238,2694,339,2844,339"/>
+<area shape="poly" id="node36" href="natulka_optimize_bows_full.html" title="Optimize\nBows" alt="" coords="2621,238,2472,238,2433,339,2583,339"/>
+<area shape="poly" id="node41" href="natulka_poisoned_spears_full.html" title="Poisoned\nSpears" alt="" coords="1489,673,1344,673,1307,774,1452,774"/>
+<area shape="poly" id="node28" href="natulka_training_field_full.html" title="Training\nField" alt="" coords="870,238,732,238,696,339,835,339"/>
+</map>

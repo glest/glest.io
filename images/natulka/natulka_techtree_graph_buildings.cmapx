@@ -1,0 +1,13 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="natulka_farm_full.html" title="Farm" alt="" coords="164,315,115,299,66,315,66,342,164,342"/>
+<area shape="poly" id="node3" href="natulka_wolf_hut_full.html" title="Wolf\nHut" alt="" coords="110,446,58,415,5,446,5,495,110,495"/>
+<area shape="poly" id="node5" href="natulka_golem_hole_full.html" title="Golem\nHole" alt="" coords="298,446,235,415,172,446,172,495,298,495"/>
+<area shape="poly" id="node9" href="natulka_dragon_tower_full.html" title="Dragon\nTower" alt="" coords="455,446,388,415,322,446,322,495,455,495"/>
+<area shape="poly" id="node2" href="natulka_town_center_full.html" title="Town\nCenter" alt="" coords="330,36,268,5,207,36,207,85,330,85"/>
+<area shape="poly" id="node4" href="natulka_tower_academy_full.html" title="Tower\nAcademy" alt="" coords="232,173,151,142,71,173,71,222,231,222"/>
+<area shape="poly" id="node6" href="natulka_stone_sanctuary_full.html" title="Stone\nSanctuary" alt="" coords="638,309,555,278,472,309,472,359,638,359"/>
+<area shape="poly" id="node8" href="natulka_metal_wreaker_full.html" title="Metal\nWreaker" alt="" coords="462,173,387,142,313,173,313,222,462,222"/>
+<area shape="poly" id="node10" href="natulka_army_tent_full.html" title="Army\nTent" alt="" coords="303,309,246,278,189,309,189,359,303,359"/>
+<area shape="poly" id="node11" href="natulka_fire_menhir_full.html" title="Fire\nMenhir" alt="" coords="631,446,564,415,498,446,498,495,631,495"/>
+<area shape="poly" id="node7" href="natulka_sentry_tower_full.html" title="Sentry\nTower" alt="" coords="448,309,387,278,327,309,327,359,448,359"/>
+</map>
