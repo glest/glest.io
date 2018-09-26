@@ -1,0 +1,107 @@
+---
+title: Frequently Asked Questions (FAQ)
+layout: default
+---
+
+<ul>
+  <li><a href="#differences">How is ZetaGlest Different from MegaGlest?</a></li>
+  <li><a href="#releasedate">When is the date of the next release?</a></li>
+  <li><a href="#contributing">I want to contribute. Where do I start?</a></li>
+  <li><a href="#openaticket">I have a suggestion or a feature request. Should I open a ticket?</a></li>
+  <li><a href="#headlessserver">What is a headless server?</a></li>
+  <li><a href="#hostinggameserver">How do I host a server?</a></li>
+  <li><a href="#portforwarding">What ports do I need to forward</a></li>
+  <li><a href="#headlessalone">Can I connect to a server that's already running on my computer?</a></li>
+</ul>
+
+<h4 id="differences">How is ZetaGlest Different from MegaGlest?</h4>
+<p>See the page <a href="differences.html">Differences from MegaGlest</a></p>
+
+<h4 id="releasedate">When is the date of the next release?</h4>
+<p>From the <b>milestone</b> pages, you can view the approximate date
+of the next release, as well as which issues need to be done before the
+release is issued:</p>
+<ul>
+<li><a href="https://github.com/ZetaGlest/zetaglest-source/milestones">Milestones in the source code repo</a><br /></li>
+<li><a href="https://github.com/ZetaGlest/zetaglest-data/milestones">Milestones in the data repo</a></li>
+</ul>
+
+<p>The target dates and issues listed may change but those listed
+represent our goals at the time they are updated.</p>
+
+<h4 id="contributing">I want to contribute. Where do I start?</h4>
+<p>Please see <a href="https://github.com/ZetaGlest/zetaglest-source/blob/develop/CONTRIBUTING.md">the CONTRIBUTING doc</a>.</p>
+
+<p>After we get to know you better and understand what your skills are, we
+will be able to offer you individual tickets. Before that happens,
+you must browse through the tickets to find one that interests
+you and that suits you. Because this is a volunteer project, we
+recommend only working on tickets that you find interesting.</p>
+
+<h4 id="openaticket">I have a suggestion or a feature request. Should I open a ticket?</h4>
+
+<p>Yes. You are welcome to present ideas in the <a
+href="https://discord.gg/WaAaXS7">ZetaGlest Discord chat room</a>, but
+often someone may then tell you to open a ticket.
+
+<ul>
+
+  <li> Having a ticket means there will be a permanent record of a
+  discussion. Discussion in chat often scrolls away never to be seen
+  again.</li>
+
+  <li>Allows people who are absent from chat to view the discussion
+  later and offer feedback or solutions</li>
+
+ <li>If we have to spend too much time discussing feature requests in
+ chat, our focus is taken away from a task we might currently be
+ working on</li>
+
+ <li>It helps the project managers by saving them time. You may see
+ your suggestion as only one item, but remember they get suggestions
+ from many people.</li>
+
+ <li>If you don't care enough to spend the time to open a ticket, we
+ don't care enough to spend any time considering your suggestion</li>
+
+</ul>
+
+<p>Sometimes your suggestion will be rejected. We will always try to respond and give a reason,
+because we appreciate you care enough to make the suggestion and that
+you're a fan of the game. Sometimes it may take us a while to respond,
+or to complete the ticket. You will get notified of any replies by
+email through GitHUb as long as you are subscribed to the ticket.</p>
+
+<h4 id="headlessserver">What is a headless server?</h4>
+<p>
+  A headless server is a "dedicated" server. People can connect to it
+  anytime to start a game. Once the game has started, no one can join
+  to start a new game until the one that's running has completed.You do
+  not need to play a game that is starting. The game setup interface
+  appears to people who connect to your headless server (you will not
+  see the game setup menu unless you connect to your server by starting
+  a new instance of ZetaGlest from another computer).
+</p>
+
+<h4 id="hostinggameserver">How do I host a server?</h4>
+
+<p>First, you'll need to set-up <a href="#portforwarding">port-forwarding</a> (You'll only need to do
+that once). To run your own <a href="#headlessserver">headless (dedicated) server</a>:</p>
+
+<pre>
+    zetaglest --headless-server-mode
+</pre>
+<p>To start a temporary server, enter the ZetaGlest lobby and click "Host Game"
+</p>
+<p>To host a LAN game, use the LAN option from the ZetaGlest game
+menu</p>
+
+<h4 id="portforwarding">What ports do I need to foward?</h4>
+<p>TCP ports 61357-61368</p>
+
+<h4 id="headlessalone">Can I connect to a server that's already running on my computer?</h4>
+<p>When serving a running game, a headless ZetaGlest server uses almost
+the same amount of computer resources as a running game. Therefore, it
+is recommended not to try connecting your ZG client to a headless
+server running on the same computer. The beginning of the game may run
+well, but during gameplay later, there may be problems.</p>
