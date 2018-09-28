@@ -1,0 +1,13 @@
+---
+title: Blog (Index)
+layout: default
+---
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      Posted: {{ post.date }}<br />
+      {{ post.excerpt }}<a href="{{ post.url }}">[Read More]</a>
+    </li>
+  {% endfor %}
+</ul>
