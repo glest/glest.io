@@ -6,9 +6,9 @@ layout: null
 <rss version="2.0">
 
     <channel>
-        <title>{{ site.title }}</title>
+        <title>The ZetaGlest Blog</title>
         <link>{{ site.url }}</link>
-        <description>{{ site.description }}</description>
+        <description>News about development and releases</description>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         {% for post in site.posts %}
         <item>
