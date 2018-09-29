@@ -73,8 +73,19 @@ a img {
   text-align: center;
 }
 
-h1 {
-text-align: center;
+IMG.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.subtitle {
+  text-align: center;
+  border-style: inset;
+  border-width: 5px 6px 3px 10px;
+  border-color: red;
+}
+
 }
 
 .form {
@@ -180,10 +191,28 @@ img {
  * Text display: side, colors, etc.
  */
 p { text-indent: 2em }
-a { color: #996600 }
-a:link { text-decoration: none }
 
-a img { border: 0; }
+a:link, a:visited {
+  color: #993333;
+  text-decoration: none;
+  /* border-style: solid; */
+  /* border-width: 0px 0px 2px 0px; */
+}
+
+a { color: #993333; }
+
+a:hover, a:active {
+  background-color: #ffeecc;
+  text-decoration: none;
+  color: #993333; */
+/*  border: 2px solid brown;
+  border-radius: 12px;
+  border-style: inset;
+  border-width: 3px 2px 5px 3px; */
+/*  padding-left: 8px; */
+/*  padding-right: 8px; */
+}
+
 img.right {
     float: right;
     margin: 0 0 10px 10px;
