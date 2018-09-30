@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>{% if page.title %}{{ page.title | escape }} | {{ site.title}}
-            {% elsif page.tag %}{{ page.tag | escape }} | {{ site.title}}
-            {% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-    <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="ZetaGlest Blog">
-    <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/ZetaGlest/zetaglest.github.io/commits/master.atom">
-    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
-    <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
-    <link rel="stylesheet" href="/docs/assets/css/style.css">
-    <!--including Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title}}
+    {% elsif page.tag %}{{ page.tag | escape }} | {{ site.title}}
+    {% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="ZetaGlest Blog">
+  <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/ZetaGlest/zetaglest.github.io/commits/master.atom">
+  <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
+  <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
+  <!--including Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <!--including local stylesheet-->
+  <link rel="stylesheet" href="/docs/assets/css/style.css">
+</head>
+
 <body>
   <div class="container">
-    <h1><img class="centered" src="/docs/assets/images/zetaglest_logo_412x207.png" alt="ZetaGlest logo" title="ZetaGlest logo" width="412" height="207"</h1>
+    <header>
+      <a href="/docs">
+        <img class="centered" src="/docs/assets/images/zetaglest_logo_412x207.png" alt="ZetaGlest logo" title="ZetaGlest logo"
+        width="412" height="207"></a>
+    </header>
     <h2 class="subtitle">{{ page.title }}</h2>
