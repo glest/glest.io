@@ -31,6 +31,10 @@ plugins:
 paginate: 10
 paginate_path: "/blog/page:num/"
 
+# for posts
+# By default this is the first paragraph of content in the post, but it
+# can be customized by using this variable
+excerpt_separator: <!--more-->
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

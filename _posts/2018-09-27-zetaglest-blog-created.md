@@ -15,6 +15,7 @@ I know the biggest question is, "What makes ZetaGlest different from <a
 href="https://megaglest.org/">MegaGlest</a>?" You can feel assured that
 the <a href="https://zetaglest.github.io/docs/differences.html">Differences
 from MegaGlest page</a> will answer that question!
+<!--more-->
 
 With regard to changes, bug fixes, and feature additions in the current
 code and data, we've been noting them in the <a
