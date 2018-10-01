@@ -406,3 +406,11 @@ tr.even {
 	background-color: #7F462C;
 }
 
+#post_date {
+  color: white;
+  background-color: gray;
+  border-style: solid;
+  border-radius: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
