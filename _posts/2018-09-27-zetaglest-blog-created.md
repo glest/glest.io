@@ -4,6 +4,8 @@ title: "Blog Created"
 date: 2018-09-27 23:52:05 -0500
 ---
 
+{{ post.date }}
+
 Hello, everyone! We are about 2 months away from the first release. To
 view more information about our road map to release, please consult the
 <a href="https://zetaglest.github.io/docs/faq.html#releasedate">FAQ</a>.
