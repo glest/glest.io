@@ -229,95 +229,95 @@ The type can be a number between 1 and 5.
 </p><p>Parameters:<br />
 <b>unitID</b> - unit ID of the target unit.
 </p>
-<h2><span class="mw-headline" id="Game">Game</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=33" title="Edit section: Game">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="setCameraPosition.28pos.29">setCameraPosition(pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=34" title="Edit section: setCameraPosition(pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h2><span class="mw-headline" id="Game">Game</span></h2>
+<h3><span class="mw-headline" id="setCameraPosition.28pos.29">setCameraPosition(pos)</span></h3>
 <p>Move the camera to the coordinates of pos.
 </p><p>Parameters:<br />
 <b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
 </p>
-<h3><span class="mw-headline" id="togglePauseGame.28pauseStatus.29">togglePauseGame(pauseStatus)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=35" title="Edit section: togglePauseGame(pauseStatus)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="togglePauseGame.28pauseStatus.29">togglePauseGame(pauseStatus)</span></h3>
 <p>Toggle the pause state of the existing game.
 </p><p>Parameters:<br />
 <b>pauseStatus</b> - 0 indicates normal game play, 1 indicates a paused game
 </p>
-<h3><span class="mw-headline" id="setPlayerAsWinner.28factionID.29">setPlayerAsWinner(factionID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=36" title="Edit section: setPlayerAsWinner(factionID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="setPlayerAsWinner.28factionID.29">setPlayerAsWinner(factionID)</span></h3>
 <p>Sets the player with index faction ID as the winner. Would typically be followed by <tt>endGame()</tt>.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
-<h3><span class="mw-headline" id="endGame.28.29">endGame()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=37" title="Edit section: endGame()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="endGame.28.29">endGame()</span></h3>
 <p>Ends the scenario, bringing up the "you win" screen and asking the player if they want to leave the game. Usually would be called after <tt>setPlayerAsWinner()</tt> when victory conditions have been met.
 </p>
-<h3><span class="mw-headline" id="loadScenario.28scenario.2C_keepFactions.29">loadScenario(scenario, keepFactions)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=38" title="Edit section: loadScenario(scenario, keepFactions)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="loadScenario.28scenario.2C_keepFactions.29">loadScenario(scenario, keepFactions)</span></h3>
 <p>Loads another scenario from inside an existing scenario. The new scenario must have the same techtree and factions, but map, tileset can change.
 </p><p>Parameters:<br />
 <b>scenario</b> - the name of the scenario to be loaded.<br />
 <b>keepFactions</b> - True to call the next scenario with existing factions or false to call the next scenario with only newly defined factions in the new scenario
 </p>
-<h3><span class="mw-headline" id="setAttackWarningsEnabled.28enabled.29">setAttackWarningsEnabled(enabled)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=39" title="Edit section: setAttackWarningsEnabled(enabled)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="setAttackWarningsEnabled.28enabled.29">setAttackWarningsEnabled(enabled)</span></h3>
 <p>Enables or disables the attack warning system for the player.
 </p><p>Parameters:<br />
 <b>enabled</b> - A boolean true or false value, with true enabling the attack warning system and false disabling it.
 </p>
-<h3><span class="mw-headline" id="getAttackWarningsEnabled.28.29">getAttackWarningsEnabled()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=40" title="Edit section: getAttackWarningsEnabled()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getAttackWarningsEnabled.28.29">getAttackWarningsEnabled()</span></h3>
 <p>Returns the current status of the attack warnings system (true if enabled, false if disabled).
 </p>
-<h3><span class="mw-headline" id="getIsDayTime.28.29">getIsDayTime()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=41" title="Edit section: getIsDayTime()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getIsDayTime.28.29">getIsDayTime()</span></h3>
 <p>Returns if it is day ingame. ( 1 is day and 0 is night )
 </p>
-<h3><span class="mw-headline" id="getIsNightTime.28.29">getIsNightTime()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=42" title="Edit section: getIsNightTime()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getIsNightTime.28.29">getIsNightTime()</span></h3>
 <p>Returns if it is night ingame. ( 1 is night and 0 is day )
 </p>
-<h3><span class="mw-headline" id="getTimeOfDay.28.29">getTimeOfDay()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=43" title="Edit section: getTimeOfDay()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getTimeOfDay.28.29">getTimeOfDay()</span></h3>
 <p>Returns the ingame time of the day.
 </p>
-<h3><span class="mw-headline" id="storeSaveGameDate.28key.2C_value.29">storeSaveGameDate(key, value)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=44" title="Edit section: storeSaveGameDate(key, value)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="storeSaveGameDate.28key.2C_value.29">storeSaveGameDate(key, value)</span></h3>
 <p>Stores <i>value</i> at <i>key</i> in the savegame.<br />
 <i><b>Only available in the onSave-tag!</b></i>
 </p><p>Parameters:<br />
 <b>key</b> - a key string<br />
 <b>value</b> - a string that is stored
 </p>
-<h3><span class="mw-headline" id="loadSaveGameDate.28key.29">loadSaveGameDate(key)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=45" title="Edit section: loadSaveGameDate(key)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="loadSaveGameDate.28key.29">loadSaveGameDate(key)</span></h3>
 <p>Returns the <i>value</i> stored at <i>key</i> in the savegame.<br />
 <i><b>Only available in the onLoad-tag!</b></i>
 </p><p>Parameters:<br />
 <b>key</b> - a key string
 </p>
-<h2><span class="mw-headline" id="AI">AI</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=46" title="Edit section: AI">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="enableAi.28faction.29">enableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=47" title="Edit section: enableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h2><span class="mw-headline" id="AI">AI</span></h2>
+<h3><span class="mw-headline" id="enableAi.28faction.29">enableAi(faction)</span></h3>
 <p>Enables a factions AI. All of the faction's units will move with this command.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
-<h3><span class="mw-headline" id="disableAi.28faction.29">disableAi(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=48" title="Edit section: disableAi(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="disableAi.28faction.29">disableAi(faction)</span></h3>
 <p>Disables a factions AI. None of the faction's units will move with this command.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
-<h3><span class="mw-headline" id="getAiEnabled.28faction.29">getAiEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=49" title="Edit section: getAiEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getAiEnabled.28faction.29">getAiEnabled(faction)</span></h3>
 <p>Checks the enabled status of a factions AI. Returns 0 if the AI is disabled, and 1 if enabled.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
-<h3><span class="mw-headline" id="enableConsume.28faction.29">enableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=50" title="Edit section: enableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="enableConsume.28faction.29">enableConsume(faction)</span></h3>
 <p>Enables a factions requirement to consume resources like food. All of the faction's units will consume food type resources with this command.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
-<h3><span class="mw-headline" id="disableConsume.28faction.29">disableConsume(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=51" title="Edit section: disableConsume(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="disableConsume.28faction.29">disableConsume(faction)</span></h3>
 <p>Disbles a factions requirement to consume resources like food. All of the faction's units will not consume food type resources with this command.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
-<h3><span class="mw-headline" id="getConsumeEnabled.28faction.29">getConsumeEnabled(faction)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=52" title="Edit section: getConsumeEnabled(faction)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getConsumeEnabled.28faction.29">getConsumeEnabled(faction)</span></h3>
 <p>Checks the consume status of a factions AI. Returns 0 if disabled, and 1 if enabled.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
 
-<h2><span class="mw-headline" id="Events">Events</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=58" title="Edit section: Events">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="registerCellTriggerEventForUnitToUnit.28sourceUnitID.2C_destUnitID.29">registerCellTriggerEventForUnitToUnit(sourceUnitID, destUnitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=59" title="Edit section: registerCellTriggerEventForUnitToUnit(sourceUnitID, destUnitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h2><span class="mw-headline" id="Events">Events</span></h2>
+<h3><span class="mw-headline" id="registerCellTriggerEventForUnitToUnit.28sourceUnitID.2C_destUnitID.29">registerCellTriggerEventForUnitToUnit(sourceUnitID, destUnitID)</span></h3>
 <p>Register a cell 'trigger' event. Any time sourceUnit comes next to destUnit the eventID returned by this function will be triggered inside an event called '&lt;cellTriggerEvent&gt;'.
 </p><p>Parameters:<br />
 <b>sourceUnitID</b> - the ID of a unit moves next to destUnit.<br />
@@ -342,31 +342,31 @@ The type can be a number between 1 and 5.
 		unregisterCellTriggerEvent<span class="br0">&#40;</span>cell_event1<span class="br0">&#41;</span><span class="sy0">;</span>
 	<span class="kw1">end</span>
 <span class="sy0">&lt;/</span>cellTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
-<h3><span class="mw-headline" id="registerCellTriggerEventForUnitToLocation.28sourceUnitID.2C_pos.29">registerCellTriggerEventForUnitToLocation(sourceUnitID, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=60" title="Edit section: registerCellTriggerEventForUnitToLocation(sourceUnitID, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="registerCellTriggerEventForUnitToLocation.28sourceUnitID.2C_pos.29">registerCellTriggerEventForUnitToLocation(sourceUnitID, pos)</span></h3>
 <p>Register a cell 'trigger' event. Any time sourceUnit comes into the cell co-ordinates specified by pos, the event called '&lt;cellTriggerEvent&gt;' is triggered using the eventID returned by this function.
 </p><p>Parameters:<br />
 <b>sourceUnitID</b> - the ID of a unit moves next to destUnit.<br />
 <b>pos</b> - the x and y cell coordinates that will trigger the event when sourceUnitID enters the cell
 </p>
-<h3><span class="mw-headline" id="registerCellTriggerEventForFactionToUnit.28sourceFactionID.2C_destUnitID.29">registerCellTriggerEventForFactionToUnit(sourceFactionID, destUnitID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=61" title="Edit section: registerCellTriggerEventForFactionToUnit(sourceFactionID, destUnitID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="registerCellTriggerEventForFactionToUnit.28sourceFactionID.2C_destUnitID.29">registerCellTriggerEventForFactionToUnit(sourceFactionID, destUnitID)</span></h3>
 <p>Register a cell 'trigger' event. Any time a unit from sourceFaction comes next to destUnit the eventID returned by this function will be triggered inside an event called '&lt;cellTriggerEvent&gt;'.
 </p><p>Parameters:<br />
 <b>sourceFactionID</b> - the ID of a faction who has at least one unit that moves next to destUnit.<br />
 <b>destUnitID</b> - the ID of a unit that source moves next to.
 </p>
-<h3><span class="mw-headline" id="registerCellTriggerEventForFactionToLocation.28sourceFactionID.2C_pos.29">registerCellTriggerEventForFactionToLocation(sourceFactionID, pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=62" title="Edit section: registerCellTriggerEventForFactionToLocation(sourceFactionID, pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="registerCellTriggerEventForFactionToLocation.28sourceFactionID.2C_pos.29">registerCellTriggerEventForFactionToLocation(sourceFactionID, pos)</span></h3>
 <p>Register a cell 'trigger' event. Any time a unit from sourceFaction comes into the cell co-ordinates specified by pos, the event called '&lt;cellTriggerEvent&gt;' is triggered using the eventID returned by this function.
 </p><p>Parameters:<br />
 <b>sourceFactionID</b> - the ID of a faction who has at least one unit that moves next to destUnit.<br />
 <b>pos</b> - the x and y cell co-ordinates that will trigger the event when a unit from sourceFactionID enters the cell.
 </p>
-<h3><span class="mw-headline" id="registerCellAreaTriggerEvent.28pos.29">registerCellAreaTriggerEvent(pos)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=63" title="Edit section: registerCellAreaTriggerEvent(pos)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="registerCellAreaTriggerEvent.28pos.29">registerCellAreaTriggerEvent(pos)</span></h3>
 <p>Registers a bounding rectangle as a trigger event. This will be triggered by ANY unit moving in or out of the area. To know which unit, use <tt>triggeredEventAreaEntryUnitId()</tt>.
 </p><p>Parameters:<br />
 <b>pos</b> - the x and y coordinate of the top left point then the bottom right point (eg, {10,10,5,5} would create a box from points (10,10) to (5,5)).
 </p><p><br />
 </p>
-<h3><span class="mw-headline" id="registerDayNightEvent.28.29">registerDayNightEvent()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=64" title="Edit section: registerDayNightEvent()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="registerDayNightEvent.28.29">registerDayNightEvent()</span></h3>
 <p>Enables the Day/Night Event which will be triggered when night or day starts.
 </p><p>Example:
 </p>
@@ -380,19 +380,19 @@ The type can be a number between 1 and 5.
 		setDisplayText<span class="br0">&#40;</span><span class="st0">'**It is night time, WATCH OUT!**'</span><span class="br0">&#41;</span>
     <span class="kw1">end</span>
 <span class="sy0">&lt;/</span>dayNightTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
-<h3><span class="mw-headline" id="unregisterDayNightEvent.28.29">unregisterDayNightEvent()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=65" title="Edit section: unregisterDayNightEvent()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="unregisterDayNightEvent.28.29">unregisterDayNightEvent()</span></h3>
 <p>Disables the Day/Night Event.
 </p>
-<h3><span class="mw-headline" id="triggeredEventAreaEntryUnitId.28.29">triggeredEventAreaEntryUnitId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=66" title="Edit section: triggeredEventAreaEntryUnitId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="triggeredEventAreaEntryUnitId.28.29">triggeredEventAreaEntryUnitId()</span></h3>
 <p>Returns the unit ID of the unit who entered a registered cell area trigger event.
 </p>
-<h3><span class="mw-headline" id="triggeredEventAreaExitUnitId.28.29">triggeredEventAreaExitUnitId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=67" title="Edit section: triggeredEventAreaExitUnitId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="triggeredEventAreaExitUnitId.28.29">triggeredEventAreaExitUnitId()</span></h3>
 <p>Returns the unit ID of the unit who exited a registered cell area trigger event.
 </p>
-<h3><span class="mw-headline" id="lastUnitTriggerEventUnit.28.29">lastUnitTriggerEventUnit()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=68" title="Edit section: lastUnitTriggerEventUnit()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="lastUnitTriggerEventUnit.28.29">lastUnitTriggerEventUnit()</span></h3>
 <p>Returns the ID of the Unit which triggered the UnitTriggerEvent.
 </p>
-<h3><span class="mw-headline" id="lastUnitTriggerEventType.28.29">lastUnitTriggerEventType()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=69" title="Edit section: lastUnitTriggerEventType()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="lastUnitTriggerEventType.28.29">lastUnitTriggerEventType()</span></h3>
 <p>Returns the ID of property which changed.
 1=hp
 2=ep
@@ -400,20 +400,20 @@ The type can be a number between 1 and 5.
 4=field
 5=skill
 </p>
-<h3><span class="mw-headline" id="getCellTriggerEventCount.28eventID.29">getCellTriggerEventCount(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=70" title="Edit section: getCellTriggerEventCount(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="getCellTriggerEventCount.28eventID.29">getCellTriggerEventCount(eventID)</span></h3>
 <p>Returns the number of times the event specified by eventID has been triggered.
 </p><p>Parameters:<br />
 <b>eventID</b> - the ID of a previously registered event
 </p>
-<h3><span class="mw-headline" id="triggeredCellEventUnitId.28.29">triggeredCellEventUnitId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=71" title="Edit section: triggeredCellEventUnitId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="triggeredCellEventUnitId.28.29">triggeredCellEventUnitId()</span></h3>
 <p>Can be called in a '&lt;cellTriggerEvent&gt;' to return the unit ID of the unit whom triggered the event.
 </p>
-<h3><span class="mw-headline" id="unregisterCellTriggerEvent.28eventID.29">unregisterCellTriggerEvent(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=72" title="Edit section: unregisterCellTriggerEvent(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="unregisterCellTriggerEvent.28eventID.29">unregisterCellTriggerEvent(eventID)</span></h3>
 <p>Unregister the event specified by eventID.
 </p><p>Parameters:<br />
 <b>eventID</b> - the ID of a previously registered event.
 </p>
-<h3><span class="mw-headline" id="registerUnitTriggerEvent.28unitId.29">registerUnitTriggerEvent(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=73" title="Edit section: registerUnitTriggerEvent(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="registerUnitTriggerEvent.28unitId.29">registerUnitTriggerEvent(unitId)</span></h3>
 <p>Registers a unit trigger event for a unit which will be triggered if one of his properties changes.
 </p><p>Example:
 </p>
@@ -439,10 +439,10 @@ The type can be a number between 1 and 5.
         <span class="kw1">end</span>
     <span class="kw1">end</span>
 <span class="sy0">&lt;/</span>unitTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
-<h3><span class="mw-headline" id="unregisterUnitTriggerEvent.28unitId.29">unregisterUnitTriggerEvent(unitId)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=74" title="Edit section: unregisterUnitTriggerEvent(unitId)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="unregisterUnitTriggerEvent.28unitId.29">unregisterUnitTriggerEvent(unitId)</span></h3>
 <p>Unregisters the unit trigger event for a unit.
 </p>
-<h3><span class="mw-headline" id="startTimerEvent.28.29">startTimerEvent()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=75" title="Edit section: startTimerEvent()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="startTimerEvent.28.29">startTimerEvent()</span></h3>
 <p>Registers a timer and returns its unqiue ID, which can later be compared within a '&lt;timerTriggerEvent&gt;' event.
 </p><p>Example:
 </p>
@@ -456,48 +456,48 @@ The type can be a number between 1 and 5.
 		<span class="kw1">end</span>
 	<span class="kw1">end</span>
 <span class="sy0">&lt;/</span>timerTriggerEvent<span class="sy0">&gt;</span></pre></div></div>
-<h3><span class="mw-headline" id="resetTimerEvent.28eventID.29">resetTimerEvent(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=76" title="Edit section: resetTimerEvent(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="resetTimerEvent.28eventID.29">resetTimerEvent(eventID)</span></h3>
 <p>Reset the timer specified by eventID. This function also returns the number of seconds elapsed since the timer started.
 </p><p>Parameters:<br />
 <b>eventID</b> - the ID of a previously registered timer.
 </p>
-<h3><span class="mw-headline" id="stopTimerEvent.28eventID.29">stopTimerEvent(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=77" title="Edit section: stopTimerEvent(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="stopTimerEvent.28eventID.29">stopTimerEvent(eventID)</span></h3>
 <p>Stop the timer specified by eventID. This function also returns the number of seconds elapsed since the timer started.
 </p><p>Parameters:<br />
 <b>eventID</b> - the ID of a previously registered timer.
 </p>
-<h3><span class="mw-headline" id="timerEventSecondsElapsed.28eventID.29">timerEventSecondsElapsed(eventID)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=78" title="Edit section: timerEventSecondsElapsed(eventID)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="timerEventSecondsElapsed.28eventID.29">timerEventSecondsElapsed(eventID)</span></h3>
 <p>This function returns the number of seconds elapsed since the timer started.
 </p><p>Parameters:<br />
 <b>eventID</b> - the ID of a previously registered timer.
 </p>
-<h3><span class="mw-headline" id="triggeredCellEventId.28.29">triggeredCellEventId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=79" title="Edit section: triggeredCellEventId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="triggeredCellEventId.28.29">triggeredCellEventId()</span></h3>
 <p>This function returns the eventID that is currently triggering a '&lt;cellTriggerEvent&gt;'.
 </p>
-<h3><span class="mw-headline" id="triggeredTimerEventId.28.29">triggeredTimerEventId()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=80" title="Edit section: triggeredTimerEventId()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="triggeredTimerEventId.28.29">triggeredTimerEventId()</span></h3>
 <p>This function returns the eventID that is currently triggering a '&lt;timerTriggerEvent&gt;'.
 </p>
-<h3><span class="mw-headline" id="startEfficientTimerEvent.28triggerSecondsElapsed.29">startEfficientTimerEvent(triggerSecondsElapsed)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=81" title="Edit section: startEfficientTimerEvent(triggerSecondsElapsed)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="startEfficientTimerEvent.28triggerSecondsElapsed.29">startEfficientTimerEvent(triggerSecondsElapsed)</span></h3>
 <p>This function creates a timer that will only trigger the timer event after <tt>triggerSecondsElapsed</tt> seconds, then remove the timer.
 </p>
 
 <h2><span class="mw-headline" id="Sound">Sound</span></h2>
-<h3><span class="mw-headline" id="playStaticSound.28soundFile.29">playStaticSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=54" title="Edit section: playStaticSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="playStaticSound.28soundFile.29">playStaticSound(soundFile)</span></h3>
 <p>Play a static sound file specified by 'soundFile'.
 </p><p>Parameters:<br />
 <b>soundFile</b> - the filename of the sound file to play.
 </p>
-<h3><span class="mw-headline" id="playStreamingSound.28soundFile.29">playStreamingSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=55" title="Edit section: playStreamingSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="playStreamingSound.28soundFile.29">playStreamingSound(soundFile)</span></h3>
 <p>Play a streaming sound file (background music) specified by 'soundFile'.
 </p><p>Parameters:<br />
 <b>soundFile</b> - the filename of the sound file to play.
 </p>
-<h3><span class="mw-headline" id="stopStreamingSound.28soundFile.29">stopStreamingSound(soundFile)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=56" title="Edit section: stopStreamingSound(soundFile)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="stopStreamingSound.28soundFile.29">stopStreamingSound(soundFile)</span></h3>
 <p>Stop playing a streaming sound file (background music) specified by 'soundFile'.
 </p><p>Parameters:<br />
 <b>soundFile</b> - the filename of the sound file to play.
 </p>
-<h3><span class="mw-headline" id="stopAllSound.28.29">stopAllSound()</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=57" title="Edit section: stopAllSound()">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="stopAllSound.28.29">stopAllSound()</span></h3>
 <p>Stop playing all sounds
 </p>
 
@@ -661,7 +661,7 @@ The type can be a number between 1 and 5.
 <b>pos</b> - x and y coordinates for the camera's position.
 </p>
 
-<h2><span class="mw-headline" id="XML_events">XML events</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/index.php?title=MG/Lua&amp;action=edit&amp;section=118" title="Edit section: XML events">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id="XML_events">XML events</span></h2>
 <p>These are XML tags used to execute Lua code on its specified event. Variables can be used across different events.
 </p>
 <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="xml source-xml"><pre class="de1"><span class="sc3"><span class="re1">&lt;global<span class="re2">&gt;</span></span></span>
