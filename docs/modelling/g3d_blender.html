@@ -2,26 +2,30 @@
 title: Blender G3D Exporter
 layout: modelling_menu
 ---
-<p>
-  ZetaGlest is restricted to the G3D modeling format. Currently an
-  up-to-date importer and exporter only exists for Blender, requiring
-  that Blender is used for modeling or at least converting imported
-  models. This is done with the <b>G3D support</b> python script, which
-  allows Blender to both import and export G3D models.
-</p>
+<p>ZetaGlest is currently restricted to the G3D modeling format. Currently an up-to-date importer and exporter only exist for Blender, requiring that Blender is used for modeling or at least converting imported models. This is done with the <b>G3D support</b> python script, which allows Blender to both import and export G3D models.</p>
+
+<p> This page is based off the <a href="https://docs.megaglest.org/G3D_support">MegaGlest docs page</a>.</p>
 
 <h3>Download</h3>
 <p>The script to use depends entirely on the version of Blender used. <b>It is strongly recommended to use the g3d_support.py from the "blender" directory in your game installation.</b><br/>
 
 If the script fails to load, try the most recent blender script: <a href="https://raw.githubusercontent.com/ZetaGlest/zetaglest-data/develop/blender_g3d_plugin.py" download>blender_g3d_plugin.py</a></p>
+
 <h3>Installation</h3>
 <ol>
-    <li>In the info window, under the file option, choose "user preferences".</li>
-    <li>In this new window, switch to the addons tab and click the "install add-on" button at the bottom.</li>
-    <li>Open the python file you just downloaded. Alternatively, it's possible to manually install the script by placing it in the Blender scripts folder. The location varies depending on where you told the installer to create this folder, and could be in the installation directory or a user directory (such as the home folder or the AppData folder).</li>
-    <li> The addon will now be found in this window, in the import-export category, under the name "G3D Mesh Import/Export". <b>Tick the checkbox beside it to enable it.</b></li>
-    <li>Note that in order to be able to export in future sessions, you must save the user preferences with <code>ctrl + u</code>.</li>
-</ol>
+    <li>In the info window, under the file option, choose "User Preferences".</br>
+    <img src="../assets/images/g3d_blender/user_pref.png" alt="user_pref.png" width="100%" height="100%"/></li>
+    <li>In this new window, switch to the Add-ons tab and click the "Install Add-on from file" button at the bottom.</br>
+    <img src="../assets/images/g3d_blender/activate_g3d.png" alt="activate_g3d.png" width="100%" height="100%"/></li>
+    <li> In the search box, search for "g3d". The addon will now be found in this window, in the import-export category, under the name "G3D Mesh Import/Export". <b>Tick the checkbox beside it to enable it.</b></li>
+    <li>Note that in order to be able to export in future sessions, you must save the user preferences.</li>
+<p>
+  ZetaGlest uses the G3D modelling format exclusively. Currently an
+  up-to-date importer and exporter only exists for Blender, requiring
+  that Blender is used for modelling or at least converting imported
+  models. This is done with the <b>Blender G3D plugin</b> python script, which
+  allows Blender to both import and export G3D models.
+</p>
 
 <h3>Limitations</h3>
 <ul>
@@ -32,6 +36,7 @@ If the script fails to load, try the most recent blender script: <a href="https:
 <h3>Model Preparation</h3>
 <ul>
     <li>The start and end animation frame should be set appropriately. A large number of frames causes a massive filesize. G3D interposition of frames is considerably smoother than viewed in Blender, so models should rarely require more than 30 frames. If the model is unanimated, the start aand end frame should be set to 1 in the timeline window.</li>
+<img src="../assets/images/g3d_blender/import.png" alt="import.png" width="100%" height="100%"/></li>
     <li>The texture of the model must be properly linked in order for it to appear on the exported G3D model. To link the texture, in the properties window, under the textures tab, with the model selected, set the type to "Image or movie" and open the image.</li>
     <li>In the G3D support panel, under Object Data in the properties window, the g3d object properties can be set:
     <ul>
@@ -41,19 +46,33 @@ If the script fails to load, try the most recent blender script: <a href="https:
         <li><b>Non-selectable</b> objects can't be clicked on to select the unit, such as the pebbles that scatter when a worker is mining.</li>
         <li><b>Fully opaque</b> which makes the model invisible, but its still selectable!! ( Help to make small units easier to select, such as snakes spiders etc. )</li>
         <li><b>Glow</b> lets the object glow the way MG's particles "glow".</li>
+    </ul></br>
+    <img src="../assets/images/g3d_blender/g3d_editor.png" alt="g3d_editor.png" width="100%" height="100%"/>
+    </li>
+    To make a material partially transparent, in the materials tab of the properties window, check the transparency box and under Z transparency, adjust the alpha slider.</br>
+    <img src="../assets/images/g3d_blender/z_transparency.png" alt="z_transparency.png" width="100%" height="100%"/>
+</ul>
+
+<h3>Importing</h3>
+<p>To import a model from G3D, open the file menu of the info window, choose import, and select "Glest 3D File (g3d)". Choose the file to load and it will be loaded at the origin. Note that animations cannot be imported, only the meshes and UV (texture) coordinates.</br>
+<img src="../assets/images/g3d_blender/import.png" alt="import.png" width="100%" height="100%"/></p>
+
+<h3>Exporting</h3>
+<p>To export a model to G3D, in object mode, select the meshes you want to export (if nothing is selected, everything will be exported, then open the file menu of the info window, choose export, and select "Glest 3D File (g3d)". Choose a file location and all objects will be exported to G3D (non-compatible objects such as bones, cameras, or lights will not be exported).</p>
     </ul>
     </li>
     To make a material partially transparent, in the materials tab of the properties window, check the transparency box and under Z transparency, adjust the alpha slider.
 </ul>
-
-<h3>Exporting</h3>
-<p>To export a model to G3D, in object mode, select the meshes you want to export (if nothing is selected, everything will be exported, then open the file menu of the info window, choose export, and select "Glest 3D File (g3d)". Choose a file location and all objects will be exported to G3D (non-compatible objects such as bones, cameras, or lights will not be exported).</p>
-
-<h3>Importing</h3>
-<p>To import a model from G3D, open the file menu of the info window, choose import, and select "Glest 3D File (g3d)". Choose the file to load and it will be loaded at the origin. Note that animations cannot be imported, only the meshes and UV (texture) coordinates.</p>
 
 <h3>Troubleshooting</h3>
 <ul>
     <li>White model - The texture was not properly linked to the object (detailed above).</li>
     <li>Model is sideways - Model not orientated properly. The Z(blue) axis is height, the X axis is width, and the Y axis is depth, like Blender's defaults.(Warning: Orientation is different in older versions of the script!)</li>
 </ul>
+
+<p><a href="https://github.com/ZetaGlest/zetaglest-data/issues">tickets
+related to models</a> are in the data repo</p>
+
+<p>The links on the left give detailed information about working on
+models for the ZetaGlest project. (The information is not complete
+yet)</p>
