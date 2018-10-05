@@ -11,7 +11,7 @@ layout: default
 <p>
 
 <p>
-  Note: You can’t use the <pre><-operator</pre> in within the XML-events. You can
+  Note: You can’t use the <pre>&lt;-operator</pre> in within the XML-events. You can
   use an external script instead or invert the logic.
 </p>
 
@@ -45,29 +45,29 @@ layout: default
 <b>text</b> - a string identifying the<i> text</i> from a language file.
 </p>
 <h3><span class="mw-headline" id="addConsoleLangText.28text.29">addConsoleLangText(text)</span></h3>
-<p>Displays a message in the game console messages area. Will remain until the message timeout has elapsed. Works like <tt>displayFormattedText()</tt> besides the fact that <tt>addConsoleLangText()</tt> uses the language-file for resolving the format of the text.
+<p>Displays a message in the game console messages area. Will remain until the message timeout has elapsed. Works like <code>displayFormattedText()</code> besides the fact that <code>addConsoleLangText()</code> uses the language-file for resolving the format of the text.
 </p><p>Parameters:<br />
 <b>text</b> - a string identifying the <i>text</i> from a language file.
 </p>
 <h3><span class="mw-headline" id="setDisplayText.28text.29">setDisplayText(text)</span></h3>
-<p>Displays a message at the top of the screen. Will remain until dismissed with <tt>clearDisplayText()</tt> or <tt>setDisplayText()</tt> is called again.
+<p>Displays a message at the top of the screen. Will remain until dismissed with <code>clearDisplayText()</code> or <code>setDisplayText()</code> is called again.
 </p><p>Parameters:<br />
 <b>text</b> - a string identifying the <i>text</i> from a language file.
 </p>
 <h3><span class="mw-headline" id="displayFormattedText_.28fmt.2C_....29">displayFormattedText (fmt, ...)</span></h3>
-<p>Works like <tt>setDisplayText()</tt> but allows formatting of text.
+<p>Works like <code>setDisplayText()</code> but allows formatting of text.
 </p><p>Parameters:<br />
 <b>fmt</b> - a string identifying the format of text <i>(like in printf)</i>.<br />
 <b>...</b> - variable parameter list to pass values to fmt <i>(like in printf)</i>.
 </p>
 <h3><span class="mw-headline" id="displayFormattedLangText_.28fmt.2C_....29">displayFormattedLangText (fmt, ...)</span></h3>
-<p>Works like <tt>displayFormattedText()</tt> but uses the language-file for resolving the format of the text.
+<p>Works like <code>displayFormattedText()</code> but uses the language-file for resolving the format of the text.
 </p><p>Parameters:<br />
 <b>fmt</b> - a string identifying the format of text <i>(like in printf)</i>.<br />
 <b>...</b> - variable parameter list to pass values to fmt <i>(like in printf)</i>.
 </p>
 <h3><span class="mw-headline" id="clearDisplayText.28.29">clearDisplayText()</span></h3>
-<p>Clears the message from the top of the screen previously set with <tt>setDisplayText()</tt>.
+<p>Clears the message from the top of the screen previously set with <code>setDisplayText()</code>.
 </p>
 <h3><span class="mw-headline" id="translate.28.29">translate(key)</span></h3>
 <p>Returns the corresponding string value from the loaded lng files.
@@ -241,12 +241,12 @@ The type can be a number between 1 and 5.
 <b>pauseStatus</b> - 0 indicates normal game play, 1 indicates a paused game
 </p>
 <h3><span class="mw-headline" id="setPlayerAsWinner.28factionID.29">setPlayerAsWinner(factionID)</span></h3>
-<p>Sets the player with index faction ID as the winner. Would typically be followed by <tt>endGame()</tt>.
+<p>Sets the player with index faction ID as the winner. Would typically be followed by <code>endGame()</code>.
 </p><p>Parameters:<br />
 <b>faction </b>- the index of the faction.
 </p>
 <h3><span class="mw-headline" id="endGame.28.29">endGame()</span></h3>
-<p>Ends the scenario, bringing up the "you win" screen and asking the player if they want to leave the game. Usually would be called after <tt>setPlayerAsWinner()</tt> when victory conditions have been met.
+<p>Ends the scenario, bringing up the "you win" screen and asking the player if they want to leave the game. Usually would be called after <code>setPlayerAsWinner()</code> when victory conditions have been met.
 </p>
 <h3><span class="mw-headline" id="loadScenario.28scenario.2C_keepFactions.29">loadScenario(scenario, keepFactions)</span></h3>
 <p>Loads another scenario from inside an existing scenario. The new scenario must have the same techtree and factions, but map, tileset can change.
@@ -361,7 +361,7 @@ The type can be a number between 1 and 5.
 <b>pos</b> - the x and y cell co-ordinates that will trigger the event when a unit from sourceFactionID enters the cell.
 </p>
 <h3><span class="mw-headline" id="registerCellAreaTriggerEvent.28pos.29">registerCellAreaTriggerEvent(pos)</span></h3>
-<p>Registers a bounding rectangle as a trigger event. This will be triggered by ANY unit moving in or out of the area. To know which unit, use <tt>triggeredEventAreaEntryUnitId()</tt>.
+<p>Registers a bounding rectangle as a trigger event. This will be triggered by ANY unit moving in or out of the area. To know which unit, use <code>triggeredEventAreaEntryUnitId()</code>.
 </p><p>Parameters:<br />
 <b>pos</b> - the x and y coordinate of the top left point then the bottom right point (eg, {10,10,5,5} would create a box from points (10,10) to (5,5)).
 </p><p><br />
@@ -478,7 +478,7 @@ The type can be a number between 1 and 5.
 <p>This function returns the eventID that is currently triggering a '&lt;timerTriggerEvent&gt;'.
 </p>
 <h3><span class="mw-headline" id="startEfficientTimerEvent.28triggerSecondsElapsed.29">startEfficientTimerEvent(triggerSecondsElapsed)</span></h3>
-<p>This function creates a timer that will only trigger the timer event after <tt>triggerSecondsElapsed</tt> seconds, then remove the timer.
+<p>This function creates a timer that will only trigger the timer event after <code>triggerSecondsElapsed</code> seconds, then remove the timer.
 </p>
 
 <h2><span class="mw-headline" id="Sound">Sound</span></h2>
@@ -547,11 +547,11 @@ The type can be a number between 1 and 5.
 <h3><span class="mw-headline" id="lastDeadUnitCauseOfDeath.28.29">lastDeadUnitCauseOfDeath()</span></h3>
 <p>Returns the following depending on how the last unit died:
 </p>
-<dl><dd>None = 0</dd>
-<dd>Attacked = 1</dd>
-<dd>Attack boost = 2</dd>
-<dd>Starved resource = 3</dd>
-<dd>Negative regeneration = 4</dd></dl>
+<dl><dt class="d-inline-block">None</dt><dd class="d-inline-block">&nbsp;= 0</dd><br>
+<dt class="d-inline-block">Attacked =</dt><dd class="d-inline-block"> 1</dd><br>
+<dt class="d-inline-block">Attack boost</dt><dd class="d-inline-block">&nbsp;= 2</dd><br>
+<dt class="d-inline-block">Starved resource</dt><dd class="d-inline-block">&nbsp;= 3</dd><br>
+<dt class="d-inline-block">Negative regeneration</dt><dd class="d-inline-block">&nbsp;= 4</dd></dl>
 <h3><span class="mw-headline" id="lastDeadUnitKillerName.28.29">lastDeadUnitKillerName()</span></h3>
 <p>Returns the name of the killer of the last dead unit. Returns empty if the cause of death was not from an attacker (attacked).
 </p>
@@ -604,7 +604,7 @@ The type can be a number between 1 and 5.
 <p>Returns true if the human player won the game, and false if they did not.
 </p>
 <h3><span class="mw-headline" id="isGameOver.28.29">isGameOver()</span></h3>
-<p>Returns true if the game is over (either by the default game over criteria being met or by calling <tt>endGame()</tt>). Returns false otherwise.
+<p>Returns true if the game is over (either by the default game over criteria being met or by calling <code>endGame()</code>). Returns false otherwise.
 </p>
 <h3><span class="mw-headline" id="startLocation.28faction.29">startLocation(faction)</span></h3>
 <p>Returns the start location for a given faction as a set of coordinates.
@@ -619,25 +619,25 @@ The type can be a number between 1 and 5.
 <p>Generates a random number based on the supplied seed.
 </p>
 <h3><span class="mw-headline" id="getRandomGen.28minVal.2C_maxVal.29">getRandomGen(minVal, maxVal)</span></h3>
-<p>Used with <tt>setRandomGenInit</tt> to get a random number inbetween <tt>minVal</tt> and <tt>maxVal</tt>.
+<p>Used with <code>setRandomGenInit</code> to get a random number inbetween <code>minVal</code> and <code>maxVal</code>.
 </p>
 <h3><span class="mw-headline" id="getWorldFrameCount.28.29">getWorldFrameCount()</span></h3>
 <p>Retrieves the world frame count, which can be used in seeding random numbers.
 </p>
 <h3><span class="mw-headline" id="getUnitsForFaction.28factionIndex.2C_commandTypeName.2C_field.29">getUnitsForFaction(factionIndex, commandTypeName, field)</span></h3>
 <p>Returns an array (table) of units in the specified faction which lists all units which have the specified command and can use it on the specified field (such as being able to attack air units).<br />
-<tt>0</tt> for land and <tt>1</tt> for air field.
+<code>0</code> for land and <code>1</code> for air field.
 </p>
 <h3><span class="mw-headline" id="getUnitCurrentField.28unitId.29">getUnitCurrentField(unitId)</span></h3>
-<p>For the specified unit, returns <tt>0</tt> if they are land and <tt>1</tt> if they are in the air field.
+<p>For the specified unit, returns <code>0</code> if they are land and <code>1</code> if they are in the air field.
 </p>
 
 <h2><span class="mw-headline" id="Network">Network</span></h2>
 <h3><span class="mw-headline" id="networkShowMessageForFaction.28text.2C_header.2C_factionIndex.29">networkShowMessageForFaction(text, header, factionIndex)</span></h3>
-<p>Works the same was as <tt>showMessage()</tt>, but only displays the message to the specific faction. Good for network scenarios where it may be beneficial to display different messages to each player.
+<p>Works the same was as <code>showMessage()</code>, but only displays the message to the specific faction. Good for network scenarios where it may be beneficial to display different messages to each player.
 </p>
 <h3><span class="mw-headline" id="networkShowMessageForTeam.28text.2C_header.2C_teamIndex.29">networkShowMessageForTeam(text, header, teamIndex)</span></h3>
-<p>Works the same was as <tt>networkShowMessageForFaction()</tt> above, but displays to all players in the specified team.
+<p>Works the same was as <code>networkShowMessageForFaction()</code> above, but displays to all players in the specified team.
 </p>
 <h3><span class="mw-headline" id="showMarker.28flashCount.2C_factionIndex.2C_note.2C_textureFile.2C_pos.29">showMarker(flashCount, factionIndex, note, textureFile, pos)</span></h3>
 <p>Places a marker on the map at a given location.
