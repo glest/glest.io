@@ -71,8 +71,6 @@ IMG.centered {
   border-color: red;
 }
 
-}
-
 .form {
 font-size: 10px;
 }
@@ -189,7 +187,7 @@ a { color: #993333; }
 a:hover, a:active {
   background-color: #ffeecc;
   text-decoration: none;
-  color: #993333; */
+  color: #993333;
 /*  border: 2px solid brown;
   border-radius: 12px;
   border-style: inset;
