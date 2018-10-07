@@ -8,12 +8,11 @@ layout: default
   games of ZetaGlest. This page lists all the Lua commands available in
   ZetaGlest. For information on how to create scenarios and working with
   Lua in general, see Lua.
-<p>
+</p>
 
 <p>
   Note: You can’t use the <pre>&lt;-operator</pre> in within the XML-events. You can
   use an external script instead or invert the logic.
-</p>
 
 <p>
     The LUA information provided on these pages was either adapted or
@@ -34,14 +33,15 @@ layout: default
 
 <h2><span class="mw-headline" id="Text">Text</span></h2>
 <h3><span class="mw-headline" id="showMessage.28text.2C_header.29">showMessage(text, header)</span></h3>
-<p>Displays a message box on the screen, that will have to be dismissed by the player.
-</p><p>Parameters:<br />
-<b>text</b> - a string identifying the<i> text</i> from a language file.<br />
-<b>header</b> - a string identifying the<i> title bar text </i>from a language file.
+<p>Displays a message box on the screen, that will have to be dismissed by the player.</p>
+<p>Parameters:<br />
+<strong>text</strong> - a string identifying the<i> text</i> from a language file.<br />
+<strong>header</strong> - a string identifying the<i> title bar text </i>from a language file.
 </p>
 <h3><span class="mw-headline" id="addConsoleText.28text.29">addConsoleText(text)</span></h3>
 <p>Displays a message in the game console messages area. Will remain until the user-specified message timeout has elapsed.
-</p><p>Parameters:<br />
+</p>
+<p>Parameters:<br />
 <b>text</b> - a string identifying the<i> text</i> from a language file.
 </p>
 <h3><span class="mw-headline" id="addConsoleLangText.28text.29">addConsoleLangText(text)</span></h3>
@@ -547,11 +547,13 @@ The type can be a number between 1 and 5.
 <h3><span class="mw-headline" id="lastDeadUnitCauseOfDeath.28.29">lastDeadUnitCauseOfDeath()</span></h3>
 <p>Returns the following depending on how the last unit died:
 </p>
-<dl><dt class="d-inline-block">None</dt><dd class="d-inline-block">&nbsp;= 0</dd><br>
-<dt class="d-inline-block">Attacked =</dt><dd class="d-inline-block"> 1</dd><br>
-<dt class="d-inline-block">Attack boost</dt><dd class="d-inline-block">&nbsp;= 2</dd><br>
-<dt class="d-inline-block">Starved resource</dt><dd class="d-inline-block">&nbsp;= 3</dd><br>
-<dt class="d-inline-block">Negative regeneration</dt><dd class="d-inline-block">&nbsp;= 4</dd></dl>
+<ul class="list-group">
+	<li class="list-group-item">None = 0</li>
+	<li class="list-group-item">Attacked = 1</li>
+	<li class="list-group-item">Attack boost = 2</li>
+	<li class="list-group-item">Starved resource = 3</li>
+	<li class="list-group-item">Negative regeneration = 4</li>
+</ul>
 <h3><span class="mw-headline" id="lastDeadUnitKillerName.28.29">lastDeadUnitKillerName()</span></h3>
 <p>Returns the name of the killer of the last dead unit. Returns empty if the cause of death was not from an attacker (attacked).
 </p>
