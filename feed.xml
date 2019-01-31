@@ -6,9 +6,9 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
     <channel>
-        <title>The ZetaGlest Blog</title>
+        <title>The Glest Blog</title>
         <link>{{ site.url }}</link>
-        <atom:link href="https://zetaglest.github.io/feed.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://glest.github.io/feed.xml" rel="self" type="application/rss+xml" />
         <description>News about development and releases</description>
         <generator>jekyll</generator>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>

@@ -9,10 +9,10 @@
     {% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="ZetaGlest Blog">
-  <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/ZetaGlest/zetaglest.github.io/commits/master.atom">
-  <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-source:develop" href="https://github.com/ZetaGlest/zetaglest-source/commits/develop.atom">
-  <link rel="alternate" type="application/rss+xml" title="Recent Commits to zetaglest-data:develop" href="https://github.com/ZetaGlest/zetaglest-data/commits/develop.atom">
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="Glest Blog">
+  <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/Glest/glest.github.io/commits/master.atom">
+  <link rel="alternate" type="application/rss+xml" title="Recent Commits to glest-source:develop" href="https://github.com/Glest/glest-source/commits/develop.atom">
+  <link rel="alternate" type="application/rss+xml" title="Recent Commits to glest-data:develop" href="https://github.com/Glest/glest-data/commits/develop.atom">
   <!--including Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
     crossorigin="anonymous">
@@ -22,6 +22,6 @@
 
 <body>
   <div class="container">
-    <header><img class="centered" src="/docs/assets/images/zetaglest_logo_412x207.png" alt="ZetaGlest logo" title="ZetaGlest logo"
+    <header><img class="centered" src="/docs/assets/images/logo_412x207.png" alt="Glest logo" title="Glest logo"
         width="412" height="207"> </header>
     <h2 class="subtitle">{{ page.title }}</h2>   

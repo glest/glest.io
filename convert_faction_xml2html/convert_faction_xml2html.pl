@@ -3,7 +3,7 @@
 # script to create HTML-pages and diagrams from the glest-factions techtree
 # 20110120, bugs & feedback to olaus@rupp.de
 # Copyright 2011 olaus
-# Copyright 2012-2016 olaus & MegaGlest Team
+# Copyright 2012-2019 olaus & Glest Team
 # license: GPLv3 or newer
 
 our $version = "0.8.2 beta";
@@ -98,11 +98,11 @@ if ( $cfg_file = shift @ARGV ) {
 	}
 }
 else {
-	$cfg_file ="zetapack.ini";
+	$cfg_file ="factionpack.ini";
 }
 
 if ( ! -e $cfg_file ) {
-	die "\nusage: $0 [zetapack.ini]\n\n";
+	die "\nusage: $0 [factionpack.ini]\n\n";
 }
 
 $cfg = new Config::IniFiles( -file => "./$cfg_file", -allowcontinue => 1 );
@@ -172,7 +172,7 @@ our $map_legend = $cfg->val('style', 'map_legend');
 
 #$footer =~ s/VAR_CREATED_BY/<I><A HREF=\"http:\/\/rupp.de\/glest\/\">$me<\/A><\/I>, version: <I>$version<\/I>, using config-file:  <I>$cfg_file<\/I>, on: <I>$now_string<\/I> /;
 # ^ timestamp should be in the one common footer
-$footer =~ s/VAR_CREATED_BY/<I><A HREF=\"https:\/\/github.com\/ZetaGlest\/zetaglest.github.io\/blob\/master\/convert_faction_xml2html\/convert_faction_xml2html.pl\">$me<\/A><\/I>, version: <I>$version<\/I>, using config-file:  <I>$cfg_file<\/I>/;
+$footer =~ s/VAR_CREATED_BY/<I><A HREF=\"https:\/\/github.com\/Glest\/glest.github.io\/blob\/master\/convert_faction_xml2html\/convert_faction_xml2html.pl\">$me<\/A><\/I>, version: <I>$version<\/I>, using config-file:  <I>$cfg_file<\/I>/;
 
 our $level_hp = $cfg->val('all', 'level_hp');
 our $level_ep = $cfg->val('all', 'level_ep');
@@ -1411,7 +1411,7 @@ $outfile = "$out_path/$summary";
 
 open (HTML, "> $outfile") || die "can't write summary page $outfile\n";
 
-print HTML &header("ZetaGlest Techtree Summary");
+print HTML &header("Glest Techtree Summary");
 print HTML &choose_faction_html()."<P>\n";
 print HTML &show_special_pages()."<P>\n";
 
