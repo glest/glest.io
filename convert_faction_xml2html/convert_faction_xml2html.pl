@@ -98,11 +98,11 @@ if ( $cfg_file = shift @ARGV ) {
 	}
 }
 else {
-	$cfg_file ="factionpack.ini";
+	$cfg_file ="glestpack.ini";
 }
 
 if ( ! -e $cfg_file ) {
-	die "\nusage: $0 [factionpack.ini]\n\n";
+	die "\nusage: $0 [glestpack.ini]\n\n";
 }
 
 $cfg = new Config::IniFiles( -file => "./$cfg_file", -allowcontinue => 1 );
