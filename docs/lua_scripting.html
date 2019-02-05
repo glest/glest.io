@@ -3,8 +3,8 @@ title: LUA scripting
 layout: default
 ---
 <p>
-  Lua is the scripting language used in Glest's scenarios. It allows
-  scenarios to expand and do things not normally possible in regular
+  Lua is the scripting language used in Glest. It allows greater flexibility and in-game customization,
+  ideal for scenarios to do things not normally possible in regular
   games of Glest. This page lists all the Lua commands available in
   Glest. For information on how to create scenarios and working with
   Lua in general, see Lua.
@@ -13,11 +13,6 @@ layout: default
 <p>
   Note: You can’t use the <pre>&lt;-operator</pre> in within the XML-events. You can
   use an external script instead or invert the logic.
-
-<p>
-    The LUA information provided on these pages was either adapted or
-    copied from <a href="https://docs.megaglest.org/MG/Lua">MG/Lua</a>
-</p>
 
 <ul>
   <li><a href="#Text">Text</a></li>
@@ -75,11 +70,11 @@ layout: default
 
 <h2><span class="mw-headline" id="Unit">Unit</span></h2>
 <h3><span class="mw-headline" id="createUnit.28unitID.2C_faction.2C_pos.29">createUnit(unitID, faction, pos)</span></h3>
-<p>Creates a unit. If <i>pos</i> is occupied, a nearby cell will be chosen. The game attempts to keep a 2 cell 'border' between the new unit and other units or objects (eg, trees). If a position can not be found, the game crashes.
+<p>Creates a unit and returns its value. If <i>pos</i> is occupied, a nearby cell will be chosen. The game attempts to keep a 2 cell 'border' between the new unit and other units or objects (eg, trees). If a position can not be found, an error occurs.
 </p><p>Parameters:<br /><b>unit</b> - name of a unit in the loaded factions.<br /><b>faction</b> - the index of the faction this unit will belong to.<br /><b>pos</b> - an array of two elements, specifying the co-ordinates {x,y}.
 </p>
 <h3><span class="mw-headline" id="createUnitNoSpacing.28unitID.2C_faction.2C_pos.29">createUnitNoSpacing(unitID, faction, pos)</span></h3>
-<p>Same as above, but position is exact.
+<p>Same as above, but position is forced to be exact.
 </p><p></p>
 <h3><span class="mw-headline" id="destroyUnit.28unitID.29">destroyUnit(unitID)</span></h3>
 <p>Destroys a unit.
@@ -99,6 +94,8 @@ layout: default
 <b>unitID</b> - the ID of the unit to move.<br />
 <b>pos</b> - the x and y coordinates of the location you wish to move the unit to (note the exact position may not be the supplied position, as the unit may be slightly staggered, particularly if a unit already exists in the given location).
 </p>
+<h3><span class="mw-headline" id="forceSetUnitPosition.28unitId.2C_pos.29">forceSetUnitPosition(unitId, pos)</span></h3>
+<p>Same as above, but forces unit to be in that position even if another unit or resource is already there. Be careful, as unit may get stuck.
 <h3><span class="mw-headline" id="moveToUnit.28unitID.2C_destUnitID.29">moveToUnit(unitID, destUnitID)</span></h3>
 <p>Move unitID to the location of destUnitID.
 </p><p>Parameters:<br />
