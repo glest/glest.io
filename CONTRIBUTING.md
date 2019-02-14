@@ -2,7 +2,7 @@
 
 Thank you your interest in this project!
 
-This repo is for the [Glest web site](https://glest.github.io/docs/).
+This repo is for the [Glest web site](https://glest.io).
 
 The guidelines for contributing are the same for the [Glest source
 code](https://github.com/Glest/glest-source), and can be found
