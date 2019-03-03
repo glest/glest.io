@@ -1,0 +1,2 @@
+lord_of_the_land|-1433503771|You are a worker living in a village and you need to work your way \nup to be the Lord.|http://mods.megaglest.org/scenarios/lord_of_the_land.7z|http://mods.megaglest.org/scenarios/lord_of_the_land.jpg|
+mission_brake_out|111111111|A military break out scenario|http://mods.megaglest.org/scenarios/mission_brake_out.7z|http://mods.megaglest.org/scenarios/mission_brake_out.jpg|

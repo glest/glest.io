@@ -36,3 +36,28 @@ The other html files for that part of the website are in
 [docs/](https://github.com/Glest/glest.github.io/tree/master/docs)
 
 Assets, including the stylesheet, are in [docs/assets/](https://github.com/Glest/glest.github.io/tree/master/docs/assets)
+
+Mod Formats:
+
+Scenario, Tilesets:
+Name
+CRC
+Description
+URL
+imageURL
+
+Techs:
+Name
+Faction Count
+CRC
+Description
+URL
+imageURL
+
+Maps:
+Name
+Player Count
+CRC
+Description
+URL
+imageURL
