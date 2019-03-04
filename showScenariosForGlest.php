@@ -1,2 +1,3 @@
 lord_of_the_land|-1433503771|You are a worker living in a village and you need to work your way \nup to be the Lord.|http://mods.megaglest.org/scenarios/lord_of_the_land.7z|http://mods.megaglest.org/scenarios/lord_of_the_land.jpg|
 mission_brake_out|111111111|A military break out scenario|http://mods.megaglest.org/scenarios/mission_brake_out.7z|http://mods.megaglest.org/scenarios/mission_brake_out.jpg|
+wild_hunt|-1864894839|A scenario based on the fight for survival\n\nMade by Keith Sammut|https://glest.io/mods/scenarios/wild_hunt.7z|https://raw.githubusercontent.com/KeithSammut/wild_hunt/master/loading_screen.jpg|
