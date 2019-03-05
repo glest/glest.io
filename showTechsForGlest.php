@@ -1,9 +1,7 @@
-enemies_and_allies|1|1918821605|Enemies and Allies beta7\n\nby Eliminator|http://mods.megaglest.org/techs/enemies_and_allies.7z|http://mods.megaglest.org/techs/enemies_and_allies.png|
-imperial_m_g|3|-1281058859|Imperial Faction is a medieval based faction with steampunk influences.\nby Mr War\n\n (tech and magic included)|http://mods.megaglest.org/techs/imperial_m_g.7z|http://mods.megaglest.org/techs/imperial_m_g.jpg|
-japanese|1|-2121853909|Japanese is a faction created by Hagekura.\nIt is based on the Medieval "SENGOKU JIDAI(Warring-states period)"\nof Japan.\n\nV0.89a(MG) released(2011/12/09)  |http://mods.megaglest.org/techs/japanese.7z|http://mods.megaglest.org/techs/japanese.jpg|
-ming_dynasty|1|1386021592|The Great Ming (Chinese) Faction v0.1|http://mods.megaglest.org/techs/ming_dynasty.7z|http://mods.megaglest.org/techs/ming_dynasty.jpg|
-munchy|2|603846047|Here is a techtree of two factions:\n* Monsters and\n* Aliens\n\n made by Noah Vejvoda ( tiger )|http://mods.megaglest.org/techs/munchy.7z|http://mods.megaglest.org/techs/munchy.jpg|
-nihilirian|2|-1437018245|A story of two distinctively different races with one origin - Arcturus & Sirius.\nhttp://home.arcor.de/nihilirian\n\n   Made by Hristo Ilchev |http://mods.megaglest.org/techs/nihilirian.7z|http://mods.megaglest.org/techs/nihilirian.jpg|
-sci_fi_pack|2|242300896|Martians - Industarons\n>> the scici pack <<  \n\nby mr WAR|http://mods.megaglest.org/techs/sci_fi_pack.7z|http://mods.megaglest.org/techs/sci_fi_pack.jpg|
-vbros_pack_3|4|-412303488|The VBros pack 3 includes three factions:\n* Chess\n* Circus\n* Mario|http://mods.megaglest.org/techs/vbros_pack_3.7z|http://mods.megaglest.org/techs/vbros_pack_3.jpg|
-vbros_pack_4|4|-1882835903|The VBros pack 4 includes four factions:\n* USA (United States of America)\n* Moon\n* Martians\n* PC|http://mods.megaglest.org/techs/vbros_pack_4.7z|http://mods.megaglest.org/techs/vbros_pack_4.jpg|
+enemies_and_allies|1|0|Enemies and Allies beta7\n\nby Eliminator|https://glest.io/mods/techs/enemies_and_allies.7z|https://glest.io/mods/techs/enemies_and_allies.png|
+imperial_m_g|3|0|Imperial Faction is a medieval based faction with steampunk influences.\nby Mr War\n\n (tech and magic included)|https://glest.io/mods/techs/imperial_m_g.7z|https://glest.io/mods/techs/imperial_m_g.jpg|
+munchy|2|0|Here is a techtree of two factions:\n* Monsters and\n* Aliens\n\n made by Noah Vejvoda ( tiger )|https://glest.io/mods/techs/munchy.7z|https://glest.io/mods/techs/munchy.jpg|
+nihilirian|2|0|A story of two distinctively different races with one origin - Arcturus & Sirius.\nhttp://home.arcor.de/nihilirian\n\n   Made by Hristo Ilchev |https://glest.io/mods/techs/nihilirian.7z|https://glest.io/mods/techs/nihilirian.jpg|
+sci_fi_pack|2|0|Martians - Industarons\n>> the scici pack <<  \n\nby mr WAR|https://glest.io/mods/techs/sci_fi_pack.7z|https://glest.io/mods/techs/sci_fi_pack.jpg|
+vbros_pack_3|4|0|The VBros pack 3 includes four factions:\n* Chess\n* Circus\n* Mario\n* Penguin|https://glest.io/mods/techs/vbros_pack_3.7z|https://glest.io/mods/techs/vbros_pack_3.jpg|
+vbros_pack_4|4|0|The VBros pack 4 includes four factions:\n* USA (United States of America)\n* Moon\n* Martians\n* PC|https://glest.io/mods/techs/vbros_pack_4.7z|https://glest.io/mods/techs/vbros_pack_4.jpg|

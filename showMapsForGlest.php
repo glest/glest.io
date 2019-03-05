@@ -1,1 +1,1 @@
-cliff_way.mgm|8|117865711||http://mods.megaglest.org/maps/cliff_way.mgm|http://mods.megaglest.org/maps/cliff_way.mgm.jpg|
+cliff_way.mgm|8|0|Cliff Way Map|https://glest.io/mods/maps/cliff_way.mgm|https://glest.io/mods/maps/cliff_way.jpg|
