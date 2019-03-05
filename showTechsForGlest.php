@@ -1,5 +1,6 @@
 enemies_and_allies|1|0|Enemies and Allies beta7\n\nby Eliminator|https://glest.io/mods/techs/enemies_and_allies.7z|https://glest.io/mods/techs/enemies_and_allies.png|
 imperial_m_g|3|0|Imperial Faction is a medieval based faction with steampunk influences.\nby Mr War\n\n (tech and magic included)|https://glest.io/mods/techs/imperial_m_g.7z|https://glest.io/mods/techs/imperial_m_g.jpg|
+assault_command|2|0|An Epic Modern War Tech tree,\nA very epic tree to play with other people|https://glest.io/mods/techs/assault_command.7z|https://glest.io/mods/techs/assault_command.jpg|
 munchy|2|0|Here is a techtree of two factions:\n* Monsters and\n* Aliens\n\n made by Noah Vejvoda ( tiger )|https://glest.io/mods/techs/munchy.7z|https://glest.io/mods/techs/munchy.jpg|
 nihilirian|2|0|A story of two distinctively different races with one origin - Arcturus & Sirius.\nhttp://home.arcor.de/nihilirian\n\n   Made by Hristo Ilchev |https://glest.io/mods/techs/nihilirian.7z|https://glest.io/mods/techs/nihilirian.jpg|
 elves_tech|3|0|An Elves Faction\n\nCredits: Gameboy, Archmage, MirceaKitsune, Battle For Wesnoth [Music]|https://glest.io/mods/techs/elves_tech.7z|https://glest.io/mods/techs/elves_tech.jpg|
