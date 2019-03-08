@@ -6,7 +6,7 @@
 # Copyright 2012-2019 olaus & Glest Team
 # license: GPLv3 or newer
 
-our $version = "0.8.2 beta";
+our $version = "2.0";
 
 # This tool requires jquery and the jquery dataTables plugin (run setupDeps.sh which uses curl to try to download these into the media folder).
 # These are NOT required to run the script but are used to display the resulting html.
