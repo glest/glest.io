@@ -107,6 +107,13 @@ layout: default
 <b>unitID</b> - the ID of the unit to move (starting location).<br />
 <b>destUnitID</b> - the ID of the unit to move to (ending location of unitID). This would essentially make unitID 'follow' destUnitID until it arrives at the location of destUnitID.
 </p>
+<h3><span class="mw-headline" id="setLockedUnitForFaction.28unitName.2CfactionIndex.2Clock.29">setLockedUnitForFaction(unitName, factionIndex, lock)</span></h3>
+<p>Sets a unit type as "locked" for a particular player, meaning that they will not be able to produce such a unit type.
+</p><p>Parameters:<br />
+<b>unitName</b> - the type name string of a unit<br/>
+<b>factionIndex</b> - the player index<br/>
+<b>lock</b> - a value whether to lock the unit (true or false)<br/>
+</p>
 <h3><span class="mw-headline" id="giveStopCommand.28unitID.29">giveStopCommand(unitID)</span></h3>
 <p>Gives a stop command to a specific unit.
 </p><p>Parameters:<br />
