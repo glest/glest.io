@@ -24,8 +24,7 @@ jekyll site.
 
 ## Templates and Layouts
 
-The templates and layouts for the website at https://glest.io/docs/
-are in:
+The templates and layouts for the website are in:
 
  * [_includes](https://github.com/Glest/glest.github.io/tree/master/_includes)
  * [_layouts](https://github.com/Glest/glest.github.io/tree/master/_layouts)

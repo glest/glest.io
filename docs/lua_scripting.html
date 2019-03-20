@@ -627,7 +627,7 @@ The type can be 1, 2 or 4.
 </p>
 <div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="lua source-lua"><pre class="de1"><span class="kw3">dofile</span><span class="br0">&#40;</span>getSystemMacroValue<span class="br0">&#40;</span><span class="st0">&quot;$SCENARIO_PATH&quot;</span><span class="br0">&#41;</span> <span class="sy0">..</span> <span class="st0">&quot;filename.lua&quot;</span><span class="br0">&#41;</span></pre></div></div>
 <h3><span class="mw-headline" id="scenarioDir.28.29">scenarioDir()</span></h3>
-<p>Does the same as <b>getSystemMacroValue("$SCENARIO_PATH")</b>. Exist for GAE compatibility.
+<p>The same as <b>getSystemMacroValue("$SCENARIO_PATH")</b>.
 </p><p><br />
 </p>
 <h3><span class="mw-headline" id="getPlayerName.28faction.29">getPlayerName(faction)</span></h3>
@@ -675,7 +675,7 @@ The type can be 1, 2 or 4.
 </p>
 <h3><span class="mw-headline" id="getUnitsForFaction.28factionIndex.2C_commandTypeName.2C_field.29">getUnitsForFaction(factionIndex, commandTypeName, field)</span></h3>
 <p>Returns an array (table) of units in the specified faction which lists all units which have the specified command and can use it on the specified field (such as being able to attack air units).<br />
-Field can be one of the following values:
+Field can be one of the following values:</p>
 <ul class="list-group">
 	<li class="list-group-item">None = 0</li>
 	<li class="list-group-item">Land = 1</li>
@@ -684,10 +684,9 @@ Field can be one of the following values:
 	<li class="list-group-item">Water = 4</li>
 	<li class="list-group-item">LandWater = 5</li>
 </ul>
-</p>
 <h3><span class="mw-headline" id="areCellsFree.28factionIndex.2C_commandTypeName.2C_field.29">areCellsFree(size, field, pos)</span></h3>
 <p>Returns whether the specified group of cells is free, specifying the diameter size required, the field, and the position to check if free {x, y}<br />
-Field can be one of the following values:
+Field can be one of the following values:</p>
 <ul class="list-group">
 	<li class="list-group-item">None = 0</li>
 	<li class="list-group-item">Land = 1</li>
@@ -696,7 +695,6 @@ Field can be one of the following values:
 	<li class="list-group-item">Water = 4</li>
 	<li class="list-group-item">LandWater = 5</li>
 </ul>
-</p>
 <h3><span class="mw-headline" id="getUnitCurrentField.28unitId.29">getUnitCurrentField(unitId)</span></h3>
 <p>For the specified unit, returns one of the following values:
 </p>
