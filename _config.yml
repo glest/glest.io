@@ -24,12 +24,12 @@ url: "https://glest.io" # the base hostname & protocol for your site, e.g. http:
 # Build settings
 markdown: kramdown
 #theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
+#plugins:
+#  - jekyll-feed
+#  - jekyll-paginate
 
-paginate: 10
-paginate_path: "/blog/page:num/"
+#paginate: 10
+#paginate_path: "/blog/page:num/"
 
 # for posts
 # By default this is the first paragraph of content in the post, but it
