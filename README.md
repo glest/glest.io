@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/glest/glest.github.io.svg?branch=master)](https://travis-ci.org/glest/glest.github.io)
+
 # Glest
 
 **Official Website: https://glest.io**
