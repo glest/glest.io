@@ -170,25 +170,34 @@ The type can be 1, 2 or 4.
 1=hp
 2=ep
 4=field
-</p><p>EP and HP are capped to the unit max EP and HP. Field can be 0 for land or 1 for air.
+</p><p>EP and HP are capped to the unit max EP and HP. Field can be one of the following values:
 </p>
+<ul class="list-group">
+	<li class="list-group-item">None = 0</li>
+	<li class="list-group-item">Land = 1</li>
+	<li class="list-group-item">Air = 2</li>
+	<li class="list-group-item">LandAir = 3</li>
+	<li class="list-group-item">Water = 4</li>
+	<li class="list-group-item">LandWater = 5</li>
+</ul>
 <h3><span class="mw-headline" id="getUnitProperty.28unitId.2CtypeId.29">getUnitProperty(unitId,typeId)</span></h3>
-<p>Returns the value of the type of the unit.
-The type can be a number between 1 and 5.
+<p>Returns the value of the type of the unit. The type can be one of the following values:
 1=hp
 2=ep
-3=level
 4=field
-5=skill
-</p><p>getUnitProperty is dedicated for hp,ep and field. For skill and level see getUnitPropertyName(unitId,typeId).
+</p><p>getUnitProperty is dedicated for hp,ep and field. For skill and level see getUnitPropertyName(unitId,typeId). Field can be one of the following values:
 </p>
+<ul class="list-group">
+	<li class="list-group-item">None = 0</li>
+	<li class="list-group-item">Land = 1</li>
+	<li class="list-group-item">Air = 2</li>
+	<li class="list-group-item">LandAir = 3</li>
+	<li class="list-group-item">Water = 4</li>
+	<li class="list-group-item">LandWater = 5</li>
+</ul>
 <h3><span class="mw-headline" id="getUnitPropertyName.28unitId.2CtypeId.29">getUnitPropertyName(unitId,typeId)</span></h3>
-<p>Returns the name of the type of the unit.
-The type can be a number between 1 and 5.
-1=hp
-2=ep
+<p>Returns the name of the type of the unit. The type can be one of the following values:
 3=level
-4=field
 5=skill
 </p><p>getUnitPropertyName is dedicated for skill and level. For hp,ep and field see getUnitProperty(unitId,typeId).
 </p>
@@ -666,16 +675,39 @@ The type can be a number between 1 and 5.
 </p>
 <h3><span class="mw-headline" id="getUnitsForFaction.28factionIndex.2C_commandTypeName.2C_field.29">getUnitsForFaction(factionIndex, commandTypeName, field)</span></h3>
 <p>Returns an array (table) of units in the specified faction which lists all units which have the specified command and can use it on the specified field (such as being able to attack air units).<br />
-<code>0</code> for land and <code>1</code> for air field.
+Field can be one of the following values:
+<ul class="list-group">
+	<li class="list-group-item">None = 0</li>
+	<li class="list-group-item">Land = 1</li>
+	<li class="list-group-item">Air = 2</li>
+	<li class="list-group-item">LandAir = 3</li>
+	<li class="list-group-item">Water = 4</li>
+	<li class="list-group-item">LandWater = 5</li>
+</ul>
 </p>
 <h3><span class="mw-headline" id="areCellsFree.28factionIndex.2C_commandTypeName.2C_field.29">areCellsFree(size, field, pos)</span></h3>
-<p>Returns whether the specified group of cells is free, specifying the diameter size required, the field (land or air), and the position to check if free {x, y}<br />
-<code>0</code> for land and <code>1</code> for air field.
+<p>Returns whether the specified group of cells is free, specifying the diameter size required, the field, and the position to check if free {x, y}<br />
+Field can be one of the following values:
+<ul class="list-group">
+	<li class="list-group-item">None = 0</li>
+	<li class="list-group-item">Land = 1</li>
+	<li class="list-group-item">Air = 2</li>
+	<li class="list-group-item">LandAir = 3</li>
+	<li class="list-group-item">Water = 4</li>
+	<li class="list-group-item">LandWater = 5</li>
+</ul>
 </p>
 <h3><span class="mw-headline" id="getUnitCurrentField.28unitId.29">getUnitCurrentField(unitId)</span></h3>
-<p>For the specified unit, returns <code>0</code> if they are land and <code>1</code> if they are in the air field.
+<p>For the specified unit, returns one of the following values:
 </p>
-
+<ul class="list-group">
+	<li class="list-group-item">None = 0</li>
+	<li class="list-group-item">Land = 1</li>
+	<li class="list-group-item">Air = 2</li>
+	<li class="list-group-item">LandAir = 3</li>
+	<li class="list-group-item">Water = 4</li>
+	<li class="list-group-item">LandWater = 5</li>
+</ul>
 <h2><span class="mw-headline" id="Network">Network</span></h2>
 <h3><span class="mw-headline" id="networkShowMessageForFaction.28text.2C_header.2C_factionIndex.29">networkShowMessageForFaction(text, header, factionIndex)</span></h3>
 <p>Works the same was as <code>showMessage()</code>, but only displays the message to the specific faction. Good for network scenarios where it may be beneficial to display different messages to each player.
