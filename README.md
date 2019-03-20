@@ -41,24 +41,10 @@ Assets, including the stylesheet, are in [docs/assets/](https://github.com/Glest
 Mod Formats:
 
 Scenario, Tilesets:
-Name
-CRC
-Description
-URL
-imageURL
+Name|CRC|Description|URL|imageURL
 
 Techs:
-Name
-Faction Count
-CRC
-Description
-URL
-imageURL
+Name|Faction Count|CRC|Description|URL|imageURL
 
 Maps:
-Name
-Player Count
-CRC
-Description
-URL
-imageURL
+Name|Player Count|CRC|Description|URL|imageURL
