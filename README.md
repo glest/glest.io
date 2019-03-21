@@ -46,7 +46,7 @@ Scenario, Tilesets:
 Name|CRC|Description|URL|imageURL
 
 Techs:
-Name|Faction Count|CRC|Description|URL|imageURL
+Name|FactionCount|CRC|Description|URL|imageURL
 
 Maps:
-Name|Player Count|CRC|Description|URL|imageURL
+Name|PlayerCount|CRC|Description|URL|imageURL
