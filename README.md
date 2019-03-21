@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/glest/glest.github.io.svg?branch=master)](https://travis-ci.org/glest/glest.github.io)
+[![Build Status](https://travis-ci.org/glest/glest.io.svg?branch=master)](https://travis-ci.org/glest/glest.io)
 
 # Glest
 
@@ -28,15 +28,15 @@ jekyll site.
 
 The templates and layouts for the website are in:
 
- * [_includes](https://github.com/Glest/glest.github.io/tree/master/_includes)
- * [_layouts](https://github.com/Glest/glest.github.io/tree/master/_layouts)
+ * [_includes](https://github.com/Glest/glest.io/tree/master/_includes)
+ * [_layouts](https://github.com/Glest/glest.io/tree/master/_layouts)
 
 ## CSS and Images
 
 The other html files for that part of the website are in
-[docs/](https://github.com/Glest/glest.github.io/tree/master/docs)
+[docs/](https://github.com/Glest/glest.io/tree/master/docs)
 
-Assets, including the stylesheet, are in [docs/assets/](https://github.com/Glest/glest.github.io/tree/master/docs/assets)
+Assets, including the stylesheet, are in [docs/assets/](https://github.com/Glest/glest.io/tree/master/docs/assets)
 
 Mod Formats:
 
