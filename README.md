@@ -1,3 +1,12 @@
+
+========================================================================================
+
+ARCHIVED
+========
+This project is no longer maintained. If you would like to contact about this, please find us on **[Discord](https://discord.gg/es3EyBB)**.
+
+========================================================================================
+
 [![Build Status](https://travis-ci.org/glest/glest.io.svg?branch=master)](https://travis-ci.org/glest/glest.io)
 
 # Glest
